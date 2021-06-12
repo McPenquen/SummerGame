@@ -1,11 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] public int playerId = 1;
+    [SerializeField] public int playerId = 0;
     [SerializeField] public float speed = 5.0f;
-    [SerializeField] public int jumpPower = 10;
+    [SerializeField] public int jumpPower = 7;
 
+    private void Awake() {
+        // Increase the player id based on the player manager
+        PlayersManager.IncreasePlayerCount();
+        playerId = PlayersManager.GetPlayerCount();
+    }
     private void Update()
     {
         // Set the movement based on the playerID
