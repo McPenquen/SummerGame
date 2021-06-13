@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F864A0F1-34CE-4AC1-BEF3-667F759669D9}" SchemaVersion="103">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{F864A0F1-34CE-4AC1-BEF3-667F759669D9}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="startup" ID="{DDADBEED-393A-4A0F-AF6B-F41E0B3E7963}" ShortID="193424966">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="42.1"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="3.34">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6365F6DB-B98D-4B80-9307-672BC2E27E19}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-20"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

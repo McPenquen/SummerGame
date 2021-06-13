@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	282243215	startup_test			\Default Work Unit\startup_test	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1110677034	Underwater_Echoes	Wwise Stereo Delay			
+	1237275451	Octave_Up	Wwise Pitch Shifter			
+	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	496167673	startup_1	Y:\SummerGameWFolder\SummerGame-Wwise\SummerGame-Wwise_WwiseProject\.cache\Windows\SFX\Cartoon, Musical, Orchestral, Harp, Dream SND11722_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\startup_1		49544
+

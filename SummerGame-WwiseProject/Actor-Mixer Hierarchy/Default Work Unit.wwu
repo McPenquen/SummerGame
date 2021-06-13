@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2581998D-9BBB-4309-88DE-B31E52E03417}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{2581998D-9BBB-4309-88DE-B31E52E03417}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="startup_1" ID="{631447B4-5573-48D0-87A6-B4C4B1E30750}" ShortID="464311475">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>1540</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{228A9784-073D-4295-A07B-F98D4EED296B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+							<ObjectRef Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+							<ObjectRef Name="Underwater_Echoes" ID="{3C6B127B-9DAE-4879-A4ED-75DF209310EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect3" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cartoon, Musical, Orchestral, Harp, Dream SND11722" ID="{FF568DAD-81BB-4C6F-A34E-9A28FC68F570}">
+							<Language>SFX</Language>
+							<AudioFile>Cartoon, Musical, Orchestral, Harp, Dream SND11722.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="496167673"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{1E3B95F9-EA5F-4110-AE6B-491A89503AC1}">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="startup_1_Path" ID="{9C007040-485E-4279-8839-4952B81EF265}">
+									<PointList>
+										<Point>
+											<XPos>-80.71066</XPos>
+											<YPos>70.90395</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>0.50761</XPos>
+											<YPos>88.13559</YPos>
+											<Flags>0</Flags>
+											<Time>625</Time>
+										</Point>
+										<Point>
+											<XPos>71.5736</XPos>
+											<YPos>69.49153</YPos>
+											<Flags>0</Flags>
+											<Time>1250</Time>
+										</Point>
+										<Point>
+											<XPos>84.77157</XPos>
+											<YPos>-25.9887</YPos>
+											<Flags>0</Flags>
+											<Time>1875</Time>
+										</Point>
+										<Point>
+											<XPos>58.88325</XPos>
+											<YPos>-63.27684</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>-6.59898</XPos>
+											<YPos>-100</YPos>
+											<Flags>0</Flags>
+											<Time>3125</Time>
+										</Point>
+										<Point>
+											<XPos>-80.20305</XPos>
+											<YPos>-88.70056</YPos>
+											<Flags>0</Flags>
+											<Time>3750</Time>
+										</Point>
+										<Point>
+											<XPos>-92.8934</XPos>
+											<YPos>2.25989</YPos>
+											<Flags>0</Flags>
+											<Time>4375</Time>
+										</Point>
+										<Point>
+											<XPos>-79.69543</XPos>
+											<YPos>71.18644</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Cartoon, Musical, Orchestral, Harp, Dream SND11722" ID="{FF568DAD-81BB-4C6F-A34E-9A28FC68F570}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
