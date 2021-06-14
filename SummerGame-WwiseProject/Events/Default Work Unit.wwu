@@ -12,6 +12,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{56A4E735-EAFA-4020-8987-D2554EE5A77C}" ShortID="483379649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

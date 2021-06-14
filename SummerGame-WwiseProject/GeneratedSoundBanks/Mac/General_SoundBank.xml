@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="3657742645" Language="SFX" Hash="1100973559">
+		<SoundBank Id="3657742645" Language="SFX" Hash="2878883796">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
