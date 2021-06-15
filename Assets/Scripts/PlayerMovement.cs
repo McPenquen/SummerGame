@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] public int playerId = 0;
-    [SerializeField] public float speed = 5.0f;
-    [SerializeField] public int jumpPower = 7;
+    [SerializeField] private int playerId = 0;
+    [SerializeField] private float speed = 5.0f;
+    [SerializeField] private int jumpPower = 7;
     private int canJump = 0;
 
     private void Awake() {
@@ -25,13 +25,13 @@ public class PlayerMovement : MonoBehaviour
     }
     // collisiond handling inspired from: https://answers.unity.com/questions/1220752/how-to-detect-if-not-colliding.html
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.layer == 11) // 11 is the environment layer
+        if (collision.gameObject.layer == 11 || collision.gameObject.layer == 10) // 11 is the environment layer & 10 is players
         {
             canJump++;
         }
     }
     private void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.layer == 11) // 11 is the environment layer
+        if (collision.gameObject.layer == 11 || collision.gameObject.layer == 10)
         {
             canJump--;
         }
