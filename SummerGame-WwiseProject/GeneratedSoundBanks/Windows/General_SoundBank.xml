@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="3657742645" Language="SFX" Hash="2878883796">
+			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
+			<ShortName>General_SoundBank</ShortName>
+			<Path>General_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="282243215" Name="startup_test" ObjectPath="\Events\Default Work Unit\startup_test">
+					<IncludedMemoryFiles>
+						<File Id="496167673" Language="SFX">
+							<ShortName>Cartoon, Musical, Orchestral, Harp, Dream SND11722.wav</ShortName>
+							<Path>SFX\Cartoon, Musical, Orchestral, Harp, Dream SND11722_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

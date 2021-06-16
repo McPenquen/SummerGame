@@ -1,0 +1,25 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Language": "SFX",
+    "Hash": "366355242",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   }
+  ]
+ }
+}
