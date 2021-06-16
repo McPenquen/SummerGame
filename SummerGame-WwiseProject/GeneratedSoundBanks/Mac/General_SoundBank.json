@@ -1,0 +1,40 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\james\\Documents\\GitHub\\SummerGame\\SummerGame-WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3657742645",
+    "Language": "SFX",
+    "Hash": "2878883796",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\General_SoundBank",
+    "ShortName": "General_SoundBank",
+    "Path": "General_SoundBank.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "282243215",
+      "Name": "startup_test",
+      "ObjectPath": "\\Events\\Default Work Unit\\startup_test",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "496167673",
+        "Language": "SFX",
+        "ShortName": "Cartoon, Musical, Orchestral, Harp, Dream SND11722.wav",
+        "Path": "SFX\\Cartoon, Musical, Orchestral, Harp, Dream SND11722_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
