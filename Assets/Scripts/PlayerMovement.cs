@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private int playerId = 0;
+    [SerializeField] private GameObject bond = null;
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private int jumpPower = 7;
+    private int playerId = 0;
     private int canJump = 0;
 
     private void Awake() {

@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 711527158}
   - component: {fileID: 711527154}
   - component: {fileID: 711527157}
+  - component: {fileID: 711527159}
   m_Layer: 10
   m_Name: Player_1
   m_TagString: Player
@@ -473,7 +474,26 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!232 &711527159
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711527153}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 2017027503}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 4, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.005
+  m_MaxDistanceOnly: 0
 --- !u!1 &749147631
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,9 +558,10 @@ GameObject:
   - component: {fileID: 790778885}
   - component: {fileID: 790778886}
   - component: {fileID: 790778887}
-  m_Layer: 0
-  m_Name: Bond
-  m_TagString: Untagged
+  - component: {fileID: 790778888}
+  m_Layer: 12
+  m_Name: Players_Bond
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -552,13 +573,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790778884}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0016580356, w: 0.9999986}
+  m_LocalPosition: {x: 0, y: 3, z: 0.5}
   m_LocalScale: {x: 3, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2036169615}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.19}
 --- !u!212 &790778886
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -622,6 +643,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8475c87ae46aae7449a7e830ff068a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 711527153}
+  player2: {fileID: 2017027499}
+  zLayer: 0.5
+--- !u!65 &790778888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790778884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &884954327
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884954327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.059410095, z: -0.00011634827}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2036169615}
@@ -719,7 +756,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -886,7 +923,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923598375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -1, z: 0}
+  m_LocalPosition: {x: 5, y: -1, z: 0.5}
   m_LocalScale: {x: 24, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 156438807}
@@ -905,6 +942,7 @@ GameObject:
   - component: {fileID: 2017027503}
   - component: {fileID: 2017027500}
   - component: {fileID: 2017027504}
+  - component: {fileID: 2017027505}
   m_Layer: 10
   m_Name: Player_2
   m_TagString: Player
@@ -1023,7 +1061,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2017027504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,6 +1077,25 @@ MonoBehaviour:
   playerId: 0
   speed: 5
   jumpPower: 7
+--- !u!232 &2017027505
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017027499}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 711527158}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -4, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 0.005
+  m_MaxDistanceOnly: 0
 --- !u!1 &2036169614
 GameObject:
   m_ObjectHideFlags: 0

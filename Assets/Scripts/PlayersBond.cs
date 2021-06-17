@@ -12,7 +12,6 @@ public class PlayersBond : MonoBehaviour
     private Vector3 playersVector;
     private Vector3 bondScale = new Vector3(3, 0.5f, 1);
 
-
     void Update()
     {
         // Update the length of the bond
@@ -29,6 +28,7 @@ public class PlayersBond : MonoBehaviour
         // Rotate the bond
         newRotation = Quaternion.LookRotation(player1.transform.position - player2.transform.position);
         newRotation.y = 0;
+        newRotation.x = 0;
         transform.rotation = newRotation;
     }
 }
