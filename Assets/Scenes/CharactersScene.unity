@@ -258,7 +258,7 @@ Transform:
   m_Children:
   - {fileID: 1923598378}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707073737
 GameObject:
@@ -451,9 +451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4df158a2f1d64479de93c5d4507b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 0
+  bond: {fileID: 790778887}
   speed: 5
   jumpPower: 7
+  playerId: 0
 --- !u!50 &711527158
 Rigidbody2D:
   serializedVersion: 4
@@ -558,7 +559,6 @@ GameObject:
   - component: {fileID: 790778885}
   - component: {fileID: 790778886}
   - component: {fileID: 790778887}
-  - component: {fileID: 790778888}
   m_Layer: 12
   m_Name: Players_Bond
   m_TagString: Player
@@ -573,13 +573,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790778884}
-  m_LocalRotation: {x: 0, y: 0, z: 0.0016580356, w: 0.9999986}
-  m_LocalPosition: {x: 0, y: 3, z: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 3, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2036169615}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.19}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &790778886
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -643,22 +643,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8475c87ae46aae7449a7e830ff068a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 711527153}
-  player2: {fileID: 2017027499}
+  player1: {fileID: 711527157}
+  player2: {fileID: 2017027504}
   zLayer: 0.5
---- !u!65 &790778888
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790778884}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  maxLength: 10
 --- !u!1 &884954327
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,8 +687,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2036169615}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047539555
 GameObject:
@@ -1074,9 +1062,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4df158a2f1d64479de93c5d4507b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 0
+  bond: {fileID: 790778887}
   speed: 5
   jumpPower: 7
+  playerId: 0
 --- !u!232 &2017027505
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -1125,8 +1114,7 @@ Transform:
   m_Children:
   - {fileID: 2017027502}
   - {fileID: 711527156}
-  - {fileID: 884954329}
   - {fileID: 790778885}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

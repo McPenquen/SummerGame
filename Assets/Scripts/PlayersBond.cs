@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayersBond : MonoBehaviour
 {
-    [SerializeField] private GameObject player1;
-    [SerializeField] private GameObject player2;
+    [SerializeField] private PlayerMovement player1;
+    [SerializeField] private PlayerMovement player2;
     [SerializeField] private float zLayer = 1.0f;
+    [SerializeField] public float maxLength = 10.0f;
     private Vector3 newPosition = new Vector3(0, 0, 0);
     private Quaternion newRotation = new Quaternion(0, 0, 0, 0);
     private Vector3 playersVector;
@@ -30,5 +31,15 @@ public class PlayersBond : MonoBehaviour
         newRotation.y = 0;
         newRotation.x = 0;
         transform.rotation = newRotation;
+    }
+
+    // Takes in a Vector3 - if the new position is within the range return true else false
+    public bool isAllowedDistance(Vector3 position, int playerId)
+    {
+        // Get the distance from the other player
+        float newPlayersDistance = playerId == player1.playerId ? 
+        (player2.transform.position - position).magnitude : (player1.transform.position - position).magnitude;
+        // Return if the distance is allowed
+        return newPlayersDistance <= maxLength;
     }
 }
