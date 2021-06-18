@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         var movement =  Input.GetAxis("Horizontal" + playerId.ToString());
         // Respect the maximum bond length
         newPos = transform.position + new Vector3(movement, 0, 0) * Time.deltaTime * speed;
-        if (bond.isAllowedDistance(newPos, playerId))
+        if (true/*bond.isAllowedDistance(newPos, playerId)*/)
         {
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * speed;
         }
