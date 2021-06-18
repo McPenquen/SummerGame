@@ -24,7 +24,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * speed;
         }
-
+        else // If they are past the allowed distance get them closer together so they can move
+        {
+            transform.position += playerId == 1 ? - bond.playersVector / bond.playersVector.magnitude / 10
+            : bond.playersVector / bond.playersVector.magnitude / 10;
+        }
         // Detect jumping
         if (Input.GetButtonDown("Jump" + playerId.ToString()) && canJump == 1) 
         {
