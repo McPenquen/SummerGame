@@ -479,7 +479,6 @@ GameObject:
   - component: {fileID: 711527158}
   - component: {fileID: 711527154}
   - component: {fileID: 711527157}
-  - component: {fileID: 711527159}
   m_Layer: 10
   m_Name: Player_1
   m_TagString: Player
@@ -592,7 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bond: {fileID: 790778887}
   speed: 5
-  jumpPower: 7
+  jumpPower: 10
   playerId: 0
 --- !u!50 &711527158
 Rigidbody2D:
@@ -615,25 +614,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!232 &711527159
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711527153}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 2017027503}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 4, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.005
-  m_MaxDistanceOnly: 0
 --- !u!1 &749147631
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,10 +649,10 @@ MonoBehaviour:
   m_Targets:
   - target: {fileID: 2017027502}
     weight: 1
-    radius: 5
+    radius: 15
   - target: {fileID: 711527156}
     weight: 1
-    radius: 5
+    radius: 15
 --- !u!4 &749147633
 Transform:
   m_ObjectHideFlags: 0
@@ -786,6 +766,7 @@ MonoBehaviour:
   player2: {fileID: 2017027504}
   zLayer: 0.5
   maxLength: 10
+  playersVector: {x: 0, y: 0, z: 0}
 --- !u!1 &884954327
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,7 +871,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.25
+  orthographic size: 18.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1232,7 +1213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bond: {fileID: 790778887}
   speed: 5
-  jumpPower: 7
+  jumpPower: 10
   playerId: 0
 --- !u!232 &2017027505
 DistanceJoint2D:

@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayersBond bond = null;
     [SerializeField] private float speed = 5.0f;
-    [SerializeField] private int jumpPower = 7;
+    [SerializeField] private int jumpPower = 10;
     public int playerId = 0;
     private int canJump = 0;
     private Vector3 newPos;
