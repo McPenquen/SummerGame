@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public int playerId = 0;
     private int canJump = 0;
     private Vector3 newPos;
+    private Vector3 bondClimbing = new Vector3(0, 0, 0);
 
     private void Awake() {
         // Increase the player id based on the player manager
@@ -16,22 +17,31 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        // Get the input keys from the horizontal axis based on playerId
-        var movement =  Input.GetAxis("Horizontal" + playerId.ToString());
+        // Get the input keys from the horizontal & vertical axis based on playerId
+        var hMovement =  Input.GetAxis("Horizontal" + playerId.ToString());
+        var vMovement =  Input.GetAxis("Vertical" + playerId.ToString());
+        if (vMovement != 0)
+        {   
+            // The Vertical Axis allow players to climb towards the other player
+            bondClimbing = playerId == 1 ? - bond.playersVector / bond.playersVector.magnitude * vMovement
+                : bond.playersVector / bond.playersVector.magnitude * vMovement;
+        }
+        newPos = transform.position + (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
         // Respect the maximum bond length
-        newPos = transform.position + new Vector3(movement, 0, 0) * Time.deltaTime * speed;
         if (bond.isAllowedDistance(newPos, playerId))
         {
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * speed;
+            transform.position = newPos;
         }
-        // If they are past the allowed distance get them closer together so they can move
+        // Correct the distance from each other in the air
         else if (canJump == 0)
         {
+            vMovement = vMovement < 0 ? 0 : vMovement;
+            transform.position += (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
             transform.position += playerId == 1 ? - bond.playersVector / bond.playersVector.magnitude / 10
-            : bond.playersVector / bond.playersVector.magnitude / 10;
+                : bond.playersVector / bond.playersVector.magnitude / 10;
         }
         // Detect jumping
-        if (Input.GetButtonDown("Jump" + playerId.ToString()) && canJump == 1) 
+        if (Input.GetButtonDown("Jump" + playerId.ToString()) && canJump != 0) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
         }
