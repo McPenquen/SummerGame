@@ -3,10 +3,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayersBond bond = null;
+    [SerializeField] private PlayerMovement otherPlayer = null;
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private int jumpPower = 10;
     public int playerId = 0;
-    private int canJump = 0;
+    private bool playerTouch = false;
+    private bool groundTouch = false;
     private Vector3 newPos;
     private Vector3 bondClimbing = new Vector3(0, 0, 0);
 
@@ -38,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position = newPos;
         }
         // Correct the distance from each other in the air
-        else if (canJump == 0 && playerId == 2)
+        else if (!(playerTouch || groundTouch) && playerId == 2)
         {
             GetComponent<DistanceJoint2D>().distance = bond.maxLength;
         }
@@ -48,22 +50,30 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
         }
         // Detect jumping
-        if (Input.GetButtonDown("Jump" + playerId.ToString()) && canJump != 0) 
+        if (Input.GetButtonDown("Jump" + playerId.ToString()) && (playerTouch || groundTouch)) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
         }
     }
     // collisiond handling inspired from: https://answers.unity.com/questions/1220752/how-to-detect-if-not-colliding.html
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.layer == 11 || collision.gameObject.layer == 10) // 11 is the environment layer & 10 is players
+        if (collision.gameObject.layer == 11) // 11 is the environment layer
         {
-            canJump++;
+            groundTouch = true;
+        }
+        if (collision.gameObject.layer == 10 && otherPlayer.groundTouch) // layer 10 is players
+        {
+            playerTouch = true;
         }
     }
     private void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.layer == 11 || collision.gameObject.layer == 10)
+        if (collision.gameObject.layer == 11)
         {
-            canJump--;
+            groundTouch = false;
+        }
+        if (collision.gameObject.layer == 10 && otherPlayer.groundTouch)
+        {
+            playerTouch = false;
         }
     }
 }
