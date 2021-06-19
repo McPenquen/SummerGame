@@ -30,15 +30,22 @@ public class PlayerMovement : MonoBehaviour
         // Respect the maximum bond length
         if (bond.isAllowedDistance(newPos, playerId))
         {
+            if (playerId == 2) 
+            {
+                // Update the joint's length
+                GetComponent<DistanceJoint2D>().distance = bond.playersVector.magnitude;
+            }
             transform.position = newPos;
         }
         // Correct the distance from each other in the air
-        else if (canJump == 0)
+        else if (canJump == 0 && playerId == 2)
         {
-            vMovement = vMovement < 0 ? 0 : vMovement;
-            transform.position += (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
-            transform.position += playerId == 1 ? - bond.playersVector / bond.playersVector.magnitude / 10
-                : bond.playersVector / bond.playersVector.magnitude / 10;
+            GetComponent<DistanceJoint2D>().distance = bond.maxLength;
+        }
+        // Disable distance joint when up close to avoid side effects
+        if (playerId == 2)
+        {
+            GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
         }
         // Detect jumping
         if (Input.GetButtonDown("Jump" + playerId.ToString()) && canJump != 0) 
