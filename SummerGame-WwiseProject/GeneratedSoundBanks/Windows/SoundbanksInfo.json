@@ -18,7 +18,7 @@
    {
     "Id": "1355168291",
     "Language": "SFX",
-    "Hash": "366355242",
+    "Hash": "2277272273",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk"
@@ -26,21 +26,63 @@
    {
     "Id": "3657742645",
     "Language": "SFX",
-    "Hash": "2878883796",
+    "Hash": "2209282435",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General_SoundBank",
     "ShortName": "General_SoundBank",
     "Path": "General_SoundBank.bnk",
     "IncludedEvents": [
      {
-      "Id": "282243215",
-      "Name": "startup_test",
-      "ObjectPath": "\\Events\\Default Work Unit\\startup_test",
+      "Id": "3987033674",
+      "Name": "play_start_up",
+      "ObjectPath": "\\Events\\Default Work Unit\\Start_Up_Events\\play_start_up",
       "IncludedMemoryFiles": [
        {
-        "Id": "496167673",
+        "Id": "311953300",
         "Language": "SFX",
-        "ShortName": "Cartoon, Musical, Orchestral, Harp, Dream SND11722.wav",
-        "Path": "SFX\\Cartoon, Musical, Orchestral, Harp, Dream SND11722_10C4C929.wem"
+        "ShortName": "Sand_B_3.wav",
+        "Path": "SFX\\Sand_B_3_10C4C929.wem"
+       },
+       {
+        "Id": "328970171",
+        "Language": "SFX",
+        "ShortName": "Sand_C_6.wav",
+        "Path": "SFX\\Sand_C_6_10C4C929.wem"
+       },
+       {
+        "Id": "438582506",
+        "Language": "SFX",
+        "ShortName": "Sand_B_8.wav",
+        "Path": "SFX\\Sand_B_8_10C4C929.wem"
+       },
+       {
+        "Id": "445736973",
+        "Language": "SFX",
+        "ShortName": "Sand_B_6.wav",
+        "Path": "SFX\\Sand_B_6_10C4C929.wem"
+       },
+       {
+        "Id": "583410628",
+        "Language": "SFX",
+        "ShortName": "Sand_C_7.wav",
+        "Path": "SFX\\Sand_C_7_10C4C929.wem"
+       },
+       {
+        "Id": "684745479",
+        "Language": "SFX",
+        "ShortName": "Sand_C_1.wav",
+        "Path": "SFX\\Sand_C_1_10C4C929.wem"
+       },
+       {
+        "Id": "987600309",
+        "Language": "SFX",
+        "ShortName": "Sand_B_2.wav",
+        "Path": "SFX\\Sand_B_2_10C4C929.wem"
+       },
+       {
+        "Id": "1049835952",
+        "Language": "SFX",
+        "ShortName": "Sand_B_4.wav",
+        "Path": "SFX\\Sand_B_4_10C4C929.wem"
        }
       ]
      }

@@ -11,21 +11,49 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="366355242">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2277272273">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="2878883796">
+		<SoundBank Id="3657742645" Language="SFX" Hash="2209282435">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="282243215" Name="startup_test" ObjectPath="\Events\Default Work Unit\startup_test" DurationType="Infinite">
+				<Event Id="3987033674" Name="play_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\play_start_up">
 					<IncludedMemoryFiles>
-						<File Id="496167673" Language="SFX">
-							<ShortName>Cartoon, Musical, Orchestral, Harp, Dream SND11722.wav</ShortName>
-							<Path>SFX\Cartoon, Musical, Orchestral, Harp, Dream SND11722_10C4C929.wem</Path>
+						<File Id="311953300" Language="SFX">
+							<ShortName>Sand_B_3.wav</ShortName>
+							<Path>SFX\Sand_B_3_10C4C929.wem</Path>
+						</File>
+						<File Id="328970171" Language="SFX">
+							<ShortName>Sand_C_6.wav</ShortName>
+							<Path>SFX\Sand_C_6_10C4C929.wem</Path>
+						</File>
+						<File Id="438582506" Language="SFX">
+							<ShortName>Sand_B_8.wav</ShortName>
+							<Path>SFX\Sand_B_8_10C4C929.wem</Path>
+						</File>
+						<File Id="445736973" Language="SFX">
+							<ShortName>Sand_B_6.wav</ShortName>
+							<Path>SFX\Sand_B_6_10C4C929.wem</Path>
+						</File>
+						<File Id="583410628" Language="SFX">
+							<ShortName>Sand_C_7.wav</ShortName>
+							<Path>SFX\Sand_C_7_10C4C929.wem</Path>
+						</File>
+						<File Id="684745479" Language="SFX">
+							<ShortName>Sand_C_1.wav</ShortName>
+							<Path>SFX\Sand_C_1_10C4C929.wem</Path>
+						</File>
+						<File Id="987600309" Language="SFX">
+							<ShortName>Sand_B_2.wav</ShortName>
+							<Path>SFX\Sand_B_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1049835952" Language="SFX">
+							<ShortName>Sand_B_4.wav</ShortName>
+							<Path>SFX\Sand_B_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

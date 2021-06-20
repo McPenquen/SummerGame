@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5fee7939ce27f43b2e191b06ab11ed4
     GuidInternal: 
-    m_lastTime: -8585773875490861873
+    m_lastTime: -8585773893212345220
     List:
     - name: Ambience
       guid: 261dd1d5d74f4b4a9cb9e738dc69a202
@@ -54,9 +54,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: 261dd1d5d74f4b4a9cb9e738dc69a202
       Path: Master-Mixer Hierarchy\Default Work Unit\Ambience
-    - name: Master Audio Bus
+    - name: Master_Audio_Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
-      id: 3803692087
+      id: 2392784291
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -64,10 +64,24 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c5fee7939ce27f43b2e191b06ab11ed4
-      - ElementName: Master Audio Bus
+      - ElementName: Master_Audio_Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master_Audio_Bus
+    - name: UI
+      guid: c0141fde7cfdcb4c82c3c88203384c76
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c5fee7939ce27f43b2e191b06ab11ed4
+      - ElementName: UI
+        ObjectType: 2
+        guid: c0141fde7cfdcb4c82c3c88203384c76
+      Path: Master-Mixer Hierarchy\Default Work Unit\UI
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -80,7 +94,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 57531442cb4f8a479ae9131731cae77e
     GuidInternal: 
-    m_lastTime: -8585773875490792063
+    m_lastTime: -8585773893212225279
     List:
     - name: General_SoundBank
       guid: ed1fbc9cffffc845b0ec06456e9ddc0c
@@ -108,11 +122,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2f57c7439767ee468ee9d03e59b7a593
     GuidInternal: 
-    m_lastTime: -8585773875490961599
+    m_lastTime: -8585773893212010257
     List:
-    - name: startup_test
+    - name: play_start_up
       guid: a7c9dc658680bb4a98b8d311dadbc986
-      id: 282243215
+      id: 3987033674
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -120,10 +134,50 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 2f57c7439767ee468ee9d03e59b7a593
-      - ElementName: startup_test
+      - ElementName: Start_Up_Events
+        ObjectType: 4
+        guid: 496290fcd98b0f4aab0515b629469c08
+      - ElementName: play_start_up
         ObjectType: 3
         guid: a7c9dc658680bb4a98b8d311dadbc986
-      Path: Events\Default Work Unit\startup_test
+      Path: Events\Default Work Unit\Start_Up_Events\play_start_up
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Start_Up_Events
+      guid: 496290fcd98b0f4aab0515b629469c08
+      id: 3794179535
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2f57c7439767ee468ee9d03e59b7a593
+      - ElementName: Start_Up_Events
+        ObjectType: 4
+        guid: 496290fcd98b0f4aab0515b629469c08
+      Path: Events\Default Work Unit\Start_Up_Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: stop_start_up
+      guid: 577cffc19a029d4c9febef2c243c084a
+      id: 492406940
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2f57c7439767ee468ee9d03e59b7a593
+      - ElementName: Start_Up_Events
+        ObjectType: 4
+        guid: 496290fcd98b0f4aab0515b629469c08
+      - ElementName: stop_start_up
+        ObjectType: 3
+        guid: 577cffc19a029d4c9febef2c243c084a
+      Path: Events\Default Work Unit\Start_Up_Events\stop_start_up
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

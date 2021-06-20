@@ -129,7 +129,13 @@
 							</PropertyList>
 						</Effect>
 						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
-						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
+						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="DelayTime" Type="Real32" Value="0.63"/>
+								<Property Name="Feedback" Type="Real32" Value="70.5"/>
+								<Property Name="WetDryMix" Type="Real32" Value="56"/>
+							</PropertyList>
+						</Effect>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.1"/>
@@ -1970,7 +1976,7 @@
 												<RTPC Name="" ID="{0B304848-5B49-4240-81D5-FE26FA374ADB}" ShortID="629409747">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="startup" ID="{DDADBEED-393A-4A0F-AF6B-F41E0B3E7963}" WorkUnitID="{F864A0F1-34CE-4AC1-BEF3-667F759669D9}"/>
+															<ObjectRef Name="startup_pitch" ID="{DDADBEED-393A-4A0F-AF6B-F41E0B3E7963}" WorkUnitID="{F864A0F1-34CE-4AC1-BEF3-667F759669D9}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{61ADC322-29EE-49B4-A360-3EE042EE44B9}">

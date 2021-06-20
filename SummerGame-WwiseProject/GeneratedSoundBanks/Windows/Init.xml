@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="366355242">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2277272273">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
