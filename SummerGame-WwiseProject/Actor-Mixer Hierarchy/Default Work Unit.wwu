@@ -3,195 +3,535 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{2581998D-9BBB-4309-88DE-B31E52E03417}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="startup_1" ID="{631447B4-5573-48D0-87A6-B4C4B1E30750}" ShortID="464311475">
-					<PropertyList>
-						<Property Name="3DPosition" Type="int16" Value="1"/>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="Pitch" Type="int32">
-							<ValueList>
-								<Value>1540</Value>
-							</ValueList>
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{228A9784-073D-4295-A07B-F98D4EED296B}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="200"/>
-											<Property Name="Min" Type="Real64" Value="-200"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-							<ObjectRef Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
-							<ObjectRef Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="Effect2" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
-							<ObjectRef Name="Underwater_Echoes" ID="{3C6B127B-9DAE-4879-A4ED-75DF209310EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="Effect3" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
-							<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="SummerGame" ID="{EAE53A9D-E5C9-4FE1-8241-C66D1ED22C39}" ShortID="465319056">
 					<ChildrenList>
-						<AudioFileSource Name="Cartoon, Musical, Orchestral, Harp, Dream SND11722" ID="{FF568DAD-81BB-4C6F-A34E-9A28FC68F570}">
-							<Language>SFX</Language>
-							<AudioFile>Cartoon, Musical, Orchestral, Harp, Dream SND11722.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="496167673"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<PositioningInfo>
-						<Position Name="" ID="{1E3B95F9-EA5F-4110-AE6B-491A89503AC1}">
-							<PropertyList>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-							</PropertyList>
-							<ChildrenList>
-								<Path2D Name="startup_1_Path" ID="{9C007040-485E-4279-8839-4952B81EF265}">
-									<PointList>
-										<Point>
-											<XPos>-80.71066</XPos>
-											<YPos>70.90395</YPos>
-											<Flags>12</Flags>
-											<Time>0</Time>
-										</Point>
-										<Point>
-											<XPos>0.50761</XPos>
-											<YPos>88.13559</YPos>
-											<Flags>0</Flags>
-											<Time>625</Time>
-										</Point>
-										<Point>
-											<XPos>71.5736</XPos>
-											<YPos>69.49153</YPos>
-											<Flags>0</Flags>
-											<Time>1250</Time>
-										</Point>
-										<Point>
-											<XPos>84.77157</XPos>
-											<YPos>-25.9887</YPos>
-											<Flags>0</Flags>
-											<Time>1875</Time>
-										</Point>
-										<Point>
-											<XPos>58.88325</XPos>
-											<YPos>-63.27684</YPos>
-											<Flags>0</Flags>
-											<Time>2500</Time>
-										</Point>
-										<Point>
-											<XPos>-6.59898</XPos>
-											<YPos>-100</YPos>
-											<Flags>0</Flags>
-											<Time>3125</Time>
-										</Point>
-										<Point>
-											<XPos>-80.20305</XPos>
-											<YPos>-88.70056</YPos>
-											<Flags>0</Flags>
-											<Time>3750</Time>
-										</Point>
-										<Point>
-											<XPos>-92.8934</XPos>
-											<YPos>2.25989</YPos>
-											<Flags>0</Flags>
-											<Time>4375</Time>
-										</Point>
-										<Point>
-											<XPos>-79.69543</XPos>
-											<YPos>71.18644</YPos>
-											<Flags>0</Flags>
-											<Time>5000</Time>
-										</Point>
-									</PointList>
-								</Path2D>
-							</ChildrenList>
-						</Position>
-					</PositioningInfo>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Cartoon, Musical, Orchestral, Harp, Dream SND11722" ID="{FF568DAD-81BB-4C6F-A34E-9A28FC68F570}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<ActorMixer Name="Ambience" ID="{CF4BBCED-243F-4C32-BF75-3337914C6BA1}" ShortID="87298623">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<ActorMixer Name="Wind" ID="{D13BD2EA-E2D8-4352-8EAD-129738BF3BAD}" ShortID="1017943731">
+						<ActorMixer Name="Ambience" ID="{6E944E1C-1C47-489F-8AA8-F4A6A1AA0A17}" ShortID="402846245">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+									<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" ShortID="791786701">
+								<ActorMixer Name="Wind" ID="{D13BD2EA-E2D8-4352-8EAD-129738BF3BAD}" ShortID="1017943731">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-											<ObjectRef Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="SoundSeed Air Wind" ID="{F125F6F6-830D-4A40-9FC8-203E563DB48B}" ShortID="193960921" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+										<Sound Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" ShortID="791786701">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-1840"/>
-												<Property Name="FrequencyScale" Type="Real32" Value="1.85"/>
-												<Property Name="GainOffset" Type="Real32" Value="1.1"/>
-												<Property Name="Gustiness" Type="Real32" Value="0.23"/>
-												<Property Name="QFactorScale" Type="Real32" Value="0.38"/>
-												<Property Name="Variability" Type="Real32" Value="0.37"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<PluginData/>
-											<PluginInnerObjectList>
-												<List Name="Deflectors">
-													<PluginInnerObject Name="" ID="{81B95055-150B-4470-B110-7FEF93228CA7}" PluginName="Deflector" CompanyID="0" PluginID="121"/>
-												</List>
-											</PluginInnerObjectList>
-										</SourcePlugin>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="SoundSeed Air Wind" ID="{F125F6F6-830D-4A40-9FC8-203E563DB48B}" ShortID="193960921" PluginName="SoundSeed Air Wind" CompanyID="0" PluginID="119">
+													<PropertyList>
+														<Property Name="AverageVelocity" Type="Real32" Value="-930"/>
+														<Property Name="Direction" Type="Real32" Value="8"/>
+														<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.06"/>
+														<Property Name="GainOffset" Type="Real32" Value="20"/>
+														<Property Name="Gustiness" Type="Real32" Value="0.21"/>
+														<Property Name="QFactorScale" Type="Real32" Value="0.17"/>
+														<Property Name="Variability" Type="Real32" Value="0.35"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<PluginData>
+	<CurveList Version="1">
+		<CurveInfo Name="AverageVelocity">
+			<Curve Name="" ID="{426BFFD8-E620-4753-878D-0FB62834B0E1}">
+				<PropertyList>
+					<Property Name="Flags" Type="int32" Value="1"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>5</Flags>
+					</Point>
+					<Point>
+						<XPos>10</XPos>
+						<YPos>0</YPos>
+						<Flags>37</Flags>
+					</Point>
+				</PointList>
+			</Curve>
+		</CurveInfo>
+	</CurveList>
+</PluginData>
+													<PluginInnerObjectList>
+														<List Name="Deflectors">
+															<PluginInnerObject Name="" ID="{81B95055-150B-4470-B110-7FEF93228CA7}" PluginName="Deflector" CompanyID="0" PluginID="121">
+																<PropertyList>
+																	<Property Name="PanX" Type="Real64" Value="-8.88178419700125E-16"/>
+																	<Property Name="PanY" Type="Real64" Value="0.584795321637438"/>
+																</PropertyList>
+															</PluginInnerObject>
+														</List>
+													</PluginInnerObjectList>
+												</SourcePlugin>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="SoundSeed Air Wind" ID="{F125F6F6-830D-4A40-9FC8-203E563DB48B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="SoundSeed Air Wind" ID="{F125F6F6-830D-4A40-9FC8-203E563DB48B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</ActorMixer>
+								<ActorMixer Name="Sand" ID="{4EEEE59E-DFD5-4402-869A-0F81B744FCA6}" ShortID="992683483">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="sand" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" ShortID="579706968">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C3600DB8-040A-4C83-A115-8D5084481D74}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sand_B_8" ID="{19E36BFA-870D-4D41-AF63-2B3C47AC3F86}" ShortID="400322759">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_B_8" ID="{9CD5722F-BA6B-46D3-B4F4-15151272B210}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_B_8.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="438582506"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_B_8" ID="{9CD5722F-BA6B-46D3-B4F4-15151272B210}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_C_6" ID="{EDC64966-DABE-4C04-95EB-769297414924}" ShortID="657419179">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_C_6" ID="{DB844EAF-3195-4549-849B-4C66D4AA48B5}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_C_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="328970171"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_C_6" ID="{DB844EAF-3195-4549-849B-4C66D4AA48B5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_C_7" ID="{3C606A87-C5BD-448B-B727-A7FFB9E7469A}" ShortID="55917565">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_C_7" ID="{0F2BED6E-9EBF-4138-9874-6EC75811D127}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_C_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="583410628"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_C_7" ID="{0F2BED6E-9EBF-4138-9874-6EC75811D127}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_B_3" ID="{F092C27E-3CF0-437C-98D3-DC55CB839597}" ShortID="453763095">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_B_3" ID="{CE4370E9-D216-4C3D-9B75-3BF57DAEEA30}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_B_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="311953300"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_B_3" ID="{CE4370E9-D216-4C3D-9B75-3BF57DAEEA30}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_B_4" ID="{CE660704-E6E7-4B5B-A1E3-C03295D13FD2}" ShortID="384886247">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_B_4" ID="{DD421077-B652-45FD-8ACA-B3D2FF8EB7DF}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_B_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1049835952"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_B_4" ID="{DD421077-B652-45FD-8ACA-B3D2FF8EB7DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_B_2" ID="{207B8B3B-8ECE-4418-AECC-6D1A1F20B07C}" ShortID="95731858">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_B_2" ID="{567AB2ED-B613-44F3-AD71-DF7DF665CD9E}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_B_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="987600309"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_B_2" ID="{567AB2ED-B613-44F3-AD71-DF7DF665CD9E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_C_1" ID="{1DD0E193-E493-478F-AFEF-11F60FA89C6C}" ShortID="156800301">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_C_1" ID="{90EC8457-BB37-4D93-8ED9-482F6C1275DF}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_C_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="684745479"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_C_1" ID="{90EC8457-BB37-4D93-8ED9-482F6C1275DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sand_B_6" ID="{AD2E7BC2-E284-4F90-A63B-EBB8A2AEF3CF}" ShortID="975382868">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sand_B_6" ID="{C5EDED1D-E6D4-4A33-9249-1D0E2D2EA505}">
+															<Language>SFX</Language>
+															<AudioFile>Sand_B_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="445736973"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Sand_B_6" ID="{C5EDED1D-E6D4-4A33-9249-1D0E2D2EA505}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="silence" ID="{909F6175-56A0-40D5-9F5B-42A57377CA15}" ShortID="702100507">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{98820D1D-3AC4-4CBE-A2C7-AFF8517739C9}" ShortID="246693938" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{98820D1D-3AC4-4CBE-A2C7-AFF8517739C9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{01D8E335-025E-4067-98ED-89B0C5AF8E86}">
+											<ChildrenList>
+												<Path2D Name="Sand_Path" ID="{196547F4-F9E8-4F32-BC3A-F88262ADB0B4}">
+													<PointList>
+														<Point>
+															<XPos>1.01523</XPos>
+															<YPos>68.64407</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>51.7766497461929</XPos>
+															<YPos>50.2824858757062</YPos>
+															<Flags>0</Flags>
+															<Time>454</Time>
+														</Point>
+														<Point>
+															<XPos>72.5888324873096</XPos>
+															<YPos>30.5084745762712</YPos>
+															<Flags>0</Flags>
+															<Time>909</Time>
+														</Point>
+														<Point>
+															<XPos>73.6040609137056</XPos>
+															<YPos>-22.5988700564972</YPos>
+															<Flags>0</Flags>
+															<Time>1363</Time>
+														</Point>
+														<Point>
+															<XPos>46.7005076142132</XPos>
+															<YPos>-63.8418079096045</YPos>
+															<Flags>0</Flags>
+															<Time>1818</Time>
+														</Point>
+														<Point>
+															<XPos>-2.03045685279187</XPos>
+															<YPos>-76.8361581920904</YPos>
+															<Flags>0</Flags>
+															<Time>2272</Time>
+														</Point>
+														<Point>
+															<XPos>-64.9746192893401</XPos>
+															<YPos>-73.4463276836158</YPos>
+															<Flags>0</Flags>
+															<Time>2727</Time>
+														</Point>
+														<Point>
+															<XPos>-76.1421319796954</XPos>
+															<YPos>-42.9378531073446</YPos>
+															<Flags>0</Flags>
+															<Time>3181</Time>
+														</Point>
+														<Point>
+															<XPos>-84.2639593908629</XPos>
+															<YPos>3.38983050847457</YPos>
+															<Flags>0</Flags>
+															<Time>3636</Time>
+														</Point>
+														<Point>
+															<XPos>-82.2335025380711</XPos>
+															<YPos>45.1977401129944</YPos>
+															<Flags>0</Flags>
+															<Time>4090</Time>
+														</Point>
+														<Point>
+															<XPos>-52.28426</XPos>
+															<YPos>68.92655</YPos>
+															<Flags>0</Flags>
+															<Time>4545</Time>
+														</Point>
+														<Point>
+															<XPos>-0.50762</XPos>
+															<YPos>71.18644</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</ActorMixer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="UI" ID="{A923B011-D381-4A0B-B563-8859374E84C8}" ShortID="435586107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI" ID="{DE1F14C0-FD7C-4CCB-82C3-C88203384C76}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Alerts" ID="{C73DB407-5BA0-4972-92B8-7BBF1857A5E3}" ShortID="146044872">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</ActorMixer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
-					<ObjectLists/>
-				</ActorMixer>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

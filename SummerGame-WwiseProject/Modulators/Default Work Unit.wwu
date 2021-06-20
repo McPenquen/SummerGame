@@ -3,7 +3,7 @@
 	<Modulators>
 		<WorkUnit Name="Default Work Unit" ID="{F864A0F1-34CE-4AC1-BEF3-667F759669D9}" PersistMode="Standalone">
 			<ChildrenList>
-				<ModulatorLfo Name="startup" ID="{DDADBEED-393A-4A0F-AF6B-F41E0B3E7963}" ShortID="193424966">
+				<ModulatorLfo Name="startup_pitch" ID="{DDADBEED-393A-4A0F-AF6B-F41E0B3E7963}" ShortID="193424966">
 					<PropertyList>
 						<Property Name="LfoDepth" Type="Real64" Value="42.1"/>
 						<Property Name="LfoFrequency" Type="Real64" Value="3.34">

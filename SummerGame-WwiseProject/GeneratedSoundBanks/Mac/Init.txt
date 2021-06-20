@@ -1,6 +1,10 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	1551306167	UI			\Default Work Unit\UI	
+	2392784291	Master_Audio_Bus			\Default Work Unit\Master_Audio_Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	96700152	Mastering Suite (Custom)	Mastering Suite			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
