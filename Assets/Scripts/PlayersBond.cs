@@ -10,7 +10,7 @@ public class PlayersBond : MonoBehaviour
     [SerializeField] public float maxLength = 10.0f;
     private Vector3 newPosition = new Vector3(0, 0, 0);
     private Quaternion newRotation = new Quaternion(0, 0, 0, 0);
-    private Vector3 playersVector;
+    public Vector3 playersVector;
     private Vector3 bondScale = new Vector3(3, 0.5f, 1);
 
     void Update()

@@ -3,11 +3,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayersBond bond = null;
+    [SerializeField] private PlayerMovement otherPlayer = null;
     [SerializeField] private float speed = 5.0f;
-    [SerializeField] private int jumpPower = 7;
+    [SerializeField] private int jumpPower = 10;
     public int playerId = 0;
-    private int canJump = 0;
+    private bool playerTouch = false;
+    private bool groundTouch = false;
     private Vector3 newPos;
+    private Vector3 bondClimbing = new Vector3(0, 0, 0);
 
     private void Awake() {
         // Increase the player id based on the player manager
@@ -16,32 +19,61 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        // Get the input keys from the horizontal axis based on playerId
-        var movement =  Input.GetAxis("Horizontal" + playerId.ToString());
+        // Get the input keys from the horizontal & vertical axis based on playerId
+        var hMovement =  Input.GetAxis("Horizontal" + playerId.ToString());
+        var vMovement =  Input.GetAxis("Vertical" + playerId.ToString());
+        if (vMovement != 0)
+        {   
+            // The Vertical Axis allow players to climb towards the other player
+            bondClimbing = playerId == 1 ? - bond.playersVector / bond.playersVector.magnitude * vMovement
+                : bond.playersVector / bond.playersVector.magnitude * vMovement;
+        }
+        newPos = transform.position + (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
         // Respect the maximum bond length
-        newPos = transform.position + new Vector3(movement, 0, 0) * Time.deltaTime * speed;
         if (bond.isAllowedDistance(newPos, playerId))
         {
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * speed;
+            if (playerId == 2) 
+            {
+                // Update the joint's length
+                GetComponent<DistanceJoint2D>().distance = bond.playersVector.magnitude;
+            }
+            transform.position = newPos;
         }
-
+        // Correct the distance from each other in the air
+        else if (!(playerTouch || groundTouch) && playerId == 2)
+        {
+            GetComponent<DistanceJoint2D>().distance = bond.maxLength;
+        }
+        // Disable distance joint when up close to avoid side effects
+        if (playerId == 2)
+        {
+            GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
+        }
         // Detect jumping
-        if (Input.GetButtonDown("Jump" + playerId.ToString()) && canJump == 1) 
+        if (Input.GetButtonDown("Jump" + playerId.ToString()) && (playerTouch || groundTouch)) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
         }
     }
     // collisiond handling inspired from: https://answers.unity.com/questions/1220752/how-to-detect-if-not-colliding.html
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.layer == 11 || collision.gameObject.layer == 10) // 11 is the environment layer & 10 is players
+        if (collision.gameObject.layer == 11) // 11 is the environment layer
         {
-            canJump++;
+            groundTouch = true;
+        }
+        if (collision.gameObject.layer == 10 && otherPlayer.groundTouch) // layer 10 is players
+        {
+            playerTouch = true;
         }
     }
     private void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.layer == 11 || collision.gameObject.layer == 10)
+        if (collision.gameObject.layer == 11)
         {
-            canJump--;
+            groundTouch = false;
+        }
+        if (collision.gameObject.layer == 10 && otherPlayer.groundTouch)
+        {
+            playerTouch = false;
         }
     }
 }
