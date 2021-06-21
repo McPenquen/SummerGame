@@ -16,13 +16,17 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="2209282435">
+		<SoundBank Id="3657742645" Language="SFX" Hash="500338416">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3987033674" Name="play_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\play_start_up">
+				<Event Id="3987033674" Name="play_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\play_start_up" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="211988747" Language="SFX">
+							<ShortName>Crickets WAV\Crickets.wav</ShortName>
+							<Path>SFX\Crickets WAV\Crickets_10C4C929.wem</Path>
+						</File>
 						<File Id="311953300" Language="SFX">
 							<ShortName>Sand_B_3.wav</ShortName>
 							<Path>SFX\Sand_B_3_10C4C929.wem</Path>
@@ -35,6 +39,10 @@
 							<ShortName>Sand_B_8.wav</ShortName>
 							<Path>SFX\Sand_B_8_10C4C929.wem</Path>
 						</File>
+						<File Id="444115074" Language="SFX">
+							<ShortName>Crickets WAV\Crickets 2.wav</ShortName>
+							<Path>SFX\Crickets WAV\Crickets 2_10C4C929.wem</Path>
+						</File>
 						<File Id="445736973" Language="SFX">
 							<ShortName>Sand_B_6.wav</ShortName>
 							<Path>SFX\Sand_B_6_10C4C929.wem</Path>
@@ -46,6 +54,14 @@
 						<File Id="684745479" Language="SFX">
 							<ShortName>Sand_C_1.wav</ShortName>
 							<Path>SFX\Sand_C_1_10C4C929.wem</Path>
+						</File>
+						<File Id="716184218" Language="SFX">
+							<ShortName>Crickets WAV\Crickets 3.wav</ShortName>
+							<Path>SFX\Crickets WAV\Crickets 3_10C4C929.wem</Path>
+						</File>
+						<File Id="816023224" Language="SFX">
+							<ShortName>Crickets WAV\Crickets 4.wav</ShortName>
+							<Path>SFX\Crickets WAV\Crickets 4_10C4C929.wem</Path>
 						</File>
 						<File Id="987600309" Language="SFX">
 							<ShortName>Sand_B_2.wav</ShortName>
