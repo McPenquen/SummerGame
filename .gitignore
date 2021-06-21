@@ -62,8 +62,10 @@ crashlytics-build.properties
 *.akd
 *.validationcache
 Assets/Wwise/Editor/ProjectData/
-SummerGame-WwiseProject/.cache/
-
-
+SummerGame-WwiseProject/.cache
 /Assets/Wwise/Editor/ProjectData
 /Assets/Wwise/Editor/ProjectData.meta
+/SummerGame-WwiseProject/*.validationcache
+/SummerGame-WwiseProject/*.wsettings
+/SummerGame-WwiseProject/*.wsettings
+/UserSettings
