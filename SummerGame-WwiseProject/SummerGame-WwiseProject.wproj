@@ -57,6 +57,24 @@
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2021.1|Build=7629|VersionName=v2021.1.2|Config=Release" />
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjEwNzExIiBtYXNrPSJYWkZZMzE1MSIgZW5jPSIwIj48bGlj
+ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwx
+MCIgZXhwaXJlcz0iMjAyMS0xMi0wMSIgIC8+PGxpY2Vuc2UgaWQ9IjIxIiBuYW1l
+PSJNYWludGVuYW5jZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVz
+PSIyMDIxLTEyLTAxIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9IkxldmVsIEEg
+TGljZW5zZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDIx
+LTEyLTAxIiAgLz48bGljZW5zZSBpZD0iMzEiIG5hbWU9IlNvdW5kU2VlZCBBaXIi
+IHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAyMS0xMi0wMSIg
+IC8+PGxpY2Vuc2UgaWQ9IjYzIiBuYW1lPSJNYXN0ZXJpbmcgU3VpdGUiIHR5cGU9
+IjEiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAyMS0wOC0xNyIgIC8+PHBs
+dWdpbiBpZD0iMTIxODk2OTkiIG5hbWU9Ik1hc3RlcmluZyBTdWl0ZSIgbGljZW5z
+ZT0iNjMiIC8+PC9wcm9qZWN0Pg==|x5R68Y4/DlO7bi4CSD71ZrzLq5D72AUJEIq
+jDToEXLshP9T2UYX55nKZRc3ctBhG92+w7FhwY1Pr7uad7ZyuyRSMCKIetmNI6sz
+AMupccBpP/9zrD+w3GU8qw8vV9Ea8AyI4q+BmZwa6JiU8RYaCvDRXUbSYQUqFmff
+Cp3cj62zkWM3XAvrWQ0SRSrsufiWHYKmbldUyLIUthtvUOZRObSJ8EBb4tCIBkfa
+bAZVr1hvfKUOjKjtDM8aDEuXIEQxmSlRPkbgSodNlppnoxeUYoTesGZpAZWM0POu
+j80JRWVB1TW8hIdVTyye+71DO49/lp8oXROb7HyGKTLveCHSscg==
+"/>
 			</PropertyList>
 			<SharedValues>
 				<SharedPropertyList ClassName="AudioSource" PluginType="0" CompanyID="1" PluginID="0">

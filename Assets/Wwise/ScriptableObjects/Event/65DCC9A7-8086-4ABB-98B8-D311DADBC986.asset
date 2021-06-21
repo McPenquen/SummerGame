@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5a80ba3f300419cbec5b5b1e6af985, type: 3}
   m_Name: 65DCC9A7-8086-4ABB-98B8-D311DADBC986
   m_EditorClassIdentifier: 
-  objectName: startup_test
-  id: 282243215
+  objectName: play_start_up
+  id: 3987033674
   guid: 65DCC9A7-8086-4ABB-98B8-D311DADBC986

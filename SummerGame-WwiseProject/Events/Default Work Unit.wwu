@@ -3,24 +3,69 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="startup_test" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}">
+				<Folder Name="Start_Up_Events" ID="{FC906249-8BD9-4A0F-AB05-15B629469C08}" ShortID="389003748">
 					<ChildrenList>
-						<Action Name="" ID="{EAF291CB-8B28-42BB-AA8A-3BA2F09A1400}" ShortID="46896076">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="startup_1" ID="{631447B4-5573-48D0-87A6-B4C4B1E30750}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{56A4E735-EAFA-4020-8987-D2554EE5A77C}" ShortID="483379649">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}">
+							<ChildrenList>
+								<Action Name="" ID="{56A4E735-EAFA-4020-8987-D2554EE5A77C}" ShortID="483379649">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0817CEAA-81AF-4806-A6E4-ED74C9966529}" ShortID="266029760">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sand" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{970AEE81-8AE9-4ACD-960D-0FB18B46F7E6}" ShortID="707823190">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}">
+							<ChildrenList>
+								<Action Name="" ID="{A170FE67-6927-4522-9E1B-073B98C46ED8}" ShortID="127318149">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{60206039-8FC3-4482-B59D-CDB8780E1B78}" ShortID="264099670">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sand" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B556DF39-C36E-4EC2-8D6E-D9BB2A0B677E}" ShortID="426616589">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

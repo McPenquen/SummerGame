@@ -6,8 +6,12 @@
 				<SoundcasterSession Name="init" ID="{8DDC3573-42E6-4BF9-9552-691E74F83C17}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="startup_test" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
+							<ObjectRef Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
 							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
+							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
