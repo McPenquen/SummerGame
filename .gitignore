@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Wwise generated files
+*.akd
+*.validationcache
+[Aa]ssets/Wwise/Editor/ProjectData/
+[Ss]ummerGame-WwiseProject/.cache/
+
