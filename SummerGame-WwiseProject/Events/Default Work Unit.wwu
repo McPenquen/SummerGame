@@ -21,6 +21,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{970AEE81-8AE9-4ACD-960D-0FB18B46F7E6}" ShortID="707823190">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}">
@@ -42,6 +49,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sand" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B556DF39-C36E-4EC2-8D6E-D9BB2A0B677E}" ShortID="426616589">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

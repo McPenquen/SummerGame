@@ -503,6 +503,343 @@
 									</PositioningInfo>
 									<ObjectLists/>
 								</ActorMixer>
+								<ActorMixer Name="Crickets" ID="{9AE8C420-1865-4E29-8671-1DC09570468F}" ShortID="527330242">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" ShortID="451098730">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{41184F12-292B-4451-BB2B-E7ECA3817B58}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="25"/>
+																	<Property Name="Min" Type="Real64" Value="-76"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5F7CAD54-0936-47E0-B87C-8D17D25E272E}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Crickets_2" ID="{F2AFB3D7-F9D0-462D-A5D8-B509DEE6CEFC}" ShortID="660919772">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BA4743E8-4620-4F2C-B8D9-E397F54634F9}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="25"/>
+																			<Property Name="Min" Type="Real64" Value="-51"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{72483033-B488-49CE-8157-AE0A9D6168AA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets 2" ID="{E67C4745-D736-413E-AB85-403A0839413E}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets WAV\Crickets 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="444115074"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets 2" ID="{E67C4745-D736-413E-AB85-403A0839413E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Crickets_3" ID="{5A305A4C-2FCC-4F85-9F11-EAB0C41CE864}" ShortID="10694613">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C3B38D8D-6E3F-4339-A9CA-7FBA5E3C2357}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="76"/>
+																			<Property Name="Min" Type="Real64" Value="-76"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F9AFDCB8-1327-43B9-AB22-6DEF85A32353}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-9"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets 3" ID="{D45776FE-FE20-4080-B058-DDCDC6C732CA}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets WAV\Crickets 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="716184218"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets 3" ID="{D45776FE-FE20-4080-B058-DDCDC6C732CA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Crickets_4" ID="{BA7E6BA7-5A54-4DAD-AFC5-3135823C44EF}" ShortID="393349026">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{EFDD37C5-A273-46BB-A4C6-34A37C2985F0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="51"/>
+																			<Property Name="Min" Type="Real64" Value="-51"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1ACF86FB-66C0-47FE-AF92-9BC4A5C06753}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-9"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets 4" ID="{F05F4E05-AE1F-43D0-A6C6-9FE3FB35D949}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets WAV\Crickets 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="816023224"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets 4" ID="{F05F4E05-AE1F-43D0-A6C6-9FE3FB35D949}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Crickets_1" ID="{83F4C579-DC0C-4188-BAE3-4296FD9C5614}" ShortID="30930793">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D982216F-1FF1-458B-801D-7023C1434CD6}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="76"/>
+																			<Property Name="Min" Type="Real64" Value="-76"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BFA37666-933B-4F84-B681-9C992C236C86}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-10"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets" ID="{0B3B812A-BA11-435C-8879-2634B959C3AA}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets WAV\Crickets.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="211988747"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets" ID="{0B3B812A-BA11-435C-8879-2634B959C3AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{0B4549B3-ED60-4665-8185-8D2256477736}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="8"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Crickets_Path" ID="{39203018-391C-45D5-915C-69EDCB498F70}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
+														<Property Name="RandomX" Type="Real64" Value="9"/>
+														<Property Name="RandomY" Type="Real64" Value="9"/>
+														<Property Name="RandomZ" Type="Real64" Value="9"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-1E-05</XPos>
+															<YPos>54.51977</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>35.5329949238579</XPos>
+															<YPos>46.3276836158192</YPos>
+															<Flags>0</Flags>
+															<Time>1250</Time>
+														</Point>
+														<Point>
+															<XPos>58.8832487309645</XPos>
+															<YPos>9.03954802259886</YPos>
+															<Flags>0</Flags>
+															<Time>2500</Time>
+														</Point>
+														<Point>
+															<XPos>39.5939086294416</XPos>
+															<YPos>-53.6723163841808</YPos>
+															<Flags>0</Flags>
+															<Time>3750</Time>
+														</Point>
+														<Point>
+															<XPos>-25.3807106598985</XPos>
+															<YPos>-53.6723163841808</YPos>
+															<Flags>0</Flags>
+															<Time>5000</Time>
+														</Point>
+														<Point>
+															<XPos>-51.2690355329949</XPos>
+															<YPos>-26.5536723163842</YPos>
+															<Flags>0</Flags>
+															<Time>6250</Time>
+														</Point>
+														<Point>
+															<XPos>-62.4365482233503</XPos>
+															<YPos>22.5988700564972</YPos>
+															<Flags>0</Flags>
+															<Time>7500</Time>
+														</Point>
+														<Point>
+															<XPos>-39.0862944162437</XPos>
+															<YPos>37.8531073446328</YPos>
+															<Flags>0</Flags>
+															<Time>8750</Time>
+														</Point>
+														<Point>
+															<XPos>-1.01522842639594</XPos>
+															<YPos>53.1073446327684</YPos>
+															<Flags>0</Flags>
+															<Time>10000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</ActorMixer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
