@@ -49,11 +49,10 @@ GameObject:
   - component: {fileID: 6578420529721225351}
   - component: {fileID: 6578420529721225348}
   - component: {fileID: 6578420529721225368}
-  - component: {fileID: 6578420529721225369}
   - component: {fileID: 6578420529721225370}
   m_Layer: 10
   m_Name: Player_2
-  m_TagString: Player
+  m_TagString: Player_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
   m_Color: {r: 0.7075472, g: 0.30844486, b: 0.23696157, a: 1}
   m_FlipX: 0
@@ -187,26 +186,6 @@ MonoBehaviour:
   speed: 5
   jumpPower: 10
   playerId: 0
---- !u!231 &6578420529721225369
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6578420529721225347}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 1
-  m_ConnectedRigidBody: {fileID: 6578420531102212062}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -4, y: 0}
-  m_AutoConfigureDistance: 1
-  m_Distance: 0.005
-  m_DampingRatio: 0
-  m_Frequency: 1
 --- !u!232 &6578420529721225370
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -457,7 +436,7 @@ GameObject:
   - component: {fileID: 6578420531102212061}
   m_Layer: 10
   m_Name: Player_1
-  m_TagString: Player
+  m_TagString: Player_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,7 +494,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
   m_Color: {r: 0.078431375, g: 0.30980393, b: 0.23529413, a: 1}
   m_FlipX: 0
@@ -640,10 +619,10 @@ MonoBehaviour:
   m_Targets:
   - target: {fileID: 6578420529721225350}
     weight: 1
-    radius: 15
+    radius: 8
   - target: {fileID: 6578420531102212060}
     weight: 1
-    radius: 15
+    radius: 8
 --- !u!1 &6578420531147604268
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +694,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
