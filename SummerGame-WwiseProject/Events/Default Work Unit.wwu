@@ -66,6 +66,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Enviroment_Events" ID="{AE2D59CF-43D2-44AE-8347-CDA1627EB2AA}" ShortID="928112999">
+					<ChildrenList>
+						<Event Name="plant_sounds" ID="{57D4C6CF-B5FB-4F5F-9726-C6E455540CCC}">
+							<ChildrenList>
+								<Action Name="" ID="{BFAE2EFB-92B6-45AC-9001-58C8FB854C1C}" ShortID="1023133448">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Plants" ID="{3FF1622B-9668-40F8-8E1F-281B7C6CCBB9}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
