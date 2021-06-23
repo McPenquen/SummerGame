@@ -31,9 +31,10 @@ public class PlayerMovement : MonoBehaviour
         var vMovement =  Input.GetAxis("Vertical" + playerId.ToString());
         if (vMovement != 0)
         {   
-            // The Vertical Axis allow players to climb towards the other player
+            // The Vertical Axis allow players to climb towards the other player -> up = extend , down = shrink the bond
             bondClimbing = playerId == 1 ? bond.playersVector / bond.playersVector.magnitude * vMovement
                 : - bond.playersVector / bond.playersVector.magnitude * vMovement;
+            
         }
         newPos = transform.position + (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
         
@@ -60,10 +61,28 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // Disable distance joint when up close to avoid side effects
+        // Disable distance joint when up close to avoid side effects of the distance joint
         if (playerId == 2)
         {
-            GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
+            if (bond.playersVector.magnitude <= 5)
+            {
+                // If one of the players is hanging enable the bond
+                if ((transform.position.y < otherPlayer.transform.position.y && (!playerTouch && !groundTouch)) 
+                    || (otherPlayer.transform.position.y < transform.position.y && (!otherPlayer.playerTouch && !otherPlayer.groundTouch))
+                )
+                {
+                    GetComponent<DistanceJoint2D>().enabled = true;
+                }
+                else
+                {
+                    GetComponent<DistanceJoint2D>().enabled = false;
+                }
+                //GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
+            }
+            else
+            {
+                GetComponent<DistanceJoint2D>().enabled = true;
+            }
         }
 
         // Detect jumping

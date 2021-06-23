@@ -273,6 +273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Players
       objectReference: {fileID: 0}
+    - target: {fileID: 6578420529706806950, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6578420529706806951, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -337,6 +341,14 @@ PrefabInstance:
       propertyPath: m_AutoConfigureDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6578420531097748450, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
+      propertyPath: m_StandbyUpdate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578420531097748450, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
+      propertyPath: m_Transitions.m_InheritPosition
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6578420531097748451, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -352,6 +364,10 @@ PrefabInstance:
     - target: {fileID: 6578420531102212061, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
       propertyPath: jumpPower
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578420531102212062, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6578420531139559640, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
       propertyPath: m_Targets.Array.data[0].radius
@@ -433,7 +449,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
