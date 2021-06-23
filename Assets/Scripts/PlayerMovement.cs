@@ -13,9 +13,16 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 bondClimbing = new Vector3(0, 0, 0);
 
     private void Awake() {
-        // Increase the player id based on the player manager
-        PlayersManager.IncreasePlayerCount();
-        playerId = PlayersManager.GetPlayerCount();
+        // Increase the player id based on the player tag
+        if (tag == "Player_1")
+        {
+            playerId = 1;
+        }
+        else
+        {
+            playerId = 2;
+        }
+        
     }
     private void Update()
     {
@@ -24,11 +31,13 @@ public class PlayerMovement : MonoBehaviour
         var vMovement =  Input.GetAxis("Vertical" + playerId.ToString());
         if (vMovement != 0)
         {   
-            // The Vertical Axis allow players to climb towards the other player
-            bondClimbing = playerId == 1 ? - bond.playersVector / bond.playersVector.magnitude * vMovement
-                : bond.playersVector / bond.playersVector.magnitude * vMovement;
+            // The Vertical Axis allow players to climb towards the other player -> up = extend , down = shrink the bond
+            bondClimbing = playerId == 1 ? bond.playersVector / bond.playersVector.magnitude * vMovement
+                : - bond.playersVector / bond.playersVector.magnitude * vMovement;
+            
         }
         newPos = transform.position + (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
+        
         // Respect the maximum bond length
         if (bond.isAllowedDistance(newPos, playerId))
         {
@@ -40,17 +49,43 @@ public class PlayerMovement : MonoBehaviour
             transform.position = newPos;
         }
         // Correct the distance from each other in the air
-        else if (!(playerTouch || groundTouch) && playerId == 2)
+        else if (!(playerTouch || groundTouch))
         {
-            GetComponent<DistanceJoint2D>().distance = bond.maxLength;
+            if (playerId == 2)
+            {
+                GetComponent<DistanceJoint2D>().distance = bond.maxLength;
+            }
+            else 
+            {
+                otherPlayer.GetComponent<DistanceJoint2D>().distance = bond.maxLength;
+            }
         }
-        // Disable distance joint when up close to avoid side effects
+
+        // Disable distance joint when up close to avoid side effects of the distance joint
         if (playerId == 2)
         {
-            GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
+            if (bond.playersVector.magnitude <= 5)
+            {
+                // If one of the players is hanging enable the bond
+                if ((transform.position.y < otherPlayer.transform.position.y && (!playerTouch && !groundTouch)) 
+                    || (otherPlayer.transform.position.y < transform.position.y && (!otherPlayer.playerTouch && !otherPlayer.groundTouch))
+                )
+                {
+                    GetComponent<DistanceJoint2D>().enabled = true;
+                }
+                else
+                {
+                    GetComponent<DistanceJoint2D>().enabled = false;
+                }
+            }
+            else
+            {
+                GetComponent<DistanceJoint2D>().enabled = true;
+            }
         }
+
         // Detect jumping
-        if (Input.GetButtonDown("Jump" + playerId.ToString()) && (playerTouch || groundTouch)) 
+        if (Input.GetButtonDown("Jump" + playerId.ToString()) && ((playerTouch && otherPlayer.groundTouch) || groundTouch)) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
         }
