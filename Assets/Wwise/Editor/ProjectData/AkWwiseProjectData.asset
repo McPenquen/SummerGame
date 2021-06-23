@@ -122,8 +122,45 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 2f57c7439767ee468ee9d03e59b7a593
     GuidInternal: 
-    m_lastTime: -8585773269184775808
+    m_lastTime: -8585771576494775808
     List:
+    - name: Enviroment_Events
+      guid: cf592daed243ae448347cda1627eb2aa
+      id: 693679494
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2f57c7439767ee468ee9d03e59b7a593
+      - ElementName: Enviroment_Events
+        ObjectType: 4
+        guid: cf592daed243ae448347cda1627eb2aa
+      Path: Events/Default Work Unit/Enviroment_Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: plant_sounds
+      guid: cfc6d457fbb55f4f9726c6e455540ccc
+      id: 252728107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2f57c7439767ee468ee9d03e59b7a593
+      - ElementName: Enviroment_Events
+        ObjectType: 4
+        guid: cf592daed243ae448347cda1627eb2aa
+      - ElementName: plant_sounds
+        ObjectType: 3
+        guid: cfc6d457fbb55f4f9726c6e455540ccc
+      Path: Events/Default Work Unit/Enviroment_Events/plant_sounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: play_start_up
       guid: a7c9dc658680bb4a98b8d311dadbc986
       id: 3987033674
