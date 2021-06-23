@@ -77,7 +77,6 @@ public class PlayerMovement : MonoBehaviour
                 {
                     GetComponent<DistanceJoint2D>().enabled = false;
                 }
-                //GetComponent<DistanceJoint2D>().enabled = bond.playersVector.magnitude <= 5 ? false : true;
             }
             else
             {
