@@ -16,11 +16,31 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="500338416">
+		<SoundBank Id="3657742645" Language="SFX" Hash="3301824335">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2102497794" Name="play_jump_1" ObjectPath="\Events\Default Work Unit\Character_Events\play_jump_1" DurationType="OneShot" DurationMin="0.200000" DurationMax="0.285351">
+					<IncludedMemoryFiles>
+						<File Id="280732660" Language="SFX">
+							<ShortName>Jump_4.wav</ShortName>
+							<Path>SFX\Jump_4_10C4C929.wem</Path>
+						</File>
+						<File Id="511991935" Language="SFX">
+							<ShortName>Jump_2.wav</ShortName>
+							<Path>SFX\Jump_2_10C4C929.wem</Path>
+						</File>
+						<File Id="777891441" Language="SFX">
+							<ShortName>Jump_3.wav</ShortName>
+							<Path>SFX\Jump_3_10C4C929.wem</Path>
+						</File>
+						<File Id="916073880" Language="SFX">
+							<ShortName>Jump_1.wav</ShortName>
+							<Path>SFX\Jump_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3987033674" Name="play_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\play_start_up" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="211988747" Language="SFX">

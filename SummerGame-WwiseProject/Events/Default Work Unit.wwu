@@ -66,6 +66,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Character_Events" ID="{CB8095C9-E2D8-4C84-BCF1-36C7E3F7C41A}" ShortID="659798286">
+					<ChildrenList>
+						<Event Name="play_jump_1" ID="{EEA45DFC-D573-4797-970F-440CD5FD8962}">
+							<ChildrenList>
+								<Action Name="" ID="{908A08D5-CE41-4B83-BCBA-10F581497347}" ShortID="108807838">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jumping_example" ID="{CDDD476F-465D-4F56-B28C-165AEAB7F9CF}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

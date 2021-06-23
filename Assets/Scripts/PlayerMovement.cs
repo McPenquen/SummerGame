@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool groundTouch = false;
     private Vector3 newPos;
     private Vector3 bondClimbing = new Vector3(0, 0, 0);
-
+    public AK.Wwise.Event playerJumpSound; // declaring Wwise-Type Event 
     private void Awake() {
         // Increase the player id based on the player manager
         PlayersManager.IncreasePlayerCount();
@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump" + playerId.ToString()) && (playerTouch || groundTouch)) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
+            AkSoundEngine.PostEvent("play_jump_1",gameObject); //posting event on jump 
         }
     }
     // collisiond handling inspired from: https://answers.unity.com/questions/1220752/how-to-detect-if-not-colliding.html

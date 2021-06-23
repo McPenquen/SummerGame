@@ -13,6 +13,10 @@
 							<ObjectRef Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="play_jump_1" ID="{EEA45DFC-D573-4797-970F-440CD5FD8962}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
+							<Position X="2" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>

@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="General_SoundBank" ID="{9CBC1FED-FFFF-45C8-B0EC-06456E9DDC0C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="play_jump_1" ID="{EEA45DFC-D573-4797-970F-440CD5FD8962}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
