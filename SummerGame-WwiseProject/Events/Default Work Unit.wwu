@@ -17,7 +17,7 @@
 								<Action Name="" ID="{0817CEAA-81AF-4806-A6E4-ED74C9966529}" ShortID="266029760">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sand" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+											<ObjectRef Name="sand_short" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -25,6 +25,27 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AA4629F4-0F45-4F4E-A865-0DD765BEC28D}" ShortID="987646414">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hawk_Screech" ID="{06241CF6-7C92-4A4C-8F4F-DE9A83EEB0F8}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AA5DA03B-CD06-4F96-875C-52BB5FF2F17C}" ShortID="342180371">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coyotes_Howl" ID="{3145AA03-3560-4912-BD5A-C3A275C4D526}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A1AD7E42-9EEC-4FEE-BEFD-4A4FA432749D}" ShortID="649253756">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sand_long" ID="{7614ADE6-B974-4444-8F33-FDABCA98A1C5}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -48,7 +69,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sand" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+											<ObjectRef Name="sand_short" ID="{FD1B5EEB-C0CE-4EC3-B78D-38193646559F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -59,6 +80,36 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CE32C294-FF69-4B63-8282-74CFCDF1C6D6}" ShortID="1027459209">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hawk_Screech" ID="{06241CF6-7C92-4A4C-8F4F-DE9A83EEB0F8}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DDAA41C8-C792-42B6-9A73-B63DE8CEAF36}" ShortID="113000245">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coyotes_Howl" ID="{3145AA03-3560-4912-BD5A-C3A275C4D526}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F9FDCCAA-325B-4507-B205-76B7076FCD08}" ShortID="485904627">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sand_long" ID="{7614ADE6-B974-4444-8F33-FDABCA98A1C5}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
