@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool groundTouch = false;
     private Vector3 newPos;
     private Vector3 bondClimbing = new Vector3(0, 0, 0);
+    private Animator animator;
 
     private void Awake() {
         // Increase the player id based on the player tag
@@ -22,7 +23,9 @@ public class PlayerMovement : MonoBehaviour
         {
             playerId = 2;
         }
-        
+
+        // Initialise animator
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -36,11 +39,22 @@ public class PlayerMovement : MonoBehaviour
                 : - bond.playersVector / bond.playersVector.magnitude * vMovement;
             
         }
+
         newPos = transform.position + (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
         
         // Respect the maximum bond length
         if (bond.isAllowedDistance(newPos, playerId))
         {
+            // Animate walking
+            if (hMovement != 0)
+            {
+                animator.SetBool("isWalking", true);
+            }
+            else
+            {
+                animator.SetBool("isWalking", false);
+            }
+
             if (playerId == 2) 
             {
                 // Update the joint's length
