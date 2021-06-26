@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 6578420529721225348}
   - component: {fileID: 6578420529721225368}
   - component: {fileID: 6578420529721225370}
+  - component: {fileID: 440344260}
   m_Layer: 10
   m_Name: Player_2
   m_TagString: Player_2
@@ -249,7 +250,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.021384418, y: -0.021384478}
+  m_Offset: {x: 0.012140155, y: -0.0836528}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -260,7 +261,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0641531, y: 2.0427687}
+  m_Size: {x: 1.0629122, y: 2.117614}
   m_EdgeRadius: 0
 --- !u!114 &6578420529721225368
 MonoBehaviour:
@@ -279,6 +280,8 @@ MonoBehaviour:
   speed: 5
   jumpPower: 10
   playerId: 0
+  playerTouch: 0
+  groundTouch: 0
 --- !u!232 &6578420529721225370
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -298,6 +301,25 @@ DistanceJoint2D:
   m_AutoConfigureDistance: 0
   m_Distance: 3.6055512
   m_MaxDistanceOnly: 0
+--- !u!95 &440344260
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578420529721225347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63de258606d1e884d85f587d633a681b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6578420530736366079
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +376,7 @@ GameObject:
   - component: {fileID: 6578420531102212062}
   - component: {fileID: 6578420531102212058}
   - component: {fileID: 6578420531102212061}
+  - component: {fileID: 2088770475}
   m_Layer: 10
   m_Name: Player_1
   m_TagString: Player_1
@@ -490,6 +513,27 @@ MonoBehaviour:
   speed: 5
   jumpPower: 10
   playerId: 0
+  playerTouch: 0
+  groundTouch: 0
+--- !u!95 &2088770475
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578420531102212057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2e99763c044a8d4f96a0c53546a0ec5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6578420531147604268
 GameObject:
   m_ObjectHideFlags: 0
