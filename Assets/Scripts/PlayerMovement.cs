@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool groundTouch = false;
     private Vector3 newPos = new Vector3(0, 0, 0);
     private Vector3 bondClimbing = new Vector3(0, 0, 0);
-    private Animator animator = null;
 
     private void Awake() {
         // Increase the player id based on the player tag
@@ -23,9 +22,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerId = 2;
         }
-
-        // Initialise animator
-        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -45,16 +41,6 @@ public class PlayerMovement : MonoBehaviour
         // Respect the maximum bond length
         if (bond.isAllowedDistance(newPos, playerId))
         {
-            // Animate walking
-            if (hMovement != 0)
-            {
-                animator.SetBool("isWalking", true);
-            }
-            else
-            {
-                animator.SetBool("isWalking", false);
-            }
-
             if (playerId == 2) 
             {
                 // Update the joint's length
@@ -105,7 +91,20 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump" + playerId.ToString()) && ((playerTouch && otherPlayer.groundTouch) || groundTouch)) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
-            animator.SetBool("isJumping", true);
+            GetComponent<Animator>().SetBool("isJumping", true);
+        }
+
+        // Animate walking
+        if (hMovement != 0)
+        {
+            GetComponent<Animator>().SetBool("isWalking", true);
+
+            // Flip the sprite based on direction
+            GetComponent<SpriteRenderer>().flipX = hMovement < 0 ? false : true;
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isWalking", false);
         }
 
         // Animate jumping and falling based on the direction of the movement
@@ -114,19 +113,19 @@ public class PlayerMovement : MonoBehaviour
             Vector3 direction =  transform.InverseTransformDirection(GetComponent<Rigidbody2D>().velocity); //transform.position - previousPos;
             if (direction.y <= 0)
             {
-                animator.SetBool("isFalling", true);
-                animator.SetBool("isJumping", false);
+                GetComponent<Animator>().SetBool("isFalling", true);
+                GetComponent<Animator>().SetBool("isJumping", false);
             }
             else
             {
-                animator.SetBool("isFalling", false);
-                animator.SetBool("isJumping", true);
+                GetComponent<Animator>().SetBool("isFalling", false);
+                GetComponent<Animator>().SetBool("isJumping", true);
             }
         }
         else 
         {
-            animator.SetBool("isFalling", false);
-            animator.SetBool("isJumping", false);
+            GetComponent<Animator>().SetBool("isFalling", false);
+            GetComponent<Animator>().SetBool("isJumping", false);
         }
     }
     // collisiond handling inspired from: https://answers.unity.com/questions/1220752/how-to-detect-if-not-colliding.html
