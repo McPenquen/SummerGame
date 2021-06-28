@@ -7,9 +7,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private int jumpPower = 10;
     public int playerId = 0;
-    private bool playerTouch = false;
-    private bool groundTouch = false;
-    private Vector3 newPos;
+    [SerializeField] private bool playerTouch = false;
+    [SerializeField] private bool groundTouch = false;
+    private Vector3 newPos = new Vector3(0, 0, 0);
     private Vector3 bondClimbing = new Vector3(0, 0, 0);
 
     private void Awake() {
@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         {
             playerId = 2;
         }
-        
     }
     private void Update()
     {
@@ -36,8 +35,9 @@ public class PlayerMovement : MonoBehaviour
                 : - bond.playersVector / bond.playersVector.magnitude * vMovement;
             
         }
+
         newPos = transform.position + (new Vector3(hMovement, 0, 0) + bondClimbing) * Time.deltaTime * speed;
-        
+
         // Respect the maximum bond length
         if (bond.isAllowedDistance(newPos, playerId))
         {
@@ -46,8 +46,11 @@ public class PlayerMovement : MonoBehaviour
                 // Update the joint's length
                 GetComponent<DistanceJoint2D>().distance = bond.playersVector.magnitude;
             }
+
+            // Update position
             transform.position = newPos;
         }
+
         // Correct the distance from each other in the air
         else if (!(playerTouch || groundTouch))
         {
@@ -88,9 +91,45 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump" + playerId.ToString()) && ((playerTouch && otherPlayer.groundTouch) || groundTouch)) 
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1 * jumpPower), ForceMode2D.Impulse);
+            GetComponent<Animator>().SetBool("isJumping", true);
+        }
+
+        // Animate walking
+        if (hMovement != 0)
+        {
+            GetComponent<Animator>().SetBool("isWalking", true);
+
+            // Flip the sprite based on direction
+            GetComponent<SpriteRenderer>().flipX = hMovement < 0 ? false : true;
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("isWalking", false);
+        }
+
+        // Animate jumping and falling based on the direction of the movement
+        if (!groundTouch && !playerTouch)
+        {
+            Vector3 direction =  transform.InverseTransformDirection(GetComponent<Rigidbody2D>().velocity); //transform.position - previousPos;
+            if (direction.y <= 0)
+            {
+                GetComponent<Animator>().SetBool("isFalling", true);
+                GetComponent<Animator>().SetBool("isJumping", false);
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("isFalling", false);
+                GetComponent<Animator>().SetBool("isJumping", true);
+            }
+        }
+        else 
+        {
+            GetComponent<Animator>().SetBool("isFalling", false);
+            GetComponent<Animator>().SetBool("isJumping", false);
         }
     }
     // collisiond handling inspired from: https://answers.unity.com/questions/1220752/how-to-detect-if-not-colliding.html
+    // direction of movement from: https://answers.unity.com/questions/689999/how-to-determine-the-direction-an-object-is-moving.html
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.layer == 11) // 11 is the environment layer
         {
