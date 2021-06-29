@@ -1513,25 +1513,28 @@
 						</Folder>
 						<Folder Name="Exteriors" ID="{F49A7F7F-6562-433E-A73C-FCF4A76B2582}" ShortID="1065687125">
 							<ChildrenList>
-								<Effect Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+								<Effect Name="Desert_Outdoor_Reverb" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<Comment>Reverb for Hawk screeching, 1st mix.</Comment>
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="1"/>
-										<Property Name="Density" Type="Real32" Value="50"/>
+										<Property Name="DecayTime" Type="Real32" Value="5.3"/>
+										<Property Name="Density" Type="Real32" Value="42"/>
+										<Property Name="ERFrontBackDelay" Type="Real32" Value="66"/>
 										<Property Name="ERLevel" Type="Real32" Value="-18"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
+										<Property Name="EnableToneControls" Type="bool" Value="True"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
-										<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
-										<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
-										<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+										<Property Name="Filter1Gain" Type="Real32" Value="-6"/>
+										<Property Name="Filter2Freq" Type="Real32" Value="6380"/>
+										<Property Name="Filter2Gain" Type="Real32" Value="-1"/>
 										<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-										<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
-										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
-										<Property Name="PreDelay" Type="Real32" Value="145"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="8"/>
+										<Property Name="HFDamping" Type="Real32" Value="6.6"/>
+										<Property Name="PreDelay" Type="Real32" Value="18"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
-										<Property Name="RoomSize" Type="Real32" Value="73"/>
-										<Property Name="StereoWidth" Type="Real32" Value="28"/>
+										<Property Name="RoomSize" Type="Real32" Value="100"/>
+										<Property Name="StereoWidth" Type="Real32" Value="137"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1606,11 +1609,13 @@
 						<Effect Name="Vibrato" ID="{D9586A30-FF0D-4DCC-89C5-04CDC4716ED6}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="8.5"/>
-								<Property Name="DryLevel" Type="Real32" Value="0.3"/>
-								<Property Name="FeedBackLevel" Type="Real32" Value="0.9"/>
-								<Property Name="ModDepth" Type="Real32" Value="10"/>
+								<Property Name="DryLevel" Type="Real32" Value="0"/>
+								<Property Name="FeedBackLevel" Type="Real32" Value="-0.3"/>
+								<Property Name="FeedForwardLevel" Type="Real32" Value="0"/>
+								<Property Name="ModDepth" Type="Real32" Value="72.6"/>
 								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32" Value="17"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1877,12 +1882,12 @@
 						</Effect>
 						<Effect Name="Rhythmic_Talk" ID="{F0F27454-4BCC-4302-A61D-C324E7187DD0}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="15"/>
-								<Property Name="ModPWM" Type="Real32" Value="15"/>
+								<Property Name="ModDepth" Type="Real32" Value="19.5"/>
+								<Property Name="ModFrequency" Type="Real32" Value="0.96"/>
+								<Property Name="ModPWM" Type="Real32" Value="47"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
-								<Property Name="ModPhaseSpread" Type="Real32" Value="58"/>
-								<Property Name="ModSmoothing" Type="Real32" Value="45"/>
-								<Property Name="ModWaveform" Type="int32" Value="2"/>
+								<Property Name="ModPhaseSpread" Type="Real32" Value="45"/>
+								<Property Name="ModSmoothing" Type="Real32" Value="89"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Very_Slow_Modulation" ID="{6082F901-3CE1-4D78-8F2D-B2B72CF28085}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">

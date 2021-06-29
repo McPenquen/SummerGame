@@ -8,6 +8,20 @@
 						<Event Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}">
 							<ChildrenList>
 								<Action Name="" ID="{56A4E735-EAFA-4020-8987-D2554EE5A77C}" ShortID="483379649">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{60156098-F6C5-4E28-A73B-EC5D6E32BD38}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="wind" ID="{8B196C1B-81BE-4B13-9400-1CFD3FD6B549}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
@@ -25,6 +39,45 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0DFD1E5B-5C58-4540-B367-25DE53803B57}" ShortID="398222388">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="6">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5DD1372B-AF44-49E9-988C-6C3C37BFB50B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wolf_Howl" ID="{1E57D0A5-87CE-48CF-986D-12C9D57F0B13}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5D5953E3-CAC1-4501-BCF8-E6D83FF06944}" ShortID="605514433">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sizzling_Desert_Sand_1" ID="{4F984FBD-CE91-408B-AA09-3A09A7C4B27F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A6FFCDDC-D368-40D4-B585-F70D673016D5}" ShortID="705016100">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="5.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hawk" ID="{2724883D-561A-4F69-9E58-BEB91FE69279}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -59,6 +112,37 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BD19804D-D1D9-4B25-99AB-1DB5740CF6C3}" ShortID="468798959">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wolf_Howl" ID="{1E57D0A5-87CE-48CF-986D-12C9D57F0B13}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7A299164-97D9-4F8F-9439-DF0928570D36}" ShortID="993061783">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sizzling_Desert_Sand_1" ID="{4F984FBD-CE91-408B-AA09-3A09A7C4B27F}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{41EEDFC7-5362-468B-9A52-B00996D459B0}" ShortID="934887960">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hawk" ID="{2724883D-561A-4F69-9E58-BEB91FE69279}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

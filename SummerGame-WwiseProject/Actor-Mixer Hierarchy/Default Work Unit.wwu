@@ -18,9 +18,14 @@
 								<ActorMixer Name="Wind" ID="{D13BD2EA-E2D8-4352-8EAD-129738BF3BAD}" ShortID="1017943731">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>45</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-18</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -113,7 +118,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -506,8 +511,13 @@
 								<ActorMixer Name="Crickets" ID="{9AE8C420-1865-4E29-8671-1DC09570468F}" ShortID="527330242">
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="1"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -520,7 +530,9 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Crickets" ID="{3D697AD5-C436-471C-9F0F-021873EB359E}" ShortID="451098730">
 											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -557,208 +569,6 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Crickets_2" ID="{F2AFB3D7-F9D0-462D-A5D8-B509DEE6CEFC}" ShortID="660919772">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{BA4743E8-4620-4F2C-B8D9-E397F54634F9}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="25"/>
-																			<Property Name="Min" Type="Real64" Value="-51"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{72483033-B488-49CE-8157-AE0A9D6168AA}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Min" Type="Real64" Value="-10"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Crickets 2" ID="{E67C4745-D736-413E-AB85-403A0839413E}">
-															<Language>SFX</Language>
-															<AudioFile>Crickets WAV\Crickets 2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="444115074"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Crickets 2" ID="{E67C4745-D736-413E-AB85-403A0839413E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Crickets_3" ID="{5A305A4C-2FCC-4F85-9F11-EAB0C41CE864}" ShortID="10694613">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{C3B38D8D-6E3F-4339-A9CA-7FBA5E3C2357}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="76"/>
-																			<Property Name="Min" Type="Real64" Value="-76"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{F9AFDCB8-1327-43B9-AB22-6DEF85A32353}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="1"/>
-																			<Property Name="Min" Type="Real64" Value="-9"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Crickets 3" ID="{D45776FE-FE20-4080-B058-DDCDC6C732CA}">
-															<Language>SFX</Language>
-															<AudioFile>Crickets WAV\Crickets 3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="716184218"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Crickets 3" ID="{D45776FE-FE20-4080-B058-DDCDC6C732CA}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Crickets_4" ID="{BA7E6BA7-5A54-4DAD-AFC5-3135823C44EF}" ShortID="393349026">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{EFDD37C5-A273-46BB-A4C6-34A37C2985F0}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="51"/>
-																			<Property Name="Min" Type="Real64" Value="-51"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{1ACF86FB-66C0-47FE-AF92-9BC4A5C06753}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Min" Type="Real64" Value="-9"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Crickets 4" ID="{F05F4E05-AE1F-43D0-A6C6-9FE3FB35D949}">
-															<Language>SFX</Language>
-															<AudioFile>Crickets WAV\Crickets 4.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="816023224"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Crickets 4" ID="{F05F4E05-AE1F-43D0-A6C6-9FE3FB35D949}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Crickets_1" ID="{83F4C579-DC0C-4188-BAE3-4296FD9C5614}" ShortID="30930793">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{D982216F-1FF1-458B-801D-7023C1434CD6}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="76"/>
-																			<Property Name="Min" Type="Real64" Value="-76"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="Volume" Type="Real64">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{BFA37666-933B-4F84-B681-9C992C236C86}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="1"/>
-																			<Property Name="Min" Type="Real64" Value="-10"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Crickets" ID="{0B3B812A-BA11-435C-8879-2634B959C3AA}">
-															<Language>SFX</Language>
-															<AudioFile>Crickets WAV\Crickets.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="211988747"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Crickets" ID="{0B3B812A-BA11-435C-8879-2634B959C3AA}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
 												<Sound Name="Silence" ID="{9D1C3FFF-AC35-4E13-9DC9-E26923656510}" ShortID="1024790149">
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -781,7 +591,337 @@
 														<ActiveSource Name="Wwise Silence" ID="{FFD15B7B-CFA6-472C-9070-67F70D2F805E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="Crickets_1" ID="{173EB66E-2EE7-48F0-A88C-EC55598ABE48}" ShortID="905182547">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6E039FD5-4614-409A-8D84-5D4DB36D1037}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="126"/>
+																			<Property Name="Min" Type="Real64" Value="-25"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D7240879-24EF-491E-86E4-1D42FB38B57D}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-9"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>26</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets_1" ID="{C5D6EF18-5672-4B3C-9F2B-1A6386D57C9E}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="387864201"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets_1" ID="{C5D6EF18-5672-4B3C-9F2B-1A6386D57C9E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Crickets_2" ID="{87BACE75-42A5-49C8-AFF2-D89CD630513D}" ShortID="1001142372">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{DA740871-E74E-491F-8785-207BF80618CB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="152"/>
+																			<Property Name="Min" Type="Real64" Value="-25"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{19675EAC-97F8-4D96-B126-8EFD1E3367AF}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-4"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>31</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets_2" ID="{2B3E6599-1529-4B1E-987D-FA953499A581}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1045607690"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets_2" ID="{2B3E6599-1529-4B1E-987D-FA953499A581}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Crickets_3" ID="{9DB08ED5-C558-4242-A8EA-9B818D153975}" ShortID="554100378">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{573ACF40-BB4C-456D-84A7-374369DDEEA6}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="101"/>
+																			<Property Name="Min" Type="Real64" Value="-25"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8C2CCDB4-A4D3-44D1-8AC3-17A9ED228054}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>33</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets_3" ID="{07F4C50B-D110-4630-986F-52DD6FC27612}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="518514343"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets_3" ID="{07F4C50B-D110-4630-986F-52DD6FC27612}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Crickets_4" ID="{E1A5C4EA-1956-4EB2-BD2F-77B6C7A10DB2}" ShortID="838793285">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{AC86502B-6964-4675-B6F6-6058FF1E2E70}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="51"/>
+																			<Property Name="Min" Type="Real64" Value="-51"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D0535F3D-4B53-4872-A1C1-D75E9DDFA3A9}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-4"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>16</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Crickets_4" ID="{2FE8CAAB-852D-49CF-A38A-FC8D5881250B}">
+															<Language>SFX</Language>
+															<AudioFile>Crickets_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="912493662"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{B1031B78-EFB3-4D75-9870-ECDA9D3D90C9}"/>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Crickets_4" ID="{2FE8CAAB-852D-49CF-A38A-FC8D5881250B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{0A0BB67B-772C-4B32-A147-DE01F78576C6}">
+													<PropertyList>
+														<Property Name="PanY" Type="Real64" Value="0.386847195357827"/>
+													</PropertyList>
+												</Panner>
+												<Position Name="" ID="{02FB0122-2E71-4F1E-956D-BF93E9BC50DB}">
+													<ChildrenList>
+														<Path2D Name="Crickets_Path" ID="{4118480B-00F8-4597-81C6-7E0F88E2DE90}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="15000"/>
+																<Property Name="RandomX" Type="Real64" Value="27"/>
+																<Property Name="RandomY" Type="Real64" Value="16"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>44.35028</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>40.6091370558376</XPos>
+																	<YPos>33.3333333333333</YPos>
+																	<Flags>0</Flags>
+																	<Time>1153</Time>
+																</Point>
+																<Point>
+																	<XPos>55.8375634517766</XPos>
+																	<YPos>-0.564971751412429</YPos>
+																	<Flags>0</Flags>
+																	<Time>2307</Time>
+																</Point>
+																<Point>
+																	<XPos>55.8375634517766</XPos>
+																	<YPos>-33.3333333333333</YPos>
+																	<Flags>0</Flags>
+																	<Time>3461</Time>
+																</Point>
+																<Point>
+																	<XPos>21.8274111675127</XPos>
+																	<YPos>-53.1073446327684</YPos>
+																	<Flags>0</Flags>
+																	<Time>4615</Time>
+																</Point>
+																<Point>
+																	<XPos>3.55329949238579</XPos>
+																	<YPos>-64.9717514124294</YPos>
+																	<Flags>0</Flags>
+																	<Time>5769</Time>
+																</Point>
+																<Point>
+																	<XPos>-29.4416243654822</XPos>
+																	<YPos>-67.2316384180791</YPos>
+																	<Flags>0</Flags>
+																	<Time>6923</Time>
+																</Point>
+																<Point>
+																	<XPos>-45.1776649746193</XPos>
+																	<YPos>-42.9378531073446</YPos>
+																	<Flags>0</Flags>
+																	<Time>8076</Time>
+																</Point>
+																<Point>
+																	<XPos>-63.4517766497462</XPos>
+																	<YPos>-7.90960451977401</YPos>
+																	<Flags>0</Flags>
+																	<Time>9230</Time>
+																</Point>
+																<Point>
+																	<XPos>-59.8984771573604</XPos>
+																	<YPos>12.9943502824859</YPos>
+																	<Flags>0</Flags>
+																	<Time>10384</Time>
+																</Point>
+																<Point>
+																	<XPos>-40.1015228426396</XPos>
+																	<YPos>24.2937853107345</YPos>
+																	<Flags>0</Flags>
+																	<Time>11538</Time>
+																</Point>
+																<Point>
+																	<XPos>-28.9340101522843</XPos>
+																	<YPos>48.0225988700565</YPos>
+																	<Flags>0</Flags>
+																	<Time>12692</Time>
+																</Point>
+																<Point>
+																	<XPos>-11.6751269035533</XPos>
+																	<YPos>42.3728813559322</YPos>
+																	<Flags>0</Flags>
+																	<Time>13846</Time>
+																</Point>
+																<Point>
+																	<XPos>-0.507614213197968</XPos>
+																	<YPos>43.5028248587571</YPos>
+																	<Flags>0</Flags>
+																	<Time>15000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
 											<ObjectLists/>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -860,6 +1000,894 @@
 											</ChildrenList>
 										</Position>
 									</PositioningInfo>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Wolf_Howl" ID="{D64C4CB2-150E-4A34-A005-C1C4EEEBE8D3}" ShortID="620916616">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Desert_Outdoor_Reverb" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Wolf_Howl" ID="{1E57D0A5-87CE-48CF-986D-12C9D57F0B13}" ShortID="184102106">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{88FFDECE-D4AC-4A4F-9297-871E395834C8}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="177"/>
+																	<Property Name="Min" Type="Real64" Value="-126"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{72DEE26B-52B4-47B1-9582-E6FF998FFEB4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-26"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Silence_02" ID="{1D31FBE4-DF34-473B-B480-153FE210AA29}" ShortID="787700001">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{3A33172B-7BCC-48E3-8F46-2ABC7216E105}" ShortID="407908959" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="10"/>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+																<Property Name="LengthMin" Type="Real32" Value="-7.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{3A33172B-7BCC-48E3-8F46-2ABC7216E105}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howl_1" ID="{563E940B-7079-4ADF-A70F-02E2BDA3455A}" ShortID="883509234">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C0ED60F8-1F2C-49E4-BC98-B212162439C8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="152"/>
+																			<Property Name="Min" Type="Real64" Value="-177"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4B32538C-981A-407B-9487-60BF4470C382}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-6"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wolf_Howl_1" ID="{A0951E4A-C9E1-456E-BAD0-C727ECB91D71}">
+															<Language>SFX</Language>
+															<AudioFile>Wolf_Howl_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="319125574"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wolf_Howl_1" ID="{A0951E4A-C9E1-456E-BAD0-C727ECB91D71}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howl_2" ID="{12D24488-6E62-4009-B1C4-F26F12D154D0}" ShortID="126651406">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{07B3B013-F235-4539-B76D-1FC07B815AD2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="303"/>
+																			<Property Name="Min" Type="Real64" Value="-303"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FECADC80-ED8E-4F0B-9764-C65F86974DD3}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wolf_Howl_2" ID="{DC1D558F-D900-41FB-B682-044C252952F5}">
+															<Language>SFX</Language>
+															<AudioFile>Wolf_Howl_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1061089449"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wolf_Howl_2" ID="{DC1D558F-D900-41FB-B682-044C252952F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howl_3" ID="{29B63AC2-1217-4E84-AF90-9488FB82399F}" ShortID="947838785">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{52969776-500E-4799-A462-79BAC1A88510}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="278"/>
+																			<Property Name="Min" Type="Real64" Value="-227"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4B663C95-6126-4264-81DE-CA481A9BA95C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-5"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wolf_Howl_3" ID="{C67C3D73-7066-4AA4-B704-42A7A25E4F4A}">
+															<Language>SFX</Language>
+															<AudioFile>Wolf_Howl_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="359752431"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wolf_Howl_3" ID="{C67C3D73-7066-4AA4-B704-42A7A25E4F4A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wolf_Howl_4" ID="{00DBA988-1786-4347-9CEC-07BE67431DCE}" ShortID="582130977">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{813AA2DE-FF35-4113-888E-F416055B4AD2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="177"/>
+																			<Property Name="Min" Type="Real64" Value="-354"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{681E94BA-D612-489B-8C5B-BA27E85232A5}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-9"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wolf_Howl_4" ID="{837AE3F8-5F23-4567-AFC3-43913F18CEB8}">
+															<Language>SFX</Language>
+															<AudioFile>Wolf_Howl_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="384388040"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wolf_Howl_4" ID="{837AE3F8-5F23-4567-AFC3-43913F18CEB8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence_01" ID="{F56114F6-FA92-432F-ADEB-83458C22A288}" ShortID="298759766">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="1"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<ObjectRef Name="Desert_Outdoor_Reverb" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{DE97D6C7-DC0D-47D0-8D41-DF9ABA60902F}" ShortID="38891899" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="10"/>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+																<Property Name="LengthMin" Type="Real32" Value="-7.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{9076A59D-36C7-49C6-AF45-0306F72EB908}">
+															<PropertyList>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4.5"/>
+																<Property Name="PlayMechanismTransitionUse" Type="bool" Value="False"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Wolf_Howl_Path" ID="{FF082C0B-DA3A-4725-80DA-54C0F2C5B7CE}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="Uint32" Value="180000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>50</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>13.1979695431472</XPos>
+																			<YPos>41.8079096045198</YPos>
+																			<Flags>0</Flags>
+																			<Time>16363</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-37.0558375634518</XPos>
+																			<YPos>30.5084745762712</YPos>
+																			<Flags>0</Flags>
+																			<Time>32727</Time>
+																		</Point>
+																		<Point>
+																			<XPos>58.8832487309645</XPos>
+																			<YPos>27.1186440677966</YPos>
+																			<Flags>0</Flags>
+																			<Time>49090</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-89.3401015228426</XPos>
+																			<YPos>65.5367231638418</YPos>
+																			<Flags>0</Flags>
+																			<Time>65454</Time>
+																		</Point>
+																		<Point>
+																			<XPos>83.756345177665</XPos>
+																			<YPos>-10.1694915254237</YPos>
+																			<Flags>0</Flags>
+																			<Time>81818</Time>
+																		</Point>
+																		<Point>
+																			<XPos>12.6903553299492</XPos>
+																			<YPos>-6.77966101694915</YPos>
+																			<Flags>0</Flags>
+																			<Time>98181</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-24.8730964467005</XPos>
+																			<YPos>-24.8587570621469</YPos>
+																			<Flags>0</Flags>
+																			<Time>114545</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-45.6852791878173</XPos>
+																			<YPos>-4.51977401129943</YPos>
+																			<Flags>0</Flags>
+																			<Time>130909</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-72.0812182741117</XPos>
+																			<YPos>-29.3785310734463</YPos>
+																			<Flags>0</Flags>
+																			<Time>147272</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-74.6192893401015</XPos>
+																			<YPos>-59.3220338983051</YPos>
+																			<Flags>0</Flags>
+																			<Time>163636</Time>
+																		</Point>
+																		<Point>
+																			<XPos>40.6091370558376</XPos>
+																			<YPos>-61.0169491525424</YPos>
+																			<Flags>0</Flags>
+																			<Time>180000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{DE97D6C7-DC0D-47D0-8D41-DF9ABA60902F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{D962032B-FFDE-4B9C-9C54-7637C6981A7C}">
+													<PropertyList>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4.5"/>
+														<Property Name="PlayMechanismTransitionUse" Type="bool" Value="False"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="Wolf_Howl_Path" ID="{35EE29B6-568F-4A48-B3CB-95D62E7DBC75}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="180000"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>87.81726</XPos>
+																	<YPos>90.96045</YPos>
+																	<Flags>0</Flags>
+																	<Time>16363</Time>
+																</Point>
+																<Point>
+																	<XPos>-100</XPos>
+																	<YPos>34.46328</YPos>
+																	<Flags>0</Flags>
+																	<Time>32727</Time>
+																</Point>
+																<Point>
+																	<XPos>96.4467</XPos>
+																	<YPos>28.81356</YPos>
+																	<Flags>0</Flags>
+																	<Time>49090</Time>
+																</Point>
+																<Point>
+																	<XPos>-89.3401015228426</XPos>
+																	<YPos>65.5367231638418</YPos>
+																	<Flags>0</Flags>
+																	<Time>65454</Time>
+																</Point>
+																<Point>
+																	<XPos>83.756345177665</XPos>
+																	<YPos>-10.1694915254237</YPos>
+																	<Flags>0</Flags>
+																	<Time>81818</Time>
+																</Point>
+																<Point>
+																	<XPos>91.37056</XPos>
+																	<YPos>-61.01695</YPos>
+																	<Flags>0</Flags>
+																	<Time>98181</Time>
+																</Point>
+																<Point>
+																	<XPos>-76.64975</XPos>
+																	<YPos>-45.19774</YPos>
+																	<Flags>0</Flags>
+																	<Time>114545</Time>
+																</Point>
+																<Point>
+																	<XPos>-81.72589</XPos>
+																	<YPos>0.56497</YPos>
+																	<Flags>0</Flags>
+																	<Time>130909</Time>
+																</Point>
+																<Point>
+																	<XPos>-92.38579</XPos>
+																	<YPos>-23.16384</YPos>
+																	<Flags>0</Flags>
+																	<Time>147272</Time>
+																</Point>
+																<Point>
+																	<XPos>-100</XPos>
+																	<YPos>-68.92655</YPos>
+																	<Flags>0</Flags>
+																	<Time>163636</Time>
+																</Point>
+																<Point>
+																	<XPos>74.11168</XPos>
+																	<YPos>-87.00565</YPos>
+																	<Flags>0</Flags>
+																	<Time>180000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Sizzling_Sand" ID="{EA8353AE-6B17-476E-8F04-E000FB6208DD}" ShortID="37645614">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Sizzling_Desert_Sand_1" ID="{4F984FBD-CE91-408B-AA09-3A09A7C4B27F}" ShortID="375400663">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+													<ObjectRef Name="Rhythmic_Talk" ID="{F0F27454-4BCC-4302-A61D-C324E7187DD0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sizzling_Desert_Sand_1" ID="{C402A3B7-8686-4F1C-A60A-34107E517C02}">
+													<Language>SFX</Language>
+													<AudioFile>Sizzling_Desert_Sand_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="873656822"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Sizzling_Desert_Sand_1" ID="{C402A3B7-8686-4F1C-A60A-34107E517C02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Hawk" ID="{893628A3-CA10-483B-AF81-BA8459114021}" ShortID="235046516">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Desert_Outdoor_Reverb" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Hawk" ID="{2724883D-561A-4F69-9E58-BEB91FE69279}" ShortID="866840288">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{99F177CA-9AB0-4D82-B3D7-EAAD249344DF}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="505"/>
+																	<Property Name="Min" Type="Real64" Value="-429"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CC9BF2CF-11E2-414E-B833-E92E1D9C9296}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-14"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Red_Hawk_Screech_NFU_1" ID="{5394C5A1-41D6-402C-BDEA-C577E7BC1C1B}" ShortID="78337710">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Red_Hawk_Screech_NFU_1" ID="{798C3B93-9535-4894-AE16-F8930545C542}">
+															<Language>SFX</Language>
+															<AudioFile>Red_Hawk_Screech_NFU_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="51538749"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{58DABF22-4FE0-4E26-9A8F-A526385BB53C}">
+															<ChildrenList>
+																<Path2D Name="Red_Hawk_Screech_NFU_1_Path" ID="{6B0837AF-3F3B-4153-8694-6181C74BBE8C}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="Uint32" Value="60000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>50</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>42.6395939086295</XPos>
+																			<YPos>11.2994350282486</YPos>
+																			<Flags>0</Flags>
+																			<Time>15000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-72.0812182741117</XPos>
+																			<YPos>16.3841807909605</YPos>
+																			<Flags>0</Flags>
+																			<Time>30000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>86.8020304568528</XPos>
+																			<YPos>48.5875706214689</YPos>
+																			<Flags>0</Flags>
+																			<Time>45000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>80.7106598984772</XPos>
+																			<YPos>-51.9774011299435</YPos>
+																			<Flags>0</Flags>
+																			<Time>60000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Red_Hawk_Screech_NFU_1" ID="{798C3B93-9535-4894-AE16-F8930545C542}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Red_Hawk_Screech_NFU_2" ID="{A260D7F2-066D-41A8-BAE2-0DA9B14C5C8E}" ShortID="969377007">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Red_Hawk_Screech_NFU_2" ID="{7C31C4B5-E86A-42FE-AC71-0EFC30F45193}">
+															<Language>SFX</Language>
+															<AudioFile>Red_Hawk_Screech_NFU_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="861188202"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Red_Hawk_Screech_NFU_2" ID="{7C31C4B5-E86A-42FE-AC71-0EFC30F45193}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Red_Hawk_Screech_NFU_3" ID="{D125670F-E6CC-49E1-A5E3-2B8701A46B51}" ShortID="768736138">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Red_Hawk_Screech_NFU_3" ID="{CFF6BEE5-3B3A-4767-B6D7-502D3461D4AF}">
+															<Language>SFX</Language>
+															<AudioFile>Red_Hawk_Screech_NFU_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="94233514"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Red_Hawk_Screech_NFU_3" ID="{CFF6BEE5-3B3A-4767-B6D7-502D3461D4AF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Red_Hawk_Screech_NFU_4" ID="{5FCD9D4B-B54A-4059-8F53-AD80E297BEAC}" ShortID="928613342">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Red_Hawk_Screech_NFU_4" ID="{79E2F3EA-59D6-4A37-B95C-210315B750A0}">
+															<Language>SFX</Language>
+															<AudioFile>Red_Hawk_Screech_NFU_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="420901412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Red_Hawk_Screech_NFU_4" ID="{79E2F3EA-59D6-4A37-B95C-210315B750A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Red_Hawk_Screech_NFU_5" ID="{FB2F49C3-AD61-4C30-ABD5-B7EDB3FA1079}" ShortID="761186125">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Red_Hawk_Screech_NFU_5" ID="{BC5CA28A-43B1-4295-AC75-D26AF556E08D}">
+															<Language>SFX</Language>
+															<AudioFile>Red_Hawk_Screech_NFU_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="736740224"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Red_Hawk_Screech_NFU_5" ID="{BC5CA28A-43B1-4295-AC75-D26AF556E08D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence_1" ID="{E6768D36-6761-49FE-9EF8-1FA73835F416}" ShortID="867011879">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{115AAB12-823D-45F1-9BCA-220DE5E0CF41}" ShortID="1055711135" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="10"/>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+																<Property Name="LengthMin" Type="Real32" Value="-10"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{115AAB12-823D-45F1-9BCA-220DE5E0CF41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence_2" ID="{AF4871E2-0A3B-4156-B68B-F6B9B9F514D8}" ShortID="300825356">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{626D6951-D8EB-4692-BB46-F1ED6F87B62F}" ShortID="1011571155" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="10"/>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+																<Property Name="LengthMin" Type="Real32" Value="-10"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{626D6951-D8EB-4692-BB46-F1ED6F87B62F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{3C4A60A8-4430-4566-92AF-A8DB78B6EF0F}">
+													<ChildrenList>
+														<Path2D Name="Hawk_Path" ID="{54C46BEF-EFE3-4EB4-A848-721281600DC6}">
+															<PropertyList>
+																<Property Name="Duration" Type="Uint32" Value="60000"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>44.6700507614213</XPos>
+																	<YPos>35.593220338983</YPos>
+																	<Flags>0</Flags>
+																	<Time>12000</Time>
+																</Point>
+																<Point>
+																	<XPos>89.8477157360406</XPos>
+																	<YPos>-74.5762711864407</YPos>
+																	<Flags>0</Flags>
+																	<Time>24000</Time>
+																</Point>
+																<Point>
+																	<XPos>-73.6040609137056</XPos>
+																	<YPos>-61.0169491525424</YPos>
+																	<Flags>0</Flags>
+																	<Time>36000</Time>
+																</Point>
+																<Point>
+																	<XPos>-24.3654822335025</XPos>
+																	<YPos>-26.5536723163842</YPos>
+																	<Flags>0</Flags>
+																	<Time>48000</Time>
+																</Point>
+																<Point>
+																	<XPos>-87.3096446700508</XPos>
+																	<YPos>39.5480225988701</YPos>
+																	<Flags>0</Flags>
+																	<Time>60000</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
 							</ChildrenList>
@@ -1278,6 +2306,9 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{7B3F137F-B3BA-4C88-AAC5-9EAF6A8AA4C9}"/>
+									</PositioningInfo>
 									<ObjectLists/>
 								</ActorMixer>
 							</ChildrenList>
