@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     // Name of the scene
-    [Header("MainMenu")]
+    [Header("Menu")]
     // Null instance of the manager
     public static MenuManager instance = null;
     private void Awake()

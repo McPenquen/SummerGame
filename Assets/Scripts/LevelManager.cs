@@ -7,7 +7,8 @@ public class LevelManager : MonoBehaviour
 {
     // Name of the scene
     [Header("Level1")]
-    [SerializeField] private GameObject pauseMenuUi = null;
+    [SerializeField] private GameObject pauseMenuUI = null;
+    [SerializeField] private GameObject gameplayUI = null;
     // Null instance of the manager
     public static LevelManager instance = null;
     public static bool isPaused = false;
@@ -29,7 +30,7 @@ public class LevelManager : MonoBehaviour
             //Destroy the game manager that is not the current game manager
             Destroy(gameObject);
         }
-        pauseMenuUi.SetActive(false);
+        pauseMenuUI.SetActive(false);
     }
 
     private void  Update() 
@@ -57,18 +58,20 @@ public class LevelManager : MonoBehaviour
     // Pause the game
     public void PauseGame()
     {
-        // Pause the game and show the UI 
+        // Pause the game, show the pause menu UI and hide the gameplay UI
         isPaused = true;
-        pauseMenuUi.SetActive(true);
+        pauseMenuUI.SetActive(true);
+        gameplayUI.SetActive(false);
         Time.timeScale = 0;
     }
 
     // Resume the game
     public void ResumeGame()
     {
-        // Unpause the game and hide the UI 
+        // Unpause the game, hide the pause menu UI and show the gameplay UI
         isPaused = false;
-        pauseMenuUi.SetActive(false);
+        pauseMenuUI.SetActive(false);
+        gameplayUI.SetActive(true);
         Time.timeScale = 1;
     }
     // pause menu inspired from: https://www.youtube.com/watch?v=JivuXdrIHK0&t=354s&ab_channel=Brackeys 
