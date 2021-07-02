@@ -1,6 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Andy's_Work_Unit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Andy's_Work_Unit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Ambience_Andy" ID="{CBF73840-2A3C-445D-9C9D-B1E3635523F3}" ShortID="999445678">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Wolf" ID="{06E9E239-D971-4FAF-AA71-05AC8AD82576}" ShortID="122846529">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wolf_Howl_1" ID="{94547C4B-0AFF-4ACB-9620-2E57CA77EE1E}" ShortID="851872495">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wolf_Howl_1" ID="{D0F1F225-DA1E-4D6F-A6A4-A4F3748DEC90}">
+											<Language>SFX</Language>
+											<AudioFile>Wolf_Howl_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="349232086"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wolf_Howl_1" ID="{D0F1F225-DA1E-4D6F-A6A4-A4F3748DEC90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wolf_Howl_2" ID="{2A896F18-63E5-4FBF-A673-E474C1CC56DE}" ShortID="736698476">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wolf_Howl_2" ID="{20283110-637E-4ABC-AC23-CFCC61ADCC03}">
+											<Language>SFX</Language>
+											<AudioFile>Wolf_Howl_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="898576691"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wolf_Howl_2" ID="{20283110-637E-4ABC-AC23-CFCC61ADCC03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wolf_Howl_3" ID="{C03AB07B-FE71-4A6D-9DE7-C239EB5BB35A}" ShortID="337162771">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wolf_Howl_3" ID="{FEB3E93B-69EB-4BF6-BA50-6E66051DBDBB}">
+											<Language>SFX</Language>
+											<AudioFile>Wolf_Howl_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="609795084"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wolf_Howl_3" ID="{FEB3E93B-69EB-4BF6-BA50-6E66051DBDBB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wolf_Howl_4" ID="{664093F2-D04B-4573-B3EE-1DBDF50F2606}" ShortID="851601260">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wolf_Howl_4" ID="{41B98E47-4900-4851-89FA-8D8F8A8D3EDB}">
+											<Language>SFX</Language>
+											<AudioFile>Wolf_Howl_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="494893542"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wolf_Howl_4" ID="{41B98E47-4900-4851-89FA-8D8F8A8D3EDB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Sizzling_Heat" ID="{620718BC-199B-41FD-BBCF-A8B0FC62F789}" ShortID="364941325">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sizzling_Desert_Sand_1" ID="{B28DF3A5-FD32-454B-A928-E6E840CBA05D}" ShortID="254420400">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sizzling_Desert_Sand_1" ID="{8A21A16A-67F1-4ED4-9386-672C1CA9BC5C}">
+											<Language>SFX</Language>
+											<AudioFile>Sizzling_Desert_Sand_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="227426305"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Sizzling_Desert_Sand_1" ID="{8A21A16A-67F1-4ED4-9386-672C1CA9BC5C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
