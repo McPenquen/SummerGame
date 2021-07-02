@@ -49,6 +49,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{ADF5CF52-8DF0-47F4-9A7D-C92E51C6B39A}" ShortID="379160823">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sizzling_Desert_Sand_1" ID="{B28DF3A5-FD32-454B-A928-E6E840CBA05D}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}">
@@ -110,6 +117,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sand_long" ID="{7614ADE6-B974-4444-8F33-FDABCA98A1C5}" WorkUnitID="{2581998D-9BBB-4309-88DE-B31E52E03417}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{45887B72-6DC2-4505-B9C1-928D51970C75}" ShortID="1062205722">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sizzling_Desert_Sand_1" ID="{B28DF3A5-FD32-454B-A928-E6E840CBA05D}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
