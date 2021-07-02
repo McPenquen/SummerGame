@@ -16,60 +16,132 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="500338416">
+		<SoundBank Id="3657742645" Language="SFX" Hash="3438964901">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3987033674" Name="play_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\play_start_up" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="189333254" Language="SFX">
+							<ShortName>Sand_WAV\Sand_C_4.wav</ShortName>
+							<Path>SFX\Sand_WAV\Sand_C_4_10C4C929.wem</Path>
+						</File>
+						<File Id="190737476" Language="SFX">
+							<ShortName>Hawk_WAV\Red_Hawk_Screech_NFU_3.wav</ShortName>
+							<Path>SFX\Hawk_WAV\Red_Hawk_Screech_NFU_3_10C4C929.wem</Path>
+						</File>
 						<File Id="211988747" Language="SFX">
 							<ShortName>Crickets WAV\Crickets.wav</ShortName>
-							<Path>SFX\Crickets WAV\Crickets_10C4C929.wem</Path>
+							<Path>SFX\Crickets WAV\Crickets_BFB259A6.wem</Path>
+						</File>
+						<File Id="214807555" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_7.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_7_10C4C929.wem</Path>
+						</File>
+						<File Id="222963939" Language="SFX">
+							<ShortName>Hawk_WAV\Red_Hawk_Screech_NFU_5.wav</ShortName>
+							<Path>SFX\Hawk_WAV\Red_Hawk_Screech_NFU_5_10C4C929.wem</Path>
+						</File>
+						<File Id="291252475" Language="SFX">
+							<ShortName>Hawk_WAV\Red_Hawk_Screech_NFU_4.wav</ShortName>
+							<Path>SFX\Hawk_WAV\Red_Hawk_Screech_NFU_4_10C4C929.wem</Path>
 						</File>
 						<File Id="311953300" Language="SFX">
 							<ShortName>Sand_B_3.wav</ShortName>
 							<Path>SFX\Sand_B_3_10C4C929.wem</Path>
 						</File>
+						<File Id="323232918" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_5.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_5_10C4C929.wem</Path>
+						</File>
 						<File Id="328970171" Language="SFX">
 							<ShortName>Sand_C_6.wav</ShortName>
-							<Path>SFX\Sand_C_6_10C4C929.wem</Path>
+							<Path>SFX\Sand_C_6_4EE60868.wem</Path>
+						</File>
+						<File Id="339418712" Language="SFX">
+							<ShortName>Hawk_WAV\Red_Hawk_Screech_NFU_1.wav</ShortName>
+							<Path>SFX\Hawk_WAV\Red_Hawk_Screech_NFU_1_10C4C929.wem</Path>
+						</File>
+						<File Id="389916625" Language="SFX">
+							<ShortName>Hawk_WAV\Red_Hawk_Screech_NFU_2.wav</ShortName>
+							<Path>SFX\Hawk_WAV\Red_Hawk_Screech_NFU_2_10C4C929.wem</Path>
 						</File>
 						<File Id="438582506" Language="SFX">
 							<ShortName>Sand_B_8.wav</ShortName>
-							<Path>SFX\Sand_B_8_10C4C929.wem</Path>
+							<Path>SFX\Sand_B_8_099CD839.wem</Path>
+						</File>
+						<File Id="439911302" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_9.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_9_10C4C929.wem</Path>
 						</File>
 						<File Id="444115074" Language="SFX">
 							<ShortName>Crickets WAV\Crickets 2.wav</ShortName>
-							<Path>SFX\Crickets WAV\Crickets 2_10C4C929.wem</Path>
+							<Path>SFX\Crickets WAV\Crickets 2_BFB259A6.wem</Path>
 						</File>
-						<File Id="445736973" Language="SFX">
-							<ShortName>Sand_B_6.wav</ShortName>
-							<Path>SFX\Sand_B_6_10C4C929.wem</Path>
+						<File Id="444380838" Language="SFX">
+							<ShortName>Sand_WAV\Sand_B_5.wav</ShortName>
+							<Path>SFX\Sand_WAV\Sand_B_5_10C4C929.wem</Path>
+						</File>
+						<File Id="456000400" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_1.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_1_10C4C929.wem</Path>
+						</File>
+						<File Id="578510103" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_10.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_10_10C4C929.wem</Path>
 						</File>
 						<File Id="583410628" Language="SFX">
 							<ShortName>Sand_C_7.wav</ShortName>
-							<Path>SFX\Sand_C_7_10C4C929.wem</Path>
+							<Path>SFX\Sand_C_7_77BCC0E6.wem</Path>
 						</File>
 						<File Id="684745479" Language="SFX">
 							<ShortName>Sand_C_1.wav</ShortName>
-							<Path>SFX\Sand_C_1_10C4C929.wem</Path>
+							<Path>SFX\Sand_C_1_FF92F839.wem</Path>
 						</File>
 						<File Id="716184218" Language="SFX">
 							<ShortName>Crickets WAV\Crickets 3.wav</ShortName>
-							<Path>SFX\Crickets WAV\Crickets 3_10C4C929.wem</Path>
+							<Path>SFX\Crickets WAV\Crickets 3_BFB259A6.wem</Path>
+						</File>
+						<File Id="735834567" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_4.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_4_10C4C929.wem</Path>
+						</File>
+						<File Id="754934238" Language="SFX">
+							<ShortName>Sand_WAV\Sand_C_3.wav</ShortName>
+							<Path>SFX\Sand_WAV\Sand_C_3_10C4C929.wem</Path>
+						</File>
+						<File Id="795877897" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_3.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_3_10C4C929.wem</Path>
 						</File>
 						<File Id="816023224" Language="SFX">
 							<ShortName>Crickets WAV\Crickets 4.wav</ShortName>
-							<Path>SFX\Crickets WAV\Crickets 4_10C4C929.wem</Path>
+							<Path>SFX\Crickets WAV\Crickets 4_BFB259A6.wem</Path>
+						</File>
+						<File Id="887143814" Language="SFX">
+							<ShortName>Sand_WAV\Sand_D_1.wav</ShortName>
+							<Path>SFX\Sand_WAV\Sand_D_1_10C4C929.wem</Path>
+						</File>
+						<File Id="893487549" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_2.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_2_10C4C929.wem</Path>
+						</File>
+						<File Id="906827084" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_6.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_6_10C4C929.wem</Path>
 						</File>
 						<File Id="987600309" Language="SFX">
 							<ShortName>Sand_B_2.wav</ShortName>
-							<Path>SFX\Sand_B_2_10C4C929.wem</Path>
+							<Path>SFX\Sand_B_2_92EFD300.wem</Path>
+						</File>
+						<File Id="1040569458" Language="SFX">
+							<ShortName>Coyote_WAV\Coyote_howl_NFU_8.wav</ShortName>
+							<Path>SFX\Coyote_WAV\Coyote_howl_NFU_8_10C4C929.wem</Path>
 						</File>
 						<File Id="1049835952" Language="SFX">
 							<ShortName>Sand_B_4.wav</ShortName>
-							<Path>SFX\Sand_B_4_10C4C929.wem</Path>
+							<Path>SFX\Sand_B_4_6DEC69B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
