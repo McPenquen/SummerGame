@@ -3,22 +3,39 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	415841907	Space_Garage	Wwise RoomVerb			
+	927250686	Rhythmic_Talk	Wwise Tremolo			
+	2729523066	Desert_Outdoor_Reverb	Wwise RoomVerb			Reverb for Hawk screeching, 1st mix.
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	38891899	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wolf_Howl\Wolf_Howl\Silence_01\Wwise Silence	
 	193960921	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wind\wind\SoundSeed Air Wind	
 	246693938	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\silence\Wwise Silence	
+	347106174	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Silence\Wwise Silence	
+	407908959	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wolf_Howl\Wolf_Howl\Silence_02\Wwise Silence	
+	1011571155	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Silence_2\Wwise Silence	
+	1055711135	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Silence_1\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	211988747	Crickets_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets WAV\Crickets_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_1		405492
-	311953300	Sand_B_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_3		571952
-	328970171	Sand_C_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_C_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_C_6		903232
-	438582506	Sand_B_8	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_8		884356
-	444115074	Crickets_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets WAV\Crickets 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_2		405492
-	445736973	Sand_B_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_6		556956
-	583410628	Sand_C_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_C_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_C_7		843076
-	684745479	Sand_C_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_C_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_C_1		466816
-	716184218	Crickets_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets WAV\Crickets 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_3		108628
-	816023224	Crickets_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets WAV\Crickets 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_4		135768
-	987600309	Sand_B_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_2		737768
-	1049835952	Sand_B_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_4		602292
+	51538749	Red_Hawk_Screech_NFU_1	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Red_Hawk_Screech_NFU_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Red_Hawk_Screech_NFU_1		369800
+	94233514	Red_Hawk_Screech_NFU_3	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Red_Hawk_Screech_NFU_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Red_Hawk_Screech_NFU_3		363184
+	311953300	Sand_B_3	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_3		571952
+	319125574	Wolf_Howl_1	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Wolf_Howl_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wolf_Howl\Wolf_Howl\Wolf_Howl_1		576064
+	328970171	Sand_C_6	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_C_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_C_6		903232
+	359752431	Wolf_Howl_3	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Wolf_Howl_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wolf_Howl\Wolf_Howl\Wolf_Howl_3		552064
+	384388040	Wolf_Howl_4	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Wolf_Howl_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wolf_Howl\Wolf_Howl\Wolf_Howl_4		432064
+	387864201	Crickets_1	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_1		405492
+	420901412	Red_Hawk_Screech_NFU_4	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Red_Hawk_Screech_NFU_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Red_Hawk_Screech_NFU_4		354806
+	438582506	Sand_B_8	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_8		884356
+	445736973	Sand_B_6	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_6		556956
+	518514343	Crickets_3	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_3		108628
+	583410628	Sand_C_7	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_C_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_C_7		843076
+	684745479	Sand_C_1	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_C_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_C_1		466816
+	736740224	Red_Hawk_Screech_NFU_5	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Red_Hawk_Screech_NFU_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Red_Hawk_Screech_NFU_5		412136
+	861188202	Red_Hawk_Screech_NFU_2	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Red_Hawk_Screech_NFU_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk\Red_Hawk_Screech_NFU_2		387704
+	873656822	Sizzling_Desert_Sand_1	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sizzling_Desert_Sand_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sizzling_Sand\Sizzling_Desert_Sand_1		2091200
+	912493662	Crickets_4	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_4		135768
+	987600309	Sand_B_2	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_2		737768
+	1045607690	Crickets_2	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Crickets_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_2		405492
+	1049835952	Sand_B_4	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Sand_B_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand\Sand_B_4		602292
+	1061089449	Wolf_Howl_2	Y:\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\Wolf_Howl_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wolf_Howl\Wolf_Howl\Wolf_Howl_2		624064
 

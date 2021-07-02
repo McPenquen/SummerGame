@@ -4,6 +4,7 @@
 		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator" StaticLib="AkSilenceSource"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
 		<Plugin Name="SoundSeed Air Wind" ID="7798786" DLL="AkSoundSeedAir" StaticLib="AkSoundSeedWindSource"/>
+		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo" StaticLib="AkTremoloFX"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>
 		<Plugin Name="Mastering Suite" ID="12189699" DLL="MasteringSuite" StaticLib="MasteringSuiteFX"/>
