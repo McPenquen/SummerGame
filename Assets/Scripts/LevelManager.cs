@@ -9,27 +9,9 @@ public class LevelManager : MonoBehaviour
     [Header("Level1")]
     [SerializeField] private GameObject pauseMenuUI = null;
     [SerializeField] private GameObject gameplayUI = null;
-    // Null instance of the manager
-    public static LevelManager instance = null;
     public static bool isPaused = false;
-   // public GameObject pauseMenuUI = null;
     private void Awake()
     {
-        // Check if instance is null
-        if (instance == null)
-        {
-            //Don't destroy the current game manager
-            DontDestroyOnLoad(gameObject);
-
-            //Set game manager instance to this
-            instance = this;
-        }
-        // Check if current instance of game manager is equal to this game manager
-        else if (instance != this)
-        {
-            //Destroy the game manager that is not the current game manager
-            Destroy(gameObject);
-        }
         pauseMenuUI.SetActive(false);
     }
 
