@@ -28,7 +28,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    // Play the game with index 1
+    // Play level 1
     public void PlayGame()
     {
         SceneManager.LoadScene("Level1");

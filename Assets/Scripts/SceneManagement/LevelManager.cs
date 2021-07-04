@@ -42,8 +42,7 @@ public class LevelManager : MonoBehaviour
         // If players reach the final destination they won
         if (isWon())
         {
-            SceneManager.LoadScene("Menu");
-            //SceneManager.LoadScene("Victory");
+            SceneManager.LoadScene("Victory");
         }
         // If players fall they lose
         arePLayersFallen();

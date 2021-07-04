@@ -563,11 +563,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339231316}
   m_CullTransparentMesh: 1
---- !u!1 &486644564 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6578420531147604268, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
-  m_PrefabInstance: {fileID: 6578420530390684968}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &510696073
 GameObject:
   m_ObjectHideFlags: 0
@@ -14714,7 +14709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 339231316}
   gameplayUI: {fileID: 564557317}
-  players: {fileID: 486644564}
+  players: {fileID: 6578420530390684971}
   lastCheckpoint: {fileID: 1220100105}
   finishLine: {fileID: 1509592690}
   isLost: 0
@@ -15578,6 +15573,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6578420529706806950, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
   m_PrefabInstance: {fileID: 6578420530390684968}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6578420530390684971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1707846850444775611, guid: 6cb6ea7e852e5b841a854891de997279, type: 3}
+  m_PrefabInstance: {fileID: 6578420530390684968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578420530390684969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42ba250145d2084da1b3c1754311f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6881438848263266679
 PrefabInstance:
   m_ObjectHideFlags: 0
