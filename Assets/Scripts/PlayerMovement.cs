@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayersBond bond = null;
+    [SerializeField] private GameObject players = null;
     [SerializeField] private PlayerMovement otherPlayer = null;
     [SerializeField] private float speed = 5.0f;
     [SerializeField] private int jumpPower = 10;

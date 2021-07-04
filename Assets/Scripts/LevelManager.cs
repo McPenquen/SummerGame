@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenuUI = null;
     [SerializeField] private GameObject gameplayUI = null;
     // Players object
-    [SerializeField] private GameObject players = null;
+    [SerializeField] private PlayersManager players = null;
     // Current last check point
     [SerializeField] private GameObject lastCheckpoint = null;
     // Victory location
@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
     // If pause menu is open
     public static bool isPaused = false;
     // If the level is lost
-    public static bool isLost = false;
+    public bool isLost = false;
     private void Awake()
     {
         pauseMenuUI.SetActive(false);
@@ -42,7 +42,8 @@ public class LevelManager : MonoBehaviour
         // If players reach the final destination they won
         if (isWon())
         {
-            SceneManager.LoadScene("Victory");
+            SceneManager.LoadScene("Menu");
+            //SceneManager.LoadScene("Victory");
         }
         // If players fall they lose
         arePLayersFallen();
@@ -82,13 +83,14 @@ public class LevelManager : MonoBehaviour
     // Return players to the latest checkpoint
     private void CheckpointReturn()
     {
-        players.transform.position = lastCheckpoint.transform.position;
+        players.ChangePosition(lastCheckpoint.transform.position);
         isLost = false;
     }
     // Returns true if the players reach the final destination
     private bool isWon()
     {
-        if (players.transform.position == finishLine.transform.position)
+        if (players.GetPosition().x >= finishLine.transform.position.x - 1 && 
+        players.GetPosition().x <= finishLine.transform.position.x + 1)
         {
             return true;
         }
@@ -97,7 +99,7 @@ public class LevelManager : MonoBehaviour
     // Sets the isLost to true
     private void arePLayersFallen()
     {
-        if (players.transform.position.y < -20.0f)
+        if (players.GetPosition().y <= -10.0f)
         {
             isLost = true;
         }
