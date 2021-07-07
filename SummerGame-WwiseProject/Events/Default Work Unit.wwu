@@ -56,6 +56,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{E5EAF6BE-11D4-4BCF-BD4E-4234AE431A06}" ShortID="522339476">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wolf" ID="{0978B9E6-8DAF-471D-80FF-6E1A4488AEA3}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}">
