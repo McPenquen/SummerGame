@@ -5,23 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    // Name of the scene
-    [Header("Level1")]
     [SerializeField] private GameObject pauseMenuUI = null;
     [SerializeField] private GameObject gameplayUI = null;
     // Players object
     [SerializeField] private PlayersManager players = null;
     // Current last check point
-    [SerializeField] private GameObject lastCheckpoint = null;
+    private int lastCheckpointIndex = 0;
+    [SerializeField] private CheckpointManager[] checkpoints;
     // Victory location
     [SerializeField] private GameObject finishLine = null;
     // If pause menu is open
     public static bool isPaused = false;
-    // If the level is lost
-    public bool isLost = false;
+
     private void Awake()
     {
+        // Set the pause menu to inactive
         pauseMenuUI.SetActive(false);
+        // Set the initial checkpoint to reached
+        checkpoints[lastCheckpointIndex].SetIsReached(true);
     }
 
     private void  Update() 
@@ -44,12 +45,21 @@ public class LevelManager : MonoBehaviour
         {
             SceneManager.LoadScene("Victory");
         }
-        // If players fall they lose
-        arePLayersFallen();
-        // If players lose reload them to the last checkpoint
-        if (isLost)
+
+        // If players die reload them to the last checkpoint
+        if (arePLayersFallen())
         {
             CheckpointReturn();
+        }
+
+        // Update the checkpoint if players have passed it
+        if (lastCheckpointIndex < checkpoints.Length - 1) // the last checkpoint doesn't need to be checked
+        {
+            if (players.GetPosition().x >= checkpoints[lastCheckpointIndex + 1].transform.position.x)
+            {
+                lastCheckpointIndex++;
+                checkpoints[lastCheckpointIndex].SetIsReached(true);
+            }
         }
     }
 
@@ -79,11 +89,11 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 1;
     }
     // pause menu inspired from: https://www.youtube.com/watch?v=JivuXdrIHK0&t=354s&ab_channel=Brackeys 
+    
     // Return players to the latest checkpoint
     private void CheckpointReturn()
     {
-        players.ChangePosition(lastCheckpoint.transform.position);
-        isLost = false;
+        players.ChangePosition(checkpoints[lastCheckpointIndex].transform.position);
     }
     // Returns true if the players reach the final destination
     private bool isWon()
@@ -96,11 +106,12 @@ public class LevelManager : MonoBehaviour
         return false;
     }
     // Sets the isLost to true
-    private void arePLayersFallen()
+    private bool arePLayersFallen()
     {
         if (players.GetPosition().y <= -10.0f)
         {
-            isLost = true;
+            return true;
         }
+        return false;
     }
 }
