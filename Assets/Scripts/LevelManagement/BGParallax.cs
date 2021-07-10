@@ -17,11 +17,11 @@ public class BGParallax : MonoBehaviour
 
     void Update()
     {
-        float parCamPos = camera.transform.position.x * (1 - parallexEffect);
         // Move the BG according to the parallexEffect value
-        float distance = camera.transform.position.x *  parallexEffect;
-        transform.position = new Vector3(startPosition - distance, transform.position.y, transform.position.z);
+        float distance = camera.transform.position.x / parallexEffect;
+        transform.position = new Vector3(startPosition + distance, transform.position.y, transform.position.z);
         // Repeat the BG texture when at the end
+        /*float parCamPos = camera.transform.position.x * (1 - parallexEffect);
         if (parCamPos > startPosition + width)
         {
             startPosition += width;
@@ -29,7 +29,7 @@ public class BGParallax : MonoBehaviour
         else if (parCamPos < startPosition - width)
         {
             startPosition -= width;
-        }
+        }*/
     
     }
     // parallax effect inspired from: https://www.youtube.com/watch?v=zit45k6CUMk&ab_channel=Dani
