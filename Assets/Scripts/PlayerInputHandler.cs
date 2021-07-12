@@ -32,6 +32,16 @@ public class PlayerInputHandler : MonoBehaviour
         // Obtain the player input component
         m_playerInput = GetComponent<PlayerInput>();
 
+
+        // Check if player input is set to one controller
+        if(m_playerInput)
+        {
+            //something
+        }
+        // One Keyboard
+        // Multiple Controller
+
+
         // Obtain the number of characters in the scene
         var characters = FindObjectsOfType<Character>();
 
@@ -58,8 +68,29 @@ public class PlayerInputHandler : MonoBehaviour
         // Check the character object exists
         if (m_character != null)
         {
-            // Not null, set the X input value based on the X value of the x value of the input
+            // Not null, set the X input value based on the X value read from the the input
             m_character.SetXValue(context.ReadValue<Vector2>().x);
+        }
+    }
+
+    /*
+     * ON CLIMB METHOD
+     * 
+     * Method first checks the character
+     * object exists.
+     * 
+     * If the character object exists,
+     * the SetYValue method is invoked
+     * based on the Y value of the Vector2
+     * input.
+     */
+    public void OnClimb(InputAction.CallbackContext context)
+    {
+        // Check the character object exists
+        if (m_character != null)
+        {
+            // Not null, set the Y input value based on the Y value read from the the input
+            m_character.SetYValue(context.ReadValue<Vector2>().y);
         }
     }
 
