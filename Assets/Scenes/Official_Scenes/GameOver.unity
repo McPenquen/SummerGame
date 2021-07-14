@@ -353,7 +353,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &799300507
+--- !u!1001 &635217908
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -466,6 +466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
+--- !u!224 &635217909 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5024928249874168026, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
+  m_PrefabInstance: {fileID: 635217908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &869702139
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +483,7 @@ GameObject:
   - component: {fileID: 869702142}
   - component: {fileID: 869702141}
   m_Layer: 5
-  m_Name: VICTORY
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,7 +506,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 400}
-  m_SizeDelta: {x: 500, y: 150}
+  m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869702141
 MonoBehaviour:
@@ -523,7 +528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VICTORY
+  m_text: GAME OVER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -715,7 +720,7 @@ GameObject:
   - component: {fileID: 1172115881}
   - component: {fileID: 1172115882}
   m_Layer: 5
-  m_Name: VictoryMenu
+  m_Name: GameOverMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,7 +737,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1217767965}
+  - {fileID: 635217909}
   - {fileID: 283740812}
   m_Father: {fileID: 910552880}
   m_RootOrder: 2
@@ -761,11 +766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dff347a79722244999abafd9740d89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1217767965 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5024928249874168026, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
-  m_PrefabInstance: {fileID: 799300507}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1353692922
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.90196085, g: 0.8745099, b: 0.7372549, a: 1}
+  m_Color: {r: 1, g: 0.5764706, b: 0.5372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
