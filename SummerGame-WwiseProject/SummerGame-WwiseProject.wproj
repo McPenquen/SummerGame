@@ -13556,8 +13556,8 @@
 				<PhysicalFolder Path="Actor-Mixer Hierarchy">
 					<WorkUnit Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" PersistMode="Standalone"/>
 				</PhysicalFolder>
-				<PhysicalFolder Path="Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder">
-					<WorkUnit Name="Andy's_Actor-Mixer_Folder" ID="{3EE38847-DBA0-41F2-A21D-DF18386D1506}" PersistMode="Standalone"/>
+				<PhysicalFolder Path="Actor-Mixer Hierarchy\Andys_Actor-Mixer_Folder">
+					<WorkUnit Name="Andys_Actor-Mixer_Folder" ID="{3EE38847-DBA0-41F2-A21D-DF18386D1506}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Attenuations">
 					<WorkUnit Name="Attenuations" ID="{017BDDA0-1BB1-4CE1-8077-79594EC4585C}" PersistMode="Standalone"/>
@@ -13580,8 +13580,8 @@
 				<PhysicalFolder Path="Events">
 					<WorkUnit Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" PersistMode="Standalone"/>
 				</PhysicalFolder>
-				<PhysicalFolder Path="Events\Andy's_Events_Folder">
-					<WorkUnit Name="Andy's_Events_Folder" ID="{0A644473-AFC4-41BC-8A32-30C39F95F82D}" PersistMode="Standalone"/>
+				<PhysicalFolder Path="Events\Andys_Events_Folder">
+					<WorkUnit Name="Andys_Events_Folder" ID="{0A644473-AFC4-41BC-8A32-30C39F95F82D}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Game Parameters">
 					<WorkUnit Name="Game Parameters" ID="{4025818E-097F-4A72-B692-B8A2E2663DCB}" PersistMode="Standalone"/>
@@ -13598,8 +13598,8 @@
 				<PhysicalFolder Path="Mixing Sessions">
 					<WorkUnit Name="Mixing Sessions" ID="{6477AAF7-E365-4990-A392-E59B824B6418}" PersistMode="Standalone"/>
 				</PhysicalFolder>
-				<PhysicalFolder Path="Mixing Sessions\Andy's_Mixing Session">
-					<WorkUnit Name="Andy's_Mixing Session" ID="{2DA818D7-0731-4A41-A08B-CE06DD9C47EF}" PersistMode="Standalone"/>
+				<PhysicalFolder Path="Mixing Sessions\Andys_Mixing_Session">
+					<WorkUnit Name="Andys_Mixing_Session" ID="{2DA818D7-0731-4A41-A08B-CE06DD9C47EF}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Modulators">
 					<WorkUnit Name="Modulators" ID="{14C37342-3847-49FF-A05C-5007991BED50}" PersistMode="Standalone"/>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Andys_Work_Unit" ID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Objects" ID="{3BE3FC7B-26E2-46CA-B6E5-0E0060BC5485}" ShortID="150266750">
+					<ChildrenList>
+						<Folder Name="Plants" ID="{41310DBC-6165-42B7-BC10-73317CC5769B}" ShortID="920456651">
+							<ChildrenList>
+								<Event Name="play_plant" ID="{58F1A872-FAF5-4154-9207-E816792C62C0}">
+									<ChildrenList>
+										<Action Name="" ID="{4CCB09B1-007C-434B-BE1F-F4456A17BF21}" ShortID="457774296">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="1"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Plants" ID="{9FD80C6B-9680-415B-8D4F-FA481AEC570C}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0F1505C5-F8A6-49B0-A829-7C945738A02B}" ShortID="705954738">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="36"/>
+												<Property Name="SeekPercent" Type="Real64" Value="50">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{134818C4-826F-4C4F-A8C8-C5F41F654F71}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="35"/>
+																	<Property Name="Min" Type="Real64" Value="-35"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Plants" ID="{9FD80C6B-9680-415B-8D4F-FA481AEC570C}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="stop_plant" ID="{F4210405-BAD8-498B-AB3C-31010C08F9E1}">
+									<ChildrenList>
+										<Action Name="" ID="{739D63F3-4055-42C1-B1BF-0CABBB279440}" ShortID="490213461">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Plants" ID="{9FD80C6B-9680-415B-8D4F-FA481AEC570C}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="UFO" ID="{4C3B84FA-BBE0-4115-A37D-40C2C52961A1}" ShortID="267481347">
+							<ChildrenList>
+								<Event Name="play_ufo_idle" ID="{792939D5-D898-46D5-B9A6-2BF9130A8E39}">
+									<ChildrenList>
+										<Action Name="" ID="{30796EF2-FD4C-49E6-9432-E568968F3B6A}" ShortID="92507598">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Sounds" ID="{0CF4D829-49CE-4A26-BE1D-5F112969DBAD}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_beam_up" ID="{9BC0BB8A-214E-4A35-98E2-4960C6C795AF}">
+									<ChildrenList>
+										<Action Name="" ID="{ED6577C5-EF31-4573-9E54-FE559CF1C97E}" ShortID="186584426">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Beam_Up" ID="{972F6F8A-FDE9-4003-B438-FE8B7E1D917E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="stop_beam_up" ID="{E23A73C4-91CE-4629-A62D-B0FA0E6E4570}">
+									<ChildrenList>
+										<Action Name="" ID="{470E8791-5282-4DD2-B9CE-123606EA7AB7}" ShortID="523582559">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Beam_Up" ID="{972F6F8A-FDE9-4003-B438-FE8B7E1D917E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="stop_ufo_idle" ID="{735ADB17-3C3E-46FA-AEF5-BAB2DCC9805F}">
+									<ChildrenList>
+										<Action Name="" ID="{3875F6B3-8673-4D21-B5AC-DF2FF95DD0A5}" ShortID="347184062">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Sounds" ID="{0CF4D829-49CE-4A26-BE1D-5F112969DBAD}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

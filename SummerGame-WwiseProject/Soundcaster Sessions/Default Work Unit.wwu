@@ -10,8 +10,32 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_plant" ID="{58F1A872-FAF5-4154-9207-E816792C62C0}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_plant" ID="{F4210405-BAD8-498B-AB3C-31010C08F9E1}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ufo_idle" ID="{792939D5-D898-46D5-B9A6-2BF9130A8E39}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_beam_up" ID="{9BC0BB8A-214E-4A35-98E2-4960C6C795AF}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_ufo_idle" ID="{735ADB17-3C3E-46FA-AEF5-BAB2DCC9805F}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_beam_up" ID="{E23A73C4-91CE-4629-A62D-B0FA0E6E4570}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
