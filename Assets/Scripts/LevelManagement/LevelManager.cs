@@ -46,6 +46,8 @@ public class LevelManager : MonoBehaviour
         // If players reach the final destination they won
         if (isWon())
         {
+            // Save the time -> as score
+            ScenesNavigation.SaveScore(Timer.GetScore());
             SceneManager.LoadScene("Victory");
         }
 

@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private int minutes = 0;
-    [SerializeField] private int seconds = 0;
+    static private int minutes = 0;
+    static private int seconds = 0;
     private string strTime = "0:0";
     // The time accumulated from dt
     private float dtCounter = 0.0f;
 
+    // Static time overview
+    static public float timeOverview = 1.0f;
     private void Awake()
     {
+        // Set the default mituest and minutes
+        minutes = 3;
+        seconds = 0;
+
         // Transform seconds into minutes 
         IncreaseSecsToMins();
         
@@ -73,4 +79,17 @@ public class Timer : MonoBehaviour
         strTime = minutes.ToString() + ":" + seconds.ToString();
         GetComponent<TMPro.TextMeshProUGUI>().text = strTime;
     }
+    // Get score calculated from the time remaining
+    static public float GetScore()
+    {
+        float answr = 0.0f;
+        answr += (float)minutes;
+        answr += (float)seconds / 60;
+        // Round to 2 dec places
+        answr *= 100;
+        answr = Mathf.Round(answr);
+        answr /= 100;
+        return answr;
+    }
 }
+

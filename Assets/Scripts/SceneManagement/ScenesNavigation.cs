@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class ScenesNavigation : MonoBehaviour
 {
-    // The name of the last played level scene
-    static private string lastLevelName = ""; 
     // Null instance of the manager
     public static ScenesNavigation instance = null;
+        // The name of the last played level scene
+    static private string lastLevelName = ""; 
+    // Score from the last level played
+    static private float lastScore = 0.0f;
     private void Awake()
     {
         // Check if instance is null
@@ -38,5 +40,16 @@ public class ScenesNavigation : MonoBehaviour
     static public string GetLastLevelName()
     {
         return lastLevelName;
+    }
+
+    // Save score of the last played game
+    static public void SaveScore(float score)
+    {
+        lastScore = score;
+    }
+    // Get the last saved score
+    static public float GetScore()
+    {
+        return lastScore;
     }
 }
