@@ -235,6 +235,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Sizzling_Desert_Sand_1" ID="{B28DF3A5-FD32-454B-A928-E6E840CBA05D}" ShortID="254420400">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
