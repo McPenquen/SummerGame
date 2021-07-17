@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Andy's_Work_Unit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" PersistMode="Standalone">
+		<WorkUnit Name="Andys_Work_Unit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Ambience_Andy" ID="{CBF73840-2A3C-445D-9C9D-B1E3635523F3}" ShortID="999445678">
 					<ReferenceList>
@@ -236,6 +236,7 @@
 							<ChildrenList>
 								<Sound Name="Sizzling_Desert_Sand_1" ID="{B28DF3A5-FD32-454B-A928-E6E840CBA05D}" ShortID="254420400">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-2</Value>
@@ -264,437 +265,6 @@
 										<ActiveSource Name="Sizzling_Desert_Sand_1" ID="{8A21A16A-67F1-4ED4-9386-672C1CA9BC5C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-						</ActorMixer>
-						<ActorMixer Name="Plants" ID="{3CEF32B0-09C4-47C8-9A24-B6F9520CA2EA}" ShortID="119180199">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Plants" ID="{9FD80C6B-9680-415B-8D4F-FA481AEC570C}" ShortID="996781296">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Plant Sounds WAV" ID="{3D037971-D382-46B6-AFBC-FE08D1789605}" ShortID="893357732">
-											<PropertyList>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C5DBAE6C-CBAB-4BC7-A324-B9D3D908B096}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="859"/>
-																	<Property Name="Min" Type="Real64" Value="-935"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Plant_Sounds_1" ID="{14488B02-F4C2-4D49-B8E4-5EF19ED02253}" ShortID="550909176">
-													<PropertyList>
-														<Property Name="Weight" Type="Real64">
-															<ValueList>
-																<Value>49</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_1" ID="{857CFC96-A862-4D80-9044-7EEB170094AF}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="650233984"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_1" ID="{857CFC96-A862-4D80-9044-7EEB170094AF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_2" ID="{F884267C-62A2-4712-BA68-5DF262C3B87A}" ShortID="321842503">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_2" ID="{B862C8FD-161D-42C1-99F9-F73F8532050F}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="112066250"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_2" ID="{B862C8FD-161D-42C1-99F9-F73F8532050F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_3" ID="{FF132528-71AA-4F27-98E8-7C90613BFE62}" ShortID="132186024">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_3" ID="{0D8FAC5F-7654-4C51-925D-BC57A1C20B1D}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="838443512"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_3" ID="{0D8FAC5F-7654-4C51-925D-BC57A1C20B1D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_4" ID="{8BB92A16-C406-4F80-A19A-9AB79F4BADA3}" ShortID="252274042">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_4" ID="{AA35DE2A-485D-4E4B-BB93-5F547E648581}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_4.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="419090162"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_4" ID="{AA35DE2A-485D-4E4B-BB93-5F547E648581}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_5" ID="{A13BE22B-BAD4-482C-AA62-501D9533472D}" ShortID="727485217">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_5" ID="{B380D74D-B7BB-4AB4-A963-93EBF34D16C8}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_5.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="390587651"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_5" ID="{B380D74D-B7BB-4AB4-A963-93EBF34D16C8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_6" ID="{C2680646-54ED-4263-8037-69A582A64913}" ShortID="663741353">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_6" ID="{C00EE739-3ED5-45D0-8F41-0806F5720417}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_6.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="687883256"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_6" ID="{C00EE739-3ED5-45D0-8F41-0806F5720417}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_7" ID="{0EEC62B0-FFA3-4F89-AB9A-34185E5AEBB8}" ShortID="364294541">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_7" ID="{2149006B-5700-404D-9EAF-2170C2ED68B3}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_7.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="709045239"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_7" ID="{2149006B-5700-404D-9EAF-2170C2ED68B3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_8" ID="{6C53C712-BBB3-408C-98B7-A6C049AA8B41}" ShortID="573839382">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_8" ID="{E8252808-EC8F-4A39-997C-1121F7B3D6AF}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_8.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="987577468"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_8" ID="{E8252808-EC8F-4A39-997C-1121F7B3D6AF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_9" ID="{A114B075-42E3-4464-9B21-87A80E1F57EE}" ShortID="859487651">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_9" ID="{E06E970D-B566-4531-9E7F-D87C882167A6}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_9.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="509539300"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_9" ID="{E06E970D-B566-4531-9E7F-D87C882167A6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_10" ID="{3545B8E3-3F37-4915-9BEA-D6FEF685D84B}" ShortID="1049755081">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_10" ID="{D8E50F20-851A-4057-97B6-F8B04521E320}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_10.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="683678928"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_10" ID="{D8E50F20-851A-4057-97B6-F8B04521E320}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_11" ID="{B7038D93-E3C1-4DA1-9CD0-AB9BE3937E26}" ShortID="116589881">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_11" ID="{36C44A47-F4A8-478F-A72F-A71B84A9AF7C}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_11.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="471237613"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_11" ID="{36C44A47-F4A8-478F-A72F-A71B84A9AF7C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_12" ID="{DF8E0982-32CC-4E85-9E26-21AE88EAC5F2}" ShortID="1002439910">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_12" ID="{7921DA79-1EA2-4F16-9D7D-0F46EC330ACB}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_12.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="379661347"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_12" ID="{7921DA79-1EA2-4F16-9D7D-0F46EC330ACB}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_13" ID="{677610E1-731C-4A98-B799-953F0A9EF944}" ShortID="1004740284">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_13" ID="{25552325-5375-4C56-BC75-27ECCFD92D39}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_13.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="746551178"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_13" ID="{25552325-5375-4C56-BC75-27ECCFD92D39}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_14" ID="{4837B305-779E-4C33-B14D-10BE0F50EB57}" ShortID="529354891">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_14" ID="{0559E5AF-87AA-468D-8310-DBBE88AF9512}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_14.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="76287148"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_14" ID="{0559E5AF-87AA-468D-8310-DBBE88AF9512}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_15" ID="{D93C3B52-5137-4087-BA42-9D1861FE6291}" ShortID="1415107">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_15" ID="{56C87DC6-A35E-422F-8737-0249F53082FE}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_15.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="975248344"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_15" ID="{56C87DC6-A35E-422F-8737-0249F53082FE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Plant_Sounds_16" ID="{46E5DC6C-4AA4-4700-9881-9BC64893608D}" ShortID="233966387">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Plant_Sounds_16" ID="{77A1170E-6CCF-4F30-92A0-A622BE38A302}">
-															<Language>SFX</Language>
-															<AudioFile>Plant_Sounds_16.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="462472093"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Plant_Sounds_16" ID="{77A1170E-6CCF-4F30-92A0-A622BE38A302}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
@@ -907,6 +477,19 @@
 									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Walking" ID="{2D21B69C-2A5B-480B-AFF6-8B4A050BC81E}" ShortID="515084322">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
@@ -933,6 +516,27 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Beam_Up" ID="{972F6F8A-FDE9-4003-B438-FE8B7E1D917E}" ShortID="226526227">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B1317CB4-9F35-4B99-B60D-CCDD9BD424E9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="429"/>
+															<Property Name="Min" Type="Real64" Value="-404"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
@@ -1015,7 +619,14 @@
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<BlendContainer Name="Ship_Sounds" ID="{0CF4D829-49CE-4A26-BE1D-5F112969DBAD}" ShortID="740336926">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 										</Reference>
@@ -1027,6 +638,11 @@
 										<Sound Name="UFO_Engine_Idle_1" ID="{42C766FB-A2FD-41E6-9724-ED5601B04C0C}" ShortID="402090096">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1038,6 +654,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UFO_Engine_Idle_1" ID="{F79EF35F-6193-47C8-94E2-CD9DB2C4C1E2}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.328049991883022"/>
+														<Property Name="LoopEnd" Type="Real64" Value="5.92897886773666"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UFO_Engine_Idle_1.wav</AudioFile>
 													<MediaIDList>
@@ -1054,7 +675,7 @@
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>61</Value>
+														<Value>43</Value>
 													</ValueList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -1074,6 +695,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="UFO_Lights_Alarms_1" ID="{C01D345C-2A32-44FE-8D60-0C26299804E8}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.209982854225239"/>
+														<Property Name="LoopEnd" Type="Real64" Value="11.960590141223"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>UFO_Lights_Alarms_1.wav</AudioFile>
 													<MediaIDList>
@@ -1090,6 +716,628 @@
 									<ObjectLists/>
 								</BlendContainer>
 							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Plants" ID="{3CEF32B0-09C4-47C8-9A24-B6F9520CA2EA}" ShortID="119180199">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_Generic_5m" ID="{1C122A1B-35D5-4F45-B7C8-3AB7AFAA1A1E}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Plants" ID="{9FD80C6B-9680-415B-8D4F-FA481AEC570C}" ShortID="996781296">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D9AEF093-E23E-4F91-B246-641E1EA62243}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="606"/>
+															<Property Name="Min" Type="Real64" Value="-581"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.5"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B4FFFF45-BA4C-495F-820F-23B774D71A53}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Plant_Sounds_1" ID="{14488B02-F4C2-4D49-B8E4-5EF19ED02253}" ShortID="550909176">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_1" ID="{857CFC96-A862-4D80-9044-7EEB170094AF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.5"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="650233984"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_1" ID="{857CFC96-A862-4D80-9044-7EEB170094AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_2" ID="{F884267C-62A2-4712-BA68-5DF262C3B87A}" ShortID="321842503">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_2" ID="{B862C8FD-161D-42C1-99F9-F73F8532050F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.6"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="112066250"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_2" ID="{B862C8FD-161D-42C1-99F9-F73F8532050F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_3" ID="{FF132528-71AA-4F27-98E8-7C90613BFE62}" ShortID="132186024">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_3" ID="{0D8FAC5F-7654-4C51-925D-BC57A1C20B1D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.6"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="838443512"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_3" ID="{0D8FAC5F-7654-4C51-925D-BC57A1C20B1D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_4" ID="{8BB92A16-C406-4F80-A19A-9AB79F4BADA3}" ShortID="252274042">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_4" ID="{AA35DE2A-485D-4E4B-BB93-5F547E648581}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="419090162"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_4" ID="{AA35DE2A-485D-4E4B-BB93-5F547E648581}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_5" ID="{A13BE22B-BAD4-482C-AA62-501D9533472D}" ShortID="727485217">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_5" ID="{B380D74D-B7BB-4AB4-A963-93EBF34D16C8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.9"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="390587651"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_5" ID="{B380D74D-B7BB-4AB4-A963-93EBF34D16C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_6" ID="{C2680646-54ED-4263-8037-69A582A64913}" ShortID="663741353">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_6" ID="{C00EE739-3ED5-45D0-8F41-0806F5720417}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.9"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="687883256"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_6" ID="{C00EE739-3ED5-45D0-8F41-0806F5720417}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_7" ID="{0EEC62B0-FFA3-4F89-AB9A-34185E5AEBB8}" ShortID="364294541">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_7" ID="{2149006B-5700-404D-9EAF-2170C2ED68B3}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.8"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="709045239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_7" ID="{2149006B-5700-404D-9EAF-2170C2ED68B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_8" ID="{6C53C712-BBB3-408C-98B7-A6C049AA8B41}" ShortID="573839382">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_8" ID="{E8252808-EC8F-4A39-997C-1121F7B3D6AF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.5"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="987577468"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_8" ID="{E8252808-EC8F-4A39-997C-1121F7B3D6AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_16" ID="{46E5DC6C-4AA4-4700-9881-9BC64893608D}" ShortID="233966387">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_16" ID="{77A1170E-6CCF-4F30-92A0-A622BE38A302}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.4"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="462472093"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_16" ID="{77A1170E-6CCF-4F30-92A0-A622BE38A302}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_9" ID="{A114B075-42E3-4464-9B21-87A80E1F57EE}" ShortID="859487651">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_9" ID="{E06E970D-B566-4531-9E7F-D87C882167A6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_9.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509539300"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_9" ID="{E06E970D-B566-4531-9E7F-D87C882167A6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_10" ID="{3545B8E3-3F37-4915-9BEA-D6FEF685D84B}" ShortID="1049755081">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_10" ID="{D8E50F20-851A-4057-97B6-F8B04521E320}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="683678928"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_10" ID="{D8E50F20-851A-4057-97B6-F8B04521E320}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_11" ID="{B7038D93-E3C1-4DA1-9CD0-AB9BE3937E26}" ShortID="116589881">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_11" ID="{36C44A47-F4A8-478F-A72F-A71B84A9AF7C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="471237613"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_11" ID="{36C44A47-F4A8-478F-A72F-A71B84A9AF7C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_12" ID="{DF8E0982-32CC-4E85-9E26-21AE88EAC5F2}" ShortID="1002439910">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_12" ID="{7921DA79-1EA2-4F16-9D7D-0F46EC330ACB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="379661347"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_12" ID="{7921DA79-1EA2-4F16-9D7D-0F46EC330ACB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_13" ID="{677610E1-731C-4A98-B799-953F0A9EF944}" ShortID="1004740284">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_13" ID="{25552325-5375-4C56-BC75-27ECCFD92D39}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.3"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="746551178"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_13" ID="{25552325-5375-4C56-BC75-27ECCFD92D39}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_14" ID="{4837B305-779E-4C33-B14D-10BE0F50EB57}" ShortID="529354891">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_14" ID="{0559E5AF-87AA-468D-8310-DBBE88AF9512}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.8"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="76287148"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_14" ID="{0559E5AF-87AA-468D-8310-DBBE88AF9512}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Plant_Sounds_15" ID="{D93C3B52-5137-4087-BA42-9D1861FE6291}" ShortID="1415107">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Plant_Sounds_15" ID="{56C87DC6-A35E-422F-8737-0249F53082FE}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.9"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Plant_Sounds_15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="975248344"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Plant_Sounds_15" ID="{56C87DC6-A35E-422F-8737-0249F53082FE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Telephone" ID="{86744FE6-AA10-49F4-9656-E9F5EBB44596}" ShortID="49661484">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
