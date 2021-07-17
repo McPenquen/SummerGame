@@ -117,4 +117,9 @@ public class LevelManager : MonoBehaviour
         }
         return false;
     }
+    // Go to the game over scene = loss game
+    static public void GameOver()
+    {
+         SceneManager.LoadScene("GameOver");
+    }
 }

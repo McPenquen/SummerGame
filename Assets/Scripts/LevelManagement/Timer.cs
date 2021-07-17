@@ -33,6 +33,12 @@ public class Timer : MonoBehaviour
             // Update the new string to the text
             UpdateTimeStr();   
         }
+
+        // Lose the game if the time has reached 0
+        if (minutes == 0 && seconds == 0)
+        {
+            LevelManager.GameOver();
+        }
     }
 
     // Convert seconds into minutes = seconds be over 60
