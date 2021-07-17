@@ -137,6 +137,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{58F2A8A7-2651-4167-97C3-2126C07BE9B3}" ShortID="190591526">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wolf" ID="{0978B9E6-8DAF-471D-80FF-6E1A4488AEA3}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
