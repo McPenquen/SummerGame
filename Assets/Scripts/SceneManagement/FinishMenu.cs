@@ -10,9 +10,9 @@ public class FinishMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-    // Replay the last played level - for now only the only level
+    // Replay the last played level
     public void ReplayLastLevel()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(ScenesNavigation.GetLastLevelName());
     }
 }

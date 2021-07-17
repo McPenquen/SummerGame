@@ -23,6 +23,9 @@ public class LevelManager : MonoBehaviour
         pauseMenuUI.SetActive(false);
         // Set the initial checkpoint to reached
         checkpoints[lastCheckpointIndex].SetIsReached(true);
+
+        // Save the level's name
+        ScenesNavigation.SaveLastLevelPlayed(SceneManager.GetActiveScene().name);
     }
 
     private void  Update() 
