@@ -23,6 +23,9 @@ public class LevelManager : MonoBehaviour
         pauseMenuUI.SetActive(false);
         // Set the initial checkpoint to reached
         checkpoints[lastCheckpointIndex].SetIsReached(true);
+
+        // Save the level's name
+        ScenesNavigation.SaveLastLevelPlayed(SceneManager.GetActiveScene().name);
     }
 
     private void  Update() 
@@ -43,6 +46,8 @@ public class LevelManager : MonoBehaviour
         // If players reach the final destination they won
         if (isWon())
         {
+            // Save the time -> as score
+            ScenesNavigation.SaveScore(Timer.GetScore());
             SceneManager.LoadScene("Victory");
         }
 
@@ -113,5 +118,10 @@ public class LevelManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+    // Go to the game over scene = loss game
+    static public void GameOver()
+    {
+         SceneManager.LoadScene("GameOver");
     }
 }
