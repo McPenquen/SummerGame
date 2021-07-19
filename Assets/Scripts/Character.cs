@@ -5,18 +5,39 @@ using UnityEngine.Animations;
 
 public class Character : MonoBehaviour
 {
+    // PLAYER VALUES
+    [Header("Player Values")]
+
     // Player Index Number
     [SerializeField]
     private int m_playerIndex = 0;
+
+    // Player position
+    [SerializeField]
+    private Vector2 m_playerPos;
+
+    [SerializeField]
+    private Vector2 m_lastPlayerPos;
+
+    // PLAYER COMPONENTS
+    [Header("Player Components")]
 
     // Player Rigid Body
     [SerializeField] 
     private Rigidbody2D m_rb;
 
+    // Player animations
+    [SerializeField]
+    private Animator m_playerAnimator;
+
+    // CONTROLL VARIABLES
+    [Header ("Control Variables")]
+    
     // Movement Speed
-    [SerializeField] 
+    [SerializeField]
     private float m_movementSpeed = 5.0f;
 
+    // Repelling speed
     [SerializeField]
     private float m_climbingSpeed = 5.0f;
 
@@ -24,12 +45,35 @@ public class Character : MonoBehaviour
     [SerializeField] 
     private float m_jumpForce = 10.0f;
 
-    // Ground Check
-    private bool m_isGrounded;
+    // PLAYER STATES
+    [Header("Player States")]
 
-    // Touching other player check
+    // Is Touching other player
+    [SerializeField]
     private bool m_touchingOtherPlayer;
 
+    // Is Grounded
+    [SerializeField]
+    private bool m_isGrounded;
+
+    // Is Jumping
+    [SerializeField]
+    private bool m_isJumping;
+
+    // Is Falling
+    [SerializeField]
+    private bool m_isFalling;
+
+    // Is swinging
+    [SerializeField]
+    private bool m_isSwinging;
+
+    // Is gripping
+    [SerializeField]
+    private bool m_isGripping;
+
+    // OBJECT REFERENCES
+    [Header("Object References")]
     // Other player
     [SerializeField]
     private Character m_otherPlayer;
@@ -37,6 +81,9 @@ public class Character : MonoBehaviour
     // Bond between the players
     [SerializeField]
     private CharacterBond m_bond;
+
+    // CONTROLLER INPUT VALUES
+    [Header("Controller Input Values")]
 
     // X input (for moving character left and right)
     [SerializeField]
@@ -46,12 +93,6 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float m_yInput;
 
-    // Player animations
-    [SerializeField]
-    private Animator m_playerAnimator;
-
-    private Vector2 m_playerPos;
-
     // Start is called before the first frame update
     private void Awake()
     {
@@ -60,11 +101,17 @@ public class Character : MonoBehaviour
         {
             // "Player_1" tag found, set the player index to 0
             m_playerIndex = 0;
+
+            // Current player is player 1, obtain player 2
+            m_otherPlayer = GameObject.FindGameObjectWithTag("Player_2").GetComponent<Character>();
         }
         else if (tag == "Player_2")
         {
             // "Player_2" tag found, set the player index to 1
             m_playerIndex = 1;
+
+            // Current player is player 2, obtain player 1
+            m_otherPlayer = GameObject.FindGameObjectWithTag("Player_1").GetComponent<Character>();
         }
         
         // Obtain the 2D rigid body component
@@ -76,17 +123,11 @@ public class Character : MonoBehaviour
         // Obtain the player animator component
         m_playerAnimator = GetComponent<Animator>();
 
-        // Obtain reference to the other player
-        if (m_playerIndex == 0)
-        {
-            // Current player is player 1, obtain player 2
-            m_otherPlayer = GameObject.FindGameObjectWithTag("Player_2").GetComponent<Character>();
-        }
-        else if (m_playerIndex == 1)
-        {
-            // Current player is player 2, obtain player 1
-            m_otherPlayer = GameObject.FindGameObjectWithTag("Player_1").GetComponent<Character>();
-        }
+        // Obtain player position
+        m_playerPos = transform.position;
+
+        // Initialise lastPlayer position
+        m_lastPlayerPos = Vector2.zero;
     }
 
     /*
@@ -100,111 +141,191 @@ public class Character : MonoBehaviour
      */
     void Update()
     {
-        // 
-        //m_rb.velocity = new Vector2(m_xInput * m_movementSpeed, m_rb.velocity.y);
+        // Determine half the height of the sprite
+        float halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
 
-        // Create a vector2 based on the x value, movement speed and keep y value the same
-        Vector2 newPos = Vector2.zero;
-        // Check that the input does not exceed the y distance
-        // If fine, update the rigid body
-        // If not, do not update the rigid body
+        // Check if the player is grounded
+        m_isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.1f), Vector2.down, 0.05f);
+    }
 
-        // Determine the new position, based on the new values of x and y
-        newPos = new Vector2(transform.position.x, transform.position.y) + (new Vector2(m_xInput, 0.0f) * Time.deltaTime * m_movementSpeed);
-        //newPos = new Vector2(transform.position.x, transform.position.y) + new Vector2(m_xInput, 0.0f);
-
-        if (m_bond.AllowableDistance(newPos, m_otherPlayer.transform.position) == false)
+    private void FixedUpdate()
+    {
+        // Check if the X input has a value above or less than 0
+        if (m_xInput < 0 || m_xInput > 0)
         {
-            // Determine the distance between the new player position and the other player
-            Vector2 vectorBetweenPlayers = (newPos - m_otherPlayer.GetPlayerPosition());
+            // Flip sprite depending on value of X input
+            GetComponent<SpriteRenderer>().flipX = -m_xInput < 0.0f;
 
-            // Determine the new player position that will not violate the maximum bond length
-            newPos = m_otherPlayer.GetPlayerPosition() + (vectorBetweenPlayers.normalized * m_bond.ReturnMaxLength());
+            // Add force to the rigid body based on the player input
+            m_rb.AddForce(new Vector2((m_xInput * m_movementSpeed - m_rb.velocity.x) * m_movementSpeed, 0));
+
+            // Alter the rigid body veolocuty
+            m_rb.velocity = new Vector2(m_rb.velocity.x, m_rb.velocity.y);
         }
 
-        // Check if the player is not grounded
-        if (!m_isGrounded)
-        {
-            // Check if the player is below the other player
-            if (GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y && m_bond.AllowableDistance(newPos, m_otherPlayer.transform.position) == false)
-            {
-                // Set the vertical velocity to 0 (Cheap hack to get the vertical velocity)
-                m_rb.velocity = new Vector2(m_rb.velocity.x, 0.0f);
-            }
-        }
-        // Update the player position to the new position
-        m_playerPos = newPos;
-
-        // Update the transform, based on the value held by the player position vector
-        transform.position = m_playerPos;
-
-        // CHARACTER ANIMATIONS
-        // Flip the sprite based on the value of the X Input variable
-        if (m_xInput < 0)
-        {
-            // Input is less than zero, do not flip sprite (facing to the left by default)
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else if (m_xInput > 0)
-        {
-            // Input
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-
-        // Check if the X direction is non-zero
-        if (m_xInput != 0 && m_isGrounded)
-        {
-            // Enable the walking animation
-            m_playerAnimator.SetBool("isWalking", true);
-        }
-        else if (m_xInput == 0 && m_isGrounded)
-        {
-            // Disable the walking animation
-            m_playerAnimator.SetBool("isWalking", false);
-        }
-
-        // Animate jumping and falling based on the direction of the movement
-        if (!m_isGrounded && !m_touchingOtherPlayer)
-        {
-            // Determine the player's movement direction
-            Vector3 direction = transform.InverseTransformDirection(m_rb.velocity); //transform.position - previousPos;
-
-            // Check Y value of the direction vector
-            if (direction.y < 0)
-            {
-                // Y value is less than 0, player is falling
-
-                // Enable falling animation
-                m_playerAnimator.SetBool("isFalling", true);
-
-                // Disable jumping animation
-                m_playerAnimator.SetBool("isJumping", false);
-            }
-            else if (direction.y > 0)
-            {
-                // Y value is greater than 0, player is jumping
-
-                // Disable falling animation
-                m_playerAnimator.SetBool("isFalling", false);
-
-                // Enable jumping animation
-                m_playerAnimator.SetBool("isJumping", true);
-            }
-        }
-        else
+        // Check if player is grounded or touching other player
+        if(m_isGrounded || m_touchingOtherPlayer)
         {
             // Disable falling animation
             m_playerAnimator.SetBool("isFalling", false);
 
+            // Check if there is an imput from the player
+            if(m_xInput < 0 || m_xInput > 0)
+            {
+                // Enable the walking animation
+                m_playerAnimator.SetBool("isWalking", true);
+            }
+            else
+            {
+                // Disable the walking animation
+                m_playerAnimator.SetBool("isWalking", false);
+            }
+
+            // Check if player is at the right of the other player
+            if (GetPlayerPosition().x >= m_otherPlayer.GetPlayerPosition().x)
+            {
+                // Player is moving to the right
+                if (m_xInput > 0)
+                {
+                    // Extend the bond
+                    m_bond.ExtendBond(Time.deltaTime * m_movementSpeed);
+                }
+                // Player is moving to the left
+                else if (m_xInput < 0)
+                {
+                    // Shrink the bond
+                    m_bond.ShrinkBond(Time.deltaTime * m_movementSpeed);
+                }
+            }
+
+            // Check if the player is to the left of the other player
+            if (GetPlayerPosition().x < m_otherPlayer.GetPlayerPosition().x)
+            {
+                // Player is moving to the right
+                if (m_xInput > 0)
+                {
+                    // Shrink the bond
+                    m_bond.ShrinkBond(Time.deltaTime * m_movementSpeed);
+                }
+                // Player is moving to the left
+                else if (m_xInput < 0)
+                {
+                    // Extend the bond
+                    m_bond.ExtendBond(Time.deltaTime * m_movementSpeed);
+                }
+            }
+        }
+
+        // Check if the player has walked off the edge of a platform
+        if (!m_isFalling && !m_isGrounded && !m_touchingOtherPlayer && !m_isJumping)
+        {
+            // Set is falling to true
+            m_isFalling = true;
+
+            // Enable the distance joint
+            m_bond.EnableDistanceJoint();
+        }
+
+        // Check if the player is jumping
+        if (m_isJumping)
+        {
+            // Disable the walking animation
+            m_playerAnimator.SetBool("isWalking", false);
+
+            // Enable jumping animation
+            m_playerAnimator.SetBool("isJumping", true);
+
+            // Determine the player's movement direction
+            Vector3 direction = transform.InverseTransformDirection(m_rb.velocity);
+
+            // Check Y value of the direction vector
+            if (direction.y < 0)
+            {
+                // Set is jumping to false
+                m_isJumping = false;
+
+                // Enable is falling
+                m_isFalling = true;
+            }
+        }
+        
+        // Check if the player is falling and handle falling based actions
+        if(m_isFalling)
+        {
+            // Enable falling animation
+            m_playerAnimator.SetBool("isFalling", true);
+
             // Disable jumping animation
             m_playerAnimator.SetBool("isJumping", false);
+
+            // Check if the player is falling below the other player
+            if(GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y)
+            {
+                // Set is falling to false
+                m_isFalling = false;
+
+                // Set is swinging to true
+                m_isSwinging = true;
+
+                // Enable the distance joint
+                m_bond.EnableDistanceJoint();
+            }
+
+            // Check if the player is grounded or touching the other player
+            if(m_isGrounded || m_touchingOtherPlayer)
+            {
+                // Player has hit the ground
+                m_isFalling = false;
+
+                // Set is grounded to true
+                m_isGrounded = true;
+
+                // Enable the distance joint
+                m_bond.EnableDistanceJoint();
+            }
         }
+
+        // Check if the player is swinging and handling swinging actions
+        if(m_isSwinging)
+        {
+            // Check if Y input is less than 0 (holding down button)
+            if (m_yInput < 0)
+            {
+                // Extend the bond
+                m_bond.ExtendBond(Time.deltaTime * m_climbingSpeed);
+            }
+
+            // Check if Y input is greater than 0 (holding up button)
+            if (m_yInput > 0)
+            {
+                // Shrink the bond
+                m_bond.ShrinkBond(Time.deltaTime * m_climbingSpeed);
+            }
+
+            // Check if the player is grounded
+            if (m_isGrounded)
+            {
+                // Set is swinging to false
+                m_isSwinging = false;
+
+                // Set is grounded to true
+                m_isGrounded = true;
+            }
+        }
+
+        // Update the player position
+        m_playerPos = transform.position;
+
+        // Update the bond joint assigned to the player
+        m_bond.UpdateJoint(GetPlayerIndex(), m_playerPos);
     }
 
     /*
-     * MOVE METHOD
+     * SET X VALUE METHOD
      * 
-     * Method for handling movement of the player
+     * Method for handling X input from
+     * the player pressing the left or
+     * right inputs
      */
     public void SetXValue(float xValue)
     {
@@ -212,6 +333,13 @@ public class Character : MonoBehaviour
         m_xInput = xValue;
     }
 
+    /*
+     * SET Y VALUE METHOD
+     * 
+     * Method for handling X input from
+     * the player pressing the up or
+     * down inputs
+     */
     public void SetYValue(float yValue)
     {
         // Set the value of the Y direction variable based on the value from the argument
@@ -231,8 +359,14 @@ public class Character : MonoBehaviour
             // Invoke the jump action in Y, whilst keeping the rigid body velocity in X
             m_rb.velocity = new Vector2(m_rb.velocity.x, m_jumpForce);
 
-            // Enable jumping animation
-            m_playerAnimator.SetBool("isJumping", true);
+            // Set is grounded to false
+            m_isGrounded = false;
+
+            // Set is jumping to true
+            m_isJumping = true;
+
+            // Disable the distance joint
+            m_bond.DisableDistanceJoint();
         }
     }
 
@@ -280,8 +414,8 @@ public class Character : MonoBehaviour
         // Check if the player is touching the ground (11 is the environment layer)
         if (collision.gameObject.layer == 11)
         {
-            // Set is grounded to true
-            m_isGrounded = true;
+            //// Set is grounded to true
+            //m_isGrounded = true;
         }
 
         // Check if the player is touching other player (11 is the environment layer)
@@ -308,8 +442,8 @@ public class Character : MonoBehaviour
         // Check that the collision exit has occured with the ground layer (11 is the environment layer)
         if (collision.gameObject.layer == 11)
         {
-            // Set is grounded to false
-            m_isGrounded = false;
+            //// Set is grounded to false
+            //m_isGrounded = false;
         }
 
         // Check if the player is touching other player (10 is the environment layer)
@@ -333,18 +467,11 @@ public class Character : MonoBehaviour
     }
 
     /*
-     * CHECK TOUCHING PLAYER METHOD
+     * GET PLAYER POSITION METHOD
      * 
      * Method returns the value held
-     * by the touchingOtherPlayer
-     * variable.
-     */
-    public bool CheckTouchingPlayer()
-    {
-        // Return the value held by touching other player
-        return m_touchingOtherPlayer;
-    }
-
+     * by the isGrounded variable.
+     */     
     public Vector2 GetPlayerPosition()
     {
         return m_playerPos;

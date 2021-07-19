@@ -4,59 +4,60 @@ using UnityEngine;
 
 public class CharacterBond : MonoBehaviour
 {
-    // PLAYER VARIABLES
-    [Header("Player Settings")]
+    // OBJECT REFERENCES 
+    [Header("Object References")]
 
-    // Player 1
+    // Player 1 object
     [SerializeField] 
     private Character m_player1;
 
-    // Player 2
+    // Player 2 object
     [SerializeField] 
     private Character m_player2;
 
-    // Maximum Length
-    [SerializeField] 
-    private float m_maxLength = 10.0f; // maximum allowed length of the bond
+    // Distance joint
+    [SerializeField]
+    private DistanceJoint2D m_distanceJoint;
 
-    // Offset from player center
-    private float yOffset = -0.5f; // offset from the players' centres
-    
-    // Bond joint position of player 1
-    private Vector3 p1Joint = Vector3.zero;
-
-    // Bond joint position of player 2
-    private Vector3 p2Joint = Vector3.zero;
-
-    // BOND SETTINGS
+    // BOND VARIABLES
     [Header("Bond Settings")]
 
-    // Bond Centre - Where the camera will focus to
-    private Vector3 m_bondCentre = Vector3.zero;
+    // Maximum Bond Length
+    [SerializeField] 
+    private float m_maxLength = 10.0f;
 
-    // Bond Scale
-    private Vector3 m_bondScale;
-
-    // Bond Scale Factor
-    [SerializeField, Range(1.0f, 12.0f)] 
-    private float m_bondScaleFactor = 9.0f;
-
-    // DEBUG LINE SETTINGS
-    [Header("Debug Line Settings")]
-
-    // Debug line view boolean
+    // Offset from player center
     [SerializeField]
-    private bool m_debugLineView = false;
+    private float yOffset = 0.5f;
+
+    // BOND VALUES
+    [Header("Bond Values")]
+
+    // Bond Centre - Where the camera will focus to
+    [SerializeField]
+    private Vector2 m_bondCentre;
+
+    // Bond joint position of player 1
+    [SerializeField]
+    private Vector2 m_p1Joint = Vector2.zero;
+
+    // Bond joint position of player 2
+    [SerializeField]
+    private Vector2 m_p2Joint = Vector2.zero;
+
+    // BOND RENDERER SETTINGS
+    [Header("Bond Renderer Settings")]
+    // Debug Line Renderer
+    [SerializeField]
+    private LineRenderer m_bondRenderer;
 
     // Debug line width
     [SerializeField]
-    private float m_debugLineWidth = 0.2f;
+    private float m_bondThickness = 1.0f;
 
-    // Debug Line Renderer
-    private LineRenderer m_debugLine;
-
+    // Bond length
     [SerializeField]
-    private float m_bondLength;
+    private float m_bondLength = 5.0f;
 
     /*
      * AWAKE METHOD
@@ -83,29 +84,38 @@ public class CharacterBond : MonoBehaviour
         m_player2 = GameObject.FindGameObjectWithTag("Player_2").GetComponent<Character>();
 
         // Update position of bond joints for both players
-        p1Joint = m_player1.transform.position + new Vector3(0.0f, yOffset, 0.0f);
-        p2Joint = m_player2.transform.position + new Vector3(0.0f, yOffset, 0.0f);
-
+        m_p1Joint = m_player1.GetPlayerPosition() + new Vector2(0.0f, -yOffset);
+        m_p2Joint = m_player2.GetPlayerPosition() + new Vector2(0.0f, -yOffset);
+        
         // Obtain the bond centre
-        m_bondCentre = (p1Joint + p2Joint) / 2.0f;
+        m_bondCentre = (m_p1Joint + m_p2Joint) / 2.0f;
 
-        // Obtain the bond scale
-        m_bondScale = transform.localScale;
+        // Obtain the distance joint attached to player 1
+        m_distanceJoint = m_player1.GetComponent<DistanceJoint2D>();
+
+        // Set the anchor point to player 1
+        m_distanceJoint.anchor = m_p1Joint;
+
+        // Set player 2 as the connected body
+        m_distanceJoint.connectedBody = m_player2.GetComponent<Rigidbody2D>();
+
+        // Set the connected anchor point to player 2
+        m_distanceJoint.connectedAnchor = m_p2Joint;
+
+        // Update the bond length between p1 and p2 joints
+        m_bondLength = Vector3.Distance(m_p1Joint, m_p2Joint);
+
+        // Set the distance of the distance joint to the bond length
+        m_distanceJoint.distance = m_maxLength;
 
         // Add line renderer component
-        m_debugLine = gameObject.AddComponent<LineRenderer>();
+        m_bondRenderer = gameObject.GetComponent<LineRenderer>();
 
-        // Set start point
-        m_debugLine.SetPosition(0, p1Joint);
+        // Set the bond position based on the values obtained for p1 and p2 joints
+        SetBondRendererPosition(m_p1Joint, m_p2Joint);
 
-        // Set end point
-        m_debugLine.SetPosition(1, p2Joint);
-
-        // Set start width of line 
-        m_debugLine.startWidth = m_debugLineWidth;
-
-        // Set end width of line
-        m_debugLine.endWidth = m_debugLineWidth;
+        // Set the bond thickness
+        SetBondWidth(m_bondThickness);
     }
     /*
      * UPDATE METHOD
@@ -119,46 +129,23 @@ public class CharacterBond : MonoBehaviour
      */
     void Update()
     {
-        // Update position of bond joints for both players
-        p1Joint = m_player1.transform.position + new Vector3(0.0f, yOffset, 0.0f);
-        p2Joint = m_player2.transform.position + new Vector3(0.0f, yOffset, 0.0f);
-
         // Determine the centre of the bond
-        m_bondCentre = (p1Joint + p2Joint)/ 2.0f;
+        m_bondCentre = (m_p1Joint + m_p2Joint) / 2.0f;
 
-        // Set the bond position
+        // Update the bond transform position
         transform.position = m_bondCentre;
 
-        // Determine the direction 
-        Vector3 bondDirection = p2Joint - p1Joint;
+        // Update the bond length between p1 and p2 joints
+        m_bondLength = Vector3.Distance(m_p1Joint, m_p2Joint);
 
-        m_bondLength = Vector3.Distance(p1Joint, p2Joint);
+        // Set the distance of the distance joint to the bond length
+        m_distanceJoint.distance = m_bondLength;
 
-        // Set the right transform to the bond direction
-        transform.right = bondDirection;
+        // Update the bond position
+        SetBondRendererPosition(m_p1Joint, m_p2Joint);
 
-        // Determine the bond scale of the x component
-        m_bondScale.x = Vector3.Distance(p1Joint, p2Joint) / (m_maxLength - (0.1f * m_maxLength));
-
-        // Set the local scale to the bond scale
-        transform.localScale = m_bondScale;
-
-        // Update the positions of the debug line
-        m_debugLine.SetPosition(0, p1Joint);
-        m_debugLine.SetPosition(1, p2Joint);
-
-        // Check if debug line boolean is true and debug line is disabled
-        if(m_debugLineView == true && m_debugLine.enabled == false)
-        {
-            // Enable the debug line
-            m_debugLine.enabled = true;
-        }
-        // Else, check if debug line boolean is false and debug line is enabled
-        else if(m_debugLineView == false && m_debugLine.enabled == true)
-        {
-            // Disable the debug line
-            m_debugLine.enabled = false;
-        }
+        // Update the bond thickness
+        SetBondWidth(m_bondThickness);
     }
 
     /*
@@ -168,10 +155,10 @@ public class CharacterBond : MonoBehaviour
      * have exceeded the maximum bond distance
      * or not.
      */
-    public bool AllowableDistance(Vector3 playerPos, Vector3 otherPlayerPos)
+    public bool AllowableDistance(Vector2 playerPos, Vector2 otherPlayerPos)
     {
         // Determine the distance between both players
-        float distancePlayers = Vector3.Distance(playerPos, otherPlayerPos);
+        float distancePlayers = Vector2.Distance(playerPos, otherPlayerPos);
 
         // Check if the distance between the players is less than, or equal to, the maximum bond length
         if(distancePlayers <= m_maxLength)
@@ -187,26 +174,6 @@ public class CharacterBond : MonoBehaviour
     }
 
     /*
-     * GET BOND VECTOR METHOD
-     * 
-     * 
-     */
-    public Vector3 GetBondVector()
-    {
-        return p1Joint - p2Joint;
-    }
-
-    /*
-     * GET DISTANCE METHOD
-     * 
-     * 
-     */
-    public float GetDistance()
-    {
-        return Vector3.Distance(p1Joint, p2Joint);
-    }
-
-    /*
      * RETURN MAX LENGTH METHOD
      * 
      * Public method that returns the
@@ -218,4 +185,107 @@ public class CharacterBond : MonoBehaviour
         return m_maxLength;
     }
 
+    /*
+     * SET BOND RENDER POSITION
+     * 
+     * Method for setting the start and end
+     * points for the bond renderer
+     */
+    private void SetBondRendererPosition(Vector3 startPos, Vector3 endPos)
+    {
+        // Set the start position
+        m_bondRenderer.SetPosition(0, startPos);
+
+        // Set the end position
+        m_bondRenderer.SetPosition(1, endPos);
+    }
+
+    /*
+     * SET BOND WIDTH METHOD
+     * 
+     * Method for setting the width of the
+     * line renderer for the bond between
+     * both players
+     */
+    private void SetBondWidth(float width)
+    {
+        // Set the start width
+        m_bondRenderer.startWidth = width;
+
+        // Set the end width
+        m_bondRenderer.endWidth = width;
+    }
+
+    /*
+     * UPDATE JOINT METHOD
+     * 
+     * Method for updating the bond joint
+     * depending on the player's index
+     * number
+     */
+    public void UpdateJoint(int playerIdx, Vector2 playerPos)
+    {
+        // Check if player index is 0 (player 1)
+        if(playerIdx == 0)
+        {
+            // Update
+            m_p1Joint = playerPos + new Vector2(0.0f, -yOffset);
+        }
+        // Else player 2
+        else
+        {
+            m_p2Joint = playerPos + new Vector2(0.0f, -yOffset);
+        }
+    }
+
+    /*
+     * ENABLE THE DISTANCE JOINT
+     * 
+     * Method for enabling the distance joint
+     */
+    public void EnableDistanceJoint()
+    {
+        // Enable the distance joint
+        m_distanceJoint.enabled = true;
+    }
+
+    /*
+     * DISABLE THE DISTANCE JOINT METHOD
+     * 
+     * Method for disabling the distance joint
+     */
+    public void DisableDistanceJoint()
+    {
+        // Disable the distance joint
+        m_distanceJoint.enabled = false;
+    }
+
+    /*
+     * SHRINK BOND METHOD
+     * 
+     * Method for shrinking the distance
+     * joint distance
+     */
+    public void ShrinkBond(float shrink)
+    {
+        // Decrement the distance by a shrink value
+        m_distanceJoint.distance -= shrink;
+    }
+
+    /*
+     * EXTEND BOND METHOD
+     * 
+     * Method is used to extend the distance joint
+     * provided that it will not cause the distance
+     * to exceed the maximum length
+     */
+    public void ExtendBond(float extend)
+    {
+        // Check if the current distance + the extend value is less than the max length
+        if(m_distanceJoint.distance + extend < m_maxLength)
+        {
+            // Increment the distance by an extend valye
+            m_distanceJoint.distance += extend;
+        }
+    }
 }
