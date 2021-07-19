@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player_1
   - Player_2
+  - Bond
   layers:
   - Default
   - TransparentFX

@@ -101,6 +101,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f64fe176-6ecc-4b47-b12e-fc6686d8a021
     m_ActionName: PlayerMovement/Jump[/XInputControllerWindows/buttonSouth,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3283577956027127893}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnClimb
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 00fe7b47-2ec3-48bd-81f1-42d1d0c3df90
+    m_ActionName: PlayerMovement/Climb[/XInputControllerWindows/leftStick,/XInputControllerWindows/dpad,/Keyboard/w,/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMovement
