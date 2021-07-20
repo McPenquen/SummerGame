@@ -1,16 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour
+public class OptionsSceneManager : MonoBehaviour
 {
-    // Name of the scene
-    [Header("Menu")]
     // Null instance of the manager
-    public static MenuManager instance = null;
-    // Options Scene
-    [SerializeField] public GameObject optionsScene = null;
+    public static OptionsSceneManager instance = null;
+    // The scene to return to by pressing back
+    [SerializeField] public GameObject backScene = null;
     private void Awake()
     {
         // Check if instance is null
@@ -28,24 +25,14 @@ public class MenuManager : MonoBehaviour
             //Destroy the game manager that is not the current game manager
             Destroy(gameObject);
         }
+
+        transform.gameObject.SetActive(false);
     }
 
-    // Play level 1
-    public void PlayGame()
+    // Back to the previous scene
+    public void Back()
     {
-        SceneManager.LoadScene("Level1");
-    }
-
-    // Close the application
-    public void QuitGame() 
-    {
-        Application.Quit();
-    }
-
-    // Show the options scene
-    public void ShowOptions()
-    {
-        optionsScene.SetActive(true);
+        backScene.SetActive(true);
         transform.gameObject.SetActive(false);
     }
 }
