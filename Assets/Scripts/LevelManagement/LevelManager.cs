@@ -30,8 +30,8 @@ public class LevelManager : MonoBehaviour
 
     private void  Update() 
     {
-        // Pressing esc pauses and unpauses the game
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Pressing esc or controller back button pauses and unpauses the game
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton6))
         {
             if (isPaused)
             {
