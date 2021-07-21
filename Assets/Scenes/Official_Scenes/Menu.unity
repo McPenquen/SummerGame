@@ -257,6 +257,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5024928249874168026, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
   m_PrefabInstance: {fileID: 283740811}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &518907138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5152215144524046127, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
+  m_PrefabInstance: {fileID: 161137822746840524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +374,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &820435847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5024928249874168025, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
+  m_PrefabInstance: {fileID: 1422968816}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &910552876
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +542,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dff347a79722244999abafd9740d89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1601766219}
+  - {fileID: 820435847}
+  - {fileID: 1561798441}
 --- !u!1 &1253959239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 161137821561219979, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
@@ -799,6 +813,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5024928249874168026, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
   m_PrefabInstance: {fileID: 5024928250548214932}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1561798441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5024928249874168025, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
+  m_PrefabInstance: {fileID: 283740811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1601766219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5024928249874168025, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
@@ -1064,6 +1083,14 @@ PrefabInstance:
       propertyPath: backScene
       value: 
       objectReference: {fileID: 1172115879}
+    - target: {fileID: 161137821561219974, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
+      propertyPath: buttons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 161137821561219974, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
+      propertyPath: buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 518907138}
     - target: {fileID: 161137821561219979, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: m_Name
       value: OptionsScene
