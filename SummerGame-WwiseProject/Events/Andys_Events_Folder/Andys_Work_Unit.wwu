@@ -103,6 +103,67 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_checkpoint_phone_ring" ID="{DBC1FD45-C3F1-4993-A1FE-3D5F4F56CA87}">
+							<ChildrenList>
+								<Action Name="" ID="{74C2A305-A99A-491F-ADBC-F11E8E6E4156}" ShortID="133816157">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Telephone_Ringing" ID="{515AC58F-BC02-4A64-A41E-780F3D1BF7C9}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FF551478-7AB7-4F42-9D0C-D2D413D7D3A3}" ShortID="958292251">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Payphone_Lights_Humming_1" ID="{AD05200E-B791-4523-983F-14610E5D498E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_checkpoint_success" ID="{C251C376-6A07-47A7-AE0B-5A041F6A7C8D}">
+							<ChildrenList>
+								<Action Name="" ID="{F7BF20CC-2850-43B1-BCB0-95A3C3B4675F}" ShortID="359120335">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Telephone_Ringing" ID="{515AC58F-BC02-4A64-A41E-780F3D1BF7C9}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{383A0A88-042E-4D65-AFCF-0EAC897EDC60}" ShortID="614263802">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Telephone_Receiver_1" ID="{93BB3E53-FF32-4F63-B8FA-15A8AEE076CB}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{86AC92DD-DCDF-458E-BCB8-6DCBFDCA63AD}" ShortID="365766075">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Telephone_Answered" ID="{44886C46-9A0E-4D4E-A4B4-9F5A246E6108}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AFCD208B-1541-4DB9-97D7-258CBC206DA3}" ShortID="536367329">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Payphone_Lights_Humming_1" ID="{AD05200E-B791-4523-983F-14610E5D498E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
