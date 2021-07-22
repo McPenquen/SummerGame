@@ -31676,6 +31676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsScene
       objectReference: {fileID: 0}
+    - target: {fileID: 4745240718853745545, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
+      propertyPath: needsArrowControlHelp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5766085480504824532, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

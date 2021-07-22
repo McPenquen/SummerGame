@@ -8,6 +8,8 @@ public class SliderManager : MonoBehaviour
 {
     [SerializeField] protected Slider slider;
     [SerializeField] protected TextMeshProUGUI sliderText;
+    // Boolean if the slider has to work with arrows and doesn't by default
+    public bool needsArrowControlHelp = false; 
     void Start()
     {
         slider.onValueChanged.AddListener((v) => {
@@ -16,7 +18,10 @@ public class SliderManager : MonoBehaviour
     }
     protected void Update()
     {
-        DetectArrows();
+        if (needsArrowControlHelp)
+        {
+            DetectArrows();  
+        }
     }
     // Detect the left and right arrows to increase and decrease values (not always working)
     protected void DetectArrows()

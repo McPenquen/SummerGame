@@ -27,6 +27,79 @@ MonoBehaviour:
     m_lastTime: -8585750681979202910
     List: []
   AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Andy's_Master-Mixer_Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Andy's_Work_Unit
+      ObjectType: 12
+      guid: a6fc5fe531789d4f9941e4385aa4879c
+    ParentPath: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit
+    guid: a6fc5fe531789d4f9941e4385aa4879c
+    GuidInternal: 
+    m_lastTime: -8585746451779211825
+    List:
+    - name: Master
+      guid: 9e2090c0c626aa4898effbd28e8ebae5
+      id: 4056684167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Master-Mixer_Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: a6fc5fe531789d4f9941e4385aa4879c
+      - ElementName: Master
+        ObjectType: 2
+        guid: 9e2090c0c626aa4898effbd28e8ebae5
+      Path: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit\Master
+    - name: Music
+      guid: 6b44d4580391304c8fba3cdfbb00c7ed
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Master-Mixer_Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: a6fc5fe531789d4f9941e4385aa4879c
+      - ElementName: Master
+        ObjectType: 2
+        guid: 9e2090c0c626aa4898effbd28e8ebae5
+      - ElementName: Music
+        ObjectType: 2
+        guid: 6b44d4580391304c8fba3cdfbb00c7ed
+      Path: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit\Master\Music
+    - name: SFX
+      guid: 837bd2d5f6705244acf3ba8616113bf7
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Master-Mixer_Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: a6fc5fe531789d4f9941e4385aa4879c
+      - ElementName: Master
+        ObjectType: 2
+        guid: 9e2090c0c626aa4898effbd28e8ebae5
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 837bd2d5f6705244acf3ba8616113bf7
+      Path: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit\Master\SFX
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
@@ -214,6 +287,73 @@ MonoBehaviour:
     m_lastTime: -8585749218313851451
     List: []
   RtpcWwu:
+  - PhysicalPath: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Andy's_Game_Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Andy's_Work_Unit
+      ObjectType: 12
+      guid: 14872f9a9730574ab09ac575da2abb29
+    ParentPath: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit
+    guid: 14872f9a9730574ab09ac575da2abb29
+    GuidInternal: 
+    m_lastTime: -8585746451779221820
+    List:
+    - name: Master_Volume
+      guid: 9ad7e400b89d6d41b0e05196a66b4b7a
+      id: 4179668880
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Game_Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 14872f9a9730574ab09ac575da2abb29
+      - ElementName: Master_Volume
+        ObjectType: 13
+        guid: 9ad7e400b89d6d41b0e05196a66b4b7a
+      Path: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume
+    - name: Music_Volume
+      guid: 517a268e4663b2429c711c30ba728ef5
+      id: 1006694123
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Game_Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 14872f9a9730574ab09ac575da2abb29
+      - ElementName: Music_Volume
+        ObjectType: 13
+        guid: 517a268e4663b2429c711c30ba728ef5
+      Path: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Music_Volume
+    - name: SFX_Volume
+      guid: 17b05b0afc7d6648b7ee23d85e2846e2
+      id: 1564184899
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Game_Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 14872f9a9730574ab09ac575da2abb29
+      - ElementName: SFX_Volume
+        ObjectType: 13
+        guid: 17b05b0afc7d6648b7ee23d85e2846e2
+      Path: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\SFX_Volume
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
