@@ -11,7 +11,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambience" ID="{D5D11D26-4FD7-4A4B-9CB9-E738DC69A202}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+									<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1967,7 +1967,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="UI" ID="{DE1F14C0-FD7C-4CCB-82C3-C88203384C76}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+									<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
