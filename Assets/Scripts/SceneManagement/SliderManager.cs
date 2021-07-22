@@ -6,17 +6,21 @@ using TMPro;
 
 public class SliderManager : MonoBehaviour
 {
-    [SerializeField] private Slider slider;
-    [SerializeField] private TextMeshProUGUI sliderText;
+    [SerializeField] protected Slider slider;
+    [SerializeField] protected TextMeshProUGUI sliderText;
     void Start()
     {
         slider.onValueChanged.AddListener((v) => {
             sliderText.text = v.ToString("0");
         });
     }
-    private void Update()
+    protected void Update()
     {
-        // Read the left and right arrows to increase and decrease values 
+        DetectArrows();
+    }
+    // Detect the left and right arrows to increase and decrease values (not always working)
+    protected void DetectArrows()
+    {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             slider.value -= 10;
@@ -26,4 +30,5 @@ public class SliderManager : MonoBehaviour
             slider.value += 10;
         }
     }
+
 }

@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161137821561219972}
   - component: {fileID: 161137821561219974}
-  - component: {fileID: 161137821561219973}
+  - component: {fileID: 8230913630301690420}
   m_Layer: 5
   m_Name: OptionsScene
   m_TagString: Untagged
@@ -185,7 +185,7 @@ MonoBehaviour:
   buttons:
   - {fileID: 3715084476382200124}
   - {fileID: 5152215144524046127}
---- !u!114 &161137821561219973
+--- !u!114 &8230913630301690420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2234210146029040559}
   - component: {fileID: 2154817355707162070}
-  - component: {fileID: 921547499}
+  - component: {fileID: 4745240718853745545}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &921547499
+--- !u!114 &4745240718853745545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3715084476382200124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2be57a5ef278bb4397037b825532f93, type: 3}
+  m_Script: {fileID: 11500000, guid: 17ae950b009d23346bd27733a99fb8c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 2154817355707162070}
@@ -1094,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: 5024928249874168027, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 161137821561219973}
+      objectReference: {fileID: 8230913630301690420}
     - target: {fileID: 5024928249874168027, guid: 1d3eee983567a354cbb42de2fc77d1c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Back
