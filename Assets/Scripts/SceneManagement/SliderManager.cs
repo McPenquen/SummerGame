@@ -10,7 +10,7 @@ public class SliderManager : MonoBehaviour
     [SerializeField] protected TextMeshProUGUI sliderText;
     // Boolean if the slider has to work with arrows and doesn't by default
     public bool needsArrowControlHelp = false; 
-    void Start()
+    protected void Start()
     {
         slider.onValueChanged.AddListener((v) => {
             sliderText.text = v.ToString("0");
