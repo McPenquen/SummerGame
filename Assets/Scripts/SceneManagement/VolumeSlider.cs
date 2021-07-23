@@ -24,10 +24,12 @@ public class VolumeSlider : SliderManager
         AkSoundEngine.SetRTPCValue("Master_Volume", mainVolume);
         
         // Print out the master volume
+        /*
         int valueType = (int)AkQueryRTPCValue.RTPCValue_Global; 
         AKRESULT p = AkSoundEngine.GetRTPCValue("Master_Volume", null, 0, out returnVal, ref valueType);
         Debug.Log("Result: " + p.ToString() + ", value: " + returnVal + ", refVal: " + valueType);
-        // Getter inspired from
+        */
+        // Getter inspired from: https://www.audiokinetic.com/qa/5592/need-understanding-getrtpcvalue-updating-rtpcvalue-unity
     }   
 }
 // working with wwise inspired from: https://www.youtube.com/watch?v=YUlVlx4hHkU&ab_channel=DanielKim
