@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI = null;
     [SerializeField] private GameObject gameplayUI = null;
+    [SerializeField] private GameObject optionsScene = null;
     // Players object
     [SerializeField] private PlayersManager players = null;
     // Current last check point
@@ -30,10 +31,15 @@ public class LevelManager : MonoBehaviour
 
     private void  Update() 
     {
-        // Pressing esc pauses and unpauses the game
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Pressing esc or controller back button pauses and unpauses the game
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton6))
         {
-            if (isPaused)
+            // When it is paused and options are on return to the paused menu
+            if (isPaused && optionsScene.active == true)
+            {
+                OptionsToPause();
+            }
+            else if (isPaused)
             {
                 ResumeGame();
             }
@@ -95,6 +101,19 @@ public class LevelManager : MonoBehaviour
     }
     // pause menu inspired from: https://www.youtube.com/watch?v=JivuXdrIHK0&t=354s&ab_channel=Brackeys 
     
+    // Enter Options scene
+    public void EnterOptions()
+    {
+        optionsScene.SetActive(true);
+        pauseMenuUI.SetActive(false);
+    }
+    // Return from Options to Paused menu
+    public void OptionsToPause()
+    {
+        pauseMenuUI.SetActive(true);
+        optionsScene.SetActive(false);
+    }
+
     // Return players to the latest checkpoint
     private void CheckpointReturn()
     {

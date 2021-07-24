@@ -9,6 +9,9 @@ public class MenuNavigation : MonoBehaviour
     private int updateCounter = 0;
     // Selected Child index
     private int selectedChildIndex = 0;
+    // Buttons list
+    [SerializeField] private GameObject[] buttons;
+
     void Update()
     {
         if (updateCounter <= 1)
@@ -22,7 +25,7 @@ public class MenuNavigation : MonoBehaviour
             else if (updateCounter == 1)
             {
                 // Automatically select the first child of the menu
-                EventSystem.current.SetSelectedGameObject(gameObject.transform.GetChild(selectedChildIndex).gameObject);
+                EventSystem.current.SetSelectedGameObject(buttons[selectedChildIndex]);
             }
             updateCounter++;
         }
@@ -32,7 +35,7 @@ public class MenuNavigation : MonoBehaviour
             selectedChildIndex--;
             updateCounter = 0;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) && selectedChildIndex != gameObject.transform.childCount - 1)
+        if (Input.GetKeyDown(KeyCode.DownArrow) && selectedChildIndex != buttons.Length - 1)
         {
             selectedChildIndex++;
             updateCounter = 0;
