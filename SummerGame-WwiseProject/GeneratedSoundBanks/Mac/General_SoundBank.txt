@@ -1,7 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
+	249738436	play_ui_move			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_move	
+	452547817	Stop_All			\James'_Event_Folder\James'_Work_Unit\Stop_All	
+	492406940	stop_start_up			\Default Work Unit\Start_Up_Events\stop_start_up	
+	1986548623	play_ui_exit			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit	
+	2244506081	play_ui_cancel			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel	
+	2910167054	stop_ui			\James'_Event_Folder\James'_Work_Unit\UI\stop_ui	
+	3022734157	play_ui_confirm			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_confirm	
+	3168572341	play_beam_up			\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up	
+	3790043115	play_ufo_idle			\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle	
 	3987033674	play_start_up			\Default Work Unit\Start_Up_Events\play_start_up	
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	84665512	Wwise RoomVerb (Custom)	Wwise RoomVerb			
 	415841907	Space_Garage	Wwise RoomVerb			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
@@ -10,36 +21,58 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	193960921	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Wind\wind\SoundSeed Air Wind	
 	246693938	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\silence\Wwise Silence	
 	252323453	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\silence_01\Wwise Silence	
+	272289939	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	41907832	UI_Item_Select_Confirm_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_4		303168
+	106157273	UFO_Engine_Idle_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Engine_Idle_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Ship_Sounds\UFO_Engine_Idle_1		576064
+	113374674	UFO_Beam_Up_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Beam_Up_2_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Beam_Up\UFO_Beam_Up_2		228064
 	189333254	Sand_C_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_C_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_C_4		3582748
 	190737476	Red_Hawk_Screech_NFU_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_3		363184
 	211988747	Crickets_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Crickets WAV\Crickets_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_1		405524
 	214807555	Coyote_howl_NFU_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_7		304884
 	222963939	Red_Hawk_Screech_NFU_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_5		412136
+	225471993	UI_Item_Select_Move_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Move_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Move\UI_Item_Select_Move\UI_Item_Select_Move_1		101696
+	227426305	Sizzling_Desert_Sand_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sizzling_Desert_Sand_1_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Sizzling_Heat\Sizzling_Desert_Sand_1		2091200
 	291252475	Red_Hawk_Screech_NFU_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_4		354806
 	311953300	Sand_B_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_B_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_B_3		571952
+	314159048	UFO_Lights_Alarms_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Lights_Alarms_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Ship_Sounds\UFO_Lights_Alarms_1		1161064
+	322561206	UI_Item_Select_Cancel_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Cancel_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_1		311360
+	322958163	UI_Item_Select_Cancel_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Cancel_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_3		254016
 	323232918	Coyote_howl_NFU_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_5		338752
 	328970171	Sand_C_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_C_6_4EE60868.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_C_6		625292
 	339418712	Red_Hawk_Screech_NFU_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_1		369800
+	349232086	Wolf_Howl_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_1_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_1		576064
+	381017666	UI_Item_Select_Confirm_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_1		419904
+	383757867	UFO_Beam_Up_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Beam_Up_3_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Beam_Up\UFO_Beam_Up_3		228064
 	389916625	Red_Hawk_Screech_NFU_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_2		387704
 	438582506	Sand_B_8	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_B_8_099CD839.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_B_8		754820
 	439911302	Coyote_howl_NFU_9	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_9		444152
 	444115074	Crickets_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Crickets WAV\Crickets 2_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_2		405524
 	444380838	Sand_B_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_B_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_B_5		4064320
+	444927508	UI_Item_Select_Cancel_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Cancel_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_2		266304
 	456000400	Coyote_howl_NFU_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_1		206542
+	494893542	Wolf_Howl_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_4_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_4		432064
+	564895375	UI_Item_Select_Confirm_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_3		321600
 	578510103	Coyote_howl_NFU_10	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_10		331256
 	583410628	Sand_C_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_C_7_77BCC0E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_C_7		613524
+	609795084	Wolf_Howl_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_3_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_3		552064
 	684745479	Sand_C_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_C_1_FF92F839.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_C_1		349096
 	716184218	Crickets_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Crickets WAV\Crickets 3_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_3		108660
+	729166634	UI_Item_Select_Confirm_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_2		254016
 	735834567	Coyote_howl_NFU_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_4		338752
 	754934238	Sand_C_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_C_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_C_3		3183552
 	795877897	Coyote_howl_NFU_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_3		419720
 	816023224	Crickets_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Crickets WAV\Crickets 4_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_4		135800
 	887143814	Sand_D_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_D_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_D_1		3582748
 	893487549	Coyote_howl_NFU_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_2		373592
+	898576691	Wolf_Howl_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_2_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_2		624064
 	906827084	Coyote_howl_NFU_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_6		325612
+	956436522	UI_Item_Select_Confirm_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_5_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_5		305216
 	987600309	Sand_B_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_B_2_92EFD300.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_B_2		504648
+	1028696354	UFO_Beam_Up_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Beam_Up_4_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Beam_Up\UFO_Beam_Up_4		240064
+	1038214766	UI_Item_Select_Confirm_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_6_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_6		116800
 	1040569458	Coyote_howl_NFU_8	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_8		289802
 	1049835952	Sand_B_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_B_4_6DEC69B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_B_4		255468
+	1063259166	UI_Item_Select_Cancel_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Cancel_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_4		393280
 

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{89931503-F8CE-4E95-A6A6-C62559598EBD}" SchemaVersion="103">
 	<MixingSessions>
-		<WorkUnit Name="James'_Work_Unit" ID="{89931503-F8CE-4E95-A6A6-C62559598EBD}" PersistMode="Standalone"/>
+		<WorkUnit Name="James'_Work_Unit" ID="{89931503-F8CE-4E95-A6A6-C62559598EBD}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="UI_MIX" ID="{AAB9FA35-1864-4657-BC1D-C3E6919074F0}">
+					<ObjectList>
+						<ObjectRef Name="UI" ID="{85871650-3250-4D59-839E-786108408999}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+						<ObjectRef Name="Menu" ID="{7A362B7A-A5BE-47AA-BF43-2CE5D095ABB8}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+						<ObjectRef Name="Cancel" ID="{D008FDCC-D650-4E4B-BD24-E61CFB1726BD}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+						<ObjectRef Name="Confirm" ID="{45E5819C-671E-4C6D-BFCE-6288BC907037}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+						<ObjectRef Name="Move" ID="{D55A46F1-46DC-4E5E-9AA0-347B893FA77D}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

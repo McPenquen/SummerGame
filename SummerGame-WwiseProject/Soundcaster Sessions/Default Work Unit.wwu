@@ -31,6 +31,54 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="UI" ID="{F0CDF06E-EB7D-4E32-91E3-3467AB716254}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_ui_cancel" ID="{6F5648CC-EA6E-4907-BD4C-36E1C5576DFF}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ui_exit" ID="{FB7EC0C3-7E1F-4E06-B140-1AD93B4C6B29}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ui_confirm" ID="{43185388-BA04-4B4D-AE6C-7BBD4C7744FB}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ui_move" ID="{7ED920E5-E9A3-4EC1-B690-06A5B8401C02}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_All" ID="{C7625C6F-AD81-4DF8-9D24-6DD3DBC51327}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume" ID="{00E4D79A-9DB8-416D-B0E0-5196A66B4B7A}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{8E267A51-6346-42B2-9C71-1C30BA728EF5}"/>
+							<Value>65</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{0A5BB017-7DFC-4866-B7EE-23D85E2846E2}"/>
+							<Value>75</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

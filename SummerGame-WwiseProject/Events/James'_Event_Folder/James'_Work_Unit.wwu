@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="James'_Work_Unit" ID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" PersistMode="Standalone"/>
+		<WorkUnit Name="James'_Work_Unit" ID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Stop_All" ID="{C7625C6F-AD81-4DF8-9D24-6DD3DBC51327}">
+					<ChildrenList>
+						<Action Name="" ID="{B268773D-96AB-445C-88E6-97EC1BD5E1E5}" ShortID="529376117">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="UI" ID="{5B1E6591-0149-4409-A6A1-333A72BEF0AB}" ShortID="956894114">
+					<ChildrenList>
+						<Folder Name="Menu" ID="{17CCDCB5-5418-4FA2-A81E-10B405D28B9F}" ShortID="886814000">
+							<ChildrenList>
+								<Event Name="play_ui_move" ID="{7ED920E5-E9A3-4EC1-B690-06A5B8401C02}">
+									<ChildrenList>
+										<Action Name="" ID="{A5F91A6C-B42E-4EEC-A141-F6ACF4222520}" ShortID="843578872">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_Item_Select_Move" ID="{B7890521-DBC9-419E-988E-E94B7AC441D0}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_ui_exit" ID="{FB7EC0C3-7E1F-4E06-B140-1AD93B4C6B29}"/>
+								<Event Name="play_ui_confirm" ID="{43185388-BA04-4B4D-AE6C-7BBD4C7744FB}">
+									<ChildrenList>
+										<Action Name="" ID="{96AD1169-DC0F-4453-A155-0F52EAF223DB}" ShortID="540926535">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_Item_Select_Confirm" ID="{28D9CDA9-74B4-45EB-AA08-43B7BAC31256}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_ui_cancel" ID="{6F5648CC-EA6E-4907-BD4C-36E1C5576DFF}">
+									<ChildrenList>
+										<Action Name="" ID="{58594452-2A6E-4B21-81EE-9AA6C21639C4}" ShortID="598103829">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_Item_Select_Cancel" ID="{E5BC0573-30FB-4829-A9B4-A97AD5531E98}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="stop_ui" ID="{060C6DFF-E855-49BC-9C29-B0F759C935F9}">
+							<ChildrenList>
+								<Action Name="" ID="{E4941148-A8CB-4F63-BA57-B8F698B860F5}" ShortID="198777359">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI" ID="{85871650-3250-4D59-839E-786108408999}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{AEE2DC21-16D5-44BB-9E5E-924774476129}" ShortID="968729557"/>
+				<Folder Name="NPC" ID="{C8AB5F81-708D-45BA-A09F-FC45E40BE80E}" ShortID="651160058">
+					<ChildrenList>
+						<Folder Name="UFO" ID="{E42F3D03-9E11-48BC-BAE1-92DB05ECE4F6}" ShortID="890233054">
+							<ChildrenList>
+								<Event Name="play_ufo_idle" ID="{AC6ADF76-391A-4A67-B207-B319EFBBAC20}">
+									<ChildrenList>
+										<Action Name="" ID="{DBD0FB31-EB7E-442D-9763-9947D33966AF}" ShortID="376825759">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ship_Sounds" ID="{0CF4D829-49CE-4A26-BE1D-5F112969DBAD}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_beam_up" ID="{57BA416F-FB72-4955-8E2B-393A9E97F0C2}">
+									<ChildrenList>
+										<Action Name="" ID="{B2AA4079-987D-49BC-B90D-35D3C6FD8FD1}" ShortID="426118484">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Beam_Up" ID="{972F6F8A-FDE9-4003-B438-FE8B7E1D917E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
