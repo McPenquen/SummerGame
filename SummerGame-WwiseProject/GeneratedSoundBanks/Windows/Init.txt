@@ -1,7 +1,15 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1006694123	Music_Volume			\Andy's_Game_Parameters\Andy's_Work_Unit\Music_Volume	
+	1564184899	SFX_Volume			\Andy's_Game_Parameters\Andy's_Work_Unit\SFX_Volume	
+	4179668880	Master_Volume			\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
+	393239870	SFX			\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit\Master\SFX	
 	1551306167	UI			\Default Work Unit\UI	
 	2392784291	Master_Audio_Bus			\Default Work Unit\Master_Audio_Bus	
+	3991942870	Music			\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit\Master\Music	
+	4056684167	Master			\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit\Master	
 
 Effect plug-ins	ID	Name	Type				Notes
 	96700152	Mastering Suite (Custom)	Mastering Suite			
