@@ -145,7 +145,7 @@ public class Character : MonoBehaviour
         float halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
 
         // Check if the player is grounded
-        m_isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.1f), Vector2.down, 0.05f);
+        //m_isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.1f), Vector2.down, 0.05f);
 
         // Check if the X input has a value above or less than 0
         if (m_xInput < 0 || m_xInput > 0)
@@ -438,7 +438,7 @@ public class Character : MonoBehaviour
         if (collision.gameObject.layer == 11)
         {
             //// Set is grounded to true
-            //m_isGrounded = true;
+            m_isGrounded = true;
         }
 
         // Check if the player is touching other player (11 is the environment layer)
@@ -466,7 +466,7 @@ public class Character : MonoBehaviour
         if (collision.gameObject.layer == 11)
         {
             //// Set is grounded to false
-            //m_isGrounded = false;
+            m_isGrounded = false;
         }
 
         // Check if the player is touching other player (10 is the environment layer)
