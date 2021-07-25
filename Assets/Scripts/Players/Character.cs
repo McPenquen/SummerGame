@@ -182,6 +182,11 @@ public class Character : MonoBehaviour
             m_bond.EnableDistanceJoint();
             m_bond.UpdateDistance(m_bond.ReturnMaxLength());
         }
+        // if the distance is shorter and the play is airborn - disable the bond
+        else if (!m_isGrounded && !m_touchingOtherPlayer)
+        {
+            m_bond.DisableDistanceJoint();
+        }
 
         // Check if player is grounded or touching other player
         if(m_isGrounded || m_touchingOtherPlayer)
