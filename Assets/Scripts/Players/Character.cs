@@ -176,13 +176,11 @@ public class Character : MonoBehaviour
             }
         }
 
-        // Correct the distance from each other in the air
-        if (((transform.position - m_otherPlayer.transform.position).magnitude >= m_bond.ReturnMaxLength())
-            && !(m_touchingOtherPlayer || m_isGrounded))
+        // Correct the distance from each other in the air & enable distance joint
+        if (((transform.position - m_otherPlayer.transform.position).magnitude >= m_bond.ReturnMaxLength()))
         {
             m_bond.EnableDistanceJoint();
             m_bond.UpdateDistance(m_bond.ReturnMaxLength());
-            m_bond.DisableDistanceJoint();
         }
 
         // Check if player is grounded or touching other player
