@@ -306,8 +306,8 @@ public class Character : MonoBehaviour
                 // Set is grounded to true
                 m_isGrounded = true;
 
-                // Enable the distance joint
-                m_bond.EnableDistanceJoint();
+                // On ground disable the joint
+                m_bond.DisableDistanceJoint();
             }
         }
 
