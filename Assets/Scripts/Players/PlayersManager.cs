@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayersManager : MonoBehaviour
 {
+    [SerializeField] private GameObject player1 = null;
+    [SerializeField] private GameObject player2 = null;
+    [SerializeField] private GameObject bond = null;
     public static PlayersManager instance = null;
     void Awake() {
         if (instance == null) 
@@ -17,16 +20,16 @@ public class PlayersManager : MonoBehaviour
     public void ChangePosition(Vector3 newPos)
     {
         // player 2
-        transform.GetChild(0).position = new Vector3(newPos.x - 2, newPos.y, 0);
+        player1.transform.position = new Vector3(newPos.x - 2, newPos.y, 0);
         // player 1
-        transform.GetChild(1).position = new Vector3(newPos.x + 2, newPos.y, 0);
+        player2.transform.position = new Vector3(newPos.x + 2, newPos.y, 0);
         // bond
-        transform.GetChild(2).position = newPos;
+        bond.transform.position = newPos;
 
     }
     // Return position of the bond
     public Vector3 GetPosition()
     {
-        return transform.GetChild(2).position;
+        return bond.transform.position;
     }
 }
