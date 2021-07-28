@@ -288,4 +288,10 @@ public class CharacterBond : MonoBehaviour
             m_distanceJoint.distance += extend;
         }
     }
+
+    // Updates the bond's distance to the new value
+    public void UpdateDistance(float newLength)
+    {
+        m_distanceJoint.distance = newLength;
+    }
 }

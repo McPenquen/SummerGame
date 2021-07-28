@@ -41,7 +41,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit
     guid: a6fc5fe531789d4f9941e4385aa4879c
     GuidInternal: 
-    m_lastTime: -8585746451779211825
+    m_lastTime: -8585744750574831877
     List:
     - name: Master
       guid: 9e2090c0c626aa4898effbd28e8ebae5
@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5fee7939ce27f43b2e191b06ab11ed4
     GuidInternal: 
-    m_lastTime: -8585750681984280520
+    m_lastTime: -8585745381402678435
     List:
     - name: Ambience
       guid: 261dd1d5d74f4b4a9cb9e738dc69a202
@@ -167,7 +167,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 57531442cb4f8a479ae9131731cae77e
     GuidInternal: 
-    m_lastTime: -8585750681979273216
+    m_lastTime: -8585744750574131882
     List:
     - name: General_SoundBank
       guid: ed1fbc9cffffc845b0ec06456e9ddc0c
@@ -268,8 +268,8 @@ MonoBehaviour:
         guid: 577cffc19a029d4c9febef2c243c084a
       Path: Events\Default Work Unit\Start_Up_Events\stop_start_up
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\James'_Event_Folder\James'_Work_Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -284,8 +284,313 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585749218313851451
-    List: []
+    m_lastTime: -8585744750582503595
+    List:
+    - name: Environment
+      guid: 21dce2aed516bb449e5e924774476129
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 21dce2aed516bb449e5e924774476129
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Environment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu
+      guid: b5dccc171854a24fa81e10b405d28b9f
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: NPC
+      guid: 815fabc88d70ba45a09ffc45e40be80e
+      id: 662417162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: NPC
+        ObjectType: 4
+        guid: 815fabc88d70ba45a09ffc45e40be80e
+      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: play_beam_up
+      guid: 6f41ba5772fb55498e2b393a9e97f0c2
+      id: 3168572341
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: NPC
+        ObjectType: 4
+        guid: 815fabc88d70ba45a09ffc45e40be80e
+      - ElementName: UFO
+        ObjectType: 4
+        guid: 033d2fe4119ebc48bae192db05ece4f6
+      - ElementName: play_beam_up
+        ObjectType: 3
+        guid: 6f41ba5772fb55498e2b393a9e97f0c2
+      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.375
+    - name: play_ufo_idle
+      guid: 76df6aac1a39674ab207b319efbbac20
+      id: 3790043115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: NPC
+        ObjectType: 4
+        guid: 815fabc88d70ba45a09ffc45e40be80e
+      - ElementName: UFO
+        ObjectType: 4
+        guid: 033d2fe4119ebc48bae192db05ece4f6
+      - ElementName: play_ufo_idle
+        ObjectType: 3
+        guid: 76df6aac1a39674ab207b319efbbac20
+      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: play_ui_cancel
+      guid: cc48566f6eea0749bd4c36e1c5576dff
+      id: 2244506081
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: play_ui_cancel
+        ObjectType: 3
+        guid: cc48566f6eea0749bd4c36e1c5576dff
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel
+      maxAttenuation: 0
+      maxDuration: 2.229116
+      minDuration: 1.439637
+    - name: play_ui_confirm
+      guid: 8853184304ba4d4bae6c7bbd4c7744fb
+      id: 3022734157
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: play_ui_confirm
+        ObjectType: 3
+        guid: 8853184304ba4d4bae6c7bbd4c7744fb
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_confirm
+      maxAttenuation: 0
+      maxDuration: 2.380045
+      minDuration: 0.661769
+    - name: play_ui_exit
+      guid: c3c07efb1f7e064eb1401ad93b4c6b29
+      id: 1986548623
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: play_ui_exit
+        ObjectType: 3
+        guid: c3c07efb1f7e064eb1401ad93b4c6b29
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: play_ui_move
+      guid: e520d97ea3e9c14eb69006a5b8401c02
+      id: 249738436
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: play_ui_move
+        ObjectType: 3
+        guid: e520d97ea3e9c14eb69006a5b8401c02
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_move
+      maxAttenuation: 0
+      maxDuration: 0.593027
+      minDuration: 0.559743
+    - name: Stop_All
+      guid: 6f5c62c781adf84d9d246dd3dbc51327
+      id: 452547817
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Stop_All
+        ObjectType: 3
+        guid: 6f5c62c781adf84d9d246dd3dbc51327
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Stop_All
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_ui
+      guid: ff6d0c0655e8bc499c29b0f759c935f9
+      id: 2910167054
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: stop_ui
+        ObjectType: 3
+        guid: ff6d0c0655e8bc499c29b0f759c935f9
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\stop_ui
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: UFO
+      guid: 033d2fe4119ebc48bae192db05ece4f6
+      id: 1198168263
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: NPC
+        ObjectType: 4
+        guid: 815fabc88d70ba45a09ffc45e40be80e
+      - ElementName: UFO
+        ObjectType: 4
+        guid: 033d2fe4119ebc48bae192db05ece4f6
+      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: 91651e5b49010944a6a1333a72bef0ab
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit.wwu
     PathAndIcons:
@@ -301,7 +606,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit
     guid: 14872f9a9730574ab09ac575da2abb29
     GuidInternal: 
-    m_lastTime: -8585746451779221820
+    m_lastTime: -8585744750582483415
     List:
     - name: Master_Volume
       guid: 9ad7e400b89d6d41b0e05196a66b4b7a

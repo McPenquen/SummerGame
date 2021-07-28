@@ -145,22 +145,47 @@ public class Character : MonoBehaviour
         float halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
 
         // Check if the player is grounded
-        m_isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.1f), Vector2.down, 0.05f);
-    }
+        //m_isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.1f), Vector2.down, 0.05f);
 
-    private void FixedUpdate()
-    {
         // Check if the X input has a value above or less than 0
         if (m_xInput < 0 || m_xInput > 0)
         {
             // Flip sprite depending on value of X input
             GetComponent<SpriteRenderer>().flipX = -m_xInput < 0.0f;
 
-            // Add force to the rigid body based on the player input
-            m_rb.AddForce(new Vector2((m_xInput * m_movementSpeed - m_rb.velocity.x) * m_movementSpeed, 0));
+            if (!m_isSwinging)
+            {
+                Vector3 newPos = transform.position + new Vector3(m_xInput * m_movementSpeed * Time.deltaTime, 0, 0);
+                // Move only when it is allowed
+                if (m_bond.AllowableDistance(newPos, m_otherPlayer.transform.position))
+                {
+                    transform.position = newPos;
+                }
+                // Movement towards the other player is allowed too
+                else if (Vector2.Distance(newPos, m_otherPlayer.transform.position) < Vector2.Distance(transform.position, m_otherPlayer.transform.position))
+                {
+                    transform.position = newPos;
+                }
+            }
+            else
+            {
+                // Add force to the rigid body based on the player input
+                m_rb.AddForce(new Vector2((m_xInput * m_movementSpeed - m_rb.velocity.x) * m_movementSpeed, 0));
+                // Alter the rigid body velocity
+                m_rb.velocity = new Vector2(m_rb.velocity.x, m_rb.velocity.y);
+            }
+        }
 
-            // Alter the rigid body veolocuty
-            m_rb.velocity = new Vector2(m_rb.velocity.x, m_rb.velocity.y);
+        // Correct the distance from each other in the air & enable distance joint
+        if (Vector2.Distance(transform.position, m_otherPlayer.transform.position) >= m_bond.ReturnMaxLength())
+        {
+            m_bond.EnableDistanceJoint();
+            m_bond.UpdateDistance(m_bond.ReturnMaxLength());
+        }
+        // if the distance is shorter and the play is airborn - disable the bond
+        else if (!m_isGrounded && !m_touchingOtherPlayer)
+        {
+            m_bond.DisableDistanceJoint();
         }
 
         // Check if player is grounded or touching other player
@@ -180,7 +205,7 @@ public class Character : MonoBehaviour
                 // Disable the walking animation
                 m_playerAnimator.SetBool("isWalking", false);
             }
-
+            
             // Check if player is at the right of the other player
             if (GetPlayerPosition().x >= m_otherPlayer.GetPlayerPosition().x)
             {
@@ -214,6 +239,7 @@ public class Character : MonoBehaviour
                     m_bond.ExtendBond(Time.deltaTime * m_movementSpeed);
                 }
             }
+        
         }
 
         // Check if the player has walked off the edge of a platform
@@ -280,8 +306,8 @@ public class Character : MonoBehaviour
                 // Set is grounded to true
                 m_isGrounded = true;
 
-                // Enable the distance joint
-                m_bond.EnableDistanceJoint();
+                // On ground disable the joint
+                m_bond.DisableDistanceJoint();
             }
         }
 
@@ -415,7 +441,7 @@ public class Character : MonoBehaviour
         if (collision.gameObject.layer == 11)
         {
             //// Set is grounded to true
-            //m_isGrounded = true;
+            m_isGrounded = true;
         }
 
         // Check if the player is touching other player (11 is the environment layer)
@@ -443,7 +469,7 @@ public class Character : MonoBehaviour
         if (collision.gameObject.layer == 11)
         {
             //// Set is grounded to false
-            //m_isGrounded = false;
+            m_isGrounded = false;
         }
 
         // Check if the player is touching other player (10 is the environment layer)
