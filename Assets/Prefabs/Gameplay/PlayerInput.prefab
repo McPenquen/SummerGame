@@ -117,6 +117,58 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 00fe7b47-2ec3-48bd-81f1-42d1d0c3df90
     m_ActionName: PlayerMovement/Climb[/XInputControllerWindows/leftStick,/XInputControllerWindows/dpad,/Keyboard/w,/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 49f037f9-59f6-4759-b02e-82f588378ecf
+    m_ActionName: OneController/p1Move[/XInputControllerWindows/leftStick,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 42894378-05ba-42f9-b254-71b2c29ec195
+    m_ActionName: OneController/p1Jump[/XInputControllerWindows/leftStickPress,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: af01befa-87f9-4a68-aaa5-471cf9ce4422
+    m_ActionName: OneController/p1Climb[/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9a792754-b19b-4d32-a05c-8e3b61428d78
+    m_ActionName: OneController/p2Move[/XInputControllerWindows/rightStick,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a7d44e07-7fcc-42fd-a88a-e581072b9bf7
+    m_ActionName: OneController/p2Jump[/XInputControllerWindows/rightStickPress,/Keyboard/numpad0]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b9478143-d70d-4949-b54a-96b119dd1448
+    m_ActionName: OneController/p2Climb[/XInputControllerWindows/rightStick,/Keyboard/upArrow,/Keyboard/downArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3283577956027127893}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnGrab
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2b35ad7b-f04a-4e83-bb4c-80143a2c68a0
+    m_ActionName: PlayerMovement/Grab[/XInputControllerWindows/rightTrigger,/Keyboard/leftCtrl]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMovement

@@ -68,9 +68,17 @@ public class Character : MonoBehaviour
     [SerializeField]
     private bool m_isSwinging;
 
+    // Can grab boolean
+    [SerializeField]
+    private bool m_canGrab;
+
     // Is gripping
     [SerializeField]
-    private bool m_isGripping;
+    private bool m_isGrabbing;
+
+    // Grab radius
+    [SerializeField]
+    private float m_grabRadius = 1.5f;
 
     // OBJECT REFERENCES
     [Header("Object References")]
@@ -92,6 +100,16 @@ public class Character : MonoBehaviour
     // Y direction (for moving character up and down when character is off the ground)
     [SerializeField]
     private float m_yInput;
+
+    // View Grab Circle boolean - DEBUG USE ONLY
+    [SerializeField]
+    private bool m_viewGrabCircle = false;
+
+    // Grab Circle Line - DEBUG USE ONLY
+    private LineRenderer m_grabCircleLine;
+
+    // Number of segments - DEBUG USE ONLY
+    private int numSegments = 20;
 
     // Start is called before the first frame update
     private void Awake()
@@ -128,6 +146,48 @@ public class Character : MonoBehaviour
 
         // Initialise lastPlayer position
         m_lastPlayerPos = Vector2.zero;
+
+        // DEBUG - Grab circle line renderer
+        {
+            // Add line renderer component to the gameobject
+            m_grabCircleLine = gameObject.AddComponent<LineRenderer>();
+
+            // Set the material of the grab circle line to the default sprite shader
+            m_grabCircleLine.material = new Material(Shader.Find("Sprites/Default"));
+            
+            // Start colour for the grab circle
+            m_grabCircleLine.startColor = Color.red;
+
+            // End colour for the grab circle
+            m_grabCircleLine.startColor = Color.red;
+
+            // Start width
+            m_grabCircleLine.startWidth = 0.2f;
+
+            // End width
+            m_grabCircleLine.endWidth = 0.2f;
+
+            // Determine the number of positions for the line
+            m_grabCircleLine.positionCount = numSegments + 1;
+
+            // Set use world space to false
+            m_grabCircleLine.useWorldSpace = false;
+
+            // Invoke the debug Update grab circle method
+            UpdateGrabCircle();
+
+            // Check if view grab circle is disabled
+            if (!m_viewGrabCircle)
+            {
+                // Disable the grab circle
+                m_grabCircleLine.enabled = false;
+            }
+            else
+            {
+                // Enable the grab circle
+                m_grabCircleLine.enabled = true;
+            }
+        }
     }
 
     /*
@@ -150,6 +210,24 @@ public class Character : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // DEBUG - View grab circle code
+        {
+            // DEBUG - Check if the view grab circle is enabled
+            if (!m_viewGrabCircle)
+            {
+                // Disable the grab circle line renderer
+                m_grabCircleLine.enabled = false;
+            }
+            else
+            {
+                // Enble the grab circle line renderer
+                m_grabCircleLine.enabled = true;
+            }
+
+            // Update the grab circle
+            UpdateGrabCircle();
+        }
+
         // Check if the X input has a value above or less than 0
         if (m_xInput < 0 || m_xInput > 0)
         {
@@ -313,6 +391,23 @@ public class Character : MonoBehaviour
             }
         }
 
+        // Check if the player is grabbing
+        if(m_isGrabbing)
+        {
+            // Make the rigid body become kinematic
+            m_rb.isKinematic = true;
+
+            // Remove any velocity from the player
+            m_rb.velocity = new Vector2(0.0f, 0.0f);
+        
+        }
+        else
+        {
+            // Make the rigid body become dynamic by disabling the kinematic setting
+            m_rb.isKinematic = false;
+        }
+
+
         // Update the player position
         m_playerPos = transform.position;
 
@@ -371,17 +466,6 @@ public class Character : MonoBehaviour
     }
 
     /*
-     * GRAB METHOD
-     * 
-     * Method for handling the player when
-     * they are grabbing
-     */
-    public void Grab(bool boolValue)
-    {
-        // Add grabbing code here
-    }
-
-    /*
      * GET PLAYER INDEX METHOD
      * 
      * Method returns the index number of
@@ -414,8 +498,8 @@ public class Character : MonoBehaviour
         // Check if the player is touching the ground (11 is the environment layer)
         if (collision.gameObject.layer == 11)
         {
-            //// Set is grounded to true
-            //m_isGrounded = true;
+            // Set can grab to true
+            m_canGrab = true;
         }
 
         // Check if the player is touching other player (11 is the environment layer)
@@ -442,8 +526,8 @@ public class Character : MonoBehaviour
         // Check that the collision exit has occured with the ground layer (11 is the environment layer)
         if (collision.gameObject.layer == 11)
         {
-            //// Set is grounded to false
-            //m_isGrounded = false;
+            // Set can grab to false
+            m_canGrab = false;
         }
 
         // Check if the player is touching other player (10 is the environment layer)
@@ -474,6 +558,69 @@ public class Character : MonoBehaviour
      */     
     public Vector2 GetPlayerPosition()
     {
+        // Return the player position
         return m_playerPos;
+    }
+
+    /*
+     * GRAB METHOD
+     * 
+     * Method for handling the player when
+     * they are grabbing
+     */
+    public void Grab()
+    {
+        // Check if the player can grab
+        // if (m_canGrab)
+        //{
+            // Set is grabbing to true
+            m_isGrabbing = true;
+        //}
+    }
+
+    /*
+     * GRAB METHOD
+     * 
+     * Method for handling the player when
+     * they are grabbing
+     */
+    public void Release()
+    {
+        // Set is grabbing to false
+        m_isGrabbing = false;
+    }
+
+    /*
+     * UPDATE GRAB CIRCLE METHOD - DEBUG ONLY
+     * 
+     * Debug method update the positions of the grab
+     * circle for the player.
+     */
+    private void UpdateGrabCircle()
+    {
+        // Determine delta theta
+        float deltaTheta = (float)(2.0 * Mathf.PI) / numSegments;
+
+        // Start with theta = 0.0f
+        float theta = 0.0f;
+
+        // Iterate over the number of segments
+        for (int i = 0; i < numSegments + 1; i++)
+        {
+            // Determine X coordinate
+            float x = m_grabRadius * Mathf.Cos(theta);
+
+            // Determine Y coordinate
+            float y = m_grabRadius * Mathf.Sin(theta);
+
+            // Set point of the circle
+            Vector3 pointPosition = new Vector3(x, y, 0);
+
+            // Set the position of the point for the grab circle
+            m_grabCircleLine.SetPosition(i, pointPosition);
+
+            // Increment theta by delta theta
+            theta += deltaTheta;
+        }
     }
 }

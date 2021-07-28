@@ -119,4 +119,36 @@ public class PlayerInputHandler : MonoBehaviour
             }
         }
     }
+
+    /*
+     * ON GRAB METHOD
+     * 
+     * Method first checks if the character
+     * exists. If it does, the method then
+     * checks that the context has just been
+     * performed.
+     * 
+     * If the context has just been performed,
+     * it then invoked the jump method on the 
+     * character.
+     */
+    public void OnGrab(InputAction.CallbackContext context)
+    {
+        // Check that the character object exists
+        if(m_character != null)
+        {
+            // Check if the context has been performed
+            if(context.performed)
+            {
+                // Invoke grab method for the character
+                m_character.Grab();
+            }
+            // Else context has stopped
+            else
+            {
+                // Invoke the release method
+                m_character.Release();
+            }
+        }
+    }
 }
