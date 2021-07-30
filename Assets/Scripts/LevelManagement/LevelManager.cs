@@ -59,7 +59,7 @@ public class LevelManager : MonoBehaviour
         if (Vector2.Distance(players.GetPosition(), finishLine.transform.position) <= 40.0f && !isPlayingUfoEngineSound)
         {
             isPlayingUfoEngineSound = true;
-            AkSoundEngine.PostEvent("play_ufo_idle",gameObject);
+            //AkSoundEngine.PostEvent("play_ufo_idle",gameObject);
         }
 
         // If players reach the final destination they won
