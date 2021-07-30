@@ -38,7 +38,7 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Walking" ID="{FBE72E7F-31A8-4666-8E26-2114A237E60F}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+							<ObjectRef Name="Walking" ID="{FBE72E7F-31A8-4666-8E26-2114A237E60F}" WorkUnitID="{8ABE7C97-C587-40C6-AA2F-D5657279F748}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
