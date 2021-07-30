@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{8ABE7C97-C587-40C6-AA2F-D5657279F748}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Andys_Work_Unit" ID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}" PersistMode="Standalone">
+		<WorkUnit Name="Andy's_Work_Unit" ID="{8ABE7C97-C587-40C6-AA2F-D5657279F748}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Ambience_Andy" ID="{CBF73840-2A3C-445D-9C9D-B1E3635523F3}" ShortID="999445678">
 					<ReferenceList>
@@ -265,636 +265,6 @@
 										<ActiveSource Name="Sizzling_Desert_Sand_1" ID="{8A21A16A-67F1-4ED4-9386-672C1CA9BC5C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-						</ActorMixer>
-					</ChildrenList>
-					<ObjectLists/>
-				</ActorMixer>
-				<ActorMixer Name="Player_Characters" ID="{2D5CC2D3-2B67-4A71-ACF2-CC6DCEAF3A40}" ShortID="337372121">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<ActorMixer Name="Gem" ID="{C576BF31-F307-4B7C-AD24-CA650025724F}" ShortID="52555215">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Walking" ID="{18452D08-B36A-4EE6-9FA6-266576379290}" ShortID="69544347">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Alien_Walking_4" ID="{4A103BE5-FECC-424B-8EBA-BE031C868118}" ShortID="858424601">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_4" ID="{6B58ABD6-F8D6-4ACC-BAE0-2C9B0089C6BC}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="81588820"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_4" ID="{6B58ABD6-F8D6-4ACC-BAE0-2C9B0089C6BC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alien_Walking_5" ID="{E73AA0B6-B400-4092-BD8A-6574A5AE7DF7}" ShortID="716271713">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_5" ID="{5603C6DF-02D8-4EC1-A231-9226FF7DBBE6}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="465480366"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_5" ID="{5603C6DF-02D8-4EC1-A231-9226FF7DBBE6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alien_Walking_3" ID="{8AB730E2-D72E-41E6-943A-F15FA1A79372}" ShortID="324160778">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_3" ID="{3D6F9515-5DC3-458F-A930-E541F8383261}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="967307017"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_3" ID="{3D6F9515-5DC3-458F-A930-E541F8383261}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alien_Walking_2" ID="{209F074E-0071-44DC-A6A3-02EEDFE1AA68}" ShortID="123944833">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_2" ID="{6AA88A38-2AD1-450E-B4EC-8A5EAE4317DB}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="180261237"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_2" ID="{6AA88A38-2AD1-450E-B4EC-8A5EAE4317DB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alien_Walking_6" ID="{AC886CDD-8B03-4FF1-A21A-547BAB7531AB}" ShortID="149481943">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_6" ID="{12941949-8B46-4D66-B06A-2E21071C620E}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="665770401"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_6" ID="{12941949-8B46-4D66-B06A-2E21071C620E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alien_Walking_7" ID="{8220257F-E258-4322-AB60-01B3719212CB}" ShortID="960153777">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_7" ID="{24FED978-FA49-40A6-965F-5C6CCADD01E7}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="81007188"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_7" ID="{24FED978-FA49-40A6-965F-5C6CCADD01E7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Alien_Walking_1" ID="{82DB4CB3-DE05-4204-87C1-18F06B6EEB12}" ShortID="572151400">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alien_Walking_1" ID="{D201B643-C165-4EFD-8E78-7021668DAF14}">
-													<Language>SFX</Language>
-													<AudioFile>Alien_Walking_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="404856293"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alien_Walking_1" ID="{D201B643-C165-4EFD-8E78-7021668DAF14}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<ObjectLists/>
-						</ActorMixer>
-						<ActorMixer Name="Ini" ID="{C0543CC3-EDCD-446D-A316-5C1E16CB005A}" ShortID="329040020">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Blinking" ID="{9FB8C8DD-7F10-487B-9579-AC0E7D29E05A}" ShortID="318825232">
-									<Comment>Add in game event.</Comment>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Ini_Blinking_1" ID="{2367F1CF-54B7-4E72-9DEA-E5F8005C87FF}" ShortID="360403434">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_1" ID="{97324E87-6D3D-4E06-B836-AA02C65A05BB}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="303312899"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_1" ID="{97324E87-6D3D-4E06-B836-AA02C65A05BB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Blinking_2" ID="{7C15C988-6D79-41B7-9DEF-82E5E907E33E}" ShortID="141942797">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_2" ID="{AD4B8C30-EDB9-4AD2-9A05-0C8DD5F6D5D7}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="766963277"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_2" ID="{AD4B8C30-EDB9-4AD2-9A05-0C8DD5F6D5D7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Blinking_3" ID="{0CFDC198-B138-42C4-91B7-D8267F3F3372}" ShortID="938573727">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_3" ID="{73B7497D-E2C5-4B16-B8B0-F5DA45542F3F}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="64301467"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_3" ID="{73B7497D-E2C5-4B16-B8B0-F5DA45542F3F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Blinking_4" ID="{5ECF2E93-3F76-48C5-80A5-40FB60DA3DBE}" ShortID="146472413">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_4" ID="{91ED50A9-6594-4765-8C2A-18163B45BCCD}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="653644385"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_4" ID="{91ED50A9-6594-4765-8C2A-18163B45BCCD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Blinking_5" ID="{1FBE5E4B-4BC0-48FA-96C2-471668F83D40}" ShortID="888975303">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_5" ID="{7CF5913E-BECD-4501-8D7E-9B6D07FF0096}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="119722267"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_5" ID="{7CF5913E-BECD-4501-8D7E-9B6D07FF0096}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Blinking_6" ID="{8514A013-D517-44B0-A590-F14C81A3B0C6}" ShortID="112965065">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_6" ID="{83177C0D-5282-4F8D-A682-272DB1A8D4BE}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="25974087"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_6" ID="{83177C0D-5282-4F8D-A682-272DB1A8D4BE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Blinking_7" ID="{5B7509DB-2ACD-4CBF-AEF4-9CC63891452D}" ShortID="375843253">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Blinking_7" ID="{85EFD478-EB8E-4B81-8779-2B18BC57A931}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Blinking_7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="95781926"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Blinking_7" ID="{85EFD478-EB8E-4B81-8779-2B18BC57A931}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Jumping" ID="{825F7BB1-E5D5-4D8B-9CA4-64389E8DBDD9}" ShortID="942722106">
-									<Comment>Add in game event</Comment>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Jumping_1" ID="{35E10843-2728-4291-8F4A-8905D3C7F698}" ShortID="60675640">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Jumping_1" ID="{EF71AA2C-7816-49CD-BEE4-6A984BD5D20D}">
-													<Language>SFX</Language>
-													<AudioFile>Jumping_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="808113581"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Jumping_1" ID="{EF71AA2C-7816-49CD-BEE4-6A984BD5D20D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Jumping_2" ID="{60C5E18C-707F-4774-BAFB-7866CD05A75A}" ShortID="290872168">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Jumping_2" ID="{3961CF95-9215-47A9-9D97-31996B61B690}">
-													<Language>SFX</Language>
-													<AudioFile>Jumping_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="409887472"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Jumping_2" ID="{3961CF95-9215-47A9-9D97-31996B61B690}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Jumping_3" ID="{2949F147-2D02-40BF-8D13-61A57F08C12F}" ShortID="486755781">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Jumping_3" ID="{9BF7B7E1-39CA-4FB7-B090-44F5BB917410}">
-													<Language>SFX</Language>
-													<AudioFile>Jumping_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="64274866"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Jumping_3" ID="{9BF7B7E1-39CA-4FB7-B090-44F5BB917410}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Jumping_4" ID="{28CC70D1-4715-4576-85D5-019BB3079687}" ShortID="778321648">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Jumping_4" ID="{BD234A41-A25B-4083-9384-D159ABEEDD86}">
-													<Language>SFX</Language>
-													<AudioFile>Jumping_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="288837490"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Jumping_4" ID="{BD234A41-A25B-4083-9384-D159ABEEDD86}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Jumping_5" ID="{2753D2F6-B4F9-49C5-AE9F-49F54F28BFAF}" ShortID="636905643">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Jumping_5" ID="{DFC255CA-7344-400F-952D-6D5DF4A9F4A5}">
-													<Language>SFX</Language>
-													<AudioFile>Jumping_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="824021225"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Jumping_5" ID="{DFC255CA-7344-400F-952D-6D5DF4A9F4A5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Jumping_6" ID="{AB65ECE1-8381-4201-BB1B-543EABB5B02F}" ShortID="662723724">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Jumping_6" ID="{B4D8DE90-6C06-440C-8FEF-E442BEB4D642}">
-													<Language>SFX</Language>
-													<AudioFile>Jumping_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="407840892"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Jumping_6" ID="{B4D8DE90-6C06-440C-8FEF-E442BEB4D642}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<SwitchContainer Name="Walking" ID="{FBE72E7F-31A8-4666-8E26-2114A237E60F}" ShortID="915176916">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Ini_Walking_1" ID="{2EF17F3C-0B32-4B6C-8F8F-6A0E0C964F6A}" ShortID="352537539">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Walking_1" ID="{5CAD1B27-070E-4BDD-A06F-A722C86BB0F6}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Walking_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="443065004"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Walking_1" ID="{5CAD1B27-070E-4BDD-A06F-A722C86BB0F6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
-												<CustomState Name="" ID="{F8477FEC-940C-4515-8746-30EA954A694B}" ShortID="739346205"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
-												<CustomState Name="" ID="{655E4EC5-B942-4A90-9E01-055C3FC53076}" ShortID="385644705"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
-												<CustomState Name="" ID="{F5815AF5-4E8D-4221-834F-445CDCD6A8A8}" ShortID="15622668"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
-												<CustomState Name="" ID="{6502F6B5-C5E5-4220-8C35-ED8D998BE5C8}" ShortID="299302864"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
-												<CustomState Name="" ID="{AE1D8F4A-6291-42EC-9787-DD23220445D4}" ShortID="386086839"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
-												<CustomState Name="" ID="{944A80DE-0D8F-4C4E-99FD-09F7119D53DE}" ShortID="123556306"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
-									<ObjectLists/>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Ini_Walking_1" ID="{2EF17F3C-0B32-4B6C-8F8F-6A0E0C964F6A}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
-												<ItemList>
-													<ItemRef Name="Ini_Walking_1" ID="{2EF17F3C-0B32-4B6C-8F8F-6A0E0C964F6A}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
@@ -2216,6 +1586,636 @@
 										<ActiveSource Name="Telephone_Receiver_1" ID="{B7D99214-C54B-4901-AD2E-4799D5FCC240}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Player_Characters" ID="{2D5CC2D3-2B67-4A71-ACF2-CC6DCEAF3A40}" ShortID="337372121">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Gem" ID="{C576BF31-F307-4B7C-AD24-CA650025724F}" ShortID="52555215">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Walking" ID="{18452D08-B36A-4EE6-9FA6-266576379290}" ShortID="69544347">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Alien_Walking_4" ID="{4A103BE5-FECC-424B-8EBA-BE031C868118}" ShortID="858424601">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_4" ID="{6B58ABD6-F8D6-4ACC-BAE0-2C9B0089C6BC}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81588820"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_4" ID="{6B58ABD6-F8D6-4ACC-BAE0-2C9B0089C6BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alien_Walking_5" ID="{E73AA0B6-B400-4092-BD8A-6574A5AE7DF7}" ShortID="716271713">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_5" ID="{5603C6DF-02D8-4EC1-A231-9226FF7DBBE6}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="465480366"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_5" ID="{5603C6DF-02D8-4EC1-A231-9226FF7DBBE6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alien_Walking_3" ID="{8AB730E2-D72E-41E6-943A-F15FA1A79372}" ShortID="324160778">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_3" ID="{3D6F9515-5DC3-458F-A930-E541F8383261}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="967307017"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_3" ID="{3D6F9515-5DC3-458F-A930-E541F8383261}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alien_Walking_2" ID="{209F074E-0071-44DC-A6A3-02EEDFE1AA68}" ShortID="123944833">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_2" ID="{6AA88A38-2AD1-450E-B4EC-8A5EAE4317DB}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="180261237"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_2" ID="{6AA88A38-2AD1-450E-B4EC-8A5EAE4317DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alien_Walking_6" ID="{AC886CDD-8B03-4FF1-A21A-547BAB7531AB}" ShortID="149481943">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_6" ID="{12941949-8B46-4D66-B06A-2E21071C620E}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="665770401"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_6" ID="{12941949-8B46-4D66-B06A-2E21071C620E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alien_Walking_7" ID="{8220257F-E258-4322-AB60-01B3719212CB}" ShortID="960153777">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_7" ID="{24FED978-FA49-40A6-965F-5C6CCADD01E7}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81007188"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_7" ID="{24FED978-FA49-40A6-965F-5C6CCADD01E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alien_Walking_1" ID="{82DB4CB3-DE05-4204-87C1-18F06B6EEB12}" ShortID="572151400">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alien_Walking_1" ID="{D201B643-C165-4EFD-8E78-7021668DAF14}">
+													<Language>SFX</Language>
+													<AudioFile>Alien_Walking_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="404856293"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alien_Walking_1" ID="{D201B643-C165-4EFD-8E78-7021668DAF14}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Ini" ID="{C0543CC3-EDCD-446D-A316-5C1E16CB005A}" ShortID="329040020">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Blinking" ID="{9FB8C8DD-7F10-487B-9579-AC0E7D29E05A}" ShortID="318825232">
+									<Comment>Add in game event.</Comment>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ini_Blinking_1" ID="{2367F1CF-54B7-4E72-9DEA-E5F8005C87FF}" ShortID="360403434">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_1" ID="{97324E87-6D3D-4E06-B836-AA02C65A05BB}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="303312899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_1" ID="{97324E87-6D3D-4E06-B836-AA02C65A05BB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Blinking_2" ID="{7C15C988-6D79-41B7-9DEF-82E5E907E33E}" ShortID="141942797">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_2" ID="{AD4B8C30-EDB9-4AD2-9A05-0C8DD5F6D5D7}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766963277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_2" ID="{AD4B8C30-EDB9-4AD2-9A05-0C8DD5F6D5D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Blinking_3" ID="{0CFDC198-B138-42C4-91B7-D8267F3F3372}" ShortID="938573727">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_3" ID="{73B7497D-E2C5-4B16-B8B0-F5DA45542F3F}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="64301467"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_3" ID="{73B7497D-E2C5-4B16-B8B0-F5DA45542F3F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Blinking_4" ID="{5ECF2E93-3F76-48C5-80A5-40FB60DA3DBE}" ShortID="146472413">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_4" ID="{91ED50A9-6594-4765-8C2A-18163B45BCCD}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="653644385"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_4" ID="{91ED50A9-6594-4765-8C2A-18163B45BCCD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Blinking_5" ID="{1FBE5E4B-4BC0-48FA-96C2-471668F83D40}" ShortID="888975303">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_5" ID="{7CF5913E-BECD-4501-8D7E-9B6D07FF0096}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="119722267"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_5" ID="{7CF5913E-BECD-4501-8D7E-9B6D07FF0096}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Blinking_6" ID="{8514A013-D517-44B0-A590-F14C81A3B0C6}" ShortID="112965065">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_6" ID="{83177C0D-5282-4F8D-A682-272DB1A8D4BE}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="25974087"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_6" ID="{83177C0D-5282-4F8D-A682-272DB1A8D4BE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Blinking_7" ID="{5B7509DB-2ACD-4CBF-AEF4-9CC63891452D}" ShortID="375843253">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Blinking_7" ID="{85EFD478-EB8E-4B81-8779-2B18BC57A931}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Blinking_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="95781926"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Blinking_7" ID="{85EFD478-EB8E-4B81-8779-2B18BC57A931}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Jumping" ID="{825F7BB1-E5D5-4D8B-9CA4-64389E8DBDD9}" ShortID="942722106">
+									<Comment>Add in game event</Comment>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jumping_1" ID="{35E10843-2728-4291-8F4A-8905D3C7F698}" ShortID="60675640">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jumping_1" ID="{EF71AA2C-7816-49CD-BEE4-6A984BD5D20D}">
+													<Language>SFX</Language>
+													<AudioFile>Jumping_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="808113581"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Jumping_1" ID="{EF71AA2C-7816-49CD-BEE4-6A984BD5D20D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jumping_2" ID="{60C5E18C-707F-4774-BAFB-7866CD05A75A}" ShortID="290872168">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jumping_2" ID="{3961CF95-9215-47A9-9D97-31996B61B690}">
+													<Language>SFX</Language>
+													<AudioFile>Jumping_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="409887472"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Jumping_2" ID="{3961CF95-9215-47A9-9D97-31996B61B690}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jumping_3" ID="{2949F147-2D02-40BF-8D13-61A57F08C12F}" ShortID="486755781">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jumping_3" ID="{9BF7B7E1-39CA-4FB7-B090-44F5BB917410}">
+													<Language>SFX</Language>
+													<AudioFile>Jumping_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="64274866"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Jumping_3" ID="{9BF7B7E1-39CA-4FB7-B090-44F5BB917410}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jumping_4" ID="{28CC70D1-4715-4576-85D5-019BB3079687}" ShortID="778321648">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jumping_4" ID="{BD234A41-A25B-4083-9384-D159ABEEDD86}">
+													<Language>SFX</Language>
+													<AudioFile>Jumping_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="288837490"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Jumping_4" ID="{BD234A41-A25B-4083-9384-D159ABEEDD86}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jumping_5" ID="{2753D2F6-B4F9-49C5-AE9F-49F54F28BFAF}" ShortID="636905643">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jumping_5" ID="{DFC255CA-7344-400F-952D-6D5DF4A9F4A5}">
+													<Language>SFX</Language>
+													<AudioFile>Jumping_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="824021225"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Jumping_5" ID="{DFC255CA-7344-400F-952D-6D5DF4A9F4A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Jumping_6" ID="{AB65ECE1-8381-4201-BB1B-543EABB5B02F}" ShortID="662723724">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jumping_6" ID="{B4D8DE90-6C06-440C-8FEF-E442BEB4D642}">
+													<Language>SFX</Language>
+													<AudioFile>Jumping_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="407840892"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Jumping_6" ID="{B4D8DE90-6C06-440C-8FEF-E442BEB4D642}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<SwitchContainer Name="Walking" ID="{FBE72E7F-31A8-4666-8E26-2114A237E60F}" ShortID="915176916">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ini_Walking_1" ID="{2EF17F3C-0B32-4B6C-8F8F-6A0E0C964F6A}" ShortID="352537539">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Walking_1" ID="{5CAD1B27-070E-4BDD-A06F-A722C86BB0F6}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Walking_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="443065004"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Walking_1" ID="{5CAD1B27-070E-4BDD-A06F-A722C86BB0F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
+												<CustomState Name="" ID="{F8477FEC-940C-4515-8746-30EA954A694B}" ShortID="739346205"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
+												<CustomState Name="" ID="{655E4EC5-B942-4A90-9E01-055C3FC53076}" ShortID="385644705"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+												<CustomState Name="" ID="{F5815AF5-4E8D-4221-834F-445CDCD6A8A8}" ShortID="15622668"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+												<CustomState Name="" ID="{6502F6B5-C5E5-4220-8C35-ED8D998BE5C8}" ShortID="299302864"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
+												<CustomState Name="" ID="{AE1D8F4A-6291-42EC-9787-DD23220445D4}" ShortID="386086839"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
+												<CustomState Name="" ID="{944A80DE-0D8F-4C4E-99FD-09F7119D53DE}" ShortID="123556306"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Ini_Walking_1" ID="{2EF17F3C-0B32-4B6C-8F8F-6A0E0C964F6A}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+												<ItemList>
+													<ItemRef Name="Ini_Walking_1" ID="{2EF17F3C-0B32-4B6C-8F8F-6A0E0C964F6A}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
