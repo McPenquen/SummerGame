@@ -38,6 +38,10 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Walking" ID="{FBE72E7F-31A8-4666-8E26-2114A237E60F}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="stop_play_plant" ID="{6744B241-6B5E-444E-A12F-2FAD4AA920E4}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}"/>
 							<Position X="3" Y="0"/>
 						</Module>
