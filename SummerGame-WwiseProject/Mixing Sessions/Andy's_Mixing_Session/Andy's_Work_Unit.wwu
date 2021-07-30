@@ -3,7 +3,7 @@
 	<MixingSessions>
 		<WorkUnit Name="Andy's_Work_Unit" ID="{92536D32-5802-4866-B439-A690EDBCC3A2}" PersistMode="Standalone">
 			<ChildrenList>
-				<MixingSession Name="Andys_Mixing_Session" ID="{CA5CEE87-7E72-4E54-9608-4235899AF17D}">
+				<MixingSession Name="Andy's_Mixing_Session" ID="{CA5CEE87-7E72-4E54-9608-4235899AF17D}">
 					<ObjectList>
 						<ObjectRef Name="Plants" ID="{3CEF32B0-09C4-47C8-9A24-B6F9520CA2EA}" WorkUnitID="{8ABE7C97-C587-40C6-AA2F-D5657279F748}"/>
 						<ObjectRef Name="Beam_Up" ID="{972F6F8A-FDE9-4003-B438-FE8B7E1D917E}" WorkUnitID="{8ABE7C97-C587-40C6-AA2F-D5657279F748}"/>
