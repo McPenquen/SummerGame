@@ -994,37 +994,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 161137821561219973, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: backScene
-      value: 
-      objectReference: {fileID: 1172115879}
     - target: {fileID: 161137821561219979, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: m_Name
       value: OptionsScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 2154817355707162070, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_Value
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 2154817355707162070, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_WholeNumbers
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234210146029040559, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2947924839521005790, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 106
-      objectReference: {fileID: 0}
-    - target: {fileID: 3787500295497430399, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4976192866420971631, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766085480504824532, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1045,10 +1017,6 @@ PrefabInstance:
     - target: {fileID: 5934027856551183633, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7245358878445241799, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
-      propertyPath: m_text
-      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 8230913630301690420, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: backScene
