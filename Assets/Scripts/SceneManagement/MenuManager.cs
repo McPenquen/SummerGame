@@ -33,18 +33,24 @@ public class MenuManager : MonoBehaviour
     // Play level 1
     public void PlayGame()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         SceneManager.LoadScene("Level1");
     }
 
     // Close the application
     public void QuitGame() 
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         Application.Quit();
     }
 
     // Show the options scene
     public void ShowOptions()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         optionsScene.SetActive(true);
         transform.gameObject.SetActive(false);
     }

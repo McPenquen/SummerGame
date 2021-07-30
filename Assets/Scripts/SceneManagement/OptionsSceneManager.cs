@@ -32,6 +32,8 @@ public class OptionsSceneManager : MonoBehaviour
     // Back to the previous scene
     public void Back()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         backScene.SetActive(true);
         transform.gameObject.SetActive(false);
     }

@@ -98,6 +98,8 @@ public class LevelManager : MonoBehaviour
 
     public void EnterMainMenu()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
@@ -105,6 +107,8 @@ public class LevelManager : MonoBehaviour
     // Pause the game
     public void PauseGame()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         // Pause the game, show the pause menu UI and hide the gameplay UI
         isPaused = true;
         pauseMenuUI.SetActive(true);
@@ -115,6 +119,8 @@ public class LevelManager : MonoBehaviour
     // Resume the game
     public void ResumeGame()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         // Unpause the game, hide the pause menu UI and show the gameplay UI
         isPaused = false;
         pauseMenuUI.SetActive(false);
@@ -126,12 +132,16 @@ public class LevelManager : MonoBehaviour
     // Enter Options scene
     public void EnterOptions()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         optionsScene.SetActive(true);
         pauseMenuUI.SetActive(false);
     }
     // Return from Options to Paused menu
     public void OptionsToPause()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         pauseMenuUI.SetActive(true);
         optionsScene.SetActive(false);
     }
