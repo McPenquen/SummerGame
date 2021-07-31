@@ -10,44 +10,8 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_ufo_idle" ID="{B4910718-309F-443F-BC1F-C139C97C2234}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="play_checkpoint_success" ID="{C251C376-6A07-47A7-AE0B-5A041F6A7C8D}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
 							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="stop_play_ufo_idle" ID="{9A91A3A1-5BEF-461B-B21C-BD8C079E07E9}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="play_checkpoint_phone_ring" ID="{DBC1FD45-C3F1-4993-A1FE-3D5F4F56CA87}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="play_plant" ID="{B296738A-338C-4B7E-A456-02D827F802DD}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="play_beam_up" ID="{83BEF836-9092-4E56-A1A7-5AE5C643A92A}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="2" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Walking" ID="{FBE72E7F-31A8-4666-8E26-2114A237E60F}" WorkUnitID="{8ABE7C97-C587-40C6-AA2F-D5657279F748}"/>
-							<Position X="2" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="stop_play_plant" ID="{6744B241-6B5E-444E-A12F-2FAD4AA920E4}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="stop_play_beam_up" ID="{6239F64A-1B3C-4979-8CEC-E6705DA0D2EA}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
