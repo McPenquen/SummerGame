@@ -33,6 +33,9 @@ public class LevelManager : MonoBehaviour
 
         // Save the level's name
         ScenesNavigation.SaveLastLevelPlayed(SceneManager.GetActiveScene().name);
+
+        // Save the max time -> as the max score
+        ScenesNavigation.SaveMaxScore(Timer.GetScore());
     }
 
     private void  Update() 
