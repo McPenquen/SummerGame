@@ -84,6 +84,10 @@ public class Character : MonoBehaviour
     [SerializeField]
     private float m_grabRadius = 1.5f;
 
+    // Layer Mask   
+    [SerializeField]
+    private LayerMask m_grabbableLayer = 11;
+
     // OBJECT REFERENCES
     [Header("Object References")]
     // Other player
@@ -200,6 +204,7 @@ public class Character : MonoBehaviour
         }
     }
 
+
     /*
      * UPDATE METHOD
      * 
@@ -211,6 +216,18 @@ public class Character : MonoBehaviour
      */
     void Update()
     {
+        // Check if player is within the grabable layer
+        if (Physics2D.OverlapCircle(GetPlayerPosition(), m_grabRadius, m_grabbableLayer))
+        {
+            // Set can grab boolean to true
+            m_canGrab = true;
+        }
+        else
+        {
+            // Set can grab boolean to false
+            m_canGrab = false;
+        }
+
         // DEBUG - View grab circle code
         {
             // DEBUG - Check if the view grab circle is enabled
@@ -228,8 +245,6 @@ public class Character : MonoBehaviour
             // Update the grab circle
             UpdateGrabCircle();
         }
-
-
 
         // Determine half the height of the sprite
         float halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
@@ -613,11 +628,11 @@ public class Character : MonoBehaviour
     public void Grab()
     {
         // Check if the player can grab
-        // if (m_canGrab)
-        //{
+        if (m_canGrab)
+        {
             // Set is grabbing to true
             m_isGrabbing = true;
-        //}
+        }
     }
 
     /*

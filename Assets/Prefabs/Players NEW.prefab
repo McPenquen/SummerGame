@@ -244,11 +244,18 @@ MonoBehaviour:
   m_isJumping: 0
   m_isFalling: 0
   m_isSwinging: 0
-  m_isGripping: 0
+  m_isGrabbing: 0
+  m_canGrab: 0
+  m_canMove: 0
+  m_grabRadius: 1.2
+  m_grabbableLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   m_otherPlayer: {fileID: 0}
   m_bond: {fileID: 0}
   m_xInput: 0
   m_yInput: 0
+  m_viewGrabCircle: 0
 --- !u!1 &8050295438740226934
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,11 +481,18 @@ MonoBehaviour:
   m_isJumping: 0
   m_isFalling: 0
   m_isSwinging: 0
-  m_isGripping: 0
+  m_isGrabbing: 0
+  m_canGrab: 0
+  m_canMove: 0
+  m_grabRadius: 1.2
+  m_grabbableLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   m_otherPlayer: {fileID: 0}
   m_bond: {fileID: 0}
   m_xInput: 0
   m_yInput: 0
+  m_viewGrabCircle: 0
 --- !u!232 &8665894722799807364
 DistanceJoint2D:
   m_ObjectHideFlags: 0
