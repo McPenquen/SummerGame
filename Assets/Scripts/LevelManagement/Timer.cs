@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+    // The time that the level starts with
+    [SerializeField] private int startingMinutes = 0;
+    [SerializeField] private int startingSeconds = 0;
     static private int minutes = 0;
     static private int seconds = 0;
     private string strTime = "0:0";
@@ -15,8 +18,8 @@ public class Timer : MonoBehaviour
     private void Awake()
     {
         // Set the default mituest and minutes
-        minutes = 3;
-        seconds = 0;
+        minutes = startingMinutes;
+        seconds = startingSeconds;
 
         // Transform seconds into minutes 
         IncreaseSecsToMins();

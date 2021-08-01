@@ -15,8 +15,14 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private CheckpointManager[] checkpoints;
     // Victory location
     [SerializeField] private GameObject finishLine = null;
+    // Victory boolean
+    private bool isWon = false;
     // If pause menu is open
     public static bool isPaused = false;
+    // The victory scene delay counter
+    private float victoryDelayCounter = 0.0f;
+    // Bool if the ufo engine sound has been triggered
+    private bool isPlayingUfoEngineSound = false;
 
     private void Awake()
     {
@@ -27,6 +33,9 @@ public class LevelManager : MonoBehaviour
 
         // Save the level's name
         ScenesNavigation.SaveLastLevelPlayed(SceneManager.GetActiveScene().name);
+
+        // Save the max time -> as the max score
+        ScenesNavigation.SaveMaxScore(Timer.GetScore());
     }
 
     private void  Update() 
@@ -49,11 +58,27 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        // If players reach the final destination they won
-        if (isWon())
+        // If the players get close to the finish line play ufo engine sound
+        if (Vector2.Distance(players.GetPosition(), finishLine.transform.position) <= 40.0f && !isPlayingUfoEngineSound)
         {
+            isPlayingUfoEngineSound = true;
+            AkSoundEngine.PostEvent("play_ufo_idle",gameObject);
+        }
+
+        // If players reach the final destination they won
+        FinishLineVictoryCheck();
+        if (isWon)
+        {
+            // Activate sound only once
+            if (victoryDelayCounter == 0)
+            {
+                AkSoundEngine.PostEvent("play_beam_up",gameObject);   
+            }
             // Save the time -> as score
             ScenesNavigation.SaveScore(Timer.GetScore());
+            // Wait until the sound finishes to change scene
+            victoryDelayCounter += Time.deltaTime;
+            if (victoryDelayCounter >= 2.0f )
             SceneManager.LoadScene("Victory");
         }
 
@@ -76,6 +101,8 @@ public class LevelManager : MonoBehaviour
 
     public void EnterMainMenu()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
@@ -83,6 +110,8 @@ public class LevelManager : MonoBehaviour
     // Pause the game
     public void PauseGame()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         // Pause the game, show the pause menu UI and hide the gameplay UI
         isPaused = true;
         pauseMenuUI.SetActive(true);
@@ -93,6 +122,8 @@ public class LevelManager : MonoBehaviour
     // Resume the game
     public void ResumeGame()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         // Unpause the game, hide the pause menu UI and show the gameplay UI
         isPaused = false;
         pauseMenuUI.SetActive(false);
@@ -104,12 +135,16 @@ public class LevelManager : MonoBehaviour
     // Enter Options scene
     public void EnterOptions()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         optionsScene.SetActive(true);
         pauseMenuUI.SetActive(false);
     }
     // Return from Options to Paused menu
     public void OptionsToPause()
     {
+        // Play confirm sound
+        AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         pauseMenuUI.SetActive(true);
         optionsScene.SetActive(false);
     }
@@ -119,15 +154,18 @@ public class LevelManager : MonoBehaviour
     {
         players.ChangePosition(checkpoints[lastCheckpointIndex].transform.position);
     }
-    // Returns true if the players reach the final destination
-    private bool isWon()
+    // Sets isWon to true if the players reach the final destination
+    private void FinishLineVictoryCheck()
     {
         if (players.GetPosition().x >= finishLine.transform.position.x - 1 && 
         players.GetPosition().x <= finishLine.transform.position.x + 1)
         {
-            return true;
+            isWon = true;
         }
-        return false;
+        else
+        {
+          isWon = false;  
+        }
     }
     // Sets the isLost to true
     private bool arePLayersFallen()

@@ -6,10 +6,12 @@ public class ScenesNavigation : MonoBehaviour
 {
     // Null instance of the manager
     public static ScenesNavigation instance = null;
-        // The name of the last played level scene
+    // The name of the last played level scene
     static private string lastLevelName = ""; 
     // Score from the last level played
     static private float lastScore = 0.0f;
+    // Maximum score from the last played level
+    static private float lastMaxScore = 0.0f;
     private void Awake()
     {
         // Check if instance is null
@@ -47,9 +49,19 @@ public class ScenesNavigation : MonoBehaviour
     {
         lastScore = score;
     }
+    // Save score of the last played game
+    static public void SaveMaxScore(float maxScore)
+    {
+        lastMaxScore = maxScore;
+    }
     // Get the last saved score
     static public float GetScore()
     {
         return lastScore;
+    }
+    // Get the last saved maximum score
+    static public float GetMaxScore()
+    {
+        return lastMaxScore;
     }
 }
