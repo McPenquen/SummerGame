@@ -119,6 +119,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{94CF2F61-2A1C-49B8-8493-AC5C3C02649F}" ShortID="784669674">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Payphone_Lights_Humming_1" ID="{58830BEA-2361-4B36-9E9A-E0F2C1E825CD}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="play_checkpoint_success" ID="{C251C376-6A07-47A7-AE0B-5A041F6A7C8D}">
