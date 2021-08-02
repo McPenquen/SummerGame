@@ -121,6 +121,12 @@ public class Character : MonoBehaviour
 
     // Number of segments - DEBUG USE ONLY
     private int numSegments = 20;
+    // Set the collision direction vector
+    private Vector2 collisionDirection = Vector2.zero;
+    // Saved height of the sprite
+    private float spriteHeight;
+    // Saved height of the sprite
+    private float spriteWidth;
 
     // Start is called before the first frame update
     private void Awake()
@@ -202,6 +208,9 @@ public class Character : MonoBehaviour
                 m_grabCircleLine.enabled = true;
             }
         }
+        // Save the height and width of the sprite
+        spriteHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y * 2;
+        spriteWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x * 2;
     }
 
 
@@ -247,7 +256,7 @@ public class Character : MonoBehaviour
         }
 
         // Determine half the height of the sprite
-        float halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
+        float halfHeight = spriteHeight / 2;
 
         // Check if the player is grounded
         //m_isGrounded = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.1f), Vector2.down, 0.05f);
@@ -455,7 +464,6 @@ public class Character : MonoBehaviour
 
             // Disable the players ability to move
             m_canMove = false;
-
         }
         else
         {
@@ -556,8 +564,12 @@ public class Character : MonoBehaviour
         // Check if the player is touching the ground (11 is the environment layer)
         if (collision.gameObject.layer == 11)
         {
-            //// Set is grounded to true
+            // Set is grounded to true
             m_isGrounded = true;
+
+            // Save collison vector from the center of the players feet
+            collisionDirection = collision.GetContact(0).point 
+                - new Vector2(transform.position.x, transform.position.y - spriteHeight / 2);
         }
 
         // Check if the player is touching other player (11 is the environment layer)
@@ -565,6 +577,10 @@ public class Character : MonoBehaviour
         {
             // Set touching other player to true
             m_touchingOtherPlayer = true;
+
+            // Save collison vector from the center of the players feet
+            collisionDirection = collision.GetContact(0).point 
+                - new Vector2(transform.position.x, transform.position.y - spriteHeight / 2);
         }
     }
 
@@ -632,6 +648,18 @@ public class Character : MonoBehaviour
         {
             // Set is grabbing to true
             m_isGrabbing = true;
+            // Animate the grab
+            m_playerAnimator.SetBool("isGrabbing", true);
+            m_playerAnimator.SetBool("isWalking", false); // it doesn't walk anymore
+            // If the collision is close to the feet it is grabbing the floor
+            if (collisionDirection.magnitude <= spriteWidth / 3)
+            {
+                m_playerAnimator.SetBool("isGrabbingFloor", true);
+            }
+            else
+            {
+                m_playerAnimator.SetBool("isGrabbingFloor", false);
+            }
         }
     }
 
@@ -645,6 +673,8 @@ public class Character : MonoBehaviour
     {
         // Set is grabbing to false
         m_isGrabbing = false;
+        // Stop animating the grab
+        m_playerAnimator.SetBool("isGrabbing", false);
     }
 
     /*

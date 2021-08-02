@@ -167,7 +167,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 57531442cb4f8a479ae9131731cae77e
     GuidInternal: 
-    m_lastTime: -8585738768190740603
+    m_lastTime: -8585736979939392672
     List:
     - name: General_SoundBank
       guid: ed1fbc9cffffc845b0ec06456e9ddc0c
@@ -194,12 +194,216 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Andy's_Work_Unit
       ObjectType: 12
-      guid: 80a385578c02ac4ea79b34edbb4b72c0
+      guid: 34a1481ab08c7349ae4bd493eaec004f
     ParentPath: Events\Andy's_Events_Folder\Andy's_Work_Unit
-    guid: 80a385578c02ac4ea79b34edbb4b72c0
+    guid: 34a1481ab08c7349ae4bd493eaec004f
     GuidInternal: 
-    m_lastTime: -8585737052867965160
-    List: []
+    m_lastTime: -8585736979949639966
+    List:
+    - name: Game_Object_Events
+      guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      id: 1612577249
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: play_beam_up
+      guid: 36f8be839290564ea1a75ae5c643a92a
+      id: 3168572341
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: play_beam_up
+        ObjectType: 3
+        guid: 36f8be839290564ea1a75ae5c643a92a
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_beam_up
+      maxAttenuation: 0
+      maxDuration: 2.5
+      minDuration: 2.375
+    - name: play_checkpoint_phone_ring
+      guid: 45fdc1dbf1c39349a1fe3d5f4f56ca87
+      id: 2894346942
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: play_checkpoint_phone_ring
+        ObjectType: 3
+        guid: 45fdc1dbf1c39349a1fe3d5f4f56ca87
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: play_checkpoint_success
+      guid: 76c351c2076aa747ae0b5a041f6a7c8d
+      id: 2952657888
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: play_checkpoint_success
+        ObjectType: 3
+        guid: 76c351c2076aa747ae0b5a041f6a7c8d
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success
+      maxAttenuation: 0
+      maxDuration: 5.514213
+      minDuration: 5.117991
+    - name: play_plant
+      guid: 8a7396b28c337e4ba45602d827f802dd
+      id: 2689642121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: play_plant
+        ObjectType: 3
+        guid: 8a7396b28c337e4ba45602d827f802dd
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_plant
+      maxAttenuation: 5
+      maxDuration: -1
+      minDuration: -1
+    - name: play_ufo_idle
+      guid: 180791b49f303f44bc1fc139c97c2234
+      id: 3790043115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: play_ufo_idle
+        ObjectType: 3
+        guid: 180791b49f303f44bc1fc139c97c2234
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle
+      maxAttenuation: 20
+      maxDuration: -1
+      minDuration: -1
+    - name: stop_play_beam_up
+      guid: 4af639623c1b79498cece6705da0d2ea
+      id: 2743729328
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: stop_play_beam_up
+        ObjectType: 3
+        guid: 4af639623c1b79498cece6705da0d2ea
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_beam_up
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_play_plant
+      guid: 41b244675e6b4e44a12f2fad4aa920e4
+      id: 139174012
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: stop_play_plant
+        ObjectType: 3
+        guid: 41b244675e6b4e44a12f2fad4aa920e4
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_plant
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_play_ufo_idle
+      guid: a1a3919aef5b1b46b21cbd8c079e07e9
+      id: 3729613304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: stop_play_ufo_idle
+        ObjectType: 3
+        guid: a1a3919aef5b1b46b21cbd8c079e07e9
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_ufo_idle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -211,7 +415,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2f57c7439767ee468ee9d03e59b7a593
     GuidInternal: 
-    m_lastTime: -8585737052867945188
+    m_lastTime: -8585736979949619912
     List:
     - name: play_start_up
       guid: a7c9dc658680bb4a98b8d311dadbc986
@@ -284,7 +488,7 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585737052867925187
+    m_lastTime: -8585736979949600290
     List:
     - name: Environment
       guid: 21dce2aed516bb449e5e924774476129
@@ -349,9 +553,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: play_beam_up
+    - name: play_beam_up_01
       guid: 6f41ba5772fb55498e2b393a9e97f0c2
-      id: 3168572341
+      id: 3488140881
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -368,16 +572,16 @@ MonoBehaviour:
       - ElementName: UFO
         ObjectType: 4
         guid: 033d2fe4119ebc48bae192db05ece4f6
-      - ElementName: play_beam_up
+      - ElementName: play_beam_up_01
         ObjectType: 3
         guid: 6f41ba5772fb55498e2b393a9e97f0c2
-      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up
+      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up_01
       maxAttenuation: 0
       maxDuration: 2.5
       minDuration: 2.375
-    - name: play_ufo_idle
+    - name: play_ufo_idle_01
       guid: 76df6aac1a39674ab207b319efbbac20
-      id: 3790043115
+      id: 2888126495
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -394,11 +598,11 @@ MonoBehaviour:
       - ElementName: UFO
         ObjectType: 4
         guid: 033d2fe4119ebc48bae192db05ece4f6
-      - ElementName: play_ufo_idle
+      - ElementName: play_ufo_idle_01
         ObjectType: 3
         guid: 76df6aac1a39674ab207b319efbbac20
-      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle
-      maxAttenuation: 0
+      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle_01
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: play_ui_cancel
@@ -684,8 +888,138 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 56298cd3335bce4baf0f01cc54b0bc6a
     GuidInternal: 
-    m_lastTime: -8585737052867855201
-    List: []
+    m_lastTime: -8585736979939362633
+    List:
+    - name: Ini_Movement
+      guid: 38f2bde3dce84e419c06704c05ee4686
+      id: 2064316991
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56298cd3335bce4baf0f01cc54b0bc6a
+      - ElementName: Ini_Movement
+        ObjectType: 9
+        guid: 38f2bde3dce84e419c06704c05ee4686
+      Path: States\Default Work Unit\Ini_Movement
+      values:
+      - name: grabbing
+        guid: 68601cf99675554da221e4d7a7dc1dd6
+        id: 2354840849
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: grabbing
+          ObjectType: 8
+          guid: 68601cf99675554da221e4d7a7dc1dd6
+      - name: idle
+        guid: fbaeae2195373945a89921eee896cef4
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: idle
+          ObjectType: 8
+          guid: fbaeae2195373945a89921eee896cef4
+      - name: isFalling
+        guid: 2569e449a85a1141a59d2cb681c25758
+        id: 1579702610
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: isFalling
+          ObjectType: 8
+          guid: 2569e449a85a1141a59d2cb681c25758
+      - name: isJumping
+        guid: bbc63e78ec9f914ea753be7fd0a44ee9
+        id: 594781027
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: isJumping
+          ObjectType: 8
+          guid: bbc63e78ec9f914ea753be7fd0a44ee9
+      - name: isSwinging
+        guid: 902fe74d5ba07c4eba5c4ec4f9981372
+        id: 605894799
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: isSwinging
+          ObjectType: 8
+          guid: 902fe74d5ba07c4eba5c4ec4f9981372
+      - name: isWalking
+        guid: 3ca2ab80f03d5b4d83965737decf2c0e
+        id: 3629409974
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: isWalking
+          ObjectType: 8
+          guid: 3ca2ab80f03d5b4d83965737decf2c0e
+      - name: None
+        guid: f3ea4042bc1694428306f3c9b437c1a0
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: None
+          ObjectType: 8
+          guid: f3ea4042bc1694428306f3c9b437c1a0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -715,7 +1049,7 @@ MonoBehaviour:
     m_lastTime: -8585747451146818675
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 03000000040000000500000006000000070000000a0000000b0000000c00000012000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
