@@ -6,8 +6,8 @@
 				<SoundBank Name="General_SoundBank" ID="{9CBC1FED-FFFF-45C8-B0EC-06456E9DDC0C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Andy's_Work_Unit" ID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Andy's_Work_Unit" ID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}" WorkUnitID="{5785A380-028C-4EAC-A79B-34EDBB4B72C0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="James'_Work_Unit" ID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
