@@ -79,7 +79,19 @@ public class Timer : MonoBehaviour
     // Update the string to correspond to the saved values
     private void UpdateTimeStr()
     {
-        strTime = minutes.ToString() + ":" + seconds.ToString();
+        // Check if the seconds value is less than 10
+        if(seconds < 10)
+        {
+            // Update time string with a 0 before the seconds value
+            strTime = minutes.ToString() + ":0" + seconds.ToString();
+        }
+        else
+        {
+            // Update time string
+            strTime = minutes.ToString() + ":" + seconds.ToString();
+        }
+
+        // Set text to the text string
         GetComponent<TMPro.TextMeshProUGUI>().text = strTime;
     }
     // Get score calculated from the time remaining
