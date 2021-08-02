@@ -35,7 +35,8 @@ public class MenuManager : MonoBehaviour
     {
         // Play confirm sound
         AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
-        SceneManager.LoadScene("Level1");
+        //SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("newLevel1");
     }
 
     // Close the application
