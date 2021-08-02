@@ -74,7 +74,7 @@
 					<ChildrenList>
 						<Folder Name="UFO" ID="{E42F3D03-9E11-48BC-BAE1-92DB05ECE4F6}" ShortID="890233054">
 							<ChildrenList>
-								<Event Name="play_ufo_idle" ID="{AC6ADF76-391A-4A67-B207-B319EFBBAC20}">
+								<Event Name="play_ufo_idle_01" ID="{AC6ADF76-391A-4A67-B207-B319EFBBAC20}">
 									<ChildrenList>
 										<Action Name="" ID="{DBD0FB31-EB7E-442D-9763-9947D33966AF}" ShortID="376825759">
 											<ReferenceList>
@@ -85,7 +85,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="play_beam_up" ID="{57BA416F-FB72-4955-8E2B-393A9E97F0C2}">
+								<Event Name="play_beam_up_01" ID="{57BA416F-FB72-4955-8E2B-393A9E97F0C2}">
 									<ChildrenList>
 										<Action Name="" ID="{B2AA4079-987D-49BC-B90D-35D3C6FD8FD1}" ShortID="426118484">
 											<ReferenceList>
