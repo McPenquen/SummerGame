@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4005775235">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1995917701">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,12 +21,12 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="194583585">
+		<SoundBank Id="3657742645" Language="SFX" Hash="3783490676">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3168572341" Name="play_beam_up" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up" DurationType="OneShot" DurationMin="2.375000" DurationMax="2.500000">
+				<Event Id="3168572341" Name="play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_beam_up" DurationType="OneShot" DurationMin="2.375000" DurationMax="2.500000">
 					<IncludedMemoryFiles>
 						<File Id="113374674" Language="SFX">
 							<ShortName>UFO_Beam_Up_2.wav</ShortName>
@@ -39,6 +39,134 @@
 						<File Id="1028696354" Language="SFX">
 							<ShortName>UFO_Beam_Up_4.wav</ShortName>
 							<Path>SFX\UFO_Beam_Up_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3488140881" Name="play_beam_up_01" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up_01" DurationType="OneShot" DurationMin="2.375000" DurationMax="2.500000">
+					<IncludedMemoryFiles>
+						<File Id="113374674" Language="SFX">
+							<ShortName>UFO_Beam_Up_2.wav</ShortName>
+							<Path>SFX\UFO_Beam_Up_2_10C4C929.wem</Path>
+						</File>
+						<File Id="383757867" Language="SFX">
+							<ShortName>UFO_Beam_Up_3.wav</ShortName>
+							<Path>SFX\UFO_Beam_Up_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1028696354" Language="SFX">
+							<ShortName>UFO_Beam_Up_4.wav</ShortName>
+							<Path>SFX\UFO_Beam_Up_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2894346942" Name="play_checkpoint_phone_ring" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="516595780" Language="SFX">
+							<ShortName>Telephone_1.wav</ShortName>
+							<Path>SFX\Telephone_1_10C4C929.wem</Path>
+						</File>
+						<File Id="517667731" Language="SFX">
+							<ShortName>Payphone_Lights_Humming_1.wav</ShortName>
+							<Path>SFX\Payphone_Lights_Humming_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="857392389" Language="SFX">
+							<ShortName>Telephone_4.wav</ShortName>
+							<Path>SFX\Telephone_4_10C4C929.wem</Path>
+						</File>
+						<File Id="912278910" Language="SFX">
+							<ShortName>Telephone_3.wav</ShortName>
+							<Path>SFX\Telephone_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1034876210" Language="SFX">
+							<ShortName>Telephone_2.wav</ShortName>
+							<Path>SFX\Telephone_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2952657888" Name="play_checkpoint_success" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success" DurationType="OneShot" DurationMin="5.117991" DurationMax="5.514213">
+					<IncludedMemoryFiles>
+						<File Id="351277226" Language="SFX">
+							<ShortName>Answering_Phone_2.wav</ShortName>
+							<Path>SFX\Answering_Phone_2_10C4C929.wem</Path>
+						</File>
+						<File Id="942732362" Language="SFX">
+							<ShortName>Telephone_Receiver_1.wav</ShortName>
+							<Path>SFX\Telephone_Receiver_1_10C4C929.wem</Path>
+						</File>
+						<File Id="967770350" Language="SFX">
+							<ShortName>Answering_Phone_4.wav</ShortName>
+							<Path>SFX\Answering_Phone_4_10C4C929.wem</Path>
+						</File>
+						<File Id="984249789" Language="SFX">
+							<ShortName>Answering_Phone_3.wav</ShortName>
+							<Path>SFX\Answering_Phone_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2689642121" Name="play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_plant" MaxAttenuation="5.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="76287148" Language="SFX">
+							<ShortName>Plant_Sounds_14.wav</ShortName>
+							<Path>SFX\Plant_Sounds_14_10C4C929.wem</Path>
+						</File>
+						<File Id="112066250" Language="SFX">
+							<ShortName>Plant_Sounds_2.wav</ShortName>
+							<Path>SFX\Plant_Sounds_2_10C4C929.wem</Path>
+						</File>
+						<File Id="379661347" Language="SFX">
+							<ShortName>Plant_Sounds_12.wav</ShortName>
+							<Path>SFX\Plant_Sounds_12_10C4C929.wem</Path>
+						</File>
+						<File Id="390587651" Language="SFX">
+							<ShortName>Plant_Sounds_5.wav</ShortName>
+							<Path>SFX\Plant_Sounds_5_10C4C929.wem</Path>
+						</File>
+						<File Id="419090162" Language="SFX">
+							<ShortName>Plant_Sounds_4.wav</ShortName>
+							<Path>SFX\Plant_Sounds_4_10C4C929.wem</Path>
+						</File>
+						<File Id="462472093" Language="SFX">
+							<ShortName>Plant_Sounds_16.wav</ShortName>
+							<Path>SFX\Plant_Sounds_16_10C4C929.wem</Path>
+						</File>
+						<File Id="471237613" Language="SFX">
+							<ShortName>Plant_Sounds_11.wav</ShortName>
+							<Path>SFX\Plant_Sounds_11_10C4C929.wem</Path>
+						</File>
+						<File Id="509539300" Language="SFX">
+							<ShortName>Plant_Sounds_9.wav</ShortName>
+							<Path>SFX\Plant_Sounds_9_10C4C929.wem</Path>
+						</File>
+						<File Id="650233984" Language="SFX">
+							<ShortName>Plant_Sounds_1.wav</ShortName>
+							<Path>SFX\Plant_Sounds_1_10C4C929.wem</Path>
+						</File>
+						<File Id="683678928" Language="SFX">
+							<ShortName>Plant_Sounds_10.wav</ShortName>
+							<Path>SFX\Plant_Sounds_10_10C4C929.wem</Path>
+						</File>
+						<File Id="687883256" Language="SFX">
+							<ShortName>Plant_Sounds_6.wav</ShortName>
+							<Path>SFX\Plant_Sounds_6_10C4C929.wem</Path>
+						</File>
+						<File Id="709045239" Language="SFX">
+							<ShortName>Plant_Sounds_7.wav</ShortName>
+							<Path>SFX\Plant_Sounds_7_10C4C929.wem</Path>
+						</File>
+						<File Id="746551178" Language="SFX">
+							<ShortName>Plant_Sounds_13.wav</ShortName>
+							<Path>SFX\Plant_Sounds_13_10C4C929.wem</Path>
+						</File>
+						<File Id="838443512" Language="SFX">
+							<ShortName>Plant_Sounds_3.wav</ShortName>
+							<Path>SFX\Plant_Sounds_3_10C4C929.wem</Path>
+						</File>
+						<File Id="975248344" Language="SFX">
+							<ShortName>Plant_Sounds_15.wav</ShortName>
+							<Path>SFX\Plant_Sounds_15_10C4C929.wem</Path>
+						</File>
+						<File Id="987577468" Language="SFX">
+							<ShortName>Plant_Sounds_8.wav</ShortName>
+							<Path>SFX\Plant_Sounds_8_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -186,11 +314,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3790043115" Name="play_ufo_idle" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle" DurationType="Infinite">
+				<Event Id="3790043115" Name="play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle" MaxAttenuation="20.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="106157273" Language="SFX">
 							<ShortName>UFO_Engine_Idle_1.wav</ShortName>
-							<Path>SFX\UFO_Engine_Idle_1_D79FB2B7.wem</Path>
+							<Path>SFX\UFO_Engine_Idle_1_8D80BC05.wem</Path>
+						</File>
+						<File Id="314159048" Language="SFX">
+							<ShortName>UFO_Lights_Alarms_1.wav</ShortName>
+							<Path>SFX\UFO_Lights_Alarms_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2888126495" Name="play_ufo_idle_01" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle_01" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="106157273" Language="SFX">
+							<ShortName>UFO_Engine_Idle_1.wav</ShortName>
+							<Path>SFX\UFO_Engine_Idle_1_8D80BC05.wem</Path>
 						</File>
 						<File Id="314159048" Language="SFX">
 							<ShortName>UFO_Lights_Alarms_1.wav</ShortName>
@@ -256,6 +396,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2743729328" Name="stop_play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_beam_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="139174012" Name="stop_play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_plant" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3729613304" Name="stop_play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_ufo_idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="492406940" Name="stop_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\stop_start_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2910167054" Name="stop_ui" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\stop_ui" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>

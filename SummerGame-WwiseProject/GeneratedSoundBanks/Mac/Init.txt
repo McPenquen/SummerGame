@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2064316991	Ini_Movement			\Default Work Unit\Ini_Movement	
+
+State	ID	Name	State Group			Notes
+	594781027	isJumping	Ini_Movement			
+	605894799	isSwinging	Ini_Movement			
+	748895195	None	Ini_Movement			
+	1579702610	isFalling	Ini_Movement			
+	1874288895	idle	Ini_Movement			
+	2354840849	grabbing	Ini_Movement			
+	3629409974	isWalking	Ini_Movement			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Andy's_Game_Parameters\Andy's_Work_Unit\Music_Volume	
 	1564184899	SFX_Volume			\Andy's_Game_Parameters\Andy's_Work_Unit\SFX_Volume	
