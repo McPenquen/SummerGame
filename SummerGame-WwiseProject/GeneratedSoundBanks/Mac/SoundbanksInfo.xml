@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1995917701">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1700535148">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="3783490676">
+		<SoundBank Id="3657742645" Language="SFX" Hash="4133302015">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
@@ -101,6 +101,156 @@
 							<Path>SFX\Answering_Phone_3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3259393782" Name="play_gem_gripping" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_gripping" DurationType="OneShot" DurationMin="0.754649" DurationMax="1.861406">
+					<IncludedMemoryFiles>
+						<File Id="80475751" Language="SFX">
+							<ShortName>PlayerGem_Gripping_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="185432557" Language="SFX">
+							<ShortName>PlayerGem_Gripping_7.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_7_10C4C929.wem</Path>
+						</File>
+						<File Id="497830579" Language="SFX">
+							<ShortName>PlayerGem_Gripping_5.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="546820493" Language="SFX">
+							<ShortName>PlayerGem_Gripping_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="578439824" Language="SFX">
+							<ShortName>PlayerGem_Gripping_6.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_6_10C4C929.wem</Path>
+						</File>
+						<File Id="864741291" Language="SFX">
+							<ShortName>PlayerGem_Gripping_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="894027688" Language="SFX">
+							<ShortName>PlayerGem_Gripping_4.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2346201062" Name="play_gem_jumping" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_jumping" DurationType="OneShot" DurationMin="0.673379" DurationMax="1.387392">
+					<IncludedMemoryFiles>
+						<File Id="273825055" Language="SFX">
+							<ShortName>PlayerGem_Jumping_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="383594553" Language="SFX">
+							<ShortName>PlayerGem_Jumping_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="667000515" Language="SFX">
+							<ShortName>PlayerGem_Jumping_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="761976081" Language="SFX">
+							<ShortName>PlayerGem_Jumping_4.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1912911931" Name="play_gem_landing" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2682184630" Name="play_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state" DurationType="Mixed" DurationMin="0.000000" DurationMax="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="80475751" Language="SFX">
+							<ShortName>PlayerGem_Gripping_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="185432557" Language="SFX">
+							<ShortName>PlayerGem_Gripping_7.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_7_10C4C929.wem</Path>
+						</File>
+						<File Id="221046977" Language="SFX">
+							<ShortName>PlayerGem_Swinging_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Swinging_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="258596799" Language="SFX">
+							<ShortName>PlayerGem_Falling.wav</ShortName>
+							<Path>SFX\PlayerGem_Falling_D79FB2B7.wem</Path>
+						</File>
+						<File Id="273825055" Language="SFX">
+							<ShortName>PlayerGem_Jumping_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="363765604" Language="SFX">
+							<ShortName>PlayerGem_Walking_Loop_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Walking_Loop_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="383594553" Language="SFX">
+							<ShortName>PlayerGem_Jumping_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="497830579" Language="SFX">
+							<ShortName>PlayerGem_Gripping_5.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="546820493" Language="SFX">
+							<ShortName>PlayerGem_Gripping_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="578439824" Language="SFX">
+							<ShortName>PlayerGem_Gripping_6.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_6_10C4C929.wem</Path>
+						</File>
+						<File Id="667000515" Language="SFX">
+							<ShortName>PlayerGem_Jumping_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="761976081" Language="SFX">
+							<ShortName>PlayerGem_Jumping_4.wav</ShortName>
+							<Path>SFX\PlayerGem_Jumping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="864741291" Language="SFX">
+							<ShortName>PlayerGem_Gripping_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="894027688" Language="SFX">
+							<ShortName>PlayerGem_Gripping_4.wav</ShortName>
+							<Path>SFX\PlayerGem_Gripping_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{8E492038-33E6-4394-BBFE-65DC3505D77D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{68DC2B2E-A336-4D3E-AABC-ACE2B81F9BD2}">
+							<Media>
+								<File Id="363765604"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E4F209A4-9E96-4286-8084-3E3DC23D3340}">
+							<Media>
+								<File Id="258596799"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1EB1CE19-AAA8-4AC8-99A1-41FE212452D1}">
+							<Media>
+								<File Id="221046977"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A265AA87-A42B-4FA0-A80F-66CCDB78F24C}">
+							<Media>
+								<File Id="80475751"/>
+								<File Id="185432557"/>
+								<File Id="497830579"/>
+								<File Id="546820493"/>
+								<File Id="578439824"/>
+								<File Id="864741291"/>
+								<File Id="894027688"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}">
+							<Media>
+								<File Id="273825055"/>
+								<File Id="383594553"/>
+								<File Id="667000515"/>
+								<File Id="761976081"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2689642121" Name="play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_plant" MaxAttenuation="5.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -402,6 +552,20 @@
 				<Event Id="492406940" Name="stop_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\stop_start_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2910167054" Name="stop_ui" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\stop_ui" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="72319902" Name="Gem_Movement" ObjectPath="\States\Default Work Unit\Gem_Movement">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gem_Movement\None"/>
+						<State Id="3629409974" Name="isWalking" ObjectPath="\States\Default Work Unit\Gem_Movement\isWalking"/>
+						<State Id="594781027" Name="isJumping" ObjectPath="\States\Default Work Unit\Gem_Movement\isJumping"/>
+						<State Id="1579702610" Name="isFalling" ObjectPath="\States\Default Work Unit\Gem_Movement\isFalling"/>
+						<State Id="1874288895" Name="idle" ObjectPath="\States\Default Work Unit\Gem_Movement\idle"/>
+						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Gem_Movement\isSwinging"/>
+						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Gem_Movement\isGrabbing"/>
+						<State Id="3910744550" Name="isLanding" ObjectPath="\States\Default Work Unit\Gem_Movement\isLanding"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

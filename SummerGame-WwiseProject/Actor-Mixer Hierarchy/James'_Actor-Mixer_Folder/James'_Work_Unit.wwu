@@ -8,15 +8,44 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Menu" ID="{7A362B7A-A5BE-47AA-BF43-2CE5D095ABB8}" ShortID="663887801">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{CB602948-2D1D-4977-A8D5-378184293E80}">
+										<Effect Name="Hall_Large_Bright (Custom)" ID="{99863815-E39B-48DE-84EA-8BA028A7D4C6}" ShortID="583825884" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="DecayTime" Type="Real32" Value="4.9"/>
+												<Property Name="Density" Type="Real32" Value="70"/>
+												<Property Name="DryLevel" Type="Real32" Value="-2"/>
+												<Property Name="ERLevel" Type="Real32" Value="-23"/>
+												<Property Name="ERPattern" Type="int32" Value="15"/>
+												<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+												<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+												<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+												<Property Name="Filter3Gain" Type="Real32" Value="3"/>
+												<Property Name="HFDamping" Type="Real32" Value="1.6"/>
+												<Property Name="PreDelay" Type="Real32" Value="17"/>
+												<Property Name="Quality" Type="int32" Value="14"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+												<Property Name="RoomShape" Type="Real32" Value="55"/>
+												<Property Name="RoomSize" Type="Real32" Value="19"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
@@ -202,6 +231,9 @@
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
 												</Reference>
@@ -221,7 +253,6 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
-														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -239,16 +270,6 @@
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-														</Reference>
-														<Reference Name="Effect0">
-															<Custom>
-																<Effect Name="Wwise RoomVerb (Custom)" ID="{7F643340-9883-472B-B098-64F06135ACF0}" ShortID="84665512" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-																	<PropertyList>
-																		<Property Name="DecayTime" Type="Real32" Value="0.6"/>
-																		<Property Name="DryLevel" Type="Real32" Value="-7.3"/>
-																	</PropertyList>
-																</Effect>
-															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
@@ -392,6 +413,586 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Player_Characters" ID="{349F0034-A329-4B76-A427-EE45D0E9AAC6}" ShortID="316604367">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Gem" ID="{3D573DC6-D277-4546-A132-EC4C80B12EDF}" ShortID="280776987">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Movement_State_Switch" ID="{FF9D2071-CB2D-40B6-A6EF-2095AAD45DDC}" ShortID="156361728">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Gem_Movement" ID="{D5E33E85-9D0D-45FC-BE3A-5256D6D78617}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Gem_Walking_1" ID="{A59DB7B4-DC84-4739-BAD4-C7AC4C627763}" ShortID="162764754">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerGem_Walking_Loop_1" ID="{EE6E03D6-48B6-4162-A345-2A2686835683}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerGem_Walking_Loop_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="363765604"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerGem_Walking_Loop_1" ID="{EE6E03D6-48B6-4162-A345-2A2686835683}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Gem_Falling_1" ID="{17B566D4-91F8-4D1A-8C3C-3675D3B7A3D7}" ShortID="96296866">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerGem_Falling" ID="{C7775A32-734B-468F-8AA0-6A8CE120C120}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerGem_Falling.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="258596799"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerGem_Falling" ID="{C7775A32-734B-468F-8AA0-6A8CE120C120}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Gem_Swinging_1" ID="{D3FBDF55-1D83-4E42-84B8-0691DA206844}" ShortID="288724524">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>59</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PlayerGem_Swinging_1" ID="{7AA1B4DD-904C-43DF-BD09-CFE7A325BA58}">
+													<Language>SFX</Language>
+													<AudioFile>PlayerGem_Swinging_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="221046977"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="PlayerGem_Swinging_1" ID="{7AA1B4DD-904C-43DF-BD09-CFE7A325BA58}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Gem_Gripping" ID="{41AB5735-E349-4A25-8C49-65D04F7ED8D1}" ShortID="578270198">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="PlayerGem_Gripping_1" ID="{80B8F2BA-5D31-4E7E-83B3-756999889810}" ShortID="958927643">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_1" ID="{412C9ACE-1BE6-4B24-8C94-173F41955983}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="80475751"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_1" ID="{412C9ACE-1BE6-4B24-8C94-173F41955983}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Gripping_2" ID="{6510C432-28AF-4045-B7DB-6C87EDF69859}" ShortID="661393314">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_2" ID="{803743FA-BAFA-4788-B819-F49733E4412C}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="864741291"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_2" ID="{803743FA-BAFA-4788-B819-F49733E4412C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Gripping_3" ID="{52F836A2-0729-4324-91DC-60790B221D07}" ShortID="201846765">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_3" ID="{9115F581-92F1-40FD-B846-9BC475396E08}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546820493"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_3" ID="{9115F581-92F1-40FD-B846-9BC475396E08}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Gripping_4" ID="{80EECB5C-AFD2-4563-8870-B443B8A316F5}" ShortID="322763504">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_4" ID="{130A904D-97D5-4395-A7BB-2BC775F21198}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="894027688"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_4" ID="{130A904D-97D5-4395-A7BB-2BC775F21198}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Gripping_5" ID="{F58FB158-2215-45AA-B1AD-9E51AABAB8E2}" ShortID="641030829">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_5" ID="{4A4B4474-E924-47A4-AECB-A68EBF28A7A2}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="497830579"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_5" ID="{4A4B4474-E924-47A4-AECB-A68EBF28A7A2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Gripping_6" ID="{4439397C-C5DF-4117-B197-F35567DA1129}" ShortID="698313671">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_6" ID="{BF247538-B6FB-4075-9084-37725179C56A}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="578439824"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_6" ID="{BF247538-B6FB-4075-9084-37725179C56A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Gripping_7" ID="{F95B85A3-7BD7-4739-A3E9-8E9288A3124D}" ShortID="943551242">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Gripping_7" ID="{FD2E5699-84B8-4ED9-9E9F-62243BA5FA0A}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Gripping_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="185432557"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Gripping_7" ID="{FD2E5699-84B8-4ED9-9E9F-62243BA5FA0A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Gem_Jumping" ID="{7E897862-7F5D-48AF-9721-FC2A3A7B4BAB}" ShortID="976575320">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="PlayerGem_Jumping_1" ID="{290DA831-D4DE-4D4D-9A6C-9838325DFFBE}" ShortID="576705642">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Jumping_1" ID="{1B2361F1-DD0B-49D0-BA34-89346E153024}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Jumping_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="273825055"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Jumping_1" ID="{1B2361F1-DD0B-49D0-BA34-89346E153024}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Jumping_2" ID="{F14FD113-F9D7-4AA6-AE41-B4E1A5DDBB11}" ShortID="993165762">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Jumping_2" ID="{74B28A19-CA86-4CCD-8555-8287CB3BB032}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Jumping_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="667000515"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Jumping_2" ID="{74B28A19-CA86-4CCD-8555-8287CB3BB032}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Jumping_3" ID="{A945CC72-BB27-4987-8A95-35C4922AC7A8}" ShortID="83538340">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Jumping_3" ID="{CE4442C9-275C-4C0E-BC31-23A602A8793E}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Jumping_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="383594553"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Jumping_3" ID="{CE4442C9-275C-4C0E-BC31-23A602A8793E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Jumping_4" ID="{83A47DB1-B460-410E-B8D0-24AA98E9B666}" ShortID="836472854">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Jumping_4" ID="{CC87B9D7-7C1C-4F1B-AC68-111D1BF6185D}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Jumping_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="761976081"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Jumping_4" ID="{CC87B9D7-7C1C-4F1B-AC68-111D1BF6185D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Gem_Landing" ID="{C989C447-4DA2-4360-A79B-1B975393801D}" ShortID="1063583467">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="PlayerGem_Landing_1" ID="{ED0EA8CE-5200-4078-AA3E-81DB978E8423}" ShortID="784361196">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Landing_1" ID="{3C2A1EE1-8910-4E6E-AA60-8522C771D83F}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Landing_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="779702268"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Landing_1" ID="{3C2A1EE1-8910-4E6E-AA60-8522C771D83F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Landing_2" ID="{50501AF4-3458-409E-AADF-DC96AFC9C21A}" ShortID="567095043">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Landing_2" ID="{FD10587B-5635-4BA9-914C-D095E345E529}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Landing_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1027132071"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Landing_2" ID="{FD10587B-5635-4BA9-914C-D095E345E529}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PlayerGem_Landing_3" ID="{90EAA00C-EE8C-417C-AE22-F9AB775749C2}" ShortID="453341994">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PlayerGem_Landing_3" ID="{FA92173C-DEEC-43BC-AD93-E3F69865EADB}">
+															<Language>SFX</Language>
+															<AudioFile>PlayerGem_Landing_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="266703678"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="PlayerGem_Landing_3" ID="{FA92173C-DEEC-43BC-AD93-E3F69865EADB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Gem_idle" ID="{9C12DEB3-3A53-4A22-BC06-1931B04282A8}" ShortID="555612117">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_Gripping" ID="{41AB5735-E349-4A25-8C49-65D04F7ED8D1}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_Landing" ID="{C989C447-4DA2-4360-A79B-1B975393801D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_Swinging_1" ID="{D3FBDF55-1D83-4E42-84B8-0691DA206844}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_Jumping" ID="{7E897862-7F5D-48AF-9721-FC2A3A7B4BAB}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_idle" ID="{9C12DEB3-3A53-4A22-BC06-1931B04282A8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_Walking_1" ID="{A59DB7B4-DC84-4739-BAD4-C7AC4C627763}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Gem_Falling_1" ID="{17B566D4-91F8-4D1A-8C3C-3675D3B7A3D7}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="isSwinging" ID="{1EB1CE19-AAA8-4AC8-99A1-41FE212452D1}"/>
+												<ItemList>
+													<ItemRef Name="Gem_Swinging_1" ID="{D3FBDF55-1D83-4E42-84B8-0691DA206844}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="isWalking" ID="{68DC2B2E-A336-4D3E-AABC-ACE2B81F9BD2}"/>
+												<ItemList>
+													<ItemRef Name="Gem_Walking_1" ID="{A59DB7B4-DC84-4739-BAD4-C7AC4C627763}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="idle" ID="{6DC66D57-6EE7-4724-A556-C7CF3FE74BAB}"/>
+												<ItemList>
+													<ItemRef Name="Gem_idle" ID="{9C12DEB3-3A53-4A22-BC06-1931B04282A8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="isGrabbing" ID="{A265AA87-A42B-4FA0-A80F-66CCDB78F24C}"/>
+												<ItemList>
+													<ItemRef Name="Gem_Gripping" ID="{41AB5735-E349-4A25-8C49-65D04F7ED8D1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="isJumping" ID="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}"/>
+												<ItemList>
+													<ItemRef Name="Gem_Jumping" ID="{7E897862-7F5D-48AF-9721-FC2A3A7B4BAB}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="isFalling" ID="{E4F209A4-9E96-4286-8084-3E3DC23D3340}"/>
+												<ItemList>
+													<ItemRef Name="Gem_Falling_1" ID="{17B566D4-91F8-4D1A-8C3C-3675D3B7A3D7}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
