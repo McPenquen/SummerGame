@@ -100,6 +100,44 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Players" ID="{154BF816-8A94-4C28-93DB-079559A0EDE5}" ShortID="385036964">
+					<ChildrenList>
+						<Event Name="play_gem_movement_switch_state" ID="{D657AF9A-8411-48B2-8785-69C6017DC18E}">
+							<ChildrenList>
+								<Action Name="" ID="{18619440-68AB-4509-8E36-0B2514E86238}" ShortID="382881327">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Movement_State_Switch" ID="{FF9D2071-CB2D-40B6-A6EF-2095AAD45DDC}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_gem_jumping" ID="{47987C8A-A747-442F-BE6A-1954D1266A7E}">
+							<ChildrenList>
+								<Action Name="" ID="{9D00FA44-D265-476E-948A-DCF93D29FC67}" ShortID="836018716">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gem_Jumping" ID="{7E897862-7F5D-48AF-9721-FC2A3A7B4BAB}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_gem_gripping" ID="{0C340879-49E4-40E8-AB54-CA2BAC4BBA8D}">
+							<ChildrenList>
+								<Action Name="" ID="{D314F2EA-7CCB-4C38-B8DA-94887C2F960C}" ShortID="964078276">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gem_Gripping" ID="{41AB5735-E349-4A25-8C49-65D04F7ED8D1}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_gem_landing" ID="{4FD35A85-316E-4703-8B56-7642063F2C09}"/>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

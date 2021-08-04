@@ -14,6 +14,18 @@
 						<State Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Gem_Movement" ID="{D5E33E85-9D0D-45FC-BE3A-5256D6D78617}">
+					<ChildrenList>
+						<State Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
+						<State Name="isWalking" ID="{68DC2B2E-A336-4D3E-AABC-ACE2B81F9BD2}"/>
+						<State Name="isJumping" ID="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}"/>
+						<State Name="isFalling" ID="{E4F209A4-9E96-4286-8084-3E3DC23D3340}"/>
+						<State Name="idle" ID="{6DC66D57-6EE7-4724-A556-C7CF3FE74BAB}"/>
+						<State Name="isSwinging" ID="{1EB1CE19-AAA8-4AC8-99A1-41FE212452D1}"/>
+						<State Name="isGrabbing" ID="{A265AA87-A42B-4FA0-A80F-66CCDB78F24C}"/>
+						<State Name="isLanding" ID="{6FA03933-43A3-4F62-8707-42006B775876}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

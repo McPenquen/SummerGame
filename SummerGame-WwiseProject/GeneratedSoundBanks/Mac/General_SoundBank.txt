@@ -3,8 +3,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	249738436	play_ui_move			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_move	
 	452547817	Stop_All			\James'_Event_Folder\James'_Work_Unit\Stop_All	
 	492406940	stop_start_up			\Default Work Unit\Start_Up_Events\stop_start_up	
+	1912911931	play_gem_landing			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing	
 	1986548623	play_ui_exit			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit	
 	2244506081	play_ui_cancel			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel	
+	2346201062	play_gem_jumping			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_jumping	
+	2682184630	play_gem_movement_switch_state			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state	
 	2689642121	play_plant			\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_plant	
 	2743729328	stop_play_beam_up			\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_beam_up	
 	2888126495	play_ufo_idle_01			\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle_01	
@@ -13,15 +16,30 @@ Event	ID	Name			Wwise Object Path	Notes
 	2952657888	play_checkpoint_success			\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success	
 	3022734157	play_ui_confirm			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_confirm	
 	3168572341	play_beam_up			\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_beam_up	
+	3259393782	play_gem_gripping			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_gripping	
 	3488140881	play_beam_up_01			\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up_01	
 	3729613304	stop_play_ufo_idle			\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_ufo_idle	
 	3790043115	play_ufo_idle			\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle	
 	3987033674	play_start_up			\Default Work Unit\Start_Up_Events\play_start_up	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	72319902	Gem_Movement			\Default Work Unit\Gem_Movement	
+
+State	ID	Name	State Group			Notes
+	594781027	isJumping	Gem_Movement			
+	605894799	isSwinging	Gem_Movement			
+	748895195	None	Gem_Movement			
+	1579702610	isFalling	Gem_Movement			
+	1874288895	idle	Gem_Movement			
+	3183196101	isGrabbing	Gem_Movement			
+	3629409974	isWalking	Gem_Movement			
+	3910744550	isLanding	Gem_Movement			
+
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
-	84665512	Wwise RoomVerb (Custom)	Wwise RoomVerb			
 	415841907	Space_Garage	Wwise RoomVerb			
+	583825884	Hall_Large_Bright (Custom)	Wwise RoomVerb			
+	1588715066	Echoes_Linear	Wwise Delay			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	34413156	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\silence\Wwise Silence	
@@ -34,16 +52,21 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	41907832	UI_Item_Select_Confirm_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_4		303168
 	76287148	Plant_Sounds_14	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_14_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_14		264064
+	80475751	PlayerGem_Gripping_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_1		80960
 	106157273	UFO_Engine_Idle_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Engine_Idle_1_8D80BC05.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Ship_Sounds\UFO_Engine_Idle_1		539288
 	112066250	Plant_Sounds_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_2_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_2		264064
 	113374674	UFO_Beam_Up_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Beam_Up_2_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Beam_Up\UFO_Beam_Up_2		228064
+	185432557	PlayerGem_Gripping_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_7_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_7		84800
 	189333254	Sand_C_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_C_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_C_4		3582748
 	190737476	Red_Hawk_Screech_NFU_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_3		363184
 	211988747	Crickets_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Crickets WAV\Crickets_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_1		405524
 	214807555	Coyote_howl_NFU_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_7		304884
+	221046977	Gem_Swinging_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Swinging_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Swinging_1		1175616
 	222963939	Red_Hawk_Screech_NFU_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_5		412136
 	225471993	UI_Item_Select_Move_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Move_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Move\UI_Item_Select_Move\UI_Item_Select_Move_1		101696
 	227426305	Sizzling_Desert_Sand_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sizzling_Desert_Sand_1_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Sizzling_Heat\Sizzling_Desert_Sand_1		2091200
+	258596799	Gem_Falling_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Falling_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Falling_1		984128
+	273825055	PlayerGem_Jumping_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Jumping_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_1		59456
 	291252475	Red_Hawk_Screech_NFU_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_4		354806
 	311953300	Sand_B_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_B_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_B_3		571952
 	314159048	UFO_Lights_Alarms_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Lights_Alarms_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Ship_Sounds\UFO_Lights_Alarms_1		1161064
@@ -54,8 +77,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	339418712	Red_Hawk_Screech_NFU_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_1		369800
 	349232086	Wolf_Howl_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_1_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_1		576064
 	351277226	Answering_Phone_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Answering_Phone_2_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Telephone\Telephone_Answered\Answering_Phone_2		69706
+	363765604	Gem_Walking_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Walking_Loop_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Walking_1		1263680
 	379661347	Plant_Sounds_12	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_12_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_12		264064
 	381017666	UI_Item_Select_Confirm_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_1		419904
+	383594553	PlayerGem_Jumping_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Jumping_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_3		69696
 	383757867	UFO_Beam_Up_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UFO_Beam_Up_3_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\UFO\Beam_Up\UFO_Beam_Up_3		228064
 	389916625	Red_Hawk_Screech_NFU_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Hawk_WAV\Red_Hawk_Screech_NFU_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Hawk\Hawk_Screech\Red_Hawk_Screech_NFU_2		387704
 	390587651	Plant_Sounds_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_5_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_5		264064
@@ -69,14 +94,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	462472093	Plant_Sounds_16	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_16_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_16		528064
 	471237613	Plant_Sounds_11	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_11_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_11		264064
 	494893542	Wolf_Howl_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_4_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_4		432064
+	497830579	PlayerGem_Gripping_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_5_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_5		78912
 	509539300	Plant_Sounds_9	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_9_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_9		264064
 	516595780	Telephone_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Telephone_1_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Telephone\Telephone_Ringing\Telephone_1		144064
 	517667731	Payphone_Lights_Humming_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Payphone_Lights_Humming_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Telephone\Payphone_Lights_Humming_1		586528
+	546820493	PlayerGem_Gripping_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_3		164240
 	564895375	UI_Item_Select_Confirm_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\UI_Item_Select_Confirm_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_3		321600
+	578439824	PlayerGem_Gripping_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_6_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_6		83520
 	578510103	Coyote_howl_NFU_10	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_10		331256
 	583410628	Sand_C_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_C_7_77BCC0E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_C_7		613524
 	609795084	Wolf_Howl_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_3_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_3		552064
 	650233984	Plant_Sounds_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_1_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_1		264064
+	667000515	PlayerGem_Jumping_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Jumping_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_2		69696
 	683678928	Plant_Sounds_10	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_10_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_10		264064
 	684745479	Sand_C_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_C_1_FF92F839.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_short\Sand_C_1		349096
 	687883256	Plant_Sounds_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_6_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_6		264064
@@ -86,12 +115,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	735834567	Coyote_howl_NFU_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_4		338752
 	746551178	Plant_Sounds_13	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_13_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_13		264064
 	754934238	Sand_C_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_C_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_C_3		3183552
+	761976081	PlayerGem_Jumping_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Jumping_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_4		122432
 	795877897	Coyote_howl_NFU_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_3		419720
 	816023224	Crickets_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Crickets WAV\Crickets 4_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Crickets\Crickets\Crickets_4		135800
 	838443512	Plant_Sounds_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Plant_Sounds_3_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Plants\Plants\Plant_Sounds_3		264064
 	857392389	Telephone_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Telephone_4_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Telephone\Telephone_Ringing\Telephone_4		144064
+	864741291	PlayerGem_Gripping_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_2		66624
 	887143814	Sand_D_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Sand_WAV\Sand_D_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Sand\sand_long\Sand_D_1		3582748
 	893487549	Coyote_howl_NFU_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_2		373592
+	894027688	PlayerGem_Gripping_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\PlayerGem_Gripping_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_4		116874
 	898576691	Wolf_Howl_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Wolf_Howl_2_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Ambience_Andy\Wolf\Wolf\Wolf_Howl_2		624064
 	906827084	Coyote_howl_NFU_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Coyote_WAV\Coyote_howl_NFU_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SummerGame\Ambience\Coyotes\Coyotes_Howl\Coyote_howl_NFU_6		325612
 	912278910	Telephone_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Telephone_3_10C4C929.wem		\Actor-Mixer Hierarchy\Andy's_Actor-Mixer_Folder\Andy's_Work_Unit\Environment_Objects\Telephone\Telephone_Ringing\Telephone_3		144064
