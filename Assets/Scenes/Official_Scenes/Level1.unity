@@ -31737,6 +31737,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7541878804794327936, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
+      propertyPath: needsArrowControlHelp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8230913630301690420, guid: 2e923e895407ddb4a943bffb56f50a52, type: 3}
       propertyPath: backScene
       value: 
