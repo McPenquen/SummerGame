@@ -135,7 +135,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="play_gem_landing" ID="{4FD35A85-316E-4703-8B56-7642063F2C09}"/>
+						<Event Name="play_gem_landing" ID="{4FD35A85-316E-4703-8B56-7642063F2C09}">
+							<ChildrenList>
+								<Action Name="" ID="{C66E3B5F-D99A-4EF9-A0E0-743053E8093F}" ShortID="2126668">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gem_Landing" ID="{C989C447-4DA2-4360-A79B-1B975393801D}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_gem_movement_switch_state" ID="{9DC60405-76F3-4581-ACD2-6216DE14BD95}">
+							<ChildrenList>
+								<Action Name="" ID="{95DBDCF6-7539-49FF-ABF9-F0F7D402091B}" ShortID="743485551">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Movement_State_Switch" ID="{FF9D2071-CB2D-40B6-A6EF-2095AAD45DDC}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

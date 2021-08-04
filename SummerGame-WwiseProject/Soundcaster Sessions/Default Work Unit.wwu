@@ -95,6 +95,22 @@
 							<ObjectRef Name="Stop_All" ID="{C7625C6F-AD81-4DF8-9D24-6DD3DBC51327}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="play_gem_gripping" ID="{0C340879-49E4-40E8-AB54-CA2BAC4BBA8D}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_gem_movement_switch_state" ID="{D657AF9A-8411-48B2-8785-69C6017DC18E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_gem_jumping" ID="{47987C8A-A747-442F-BE6A-1954D1266A7E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_gem_landing" ID="{4FD35A85-316E-4703-8B56-7642063F2C09}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -112,7 +128,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
-						<CurrentStateRef Name="isWalking" ID="{68DC2B2E-A336-4D3E-AABC-ACE2B81F9BD2}"/>
+						<CurrentStateRef Name="isJumping" ID="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
