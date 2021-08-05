@@ -176,6 +176,85 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ini" ID="{A3778D60-C6C8-4BA1-ABDF-D8AB076A176B}" ShortID="336360032">
+					<ChildrenList>
+						<Event Name="play_ini_movement_switch_state" ID="{94E8E912-A952-4686-B433-C4048B22130B}">
+							<ChildrenList>
+								<Action Name="" ID="{8F93EDBA-6A2A-4541-87FC-A51AAE57C35C}" ShortID="757475268">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swinging" ID="{53DF0C42-4D88-4EE6-8F12-124F076A6A04}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{855668B1-3A90-4223-B7AA-BF44C1D183F2}" ShortID="871227662">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walking" ID="{6CE3C2DA-5D2C-406D-96CD-0C0193C754F0}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_ini_movement_switch_state" ID="{EEE3900B-2165-4149-A330-45FA7F6FE34B}">
+							<ChildrenList>
+								<Action Name="" ID="{542AAC57-318D-4F40-ACCF-EE07A26D163E}" ShortID="807047119">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walking" ID="{6CE3C2DA-5D2C-406D-96CD-0C0193C754F0}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{032DDEE2-7BC0-4F29-9477-251F3F5FB957}" ShortID="348341521">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swinging" ID="{53DF0C42-4D88-4EE6-8F12-124F076A6A04}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_ini_jumping" ID="{39B36E92-15BF-41A9-A237-8262D83A3F5C}">
+							<ChildrenList>
+								<Action Name="" ID="{3EBF330C-7448-4F72-A36D-632C7F290E24}" ShortID="872764395">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jumping" ID="{8F0C080A-4D0D-472B-9F7B-40163929CE17}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_ini_gripping" ID="{42498815-11C5-42B2-85B5-018464E1DC07}">
+							<ChildrenList>
+								<Action Name="" ID="{356613E3-BA7F-453F-B97B-8FA4546B47F5}" ShortID="314438172">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gripping" ID="{A571583F-7307-40CD-9F9A-C3335693B107}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_ini_landing" ID="{B702FF72-6177-4811-B585-2EE91BCC684E}">
+							<ChildrenList>
+								<Action Name="" ID="{166AB4F6-86D1-4164-9A64-AEFA0E265CC5}" ShortID="761522208">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{6E3D59F7-EDFE-443D-B936-09651A2C75B2}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

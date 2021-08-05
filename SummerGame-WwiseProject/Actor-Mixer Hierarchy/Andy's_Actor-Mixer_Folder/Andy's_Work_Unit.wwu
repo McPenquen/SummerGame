@@ -750,6 +750,534 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
+												<CustomState Name="" ID="{24CAF593-1340-4C8C-9684-AF0FE52A4C50}" ShortID="537129246"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
+												<CustomState Name="" ID="{7A2D7C4B-DE0D-4A2D-86E7-D83B33F2D421}" ShortID="458358508"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+												<CustomState Name="" ID="{5B0C80F5-F7A6-46E9-A40C-79660B27D279}" ShortID="665595684"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+												<CustomState Name="" ID="{EA591F1B-40A7-40BA-88C0-4B9F0E1ECB83}" ShortID="920894467"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
+												<CustomState Name="" ID="{E5ECE6A1-CD1B-4D4C-841B-608EF60A2DBC}" ShortID="808182704"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
+												<CustomState Name="" ID="{82400064-46C7-48E7-B94A-BA2FD7904E79}" ShortID="105706760"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Gripping" ID="{A571583F-7307-40CD-9F9A-C3335693B107}" ShortID="419474190">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{18DC8924-D3A8-45F8-A769-A54C7EC0004D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="202"/>
+															<Property Name="Min" Type="Real64" Value="-227"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ini_Gripping_1" ID="{E03C9F98-7A1A-4591-BDCA-2B6F83F175ED}" ShortID="21849708">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Gripping_1" ID="{C33D26B3-75F8-41D3-8EB8-564EF9AE1B1D}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Gripping_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="753504210"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Gripping_1" ID="{C33D26B3-75F8-41D3-8EB8-564EF9AE1B1D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Gripping_2" ID="{CA7D966B-625C-435E-9782-9FCC3BE518E8}" ShortID="65660089">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Gripping_2" ID="{A697B1D7-E9B7-4423-8523-67949131F6B4}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Gripping_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="423598091"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Gripping_2" ID="{A697B1D7-E9B7-4423-8523-67949131F6B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Gripping_3" ID="{4D65FFF1-1D0A-4389-B880-051EA8A9DC7A}" ShortID="756307762">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Gripping_3" ID="{2B3147E6-BC25-4D79-8774-924A21027C2B}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Gripping_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1007316953"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Gripping_3" ID="{2B3147E6-BC25-4D79-8774-924A21027C2B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Gripping_4" ID="{58C3082C-F203-4350-94AB-045104A552AF}" ShortID="499446341">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Gripping_4" ID="{557F303A-489B-4D8A-B72E-31823ECF59F1}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Gripping_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="115379748"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Gripping_4" ID="{557F303A-489B-4D8A-B72E-31823ECF59F1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Gripping_5" ID="{3F58F381-3139-461D-85C5-04BE51EC4C72}" ShortID="984336963">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Gripping_5" ID="{B4DC8BF4-F7D7-4D4B-BA7F-9C3DD5849841}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Gripping_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="501584193"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Gripping_5" ID="{B4DC8BF4-F7D7-4D4B-BA7F-9C3DD5849841}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
+												<CustomState Name="" ID="{391D4EA7-9BCD-4F6D-9A33-333D8677E92F}" ShortID="437990398"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
+												<CustomState Name="" ID="{6470E64E-39FB-4622-AB0E-3A89FC0E7DE0}" ShortID="473432027"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+												<CustomState Name="" ID="{F99D0D7C-A3BA-4624-A098-6304F47B922F}" ShortID="639828672"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+												<CustomState Name="" ID="{25B90387-CEC3-4FB3-8643-CFB78BE7D45C}" ShortID="47972472"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
+												<CustomState Name="" ID="{38D72D09-C992-4137-8BA7-0A81DAFE6AA6}" ShortID="780127050"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
+												<CustomState Name="" ID="{21EF1A7D-C613-46AE-AEB5-B1F43B8C30EB}" ShortID="472533624"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Swinging" ID="{53DF0C42-4D88-4EE6-8F12-124F076A6A04}" ShortID="977705542">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E3619A85-D1F3-471B-A33B-4DF8414D63AC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="354"/>
+															<Property Name="Min" Type="Real64" Value="-303"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3D08B0EF-D644-4BF3-A924-30DC9F56F474}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" ShortID="1018849343">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Swinging_1" ID="{44B74802-AA02-4973-86F8-E486DB8C8A22}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Swinging_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="106436880"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Swinging_1" ID="{44B74802-AA02-4973-86F8-E486DB8C8A22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Swinging_2" ID="{517D19B3-9AD8-4D77-B0BA-B8538252CDE8}" ShortID="72188774">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Swinging_2" ID="{C0DFA279-F135-44E6-BCAE-F4A5D896C5EA}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Swinging_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="96444823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Swinging_2" ID="{C0DFA279-F135-44E6-BCAE-F4A5D896C5EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
+												<CustomState Name="" ID="{0771E51E-3280-4511-BC4B-11073D0E868A}" ShortID="550877089"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
+												<CustomState Name="" ID="{4A09B9E3-A795-4F13-8973-32183CFB88F1}" ShortID="240349234"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+												<CustomState Name="" ID="{B1C736FE-AF4E-45EC-A4F0-5F08EC2710B8}" ShortID="76747515"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+												<CustomState Name="" ID="{3A062806-D1F3-4100-A2D1-40E9EBFE0AC5}" ShortID="854557269"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
+												<CustomState Name="" ID="{57A97D18-AD5C-45B1-94D7-073C9369274C}" ShortID="193290295"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
+												<CustomState Name="" ID="{946EB0A9-E6B6-4E4F-A8D9-D5839CC2A2D4}" ShortID="1050124084"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Landing" ID="{6E3D59F7-EDFE-443D-B936-09651A2C75B2}" ShortID="658130027">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FE11D65B-276A-4B2B-A9EE-C71A8D7384F5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="354"/>
+															<Property Name="Min" Type="Real64" Value="-404"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ini_Landing_1" ID="{39098BD7-B009-41F2-B911-7427F5ADCCBA}" ShortID="1057483945">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Landing_1" ID="{5464526C-5B24-49A7-9C72-DB59E838F16A}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Landing_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="471532261"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Landing_1" ID="{5464526C-5B24-49A7-9C72-DB59E838F16A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Landing_2" ID="{9265B5E1-F26B-4C06-90B0-C340BF8A471E}" ShortID="415354882">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Landing_2" ID="{4EBF1113-AF9A-465E-8DD3-FFC352B8716D}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Landing_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="199524365"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Landing_2" ID="{4EBF1113-AF9A-465E-8DD3-FFC352B8716D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Landing_3" ID="{9557B340-53BE-4478-8C34-4EEE746A4C95}" ShortID="854962955">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Landing_3" ID="{298A2AC9-DCB6-40A6-85FA-327C34F9E4A0}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Landing_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="883717124"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Landing_3" ID="{298A2AC9-DCB6-40A6-85FA-327C34F9E4A0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Landing_4" ID="{EBB0393C-F35B-4B40-88FA-2485768E20FD}" ShortID="989941378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Landing_4" ID="{2C646250-D2ED-4985-9179-714E2E2D98EA}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Landing_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="339364033"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Landing_4" ID="{2C646250-D2ED-4985-9179-714E2E2D98EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Landing_5" ID="{05A6053B-0DDC-4255-92CE-1BD83B966564}" ShortID="185913728">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Landing_5" ID="{1AA4EB4B-68CC-42A8-BA86-8DE7485D1C20}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Landing_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="267801289"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Landing_5" ID="{1AA4EB4B-68CC-42A8-BA86-8DE7485D1C20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Landing_6" ID="{10648010-CB82-4D16-B8C9-0F82A9BA505A}" ShortID="973972353">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Landing_6" ID="{A3CE1722-6D0E-47BD-9892-3AEACBF5306B}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Landing_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1061621836"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Landing_6" ID="{A3CE1722-6D0E-47BD-9892-3AEACBF5306B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ini_Movement" ID="{E3BDF238-E8DC-414E-9C06-704C05EE4686}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
+												<CustomState Name="" ID="{205A2089-5EF6-4C97-9077-236529D23F84}" ShortID="512726375"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
+												<CustomState Name="" ID="{94CA1884-7CDE-4EC2-9283-28E3F7D7B7CA}" ShortID="617678960"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="grabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+												<CustomState Name="" ID="{AD5E92E7-2E41-4FFE-AF3B-80B574CD1BE7}" ShortID="872622986"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+												<CustomState Name="" ID="{251C3453-9DFC-4C65-99C3-CFA670AFB921}" ShortID="463779545"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
+												<CustomState Name="" ID="{EC1F15DB-7723-4232-B65A-F741FD8B5470}" ShortID="321599759"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
+												<CustomState Name="" ID="{03133DF7-08EC-4F92-8F40-9FA0BE220388}" ShortID="639854537"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
 								</RandomSequenceContainer>
 							</ChildrenList>
