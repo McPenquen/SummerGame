@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class SliderManager : MonoBehaviour
@@ -26,11 +27,11 @@ public class SliderManager : MonoBehaviour
     // Detect the left and right arrows to increase and decrease values (not always working)
     protected void DetectArrows()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && EventSystem.current.currentSelectedGameObject == gameObject)
         {
             slider.value -= 10;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && EventSystem.current.currentSelectedGameObject == gameObject)
         {
             slider.value += 10;
         }
