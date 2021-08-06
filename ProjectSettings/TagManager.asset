@@ -50,6 +50,9 @@ TagManager:
   - name: Environment
     uniqueID: 2635412163
     locked: 0
+  - name: Foreground
+    uniqueID: 1385521255
+    locked: 0
   - name: Players
     uniqueID: 725018065
     locked: 0

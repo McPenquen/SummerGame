@@ -6,13 +6,20 @@ public class CheckpointManager : MonoBehaviour
 {
     // Boolean if the players have reached the checkpoint
     private bool _isReached = false;
+    // Animator
+    [SerializeField] private Animator checkpointAnimator = null;
+    private void Start()
+    {
+        // Save the reference to the animator component
+        checkpointAnimator = GetComponent<Animator>();
+    }
 
     void Update()
     {
-        // if is reached set colour
+        // if is reached set the new animation
         if (_isReached)
         {
-            transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            checkpointAnimator.SetBool("isOn", true);
         }
 
     }
