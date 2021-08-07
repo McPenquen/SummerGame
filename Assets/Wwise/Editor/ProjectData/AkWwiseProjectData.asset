@@ -488,7 +488,7 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585736862726904747
+    m_lastTime: -8585734153488560875
     List:
     - name: Environment
       guid: 21dce2aed516bb449e5e924774476129
@@ -579,6 +579,98 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.5
       minDuration: 2.375
+    - name: play_gem_gripping
+      guid: 7908340ce449e840ab54ca2bac4bba8d
+      id: 3259393782
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Players
+        ObjectType: 4
+        guid: 16f84b15948a284c93db079559a0ede5
+      - ElementName: play_gem_gripping
+        ObjectType: 3
+        guid: 7908340ce449e840ab54ca2bac4bba8d
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_gripping
+      maxAttenuation: 0
+      maxDuration: 1.861406
+      minDuration: 0.754649
+    - name: play_gem_jumping
+      guid: 8a7c984747a72f44be6a1954d1266a7e
+      id: 2346201062
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Players
+        ObjectType: 4
+        guid: 16f84b15948a284c93db079559a0ede5
+      - ElementName: play_gem_jumping
+        ObjectType: 3
+        guid: 8a7c984747a72f44be6a1954d1266a7e
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_jumping
+      maxAttenuation: 0
+      maxDuration: 1.387392
+      minDuration: 0.673379
+    - name: play_gem_landing
+      guid: 855ad34f6e3103478b567642063f2c09
+      id: 1912911931
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Players
+        ObjectType: 4
+        guid: 16f84b15948a284c93db079559a0ede5
+      - ElementName: play_gem_landing
+        ObjectType: 3
+        guid: 855ad34f6e3103478b567642063f2c09
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: play_gem_movement_switch_state
+      guid: 9aaf57d61184b248878569c6017dc18e
+      id: 2682184630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Players
+        ObjectType: 4
+        guid: 16f84b15948a284c93db079559a0ede5
+      - ElementName: play_gem_movement_switch_state
+        ObjectType: 3
+        guid: 9aaf57d61184b248878569c6017dc18e
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state
+      maxAttenuation: 0
+      maxDuration: Infinity
+      minDuration: 0
     - name: play_ufo_idle_01
       guid: 76df6aac1a39674ab207b319efbbac20
       id: 2888126495
@@ -709,6 +801,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.593027
       minDuration: 0.559743
+    - name: Players
+      guid: 16f84b15948a284c93db079559a0ede5
+      id: 2188949101
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Players
+        ObjectType: 4
+        guid: 16f84b15948a284c93db079559a0ede5
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Players
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_All
       guid: 6f5c62c781adf84d9d246dd3dbc51327
       id: 452547817
@@ -729,6 +841,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: stop_gem_movement_switch_state
+      guid: 0504c69df3768145acd26216de14bd95
+      id: 1031277876
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Players
+        ObjectType: 4
+        guid: 16f84b15948a284c93db079559a0ede5
+      - ElementName: stop_gem_movement_switch_state
+        ObjectType: 3
+        guid: 0504c69df3768145acd26216de14bd95
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: stop_ui
       guid: ff6d0c0655e8bc499c29b0f759c935f9
       id: 2910167054
@@ -888,8 +1023,154 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 56298cd3335bce4baf0f01cc54b0bc6a
     GuidInternal: 
-    m_lastTime: -8585736862715666597
+    m_lastTime: -8585734153477552156
     List:
+    - name: Gem_Movement
+      guid: 853ee3d50d9dfc45be3a5256d6d78617
+      id: 72319902
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56298cd3335bce4baf0f01cc54b0bc6a
+      - ElementName: Gem_Movement
+        ObjectType: 9
+        guid: 853ee3d50d9dfc45be3a5256d6d78617
+      Path: States\Default Work Unit\Gem_Movement
+      values:
+      - name: idle
+        guid: 576dc66de76e2447a556c7cf3fe74bab
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: idle
+          ObjectType: 8
+          guid: 576dc66de76e2447a556c7cf3fe74bab
+      - name: isFalling
+        guid: a409f2e4969e864280843e3dc23d3340
+        id: 1579702610
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: isFalling
+          ObjectType: 8
+          guid: a409f2e4969e864280843e3dc23d3340
+      - name: isGrabbing
+        guid: 87aa65a22ba4a04fa80f66ccdb78f24c
+        id: 3183196101
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: isGrabbing
+          ObjectType: 8
+          guid: 87aa65a22ba4a04fa80f66ccdb78f24c
+      - name: isJumping
+        guid: 909022eedd48794798e18e86db2e7bb1
+        id: 594781027
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: isJumping
+          ObjectType: 8
+          guid: 909022eedd48794798e18e86db2e7bb1
+      - name: isLanding
+        guid: 3339a06fa343624f870742006b775876
+        id: 3910744550
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: isLanding
+          ObjectType: 8
+          guid: 3339a06fa343624f870742006b775876
+      - name: isSwinging
+        guid: 19ceb11ea8aac84a99a141fe212452d1
+        id: 605894799
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: isSwinging
+          ObjectType: 8
+          guid: 19ceb11ea8aac84a99a141fe212452d1
+      - name: isWalking
+        guid: 2e2bdc6836a33e4daabcace2b81f9bd2
+        id: 3629409974
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: isWalking
+          ObjectType: 8
+          guid: 2e2bdc6836a33e4daabcace2b81f9bd2
+      - name: None
+        guid: 3820498ee6339443bbfe65dc3505d77d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Gem_Movement
+          ObjectType: 9
+          guid: 853ee3d50d9dfc45be3a5256d6d78617
+        - ElementName: None
+          ObjectType: 8
+          guid: 3820498ee6339443bbfe65dc3505d77d
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Ini_Movement
       guid: 38f2bde3dce84e419c06704c05ee4686
       id: 2064316991
