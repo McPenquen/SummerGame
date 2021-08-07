@@ -399,7 +399,7 @@ public class Character : MonoBehaviour
             m_playerAnimator.SetBool("isJumping", false);
 
             // Check if the player is falling below the other player
-            if(GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y)
+            if(GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y && (m_otherPlayer.m_isGrabbing || m_otherPlayer.m_isGrounded))
             {
                 // Set is falling to false
                 m_isFalling = false;
@@ -683,6 +683,8 @@ public class Character : MonoBehaviour
         m_isGrabbing = false;
         // Stop animating the grab
         m_playerAnimator.SetBool("isGrabbing", false);
+        // The other player is not swinging anymore (if they were)
+        m_otherPlayer.m_isSwinging = false;
     }
 
     /*
