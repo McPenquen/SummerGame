@@ -464,6 +464,9 @@ public class Character : MonoBehaviour
 
             // Disable the players ability to move
             m_canMove = false;
+
+            // Control the animation transition from grabbing
+            m_playerAnimator.SetBool("isFalling", true);
         }
         else
         {
@@ -648,9 +651,14 @@ public class Character : MonoBehaviour
         {
             // Set is grabbing to true
             m_isGrabbing = true;
+
+            // Control the animation
+            m_playerAnimator.SetBool("isWalking", false); // it doesn't walk anymore
+            m_playerAnimator.SetBool("isJumping", false); // it's not jumping anymore
+
             // Animate the grab
             m_playerAnimator.SetBool("isGrabbing", true);
-            m_playerAnimator.SetBool("isWalking", false); // it doesn't walk anymore
+
             // If the collision is close to the feet it is grabbing the floor
             if (collisionDirection.magnitude <= spriteWidth / 3)
             {
