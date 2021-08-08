@@ -399,7 +399,7 @@ public class Character : MonoBehaviour
             m_playerAnimator.SetBool("isJumping", false);
 
             // Check if the player is falling below the other player
-            if(GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y && (m_otherPlayer.m_isGrabbing || m_otherPlayer.m_isGrounded))
+            if(GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y && (m_otherPlayer.CheckGrabbing() || m_otherPlayer.CheckGrounded()))
             {
                 // Set is falling to false
                 m_isFalling = false;
@@ -416,9 +416,6 @@ public class Character : MonoBehaviour
             {
                 // Player has hit the ground
                 m_isFalling = false;
-
-                // Set is grounded to true
-                m_isGrounded = true;
 
                 // On ground disable the joint
                 m_bond.DisableDistanceJoint();
@@ -447,9 +444,6 @@ public class Character : MonoBehaviour
             {
                 // Set is swinging to false
                 m_isSwinging = false;
-
-                // Set is grounded to true
-                m_isGrounded = true;
             }
         }
 
@@ -518,13 +512,10 @@ public class Character : MonoBehaviour
     public void Jump()
     {
         // Check if the player is grounded or it touching the other player (need improvement)
-        if (m_isGrounded || m_touchingOtherPlayer)
+        if (m_isGrounded || (m_touchingOtherPlayer && m_otherPlayer.CheckGrounded()))
         {
             // Invoke the jump action in Y, whilst keeping the rigid body velocity in X
             m_rb.velocity = new Vector2(m_rb.velocity.x, m_jumpForce);
-
-            // Set is grounded to false
-            m_isGrounded = false;
 
             // Set is jumping to true
             m_isJumping = true;
@@ -576,7 +567,7 @@ public class Character : MonoBehaviour
         }
 
         // Check if the player is touching other player (11 is the environment layer)
-        if (collision.gameObject.layer == 10 && m_otherPlayer.CheckGrounded())
+        if (collision.gameObject.layer == 10)
         {
             // Set touching other player to true
             m_touchingOtherPlayer = true;
@@ -603,14 +594,14 @@ public class Character : MonoBehaviour
         // Check that the collision exit has occured with the ground layer (11 is the environment layer)
         if (collision.gameObject.layer == 11)
         {
-            //// Set is grounded to false
+            // Set is grounded to false
             m_isGrounded = false;
         }
 
-        // Check if the player is touching other player (10 is the environment layer)
-        if (collision.gameObject.layer == 10 && m_otherPlayer.CheckGrounded())
+        // Check if the player is touching other player (10 is the player layer)
+        if (collision.gameObject.layer == 10)
         {
-            // Set is grounded to true
+            // Set isTouchingOtherPlayer to true
             m_touchingOtherPlayer = false;
         }
     }
@@ -684,7 +675,7 @@ public class Character : MonoBehaviour
         // Stop animating the grab
         m_playerAnimator.SetBool("isGrabbing", false);
         // The other player is not swinging anymore (if they were)
-        m_otherPlayer.m_isSwinging = false;
+        m_otherPlayer.SetSwinging(false);
     }
 
     /*
@@ -719,5 +710,15 @@ public class Character : MonoBehaviour
             // Increment theta by delta theta
             theta += deltaTheta;
         }
+    }
+    // Method to set the isSwinging
+    public void SetSwinging(bool var)
+    {
+        m_isSwinging = var;
+    }
+    // Method to get isGrabbing
+    public bool CheckGrabbing()
+    {
+        return m_isGrabbing;
     }
 }
