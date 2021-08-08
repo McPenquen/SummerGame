@@ -589,6 +589,7 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Jumping" ID="{8F0C080A-4D0D-472B-9F7B-40163929CE17}" ShortID="354874162">
 											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -602,6 +603,7 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
