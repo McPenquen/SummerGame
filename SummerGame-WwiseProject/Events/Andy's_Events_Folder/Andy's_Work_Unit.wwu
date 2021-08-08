@@ -183,14 +183,14 @@
 								<Action Name="" ID="{8F93EDBA-6A2A-4541-87FC-A51AAE57C35C}" ShortID="757475268">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Swinging" ID="{53DF0C42-4D88-4EE6-8F12-124F076A6A04}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+											<ObjectRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{855668B1-3A90-4223-B7AA-BF44C1D183F2}" ShortID="871227662">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Walking" ID="{6CE3C2DA-5D2C-406D-96CD-0C0193C754F0}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+											<ObjectRef Name="Ini_Walking_1" ID="{6644ACF2-E6B0-4341-B0D7-1B0C108856A6}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -204,7 +204,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Walking" ID="{6CE3C2DA-5D2C-406D-96CD-0C0193C754F0}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+											<ObjectRef Name="Ini_Walking_1" ID="{6644ACF2-E6B0-4341-B0D7-1B0C108856A6}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -214,7 +214,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Swinging" ID="{53DF0C42-4D88-4EE6-8F12-124F076A6A04}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+											<ObjectRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
