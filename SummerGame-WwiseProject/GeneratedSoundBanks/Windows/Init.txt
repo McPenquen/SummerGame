@@ -16,7 +16,7 @@ State	ID	Name	State Group			Notes
 	748895195	None	Ini_Movement			
 	1579702610	isFalling	Ini_Movement			
 	1874288895	idle	Ini_Movement			
-	2354840849	grabbing	Ini_Movement			
+	3183196101	isGrabbing	Ini_Movement			
 	3629409974	isWalking	Ini_Movement			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

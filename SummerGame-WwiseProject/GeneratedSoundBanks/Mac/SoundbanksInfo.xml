@@ -21,7 +21,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="4133302015">
+		<SoundBank Id="3657742645" Language="SFX" Hash="3899401395">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
@@ -154,7 +154,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1912911931" Name="play_gem_landing" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1912911931" Name="play_gem_landing" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing" DurationType="OneShot" DurationMin="1.851791" DurationMax="2.130431">
+					<IncludedMemoryFiles>
+						<File Id="266703678" Language="SFX">
+							<ShortName>PlayerGem_Landing_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_3_10C4C929.wem</Path>
+						</File>
+						<File Id="779702268" Language="SFX">
+							<ShortName>PlayerGem_Landing_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1027132071" Language="SFX">
+							<ShortName>PlayerGem_Landing_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2682184630" Name="play_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state" DurationType="Mixed" DurationMin="0.000000" DurationMax="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="80475751" Language="SFX">
@@ -248,6 +263,174 @@
 								<File Id="383594553"/>
 								<File Id="667000515"/>
 								<File Id="761976081"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="271671075" Name="play_ini_gripping" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_gripping" DurationType="OneShot" DurationMin="0.528360" DurationMax="0.997592">
+					<IncludedMemoryFiles>
+						<File Id="115379748" Language="SFX">
+							<ShortName>Ini_Gripping_4.wav</ShortName>
+							<Path>SFX\Ini_Gripping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="423598091" Language="SFX">
+							<ShortName>Ini_Gripping_2.wav</ShortName>
+							<Path>SFX\Ini_Gripping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="501584193" Language="SFX">
+							<ShortName>Ini_Gripping_5.wav</ShortName>
+							<Path>SFX\Ini_Gripping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="753504210" Language="SFX">
+							<ShortName>Ini_Gripping_1.wav</ShortName>
+							<Path>SFX\Ini_Gripping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1007316953" Language="SFX">
+							<ShortName>Ini_Gripping_3.wav</ShortName>
+							<Path>SFX\Ini_Gripping_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1655759033" Name="play_ini_jumping" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_jumping" DurationType="OneShot" DurationMin="0.372597" DurationMax="1.027417">
+					<IncludedMemoryFiles>
+						<File Id="136357049" Language="SFX">
+							<ShortName>Jumping_3.wav</ShortName>
+							<Path>SFX\Jumping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="194946419" Language="SFX">
+							<ShortName>Jumping_5.wav</ShortName>
+							<Path>SFX\Jumping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="542480758" Language="SFX">
+							<ShortName>Jumping_1.wav</ShortName>
+							<Path>SFX\Jumping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="593538929" Language="SFX">
+							<ShortName>Jumping_4.wav</ShortName>
+							<Path>SFX\Jumping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="705432378" Language="SFX">
+							<ShortName>Jumping_6.wav</ShortName>
+							<Path>SFX\Jumping_6_10C4C929.wem</Path>
+						</File>
+						<File Id="816822219" Language="SFX">
+							<ShortName>Jumping_2.wav</ShortName>
+							<Path>SFX\Jumping_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="570498444" Name="play_ini_landing" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_landing" DurationType="OneShot" DurationMin="0.352587" DurationMax="0.644296">
+					<IncludedMemoryFiles>
+						<File Id="199524365" Language="SFX">
+							<ShortName>Ini_Landing_2.wav</ShortName>
+							<Path>SFX\Ini_Landing_2_10C4C929.wem</Path>
+						</File>
+						<File Id="267801289" Language="SFX">
+							<ShortName>Ini_Landing_5.wav</ShortName>
+							<Path>SFX\Ini_Landing_5_10C4C929.wem</Path>
+						</File>
+						<File Id="339364033" Language="SFX">
+							<ShortName>Ini_Landing_4.wav</ShortName>
+							<Path>SFX\Ini_Landing_4_10C4C929.wem</Path>
+						</File>
+						<File Id="471532261" Language="SFX">
+							<ShortName>Ini_Landing_1.wav</ShortName>
+							<Path>SFX\Ini_Landing_1_10C4C929.wem</Path>
+						</File>
+						<File Id="883717124" Language="SFX">
+							<ShortName>Ini_Landing_3.wav</ShortName>
+							<Path>SFX\Ini_Landing_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1061621836" Language="SFX">
+							<ShortName>Ini_Landing_6.wav</ShortName>
+							<Path>SFX\Ini_Landing_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3914533117" Name="play_ini_movement_switch_state" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_movement_switch_state" DurationType="OneShot" DurationMin="0.372597" DurationMax="2.000000">
+					<IncludedMemoryFiles>
+						<File Id="106436880" Language="SFX">
+							<ShortName>Ini_Swinging_1.wav</ShortName>
+							<Path>SFX\Ini_Swinging_1_10C4C929.wem</Path>
+						</File>
+						<File Id="115379748" Language="SFX">
+							<ShortName>Ini_Gripping_4.wav</ShortName>
+							<Path>SFX\Ini_Gripping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="136357049" Language="SFX">
+							<ShortName>Jumping_3.wav</ShortName>
+							<Path>SFX\Jumping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="194946419" Language="SFX">
+							<ShortName>Jumping_5.wav</ShortName>
+							<Path>SFX\Jumping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="423598091" Language="SFX">
+							<ShortName>Ini_Gripping_2.wav</ShortName>
+							<Path>SFX\Ini_Gripping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="434402466" Language="SFX">
+							<ShortName>Ini_Walking_1.wav</ShortName>
+							<Path>SFX\Ini_Walking_1_10C4C929.wem</Path>
+						</File>
+						<File Id="501584193" Language="SFX">
+							<ShortName>Ini_Gripping_5.wav</ShortName>
+							<Path>SFX\Ini_Gripping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="542480758" Language="SFX">
+							<ShortName>Jumping_1.wav</ShortName>
+							<Path>SFX\Jumping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="593538929" Language="SFX">
+							<ShortName>Jumping_4.wav</ShortName>
+							<Path>SFX\Jumping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="705432378" Language="SFX">
+							<ShortName>Jumping_6.wav</ShortName>
+							<Path>SFX\Jumping_6_10C4C929.wem</Path>
+						</File>
+						<File Id="753504210" Language="SFX">
+							<ShortName>Ini_Gripping_1.wav</ShortName>
+							<Path>SFX\Ini_Gripping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="816822219" Language="SFX">
+							<ShortName>Jumping_2.wav</ShortName>
+							<Path>SFX\Jumping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1007316953" Language="SFX">
+							<ShortName>Ini_Gripping_3.wav</ShortName>
+							<Path>SFX\Ini_Gripping_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{4240EAF3-16BC-4294-8306-F3C9B437C1A0}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}">
+							<Media>
+								<File Id="434402466"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}">
+							<Media>
+								<File Id="106436880"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}">
+							<Media>
+								<File Id="136357049"/>
+								<File Id="194946419"/>
+								<File Id="542480758"/>
+								<File Id="593538929"/>
+								<File Id="705432378"/>
+								<File Id="816822219"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}">
+							<Media>
+								<File Id="115379748"/>
+								<File Id="423598091"/>
+								<File Id="501584193"/>
+								<File Id="753504210"/>
+								<File Id="1007316953"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -546,6 +729,8 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1031277876" Name="stop_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3252663195" Name="stop_ini_movement_switch_state" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\stop_ini_movement_switch_state" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2743729328" Name="stop_play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_beam_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="139174012" Name="stop_play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_plant" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3729613304" Name="stop_play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_ufo_idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -563,6 +748,17 @@
 						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Gem_Movement\isSwinging"/>
 						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Gem_Movement\isGrabbing"/>
 						<State Id="3910744550" Name="isLanding" ObjectPath="\States\Default Work Unit\Gem_Movement\isLanding"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2064316991" Name="Ini_Movement" ObjectPath="\States\Default Work Unit\Ini_Movement">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Ini_Movement\None"/>
+						<State Id="1874288895" Name="idle" ObjectPath="\States\Default Work Unit\Ini_Movement\idle"/>
+						<State Id="3629409974" Name="isWalking" ObjectPath="\States\Default Work Unit\Ini_Movement\isWalking"/>
+						<State Id="594781027" Name="isJumping" ObjectPath="\States\Default Work Unit\Ini_Movement\isJumping"/>
+						<State Id="1579702610" Name="isFalling" ObjectPath="\States\Default Work Unit\Ini_Movement\isFalling"/>
+						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Ini_Movement\isSwinging"/>
+						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Ini_Movement\isGrabbing"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
