@@ -167,7 +167,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 57531442cb4f8a479ae9131731cae77e
     GuidInternal: 
-    m_lastTime: -8585736862715706613
+    m_lastTime: -8585731718037018889
     List:
     - name: General_SoundBank
       guid: ed1fbc9cffffc845b0ec06456e9ddc0c
@@ -198,7 +198,7 @@ MonoBehaviour:
     ParentPath: Events\Andy's_Events_Folder\Andy's_Work_Unit
     guid: 34a1481ab08c7349ae4bd493eaec004f
     GuidInternal: 
-    m_lastTime: -8585736862726954750
+    m_lastTime: -8585731628005879855
     List:
     - name: Game_Object_Events
       guid: 89fa3ec7ba747c4a896dbbbe6e503329
@@ -217,6 +217,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 89fa3ec7ba747c4a896dbbbe6e503329
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ini
+      guid: 608d77a3c8c6a14babdfd8ab076a176b
+      id: 529034925
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Ini
+        ObjectType: 4
+        guid: 608d77a3c8c6a14babdfd8ab076a176b
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -289,6 +309,98 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.514213
       minDuration: 5.117991
+    - name: play_ini_gripping
+      guid: 15884942c511b24285b5018464e1dc07
+      id: 271671075
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Ini
+        ObjectType: 4
+        guid: 608d77a3c8c6a14babdfd8ab076a176b
+      - ElementName: play_ini_gripping
+        ObjectType: 3
+        guid: 15884942c511b24285b5018464e1dc07
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_gripping
+      maxAttenuation: 0
+      maxDuration: 0.997592
+      minDuration: 0.52836
+    - name: play_ini_jumping
+      guid: 926eb339bf15a941a2378262d83a3f5c
+      id: 1655759033
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Ini
+        ObjectType: 4
+        guid: 608d77a3c8c6a14babdfd8ab076a176b
+      - ElementName: play_ini_jumping
+        ObjectType: 3
+        guid: 926eb339bf15a941a2378262d83a3f5c
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_jumping
+      maxAttenuation: 0
+      maxDuration: 1.027417
+      minDuration: 0.372597
+    - name: play_ini_landing
+      guid: 72ff02b777611148b5852ee91bcc684e
+      id: 570498444
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Ini
+        ObjectType: 4
+        guid: 608d77a3c8c6a14babdfd8ab076a176b
+      - ElementName: play_ini_landing
+        ObjectType: 3
+        guid: 72ff02b777611148b5852ee91bcc684e
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_landing
+      maxAttenuation: 0
+      maxDuration: 0.644296
+      minDuration: 0.352587
+    - name: play_ini_movement_switch_state
+      guid: 12e9e89452a98646b433c4048b22130b
+      id: 3914533117
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Ini
+        ObjectType: 4
+        guid: 608d77a3c8c6a14babdfd8ab076a176b
+      - ElementName: play_ini_movement_switch_state
+        ObjectType: 3
+        guid: 12e9e89452a98646b433c4048b22130b
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_movement_switch_state
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 0.372597
     - name: play_plant
       guid: 8a7396b28c337e4ba45602d827f802dd
       id: 2689642121
@@ -335,6 +447,29 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
+    - name: stop_ini_movement_switch_state
+      guid: 0b90e3ee65214941a33045fa7f6fe34b
+      id: 3252663195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Ini
+        ObjectType: 4
+        guid: 608d77a3c8c6a14babdfd8ab076a176b
+      - ElementName: stop_ini_movement_switch_state
+        ObjectType: 3
+        guid: 0b90e3ee65214941a33045fa7f6fe34b
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\stop_ini_movement_switch_state
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: stop_play_beam_up
       guid: 4af639623c1b79498cece6705da0d2ea
       id: 2743729328
@@ -415,7 +550,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2f57c7439767ee468ee9d03e59b7a593
     GuidInternal: 
-    m_lastTime: -8585736862726924673
+    m_lastTime: -8585731718044157808
     List:
     - name: play_start_up
       guid: a7c9dc658680bb4a98b8d311dadbc986
@@ -488,7 +623,7 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585734153488560875
+    m_lastTime: -8585731717588382349
     List:
     - name: Environment
       guid: 21dce2aed516bb449e5e924774476129
@@ -646,8 +781,8 @@ MonoBehaviour:
         guid: 855ad34f6e3103478b567642063f2c09
       Path: Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.130431
+      minDuration: 1.851791
     - name: play_gem_movement_switch_state
       guid: 9aaf57d61184b248878569c6017dc18e
       id: 2682184630
@@ -862,8 +997,8 @@ MonoBehaviour:
         guid: 0504c69df3768145acd26216de14bd95
       Path: Events\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: stop_ui
       guid: ff6d0c0655e8bc499c29b0f759c935f9
       id: 2910167054
@@ -1023,7 +1158,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 56298cd3335bce4baf0f01cc54b0bc6a
     GuidInternal: 
-    m_lastTime: -8585734153477552156
+    m_lastTime: -8585731627999082480
     List:
     - name: Gem_Movement
       guid: 853ee3d50d9dfc45be3a5256d6d78617
@@ -1186,22 +1321,6 @@ MonoBehaviour:
         guid: 38f2bde3dce84e419c06704c05ee4686
       Path: States\Default Work Unit\Ini_Movement
       values:
-      - name: grabbing
-        guid: 68601cf99675554da221e4d7a7dc1dd6
-        id: 2354840849
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 56298cd3335bce4baf0f01cc54b0bc6a
-        - ElementName: Ini_Movement
-          ObjectType: 9
-          guid: 38f2bde3dce84e419c06704c05ee4686
-        - ElementName: grabbing
-          ObjectType: 8
-          guid: 68601cf99675554da221e4d7a7dc1dd6
       - name: idle
         guid: fbaeae2195373945a89921eee896cef4
         id: 1874288895
@@ -1234,6 +1353,22 @@ MonoBehaviour:
         - ElementName: isFalling
           ObjectType: 8
           guid: 2569e449a85a1141a59d2cb681c25758
+      - name: isGrabbing
+        guid: 68601cf99675554da221e4d7a7dc1dd6
+        id: 3183196101
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: isGrabbing
+          ObjectType: 8
+          guid: 68601cf99675554da221e4d7a7dc1dd6
       - name: isJumping
         guid: bbc63e78ec9f914ea753be7fd0a44ee9
         id: 594781027
