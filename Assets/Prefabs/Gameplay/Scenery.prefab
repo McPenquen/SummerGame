@@ -545,7 +545,7 @@ MonoBehaviour:
   - {fileID: 2823556745092055466}
   - {fileID: 2823556745289203009}
   camera: {fileID: 0}
-  parallexEffect: 3
+  parallexEffect: 3.2
 --- !u!1 &2823556744992768739
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
   - {fileID: 2823556745684414363}
   - {fileID: 2823556744992768739}
   camera: {fileID: 0}
-  parallexEffect: 2.5
+  parallexEffect: 2.8
 --- !u!1 &2823556745546411374
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ MonoBehaviour:
   - {fileID: 2823556744768124704}
   - {fileID: 2823556744000079985}
   camera: {fileID: 0}
-  parallexEffect: 3.5
+  parallexEffect: 3.6
 --- !u!1 &2823556745590749032
 GameObject:
   m_ObjectHideFlags: 0
