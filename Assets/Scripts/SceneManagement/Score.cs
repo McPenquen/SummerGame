@@ -13,7 +13,7 @@ public class Score : MonoBehaviour
         gainedScore = ScenesNavigation.GetScore();
         maxScore = ScenesNavigation.GetMaxScore();
         // Show the gained score
-        string scoreStr = "Score: " + gainedScore.ToString();
+        string scoreStr = "Score: " + ((int) (gainedScore * 100)).ToString();
         GetComponent<TMPro.TextMeshProUGUI>().text = scoreStr;
         // Setup the stars based on the score
         float percentageScore = gainedScore / maxScore * 100;
