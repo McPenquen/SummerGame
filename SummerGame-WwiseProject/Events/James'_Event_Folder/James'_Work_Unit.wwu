@@ -162,6 +162,50 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Army" ID="{265FAD33-AF70-4A08-8E7C-55DF22BC0391}" ShortID="719686920">
+					<ChildrenList>
+						<Event Name="play_army_base_emitter" ID="{4910C906-31A3-4399-9D7B-7D3088E8220F}">
+							<ChildrenList>
+								<Action Name="" ID="{DD64725B-D27B-4BA6-B226-E53BC7C17678}" ShortID="554222284">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Army_Base_Emitter_loop" ID="{606A7B1C-3D83-4A52-8896-6C43087ECB9C}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{607F7A10-CA74-4306-B253-76F5C32A94D7}" ShortID="341492947">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Army_Radio" ID="{1DF4D010-3A80-4F3E-B86B-C7659A6B417A}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_army_vehicles_far" ID="{F20FC7B6-0D6A-4E2B-8DD2-FDE70D7E78DC}">
+							<ChildrenList>
+								<Action Name="" ID="{0F4A070E-6D0E-425D-BA98-E55B09D29712}" ShortID="895654702">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Vehicles_Far" ID="{7BC8C1CC-15D4-42AD-BF1B-5812902E063D}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_explosion" ID="{5519DDEC-F28B-4A66-BBAB-2151B90314C1}">
+							<ChildrenList>
+								<Action Name="" ID="{57C53CFB-F1A2-4D75-AF93-A6AB835D4CC6}" ShortID="706488631">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Escape_Explosion" ID="{767FA152-6A76-434A-993D-4C8A52C958AD}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

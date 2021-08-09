@@ -1453,7 +1453,15 @@
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Telephone" ID="{AE0918BE-A275-4817-91B6-96906EB39B66}" ShortID="896857915">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_Generic_15m" ID="{333A96F9-1BEB-4E21-A6F9-83BFDF44162E}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 								</Reference>
@@ -1794,6 +1802,9 @@
 									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{FDF951A1-C5F9-4E5D-8AEA-39BBFBC07FD3}"/>
+							</PositioningInfo>
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Plants" ID="{3CEF32B0-09C4-47C8-9A24-B6F9520CA2EA}" ShortID="119180199">

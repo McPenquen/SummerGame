@@ -41,7 +41,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Andy's_Master-Mixer_Hierarchy\Andy's_Work_Unit
     guid: a6fc5fe531789d4f9941e4385aa4879c
     GuidInternal: 
-    m_lastTime: -8585738768191219680
+    m_lastTime: -8585731717120173110
     List:
     - name: Master
       guid: 9e2090c0c626aa4898effbd28e8ebae5
@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c5fee7939ce27f43b2e191b06ab11ed4
     GuidInternal: 
-    m_lastTime: -8585745381402678435
+    m_lastTime: -8585735096379638903
     List:
     - name: Ambience
       guid: 261dd1d5d74f4b4a9cb9e738dc69a202
@@ -167,7 +167,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 57531442cb4f8a479ae9131731cae77e
     GuidInternal: 
-    m_lastTime: -8585731718037018889
+    m_lastTime: -8585731717114058113
     List:
     - name: General_SoundBank
       guid: ed1fbc9cffffc845b0ec06456e9ddc0c
@@ -283,7 +283,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 45fdc1dbf1c39349a1fe3d5f4f56ca87
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: play_checkpoint_success
@@ -306,7 +306,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 76c351c2076aa747ae0b5a041f6a7c8d
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: 5.514213
       minDuration: 5.117991
     - name: play_ini_gripping
@@ -550,7 +550,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2f57c7439767ee468ee9d03e59b7a593
     GuidInternal: 
-    m_lastTime: -8585731718044157808
+    m_lastTime: -8585731717129478091
     List:
     - name: play_start_up
       guid: a7c9dc658680bb4a98b8d311dadbc986
@@ -623,8 +623,28 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585731717588382349
+    m_lastTime: -8585730784525249430
     List:
+    - name: Army
+      guid: 33ad5f2670af084a8e7c55df22bc0391
+      id: 3551918582
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: 33ad5f2670af084a8e7c55df22bc0391
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Environment
       guid: 21dce2aed516bb449e5e924774476129
       id: 1229948536
@@ -688,6 +708,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: play_army_base_emitter
+      guid: 06c91049a33199439d7b7d3088e8220f
+      id: 3508812408
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: 33ad5f2670af084a8e7c55df22bc0391
+      - ElementName: play_army_base_emitter
+        ObjectType: 3
+        guid: 06c91049a33199439d7b7d3088e8220f
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_base_emitter
+      maxAttenuation: 80
+      maxDuration: -1
+      minDuration: -1
+    - name: play_army_vehicles_far
+      guid: b6c70ff26a0d2b4e8dd2fde70d7e78dc
+      id: 1770554193
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: 33ad5f2670af084a8e7c55df22bc0391
+      - ElementName: play_army_vehicles_far
+        ObjectType: 3
+        guid: b6c70ff26a0d2b4e8dd2fde70d7e78dc
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_vehicles_far
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: play_beam_up_01
       guid: 6f41ba5772fb55498e2b393a9e97f0c2
       id: 3488140881
@@ -714,6 +780,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.5
       minDuration: 2.375
+    - name: play_explosion
+      guid: ecdd19558bf2664abbab2151b90314c1
+      id: 4030404899
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: 33ad5f2670af084a8e7c55df22bc0391
+      - ElementName: play_explosion
+        ObjectType: 3
+        guid: ecdd19558bf2664abbab2151b90314c1
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army\play_explosion
+      maxAttenuation: 0
+      maxDuration: 7.86576
+      minDuration: 7.86576
     - name: play_gem_gripping
       guid: 7908340ce449e840ab54ca2bac4bba8d
       id: 3259393782
@@ -1080,7 +1169,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit
     guid: 14872f9a9730574ab09ac575da2abb29
     GuidInternal: 
-    m_lastTime: -8585738768196480089
+    m_lastTime: -8585731717129453089
     List:
     - name: Master_Volume
       guid: 9ad7e400b89d6d41b0e05196a66b4b7a
@@ -1465,7 +1554,7 @@ MonoBehaviour:
     m_lastTime: -8585747451146818675
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0a0000000b0000000c0000000f0000001000000021000000230000002f0000008e000000930000009400000076030000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -21,11 +21,31 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="3899401395">
+		<SoundBank Id="3657742645" Language="SFX" Hash="2689849280">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3508812408" Name="play_army_base_emitter" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_base_emitter" MaxAttenuation="80.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="388496218" Language="SFX">
+							<ShortName>Army_Radio.wav</ShortName>
+							<Path>SFX\Army_Radio_D79FB2B7.wem</Path>
+						</File>
+						<File Id="664903196" Language="SFX">
+							<ShortName>Army_Base_Emitter_Loop.wav</ShortName>
+							<Path>SFX\Army_Base_Emitter_Loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1770554193" Name="play_army_vehicles_far" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_vehicles_far" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="151954740" Language="SFX">
+							<ShortName>Army_Vehicles_Far_Loop.wav</ShortName>
+							<Path>SFX\Army_Vehicles_Far_Loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3168572341" Name="play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_beam_up" DurationType="OneShot" DurationMin="2.375000" DurationMax="2.500000">
 					<IncludedMemoryFiles>
 						<File Id="113374674" Language="SFX">
@@ -58,7 +78,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2894346942" Name="play_checkpoint_phone_ring" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring" DurationType="Infinite">
+				<Event Id="2894346942" Name="play_checkpoint_phone_ring" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="516595780" Language="SFX">
 							<ShortName>Telephone_1.wav</ShortName>
@@ -82,7 +102,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2952657888" Name="play_checkpoint_success" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success" DurationType="OneShot" DurationMin="5.117991" DurationMax="5.514213">
+				<Event Id="2952657888" Name="play_checkpoint_success" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="5.117991" DurationMax="5.514213">
 					<IncludedMemoryFiles>
 						<File Id="351277226" Language="SFX">
 							<ShortName>Answering_Phone_2.wav</ShortName>
@@ -99,6 +119,14 @@
 						<File Id="984249789" Language="SFX">
 							<ShortName>Answering_Phone_3.wav</ShortName>
 							<Path>SFX\Answering_Phone_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4030404899" Name="play_explosion" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Army\play_explosion" DurationType="OneShot" DurationMin="7.865760" DurationMax="7.865760">
+					<IncludedMemoryFiles>
+						<File Id="589347764" Language="SFX">
+							<ShortName>Army_Explosion.wav</ShortName>
+							<Path>SFX\Army_Explosion_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

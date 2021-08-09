@@ -104,6 +104,10 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_army_base_emitter" ID="{4910C906-31A3-4399-9D7B-7D3088E8220F}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="play_gem_jumping" ID="{47987C8A-A747-442F-BE6A-1954D1266A7E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="3" Y="1"/>
 						</Module>
