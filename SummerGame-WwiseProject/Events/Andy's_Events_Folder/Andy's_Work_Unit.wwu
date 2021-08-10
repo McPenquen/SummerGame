@@ -174,23 +174,27 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_ufo_take_off" ID="{DBC03563-F529-45E9-88A6-58B6F6DC0C0C}">
+							<ChildrenList>
+								<Action Name="" ID="{7F8C0F7E-758B-4DDA-AB52-DFFF5CF70C18}" ShortID="471012042">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UFO_Take_Off_1" ID="{395AB723-EE5F-4F6D-AC18-3611BFE96A5E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ini" ID="{A3778D60-C6C8-4BA1-ABDF-D8AB076A176B}" ShortID="336360032">
 					<ChildrenList>
 						<Event Name="play_ini_movement_switch_state" ID="{94E8E912-A952-4686-B433-C4048B22130B}">
 							<ChildrenList>
-								<Action Name="" ID="{8F93EDBA-6A2A-4541-87FC-A51AAE57C35C}" ShortID="757475268">
+								<Action Name="" ID="{1176E83B-7E68-4C69-AF66-BCCC7A320ABD}" ShortID="411526689">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{855668B1-3A90-4223-B7AA-BF44C1D183F2}" ShortID="871227662">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Ini_Walking_1" ID="{6644ACF2-E6B0-4341-B0D7-1B0C108856A6}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+											<ObjectRef Name="Movement_State_Switch" ID="{8410B399-4A85-461E-BC1E-87EB92A6E11B}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -198,23 +202,10 @@
 						</Event>
 						<Event Name="stop_ini_movement_switch_state" ID="{EEE3900B-2165-4149-A330-45FA7F6FE34B}">
 							<ChildrenList>
-								<Action Name="" ID="{542AAC57-318D-4F40-ACCF-EE07A26D163E}" ShortID="807047119">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
+								<Action Name="" ID="{49888821-D3BB-42FE-82A6-DBC3CE6C8DDF}" ShortID="887535099">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ini_Walking_1" ID="{6644ACF2-E6B0-4341-B0D7-1B0C108856A6}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{032DDEE2-7BC0-4F29-9477-251F3F5FB957}" ShortID="348341521">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+											<ObjectRef Name="Movement_State_Switch" ID="{8410B399-4A85-461E-BC1E-87EB92A6E11B}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -12,6 +12,7 @@
 						<State Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
 						<State Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
 						<State Name="isGrabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+						<State Name="isLanding" ID="{CB17E200-6C16-4BB6-8230-23AAE7C2C9FE}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Gem_Movement" ID="{D5E33E85-9D0D-45FC-BE3A-5256D6D78617}">

@@ -62,6 +62,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="isGrabbing" ID="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}"/>
+						<CurrentStateRef Name="isFalling" ID="{E4F209A4-9E96-4286-8084-3E3DC23D3340}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
