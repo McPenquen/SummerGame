@@ -174,6 +174,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_ufo_take_off" ID="{4F8037EE-47E9-4DF2-94A7-037298E5828A}">
+							<ChildrenList>
+								<Action Name="" ID="{01FECE3A-EB34-4173-A119-E5CE6048F6A3}" ShortID="843759212">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UFO_Take_Off_1" ID="{F63100E8-543F-49B9-808A-4697FC03F59C}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ini" ID="{A3778D60-C6C8-4BA1-ABDF-D8AB076A176B}" ShortID="336360032">

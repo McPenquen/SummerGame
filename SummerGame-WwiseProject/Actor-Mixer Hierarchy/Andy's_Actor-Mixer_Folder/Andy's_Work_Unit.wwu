@@ -1161,6 +1161,75 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
+										<Sound Name="Ini_Idle_1" ID="{457C56C4-66D4-4A18-BF83-5BD5A47B49C5}" ShortID="932971944">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Idle_1" ID="{CDE7AD13-3CF9-4137-A814-CF14EF8BC2C3}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Idle_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1027123563"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Idle_1" ID="{CDE7AD13-3CF9-4137-A814-CF14EF8BC2C3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Swinging_3" ID="{04F53E26-1CF7-416B-AE16-5973E55354F4}" ShortID="534845741">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Swinging_3" ID="{CC641E97-E96B-4B25-9385-07AD44DF810A}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Swinging_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="166132435"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Swinging_3" ID="{CC641E97-E96B-4B25-9385-07AD44DF810A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ini_Falling_1" ID="{D604A073-252D-4827-A516-F76595A70E58}" ShortID="378934922">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ini_Falling_1" ID="{4D6803BE-8955-4EBA-819A-D5B12B62269F}">
+													<Language>SFX</Language>
+													<AudioFile>Ini_Falling_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395215130"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ini_Falling_1" ID="{4D6803BE-8955-4EBA-819A-D5B12B62269F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
@@ -1202,16 +1271,25 @@
 												<ItemRef Name="Jumping" ID="{8F0C080A-4D0D-472B-9F7B-40163929CE17}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="Ini_Swinging_3" ID="{04F53E26-1CF7-416B-AE16-5973E55354F4}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="Gripping" ID="{A571583F-7307-40CD-9F9A-C3335693B107}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Blinking" ID="{9B18BB3F-1779-4FA0-88C6-63ED4DC69EFC}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="Ini_Falling_1" ID="{D604A073-252D-4827-A516-F76595A70E58}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Ini_Swinging_2" ID="{517D19B3-9AD8-4D77-B0BA-B8538252CDE8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ini_Idle_1" ID="{457C56C4-66D4-4A18-BF83-5BD5A47B49C5}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Ini_Walking_1" ID="{6644ACF2-E6B0-4341-B0D7-1B0C108856A6}"/>
@@ -1449,6 +1527,29 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</BlendContainer>
+								<Sound Name="UFO_Take_Off_1" ID="{F63100E8-543F-49B9-808A-4697FC03F59C}" ShortID="115181726">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UFO_Take_Off_1" ID="{D34BCD48-5F53-49B4-A197-705414F8AC9F}">
+											<Language>SFX</Language>
+											<AudioFile>UFO_Take_Off_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="888391156"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="UFO_Take_Off_1" ID="{D34BCD48-5F53-49B4-A197-705414F8AC9F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
