@@ -413,6 +413,295 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
+								<ActorMixer Name="Music" ID="{DD1992F1-4462-409C-A5EF-6470FD869FCC}" ShortID="420819981">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="UI_Victory_1S" ID="{0679125E-B7B2-41C8-991F-3A63DA2F5A25}" ShortID="647895823">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Victory_1S" ID="{E64E276E-BA69-4B28-9F36-5D294D650A44}">
+													<Language>SFX</Language>
+													<AudioFile>UI_Victory_1S.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="977803398"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Victory_1S" ID="{E64E276E-BA69-4B28-9F36-5D294D650A44}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_Victory_2S" ID="{0021C8AB-3D3A-48D8-9B75-A40009116059}" ShortID="918426890">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Victory_2S" ID="{5875E441-3D81-42B3-9BED-2BEBA3ABF3C5}">
+													<Language>SFX</Language>
+													<AudioFile>UI_Victory_2S.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="412649290"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Victory_2S" ID="{5875E441-3D81-42B3-9BED-2BEBA3ABF3C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_Victory_3S" ID="{BF454130-285A-48BE-B3E9-D4DF7D125136}" ShortID="76820966">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Victory_3S" ID="{A47B3F53-AE7C-4826-8E67-6311036AAA68}">
+													<Language>SFX</Language>
+													<AudioFile>UI_Victory_3S.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="166315958"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Victory_3S" ID="{A47B3F53-AE7C-4826-8E67-6311036AAA68}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_Victory_Music" ID="{DB4FAE7B-A251-4ECD-B3CE-3E59F6D075C0}" ShortID="1029427796">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Victory_Music" ID="{5189F407-2DE4-4933-853D-C4ACCB39B526}">
+													<Language>SFX</Language>
+													<AudioFile>UI_Victory_Music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="55320165"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Victory_Music" ID="{5189F407-2DE4-4933-853D-C4ACCB39B526}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_Countdown20s" ID="{45455CEB-BEA3-4437-BDB2-8953C5DA1CF2}" ShortID="742589822">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Countdown20s" ID="{4432D366-03B3-495C-81BA-1B4D237E9EF8}">
+													<Language>SFX</Language>
+													<AudioFile>UI_Countdown20s.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548150828"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Countdown20s" ID="{4432D366-03B3-495C-81BA-1B4D237E9EF8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_GameOver" ID="{35A0240A-C5AB-4BA4-97CA-FD06ADDEF820}" ShortID="144695842">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_GameOver" ID="{47D08091-1635-4782-B529-F95ACEE62580}">
+													<Language>SFX</Language>
+													<AudioFile>UI_GameOver.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="505384754"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_GameOver" ID="{47D08091-1635-4782-B529-F95ACEE62580}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_GameOver_Music" ID="{1DF6B923-822E-4D2C-AB4D-48943B0A0A76}" ShortID="590069460">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_GameOver_Music" ID="{7C8095AD-AC84-42D6-8765-7E394C45B5F3}">
+													<Language>SFX</Language>
+													<AudioFile>UI_GameOver_Music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="464420358"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_GameOver_Music" ID="{7C8095AD-AC84-42D6-8765-7E394C45B5F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="UI_Pause_drone" ID="{C3B2D40F-7CD8-4718-AF77-531B734D3CB4}" ShortID="130484221">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Pause_drone" ID="{F89F6734-4FED-46FB-B23C-B9939DCC77AD}">
+													<Language>SFX</Language>
+													<AudioFile>UI_Pause_drone.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1039365012"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Pause_drone" ID="{F89F6734-4FED-46FB-B23C-B9939DCC77AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Music" ID="{A0065E8A-846D-4403-8235-A1E9E57A1816}" ShortID="1018650664">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Victory_Music" ID="{3DD49FEE-5637-48CB-B8AD-1D2B19F725C1}" ShortID="550936189">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="UI_Victory_Music" ID="{14D8204E-E71E-41EA-8BDB-6D311F0531E0}" ShortID="465349690">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="UI_Victory_Music" ID="{44ED2858-4E71-42AE-9196-3885E42B35C0}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>UI_Victory_Music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1027147319"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="UI_Victory_Music" ID="{44ED2858-4E71-42AE-9196-3885E42B35C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Victory_1_Star" ID="{AA5DED98-B3DB-40BE-AD4A-ABB32C0C0A7E}" ShortID="210380833">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Victory_2_Star" ID="{6FFE745E-3C52-4E34-9AA0-523B8282E933}" ShortID="641058064">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Victory_3_Star" ID="{02320CBA-9BD1-41F1-9AC5-D814DEABE248}" ShortID="367238321">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</ActorMixer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
@@ -430,12 +719,27 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Gem" ID="{3D573DC6-D277-4546-A132-EC4C80B12EDF}" ShortID="280776987">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 								</Reference>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{F9C77BF1-1CCC-415B-B93F-B048979CA620}">
+										<Effect Name="Dialog_Too_Quiet (Custom)" ID="{688436F6-D7D8-41E6-B861-E8962C15D400}" ShortID="793351679" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<PropertyList>
+												<Property Name="OutputGain" Type="Real32" Value="6"/>
+												<Property Name="Ratio" Type="Real32" Value="3"/>
+												<Property Name="Threshold" Type="Real32" Value="-30"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+									<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -978,6 +1282,12 @@
 												<SwitchRef Name="isWalking" ID="{68DC2B2E-A336-4D3E-AABC-ACE2B81F9BD2}"/>
 												<ItemList>
 													<ItemRef Name="Gem_Walking_1" ID="{A59DB7B4-DC84-4739-BAD4-C7AC4C627763}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="isLanding" ID="{6FA03933-43A3-4F62-8707-42006B775876}"/>
+												<ItemList>
+													<ItemRef Name="Gem_Landing" ID="{C989C447-4DA2-4360-A79B-1B975393801D}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>

@@ -80,6 +80,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_victory_music" ID="{6080BD2C-A6B6-49BA-A1FF-EF3EC2886CC9}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="play_ui_confirm" ID="{43185388-BA04-4B4D-AE6C-7BBD4C7744FB}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -104,12 +108,32 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_ini_movement_switch_state" ID="{94E8E912-A952-4686-B433-C4048B22130B}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="play_gem_jumping" ID="{47987C8A-A747-442F-BE6A-1954D1266A7E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="play_gem_landing" ID="{4FD35A85-316E-4703-8B56-7642063F2C09}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ui_ambience" ID="{95042BF5-7007-4D6C-810C-EED53A00D6BD}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="main" ID="{D31C1D17-8F3C-40B1-B93D-F4DA59FED74F}" WorkUnitID="{52014873-F397-4F77-A131-A6485D26E1B2}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="set_IsPaused" ID="{5B980614-42C2-4762-9422-42123D16A6E4}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="set_NotPaused" ID="{734F3BD0-AA80-40CE-A22D-7F7969ACDE99}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -127,8 +151,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
-						<CurrentStateRef Name="isJumping" ID="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}"/>
+						<CurrentStateRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
+						<CurrentStateRef Name="isWalking" ID="{68DC2B2E-A336-4D3E-AABC-ACE2B81F9BD2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

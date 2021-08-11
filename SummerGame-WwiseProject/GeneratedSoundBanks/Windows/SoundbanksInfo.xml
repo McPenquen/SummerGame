@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3088899008">
+		<SoundBank Id="1355168291" Language="SFX" Hash="622338371">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="1348834542">
+		<SoundBank Id="3657742645" Language="SFX" Hash="3167539564">
 			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
 			<ShortName>General_SoundBank</ShortName>
 			<Path>General_SoundBank.bnk</Path>
@@ -220,6 +220,10 @@
 							<ShortName>PlayerGem_Falling.wav</ShortName>
 							<Path>SFX\PlayerGem_Falling_D79FB2B7.wem</Path>
 						</File>
+						<File Id="266703678" Language="SFX">
+							<ShortName>PlayerGem_Landing_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_3_10C4C929.wem</Path>
+						</File>
 						<File Id="273825055" Language="SFX">
 							<ShortName>PlayerGem_Jumping_1.wav</ShortName>
 							<Path>SFX\PlayerGem_Jumping_1_10C4C929.wem</Path>
@@ -252,6 +256,10 @@
 							<ShortName>PlayerGem_Jumping_4.wav</ShortName>
 							<Path>SFX\PlayerGem_Jumping_4_10C4C929.wem</Path>
 						</File>
+						<File Id="779702268" Language="SFX">
+							<ShortName>PlayerGem_Landing_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_1_10C4C929.wem</Path>
+						</File>
 						<File Id="864741291" Language="SFX">
 							<ShortName>PlayerGem_Gripping_2.wav</ShortName>
 							<Path>SFX\PlayerGem_Gripping_2_10C4C929.wem</Path>
@@ -259,6 +267,10 @@
 						<File Id="894027688" Language="SFX">
 							<ShortName>PlayerGem_Gripping_4.wav</ShortName>
 							<Path>SFX\PlayerGem_Gripping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1027132071" Language="SFX">
+							<ShortName>PlayerGem_Landing_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{8E492038-33E6-4394-BBFE-65DC3505D77D}</DefaultSwitchValue>
@@ -295,6 +307,13 @@
 								<File Id="383594553"/>
 								<File Id="667000515"/>
 								<File Id="761976081"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6FA03933-43A3-4F62-8707-42006B775876}">
+							<Media>
+								<File Id="266703678"/>
+								<File Id="779702268"/>
+								<File Id="1027132071"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>

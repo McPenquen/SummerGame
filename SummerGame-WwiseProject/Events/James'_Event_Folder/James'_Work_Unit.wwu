@@ -51,6 +51,69 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="play_countdown_20s" ID="{B7835C8D-0653-43CF-B7DB-C2CE9E1B7811}">
+									<ChildrenList>
+										<Action Name="" ID="{BF0A251F-A1A7-4541-BADB-7454AFABF4FE}" ShortID="786309734">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_Countdown20s" ID="{45455CEB-BEA3-4437-BDB2-8953C5DA1CF2}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_ui_ambience" ID="{95042BF5-7007-4D6C-810C-EED53A00D6BD}">
+									<ChildrenList>
+										<Action Name="" ID="{8A736127-6E2A-43A7-9334-1ADD2FC262E8}" ShortID="932157713">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI_Pause_drone" ID="{C3B2D40F-7CD8-4718-AF77-531B734D3CB4}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="set_IsPaused" ID="{5B980614-42C2-4762-9422-42123D16A6E4}">
+									<ChildrenList>
+										<Action Name="" ID="{C7282AA0-A578-482A-9A4F-8DC3DC670ED2}" ShortID="720549318">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="8"/>
+											</PropertyList>
+											<ReferenceList/>
+											<ChildrenList>
+												<EventActionException Name="" ID="{3FBF29C2-0721-45D7-B702-36CD1CB81839}">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="UI_Pause_drone" ID="{C3B2D40F-7CD8-4718-AF77-531B734D3CB4}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+														</Reference>
+													</ReferenceList>
+												</EventActionException>
+											</ChildrenList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="set_NotPaused" ID="{734F3BD0-AA80-40CE-A22D-7F7969ACDE99}">
+									<ChildrenList>
+										<Action Name="" ID="{283F670A-3A9C-4A64-9EC7-B9C98993CDDF}" ShortID="153427854">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="10"/>
+											</PropertyList>
+											<ReferenceList/>
+											<ChildrenList>
+												<EventActionException Name="" ID="{287B8705-130A-4796-ACC5-695443E32319}">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="UI_Pause_drone" ID="{C3B2D40F-7CD8-4718-AF77-531B734D3CB4}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+														</Reference>
+													</ReferenceList>
+												</EventActionException>
+											</ChildrenList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Event Name="stop_ui" ID="{060C6DFF-E855-49BC-9C29-B0F759C935F9}">
@@ -67,6 +130,45 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Music" ID="{63000F10-7C5E-4EDA-9849-E8EAAD13A4D6}" ShortID="297470746">
+							<ChildrenList>
+								<Folder Name="Desert" ID="{DE9326CF-30A5-411B-B063-B6C8276FB468}" ShortID="794455966">
+									<ChildrenList>
+										<Folder Name="Level1" ID="{AFBDED90-7CB2-4A2B-91C1-F49E10B57C64}" ShortID="53116470">
+											<ChildrenList>
+												<Event Name="play_main_music" ID="{57F07EF9-8766-40B6-9E0C-AADCE0500E39}">
+													<ChildrenList>
+														<Action Name="" ID="{E492BD37-A35B-4522-8864-842AF6DE0E9A}" ShortID="4795014">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="main" ID="{D31C1D17-8F3C-40B1-B93D-F4DA59FED74F}" WorkUnitID="{52014873-F397-4F77-A131-A6485D26E1B2}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="stop_main_music" ID="{9BF9C686-22EA-4DA3-AADE-7E0FA03BE86E}"/>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="UI" ID="{CB9A96CA-EBCF-439F-90B7-B1DA7B685728}" ShortID="1067346365">
+									<ChildrenList>
+										<Event Name="play_victory_music" ID="{6080BD2C-A6B6-49BA-A1FF-EF3EC2886CC9}">
+											<ChildrenList>
+												<Action Name="" ID="{04BDECFD-8C2F-47C4-9665-52788955EB67}" ShortID="1011677311">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="UI_Victory_Music" ID="{14D8204E-E71E-41EA-8BDB-6D311F0531E0}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{AEE2DC21-16D5-44BB-9E5E-924774476129}" ShortID="968729557"/>
@@ -105,6 +207,9 @@
 						<Event Name="play_gem_movement_switch_state" ID="{D657AF9A-8411-48B2-8785-69C6017DC18E}">
 							<ChildrenList>
 								<Action Name="" ID="{18619440-68AB-4509-8E36-0B2514E86238}" ShortID="382881327">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Movement_State_Switch" ID="{FF9D2071-CB2D-40B6-A6EF-2095AAD45DDC}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>

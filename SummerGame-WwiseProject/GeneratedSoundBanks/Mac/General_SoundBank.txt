@@ -56,6 +56,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	415841907	Space_Garage	Wwise RoomVerb			
 	583825884	Hall_Large_Bright (Custom)	Wwise RoomVerb			
+	793351679	Dialog_Too_Quiet (Custom)	Wwise Compressor			
 	1588715066	Echoes_Linear	Wwise Delay			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
