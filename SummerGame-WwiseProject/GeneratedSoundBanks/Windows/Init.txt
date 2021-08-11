@@ -18,6 +18,7 @@ State	ID	Name	State Group			Notes
 	1874288895	idle	Ini_Movement			
 	3183196101	isGrabbing	Ini_Movement			
 	3629409974	isWalking	Ini_Movement			
+	3910744550	isLanding	Ini_Movement			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Andy's_Game_Parameters\Andy's_Work_Unit\Music_Volume	
