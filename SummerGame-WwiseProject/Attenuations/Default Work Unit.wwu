@@ -4,9 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{363BBF00-3A84-4721-9563-C7582D02DC6B}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" ShortID="712906690">
-					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
-					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -21,17 +18,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>7.5</XPos>
+											<XPos>37.5</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>10</XPos>
+											<XPos>50</XPos>
 											<YPos>-3.87977</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>100</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -58,22 +55,22 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>7.5</XPos>
+											<XPos>37.5</XPos>
 											<YPos>14</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>12.5</XPos>
+											<XPos>62.5</XPos>
 											<YPos>63</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>15.02604</XPos>
+											<XPos>75.1302</XPos>
 											<YPos>76</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>100</XPos>
 											<YPos>75</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -97,12 +94,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>5</XPos>
+											<XPos>25</XPos>
 											<YPos>50</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>100</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

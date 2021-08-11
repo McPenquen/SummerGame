@@ -9,13 +9,15 @@
 							<Custom>
 								<Effect Name="Mastering Suite (Custom)" ID="{ABE98836-D46D-4A1F-A90C-CFB66240F4AF}" ShortID="96700152" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
 									<PropertyList>
-										<Property Name="compressorBand1Enabled" Type="bool" Value="False"/>
-										<Property Name="compressorBand1MakeupGain" Type="Real32" Value="2"/>
+										<Property Name="compressorBand1Attack" Type="Real32" Value="0.02"/>
+										<Property Name="compressorBand1MakeupGain" Type="Real32" Value="16.1"/>
+										<Property Name="compressorBand1Ratio" Type="Real32" Value="7.39"/>
+										<Property Name="compressorBand1Threshold" Type="Real32" Value="-17.7"/>
 										<Property Name="compressorBand2Enabled" Type="bool" Value="False"/>
 										<Property Name="compressorBand3Enabled" Type="bool" Value="False"/>
 										<Property Name="compressorBand4Enabled" Type="bool" Value="False"/>
 										<Property Name="compressorNumBands" Type="int32" Value="1"/>
-										<Property Name="limiterThreshold" Type="Real32" Value="-1.6"/>
+										<Property Name="limiterThreshold" Type="Real32" Value="-10.2"/>
 										<Property Name="paramBand2Frequency" Type="Real32" Value="218.9555"/>
 										<Property Name="paramBand2Gain" Type="Real32" Value="0.08230453"/>
 									</PropertyList>
