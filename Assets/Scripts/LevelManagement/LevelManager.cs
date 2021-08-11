@@ -58,13 +58,6 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        // If the players get close to the finish line play ufo engine sound
-        if (Vector2.Distance(players.GetPosition(), finishLine.transform.position) <= 40.0f && !isPlayingUfoEngineSound)
-        {
-            isPlayingUfoEngineSound = true;
-            AkSoundEngine.PostEvent("play_ufo_idle",gameObject);
-        }
-
         // If players reach the final destination they won
         FinishLineVictoryCheck();
         if (isWon)
