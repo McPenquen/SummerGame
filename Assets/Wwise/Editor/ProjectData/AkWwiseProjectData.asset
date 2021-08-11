@@ -198,7 +198,7 @@ MonoBehaviour:
     ParentPath: Events\Andy's_Events_Folder\Andy's_Work_Unit
     guid: 34a1481ab08c7349ae4bd493eaec004f
     GuidInternal: 
-    m_lastTime: -8585731628005879855
+    m_lastTime: -8585729094628768274
     List:
     - name: Game_Object_Events
       guid: 89fa3ec7ba747c4a896dbbbe6e503329
@@ -217,6 +217,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 89fa3ec7ba747c4a896dbbbe6e503329
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Gem_and_Ini
+      guid: 9caca9053c711548ae05c80ea24a7b5a
+      id: 1252710715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Gem_and_Ini
+        ObjectType: 4
+        guid: 9caca9053c711548ae05c80ea24a7b5a
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Gem_and_Ini
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -263,6 +283,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.5
       minDuration: 2.375
+    - name: play_character_blinking
+      guid: d7d70f9fc8bf174394168c8fc1af6e3c
+      id: 3463543472
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Gem_and_Ini
+        ObjectType: 4
+        guid: 9caca9053c711548ae05c80ea24a7b5a
+      - ElementName: play_character_blinking
+        ObjectType: 3
+        guid: d7d70f9fc8bf174394168c8fc1af6e3c
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Gem_and_Ini\play_character_blinking
+      maxAttenuation: 0
+      maxDuration: 0.587095
+      minDuration: 0.432019
     - name: play_checkpoint_phone_ring
       guid: 45fdc1dbf1c39349a1fe3d5f4f56ca87
       id: 2894346942
@@ -283,7 +326,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 45fdc1dbf1c39349a1fe3d5f4f56ca87
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: play_checkpoint_success
@@ -306,7 +349,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 76c351c2076aa747ae0b5a041f6a7c8d
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 5.514213
       minDuration: 5.117991
     - name: play_ini_gripping
@@ -399,8 +442,8 @@ MonoBehaviour:
         guid: 12e9e89452a98646b433c4048b22130b
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_movement_switch_state
       maxAttenuation: 0
-      maxDuration: 2
-      minDuration: 0.372597
+      maxDuration: Infinity
+      minDuration: 0.352587
     - name: play_plant
       guid: 8a7396b28c337e4ba45602d827f802dd
       id: 2689642121
@@ -444,9 +487,32 @@ MonoBehaviour:
         ObjectType: 3
         guid: 180791b49f303f44bc1fc139c97c2234
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle
-      maxAttenuation: 20
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
+    - name: play_ufo_take_off
+      guid: ee37804fe947f24d94a7037298e5828a
+      id: 1097816718
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Events_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Andy's_Work_Unit
+        ObjectType: 12
+        guid: 34a1481ab08c7349ae4bd493eaec004f
+      - ElementName: Game_Object_Events
+        ObjectType: 4
+        guid: 89fa3ec7ba747c4a896dbbbe6e503329
+      - ElementName: play_ufo_take_off
+        ObjectType: 3
+        guid: ee37804fe947f24d94a7037298e5828a
+      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_take_off
+      maxAttenuation: 0
+      maxDuration: 6.8125
+      minDuration: 6.8125
     - name: stop_ini_movement_switch_state
       guid: 0b90e3ee65214941a33045fa7f6fe34b
       id: 3252663195
@@ -623,7 +689,7 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585731717588382349
+    m_lastTime: -8585729094751063962
     List:
     - name: Environment
       guid: 21dce2aed516bb449e5e924774476129
@@ -829,7 +895,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 76df6aac1a39674ab207b319efbbac20
       Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle_01
-      maxAttenuation: 20
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: play_ui_cancel
@@ -1158,7 +1224,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 56298cd3335bce4baf0f01cc54b0bc6a
     GuidInternal: 
-    m_lastTime: -8585731627999082480
+    m_lastTime: -8585729094621187383
     List:
     - name: Gem_Movement
       guid: 853ee3d50d9dfc45be3a5256d6d78617
@@ -1385,6 +1451,22 @@ MonoBehaviour:
         - ElementName: isJumping
           ObjectType: 8
           guid: bbc63e78ec9f914ea753be7fd0a44ee9
+      - name: isLanding
+        guid: 09c7de60a1b30e45ab0a213d64a0e390
+        id: 3910744550
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Ini_Movement
+          ObjectType: 9
+          guid: 38f2bde3dce84e419c06704c05ee4686
+        - ElementName: isLanding
+          ObjectType: 8
+          guid: 09c7de60a1b30e45ab0a213d64a0e390
       - name: isSwinging
         guid: 902fe74d5ba07c4eba5c4ec4f9981372
         id: 605894799
