@@ -79,6 +79,9 @@ public class LevelManager : MonoBehaviour
             // Wait until the sound finishes to change scene
             victoryDelayCounter += Time.deltaTime;
             if (victoryDelayCounter >= 2.0f )
+            // Stop all current sounds and replay the default background noise
+            AkSoundEngine.StopAll();
+            AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
             SceneManager.LoadScene("Victory");
         }
 
@@ -101,9 +104,12 @@ public class LevelManager : MonoBehaviour
 
     public void EnterMainMenu()
     {
+        Time.timeScale = 1;
+        // Stop all current sounds and replay the default background noise
+        AkSoundEngine.StopAll();
         // Play confirm sound
         AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
-        Time.timeScale = 1;
+        AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
         SceneManager.LoadScene("Menu");
     }
 
@@ -179,6 +185,9 @@ public class LevelManager : MonoBehaviour
     // Go to the game over scene = loss game
     static public void GameOver()
     {
+        // Stop all current sounds and replay the default background noise
+        AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
          SceneManager.LoadScene("GameOver");
     }
 }
