@@ -249,6 +249,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Gem_and_Ini" ID="{05A9AC9C-713C-4815-AE05-C80EA24A7B5A}" ShortID="452918498">
+					<ChildrenList>
+						<Event Name="play_character_blinking" ID="{9F0FD7D7-BFC8-4317-9416-8C8FC1AF6E3C}">
+							<ChildrenList>
+								<Action Name="" ID="{59578846-DCC8-4753-87B2-2302FF5E073F}" ShortID="1057677426">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Blinking" ID="{9B18BB3F-1779-4FA0-88C6-63ED4DC69EFC}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
