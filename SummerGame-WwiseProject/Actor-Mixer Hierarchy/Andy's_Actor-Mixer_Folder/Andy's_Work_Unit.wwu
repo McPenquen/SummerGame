@@ -1343,6 +1343,12 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
+												<SwitchRef Name="isLanding" ID="{60DEC709-B3A1-450E-AB0A-213D64A0E390}"/>
+												<ItemList>
+													<ItemRef Name="Landing" ID="{6E3D59F7-EDFE-443D-B936-09651A2C75B2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
 												<ItemList>
 													<ItemRef Name="Ini_Falling_1" ID="{D604A073-252D-4827-A516-F76595A70E58}"/>
