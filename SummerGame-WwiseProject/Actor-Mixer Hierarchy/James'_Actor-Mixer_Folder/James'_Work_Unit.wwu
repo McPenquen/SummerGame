@@ -1283,14 +1283,19 @@
 						<Sound Name="Army_Radio" ID="{D44DE706-A4DF-4D3F-BDC0-6BBCBA52A15E}" ShortID="183175931">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="att_100m" ID="{471BC718-0DB6-4510-B99F-C42645556FFE}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+									<ObjectRef Name="att_75m" ID="{87D59EF1-B590-4711-B5CE-41774CF53281}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
@@ -1305,6 +1310,9 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{A49C4614-2C42-4640-831D-FD21BF1858BF}"/>
+							</PositioningInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Army_Radio" ID="{C9143FB2-07AD-4EF9-8A37-B3A415B6EB88}" Platform="Linked"/>
@@ -1346,10 +1354,15 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="att_100m" ID="{471BC718-0DB6-4510-B99F-C42645556FFE}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+									<ObjectRef Name="att_75m" ID="{87D59EF1-B590-4711-B5CE-41774CF53281}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>

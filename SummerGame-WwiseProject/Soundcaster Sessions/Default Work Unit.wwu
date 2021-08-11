@@ -22,10 +22,6 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_checkpoint_success" ID="{C251C376-6A07-47A7-AE0B-5A041F6A7C8D}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="stop_play_ufo_idle" ID="{9A91A3A1-5BEF-461B-B21C-BD8C079E07E9}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -129,6 +125,14 @@
 							<ObjectRef Name="main" ID="{D31C1D17-8F3C-40B1-B93D-F4DA59FED74F}" WorkUnitID="{52014873-F397-4F77-A131-A6485D26E1B2}"/>
 							<Position X="3" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="set_IsPaused" ID="{5B980614-42C2-4762-9422-42123D16A6E4}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="set_NotPaused" ID="{734F3BD0-AA80-40CE-A22D-7F7969ACDE99}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -146,6 +150,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
+						<CurrentStateRef Name="on" ID="{3F2590DC-225D-4DA9-A941-1DE408703424}"/>
 						<CurrentStateRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

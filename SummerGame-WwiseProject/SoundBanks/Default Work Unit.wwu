@@ -6,9 +6,42 @@
 				<SoundBank Name="General_SoundBank" ID="{9CBC1FED-FFFF-45C8-B0EC-06456E9DDC0C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Andy's_Work_Unit" ID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="James'_Work_Unit" ID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Andy_Bank" ID="{F1CFE2E1-E5DC-4480-B0EE-13A65ADC4230}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Andy's_Work_Unit" ID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="James_Players_Bank" ID="{0E3B31E6-3848-4C2D-AD3E-49A24A8541F0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Players" ID="{154BF816-8A94-4C28-93DB-079559A0EDE5}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="James_Army_Bank" ID="{63417304-7C13-4DB6-BB44-7BDA2EE9AC43}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Army" ID="{F22FAAA6-F6D9-407B-B003-A5C1EB32942D}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="James_UI_Bank" ID="{61723651-1E94-4F27-BA6D-96431CF3B32B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="UI" ID="{5B1E6591-0149-4409-A6A1-333A72BEF0AB}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="James_NPC_Bank" ID="{E1CBD249-B9BD-47FA-8DD9-2D5C8B5D65F1}">
+					<ObjectInclusionList>
+						<ObjectRef Name="NPC" ID="{C8AB5F81-708D-45BA-A09F-FC45E40BE80E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

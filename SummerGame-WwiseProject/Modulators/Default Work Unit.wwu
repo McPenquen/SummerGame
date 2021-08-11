@@ -21,6 +21,7 @@
 						</Property>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorTime Name="New Modulator Time" ID="{05A5875A-340B-4C5E-96ED-8C2CB65B5ADF}" ShortID="566526501"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

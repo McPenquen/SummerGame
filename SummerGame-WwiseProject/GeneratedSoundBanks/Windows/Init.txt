@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	72319902	Gem_Movement			\Default Work Unit\Gem_Movement	
+	612075679	Checkpoint			\Default Work Unit\Checkpoint	
 	2064316991	Ini_Movement			\Default Work Unit\Ini_Movement	
 
 State	ID	Name	State Group			Notes
@@ -11,6 +12,9 @@ State	ID	Name	State Group			Notes
 	3183196101	isGrabbing	Gem_Movement			
 	3629409974	isWalking	Gem_Movement			
 	3910744550	isLanding	Gem_Movement			
+	748895195	None	Checkpoint			
+	930712164	off	Checkpoint			
+	1651971902	on	Checkpoint			
 	594781027	isJumping	Ini_Movement			
 	605894799	isSwinging	Ini_Movement			
 	748895195	None	Ini_Movement			

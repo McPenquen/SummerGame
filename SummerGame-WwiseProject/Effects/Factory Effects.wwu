@@ -144,9 +144,9 @@
 						</Effect>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="0.1"/>
+								<Property Name="DelayTime" Type="Real32" Value="0.21"/>
 								<Property Name="Feedback" Type="Real32" Value="36.5"/>
-								<Property Name="WetDryMix" Type="Real32" Value="50"/>
+								<Property Name="WetDryMix" Type="Real32" Value="68"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">

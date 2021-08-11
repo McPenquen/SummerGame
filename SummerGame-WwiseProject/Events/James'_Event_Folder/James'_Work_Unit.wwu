@@ -173,7 +173,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Victory_Music" ID="{3DD49FEE-5637-48CB-B8AD-1D2B19F725C1}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+															<ObjectRef Name="UI_Victory_Music" ID="{DB4FAE7B-A251-4ECD-B3CE-3E59F6D075C0}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -220,7 +220,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="UI_Victory_1S" ID="{CCD3D0E4-1E15-4B80-93B9-09F79B0D390F}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+															<ObjectRef Name="UI_Victory_1S" ID="{0679125E-B7B2-41C8-991F-3A63DA2F5A25}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -234,7 +234,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="UI_Victory_2S" ID="{6FD62555-9219-41DD-8E50-9C5FA9D4903C}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+															<ObjectRef Name="UI_Victory_2S" ID="{0021C8AB-3D3A-48D8-9B75-A40009116059}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -248,7 +248,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="UI_Victory_3S" ID="{7CFB126C-865C-49AE-91F3-182BC9FE6453}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+															<ObjectRef Name="UI_Victory_3S" ID="{BF454130-285A-48BE-B3E9-D4DF7D125136}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -294,36 +294,7 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{AEE2DC21-16D5-44BB-9E5E-924774476129}" ShortID="968729557"/>
-				<Folder Name="NPC" ID="{C8AB5F81-708D-45BA-A09F-FC45E40BE80E}" ShortID="651160058">
-					<ChildrenList>
-						<Folder Name="UFO" ID="{E42F3D03-9E11-48BC-BAE1-92DB05ECE4F6}" ShortID="890233054">
-							<ChildrenList>
-								<Event Name="play_ufo_idle_01" ID="{AC6ADF76-391A-4A67-B207-B319EFBBAC20}">
-									<ChildrenList>
-										<Action Name="" ID="{DBD0FB31-EB7E-442D-9763-9947D33966AF}" ShortID="376825759">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Ship_Sounds" ID="{0CF4D829-49CE-4A26-BE1D-5F112969DBAD}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="play_beam_up_01" ID="{57BA416F-FB72-4955-8E2B-393A9E97F0C2}">
-									<ChildrenList>
-										<Action Name="" ID="{B2AA4079-987D-49BC-B90D-35D3C6FD8FD1}" ShortID="426118484">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Beam_Up" ID="{972F6F8A-FDE9-4003-B438-FE8B7E1D917E}" WorkUnitID="{F0A27D9D-4437-46CA-8E11-B9BA2D1D5E7D}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-					</ChildrenList>
-				</Folder>
+				<Folder Name="NPC" ID="{C8AB5F81-708D-45BA-A09F-FC45E40BE80E}" ShortID="651160058"/>
 				<Folder Name="Players" ID="{154BF816-8A94-4C28-93DB-079559A0EDE5}" ShortID="385036964">
 					<ChildrenList>
 						<Event Name="play_gem_movement_switch_state" ID="{D657AF9A-8411-48B2-8785-69C6017DC18E}">
@@ -389,7 +360,50 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Army" ID="{F22FAAA6-F6D9-407B-B003-A5C1EB32942D}" ShortID="368944877"/>
+				<Folder Name="Army" ID="{F22FAAA6-F6D9-407B-B003-A5C1EB32942D}" ShortID="368944877">
+					<ChildrenList>
+						<Event Name="play_army_base_emitter" ID="{FF29C0B1-538B-4718-82DE-CEB4BD0750D7}">
+							<ChildrenList>
+								<Action Name="" ID="{8A85E1F4-E46E-4DD5-9083-C721F5CE5EB8}" ShortID="925469102">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Army_Base_Emitter_Loop" ID="{DAE03C29-73A9-44AA-932F-8A0AA93B52BF}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E39B380C-A42A-4866-BB3C-FE2F839F5E85}" ShortID="617331575">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Army_Radio" ID="{D44DE706-A4DF-4D3F-BDC0-6BBCBA52A15E}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_army_vehicles_far" ID="{5310AB54-AF09-45E9-85EE-71D522C3B704}">
+							<ChildrenList>
+								<Action Name="" ID="{A10B9C28-CE12-44B1-B3E1-F928D0B7A352}" ShortID="552108422">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Army_Vehicles_Far_Loop" ID="{30193E9F-A48E-416F-9EC7-0343261FDC37}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_explosion" ID="{395D6A4F-2D4D-42E4-9185-D7AAC379E21E}">
+							<ChildrenList>
+								<Action Name="" ID="{58B02812-E2D4-4723-AD8B-8768AC92CA93}" ShortID="844748083">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Army_Explosion" ID="{AE742C10-B54E-4083-B608-A8C7908F31E7}" WorkUnitID="{70C3A737-7303-46FA-A862-1D9203531654}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
