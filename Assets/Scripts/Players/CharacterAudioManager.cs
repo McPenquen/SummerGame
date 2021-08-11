@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterAudioManager : MonoBehaviour
 {
@@ -25,20 +26,6 @@ public class CharacterAudioManager : MonoBehaviour
 
     // GameObject
     GameObject go;
-
-
-    private enum SoundPlaying
-    {
-        none,
-        idle,
-        walking,
-        jumping,
-        swinging,
-        falling,
-        grabbing
-    }
-
-    private SoundPlaying soundEvent;
 
     private void Awake()
     {
@@ -69,12 +56,12 @@ public class CharacterAudioManager : MonoBehaviour
         // Establish stop event string
         stopEvent = "stop_" + characterName.ToLower() + "_movement_switch_state";
 
-        // Initialise sound event to none
-        soundEvent = SoundPlaying.none;
-
+        // Obtain the game object
         go = this.gameObject;
 
     }
+
+
 
     private void Update()
     {
@@ -84,17 +71,15 @@ public class CharacterAudioManager : MonoBehaviour
         // Post Sound event to sound engine
         AkSoundEngine.PostEvent(playEvent, go);
 
-        
-
-
         // Check the player status
         if (playerStatus == Character.PlayerStatus.idle)
         {
             // Play Idle sounds
-            //AkSoundEngine.SetState(characterState, "idle");
+            AkSoundEngine.SetState(characterState, "idle");
         }
         else if(playerStatus == Character.PlayerStatus.walking)
         {
+
             // Play walking sounds for the character
             AkSoundEngine.SetState(characterState, "isWalking");
         }
@@ -122,21 +107,7 @@ public class CharacterAudioManager : MonoBehaviour
         {
             // No sound for the character
             AkSoundEngine.SetState(characterState, "None");
-
-            soundEvent = SoundPlaying.none;
         }
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }
