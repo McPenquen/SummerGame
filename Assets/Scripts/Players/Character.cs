@@ -121,12 +121,30 @@ public class Character : MonoBehaviour
 
     // Number of segments - DEBUG USE ONLY
     private int numSegments = 20;
+
     // Set the collision direction vector
     private Vector2 collisionDirection = Vector2.zero;
+
     // Saved height of the sprite
     private float spriteHeight;
+
     // Saved height of the sprite
     private float spriteWidth;
+
+    // Player Status Enumerator
+    public enum PlayerStatus
+    {
+        idle = 0,
+        walking = 1,
+        jumping = 2,
+        falling = 3,
+        swinging = 4,
+        grabbing = 5
+    }
+
+    // Player status object
+    [SerializeField]
+    private PlayerStatus m_playerStatus;
 
     // Start is called before the first frame update
     private void Awake()
@@ -148,7 +166,9 @@ public class Character : MonoBehaviour
             // Current player is player 2, obtain player 1
             m_otherPlayer = GameObject.FindGameObjectWithTag("Player_1").GetComponent<Character>();
         }
-        
+
+        Debug.Log("Player " + (m_playerIndex + 1) + " GO: " + gameObject.GetInstanceID());
+
         // Obtain the 2D rigid body component
         m_rb = GetComponent<Rigidbody2D>();
 
@@ -476,6 +496,46 @@ public class Character : MonoBehaviour
 
         // Update the bond joint assigned to the player
         m_bond.UpdateJoint(GetPlayerIndex(), m_playerPos);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // PLAYER STATUS
+        if (m_isGrounded && m_xInput == 0)
+        {
+            m_playerStatus = PlayerStatus.idle;
+        }
+        else if(m_isGrounded && m_xInput != 0)
+        {
+            m_playerStatus = PlayerStatus.walking;
+        }
+        else if(m_isJumping)
+        {
+            m_playerStatus = PlayerStatus.jumping;
+        }
+        else if (m_isFalling)
+        {
+            m_playerStatus = PlayerStatus.falling;
+        }
+        else if (m_isSwinging)
+        {
+            m_playerStatus = PlayerStatus.swinging;
+        }
+        else if (m_isGrabbing)
+        {
+            m_playerStatus = PlayerStatus.grabbing;
+        }
     }
 
     /*
@@ -643,6 +703,12 @@ public class Character : MonoBehaviour
             // Set is grabbing to true
             m_isGrabbing = true;
 
+            // Set other booleans to false
+            m_isFalling = false;
+            m_isGrounded = false;
+            m_isJumping = false;
+            m_isSwinging = false;
+
             // Control the animation
             m_playerAnimator.SetBool("isWalking", false); // it doesn't walk anymore
             m_playerAnimator.SetBool("isJumping", false); // it's not jumping anymore
@@ -672,8 +738,10 @@ public class Character : MonoBehaviour
     {
         // Set is grabbing to false
         m_isGrabbing = false;
+
         // Stop animating the grab
         m_playerAnimator.SetBool("isGrabbing", false);
+
         // The other player is not swinging anymore (if they were)
         m_otherPlayer.SetSwinging(false);
     }
@@ -720,5 +788,10 @@ public class Character : MonoBehaviour
     public bool CheckGrabbing()
     {
         return m_isGrabbing;
+    }
+
+    public PlayerStatus GetPlayerStatus()
+    {
+        return m_playerStatus;
     }
 }
