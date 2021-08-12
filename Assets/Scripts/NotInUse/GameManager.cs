@@ -87,6 +87,8 @@ public class GameManager : MonoBehaviour
     public void sceneSelection(string selectedScene)
     {
         // Load selected scene
+        AkSoundEngine.StopAll(); // Stop all current sounds and replay the default background noise
+        AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
         SceneManager.LoadScene(selectedScene);
 
         // Set active scene to the selected scene

@@ -33,9 +33,12 @@ public class MenuManager : MonoBehaviour
     // Play level 1
     public void PlayGame()
     {
+        // Stop all current sounds and replay the default background noise
+        AkSoundEngine.StopAll();
         // Play confirm sound
         AkSoundEngine.PostEvent("play_ui_confirm", UnityEngine.GameObject.Find("ScenesNavigator"));
         //SceneManager.LoadScene("Level1");
+        AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
         SceneManager.LoadScene("newLevel1");
     }
 

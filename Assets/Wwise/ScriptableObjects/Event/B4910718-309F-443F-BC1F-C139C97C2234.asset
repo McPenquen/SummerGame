@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5a80ba3f300419cbec5b5b1e6af985, type: 3}
+  m_Name: B4910718-309F-443F-BC1F-C139C97C2234
+  m_EditorClassIdentifier: 
+  objectName: play_ufo_idle
+  id: 3790043115
+  guid: B4910718-309F-443F-BC1F-C139C97C2234

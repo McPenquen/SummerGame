@@ -11,20 +11,45 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1700535148">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-			<GameParameters>
-				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Music_Volume"/>
-				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\SFX_Volume"/>
-				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
-			</GameParameters>
+		<SoundBank Id="335436322" Language="SFX" Hash="70162872">
+			<ObjectPath>\SoundBanks\Default Work Unit\James_Army_Bank</ObjectPath>
+			<ShortName>James_Army_Bank</ShortName>
+			<Path>James_Army_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3508812408" Name="play_army_base_emitter" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_base_emitter" MaxAttenuation="75.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24642990" Language="SFX">
+							<ShortName>Army_Base_Emitter_Loop.wav</ShortName>
+							<Path>SFX\Army_Base_Emitter_Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="418555469" Language="SFX">
+							<ShortName>Army_Radio.wav</ShortName>
+							<Path>SFX\Army_Radio_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1770554193" Name="play_army_vehicles_far" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_vehicles_far" MaxAttenuation="250.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="731210163" Language="SFX">
+							<ShortName>Army_Vehicles_Far_Loop.wav</ShortName>
+							<Path>SFX\Army_Vehicles_Far_Loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4030404899" Name="play_explosion" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Army\play_explosion" DurationType="OneShot" DurationMin="7.865760" DurationMax="7.865760">
+					<IncludedMemoryFiles>
+						<File Id="656486940" Language="SFX">
+							<ShortName>Army_Explosion.wav</ShortName>
+							<Path>SFX\Army_Explosion_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3657742645" Language="SFX" Hash="3899401395">
-			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
-			<ShortName>General_SoundBank</ShortName>
-			<Path>General_SoundBank.bnk</Path>
+		<SoundBank Id="1163442174" Language="SFX" Hash="1691213391">
+			<ObjectPath>\SoundBanks\Default Work Unit\Andy_Bank</ObjectPath>
+			<ShortName>Andy_Bank</ShortName>
+			<Path>Andy_Bank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3168572341" Name="play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_beam_up" DurationType="OneShot" DurationMin="2.375000" DurationMax="2.500000">
 					<IncludedMemoryFiles>
@@ -42,24 +67,44 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3488140881" Name="play_beam_up_01" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up_01" DurationType="OneShot" DurationMin="2.375000" DurationMax="2.500000">
+				<Event Id="3463543472" Name="play_character_blinking" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Gem_and_Ini\play_character_blinking" DurationType="OneShot" DurationMin="0.432019" DurationMax="0.587095">
 					<IncludedMemoryFiles>
-						<File Id="113374674" Language="SFX">
-							<ShortName>UFO_Beam_Up_2.wav</ShortName>
-							<Path>SFX\UFO_Beam_Up_2_10C4C929.wem</Path>
+						<File Id="114785468" Language="SFX">
+							<ShortName>Ini_Blinking_2.wav</ShortName>
+							<Path>SFX\Ini_Blinking_2_10C4C929.wem</Path>
 						</File>
-						<File Id="383757867" Language="SFX">
-							<ShortName>UFO_Beam_Up_3.wav</ShortName>
-							<Path>SFX\UFO_Beam_Up_3_10C4C929.wem</Path>
+						<File Id="142361207" Language="SFX">
+							<ShortName>Ini_Blinking_3.wav</ShortName>
+							<Path>SFX\Ini_Blinking_3_10C4C929.wem</Path>
 						</File>
-						<File Id="1028696354" Language="SFX">
-							<ShortName>UFO_Beam_Up_4.wav</ShortName>
-							<Path>SFX\UFO_Beam_Up_4_10C4C929.wem</Path>
+						<File Id="207305166" Language="SFX">
+							<ShortName>Ini_Blinking_5.wav</ShortName>
+							<Path>SFX\Ini_Blinking_5_10C4C929.wem</Path>
+						</File>
+						<File Id="344387417" Language="SFX">
+							<ShortName>Ini_Blinking_1.wav</ShortName>
+							<Path>SFX\Ini_Blinking_1_10C4C929.wem</Path>
+						</File>
+						<File Id="364117622" Language="SFX">
+							<ShortName>Ini_Blinking_4.wav</ShortName>
+							<Path>SFX\Ini_Blinking_4_10C4C929.wem</Path>
+						</File>
+						<File Id="765011499" Language="SFX">
+							<ShortName>Ini_Blinking_6.wav</ShortName>
+							<Path>SFX\Ini_Blinking_6_10C4C929.wem</Path>
+						</File>
+						<File Id="920974787" Language="SFX">
+							<ShortName>Ini_Blinking_7.wav</ShortName>
+							<Path>SFX\Ini_Blinking_7_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2894346942" Name="play_checkpoint_phone_ring" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring" DurationType="Infinite">
+				<Event Id="2894346942" Name="play_checkpoint_phone_ring" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring" MaxAttenuation="100.000000" DurationType="Mixed" DurationMin="0.324161" DurationMax="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="351277226" Language="SFX">
+							<ShortName>Answering_Phone_2.wav</ShortName>
+							<Path>SFX\Answering_Phone_2_10C4C929.wem</Path>
+						</File>
 						<File Id="516595780" Language="SFX">
 							<ShortName>Telephone_1.wav</ShortName>
 							<Path>SFX\Telephone_1_10C4C929.wem</Path>
@@ -76,18 +121,6 @@
 							<ShortName>Telephone_3.wav</ShortName>
 							<Path>SFX\Telephone_3_10C4C929.wem</Path>
 						</File>
-						<File Id="1034876210" Language="SFX">
-							<ShortName>Telephone_2.wav</ShortName>
-							<Path>SFX\Telephone_2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2952657888" Name="play_checkpoint_success" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success" DurationType="OneShot" DurationMin="5.117991" DurationMax="5.514213">
-					<IncludedMemoryFiles>
-						<File Id="351277226" Language="SFX">
-							<ShortName>Answering_Phone_2.wav</ShortName>
-							<Path>SFX\Answering_Phone_2_10C4C929.wem</Path>
-						</File>
 						<File Id="942732362" Language="SFX">
 							<ShortName>Telephone_Receiver_1.wav</ShortName>
 							<Path>SFX\Telephone_Receiver_1_10C4C929.wem</Path>
@@ -100,8 +133,564 @@
 							<ShortName>Answering_Phone_3.wav</ShortName>
 							<Path>SFX\Answering_Phone_3_10C4C929.wem</Path>
 						</File>
+						<File Id="1034876210" Language="SFX">
+							<ShortName>Telephone_2.wav</ShortName>
+							<Path>SFX\Telephone_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{EFE66023-C001-49A5-A300-F60CF275D2F4}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{3F2590DC-225D-4DA9-A941-1DE408703424}">
+							<Media>
+								<File Id="351277226"/>
+								<File Id="967770350"/>
+								<File Id="984249789"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F521DC24-DE80-4937-92AB-5503CF5CAC6F}">
+							<Media>
+								<File Id="516595780"/>
+								<File Id="857392389"/>
+								<File Id="912278910"/>
+								<File Id="1034876210"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F521DC24-DE80-4937-92AB-5503CF5CAC6F}">
+							<Media>
+								<File Id="517667731"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3F2590DC-225D-4DA9-A941-1DE408703424}">
+							<Media>
+								<File Id="942732362"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="271671075" Name="play_ini_gripping" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_gripping" DurationType="OneShot" DurationMin="0.528360" DurationMax="0.997592">
+					<IncludedMemoryFiles>
+						<File Id="115379748" Language="SFX">
+							<ShortName>Ini_Gripping_4.wav</ShortName>
+							<Path>SFX\Ini_Gripping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="423598091" Language="SFX">
+							<ShortName>Ini_Gripping_2.wav</ShortName>
+							<Path>SFX\Ini_Gripping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="501584193" Language="SFX">
+							<ShortName>Ini_Gripping_5.wav</ShortName>
+							<Path>SFX\Ini_Gripping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="753504210" Language="SFX">
+							<ShortName>Ini_Gripping_1.wav</ShortName>
+							<Path>SFX\Ini_Gripping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1007316953" Language="SFX">
+							<ShortName>Ini_Gripping_3.wav</ShortName>
+							<Path>SFX\Ini_Gripping_3_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1655759033" Name="play_ini_jumping" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_jumping" DurationType="OneShot" DurationMin="0.372597" DurationMax="1.027417">
+					<IncludedMemoryFiles>
+						<File Id="136357049" Language="SFX">
+							<ShortName>Jumping_3.wav</ShortName>
+							<Path>SFX\Jumping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="194946419" Language="SFX">
+							<ShortName>Jumping_5.wav</ShortName>
+							<Path>SFX\Jumping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="542480758" Language="SFX">
+							<ShortName>Jumping_1.wav</ShortName>
+							<Path>SFX\Jumping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="593538929" Language="SFX">
+							<ShortName>Jumping_4.wav</ShortName>
+							<Path>SFX\Jumping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="705432378" Language="SFX">
+							<ShortName>Jumping_6.wav</ShortName>
+							<Path>SFX\Jumping_6_10C4C929.wem</Path>
+						</File>
+						<File Id="816822219" Language="SFX">
+							<ShortName>Jumping_2.wav</ShortName>
+							<Path>SFX\Jumping_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="570498444" Name="play_ini_landing" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_landing" DurationType="OneShot" DurationMin="0.352587" DurationMax="0.644296">
+					<IncludedMemoryFiles>
+						<File Id="199524365" Language="SFX">
+							<ShortName>Ini_Landing_2.wav</ShortName>
+							<Path>SFX\Ini_Landing_2_10C4C929.wem</Path>
+						</File>
+						<File Id="267801289" Language="SFX">
+							<ShortName>Ini_Landing_5.wav</ShortName>
+							<Path>SFX\Ini_Landing_5_10C4C929.wem</Path>
+						</File>
+						<File Id="339364033" Language="SFX">
+							<ShortName>Ini_Landing_4.wav</ShortName>
+							<Path>SFX\Ini_Landing_4_10C4C929.wem</Path>
+						</File>
+						<File Id="471532261" Language="SFX">
+							<ShortName>Ini_Landing_1.wav</ShortName>
+							<Path>SFX\Ini_Landing_1_10C4C929.wem</Path>
+						</File>
+						<File Id="883717124" Language="SFX">
+							<ShortName>Ini_Landing_3.wav</ShortName>
+							<Path>SFX\Ini_Landing_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1061621836" Language="SFX">
+							<ShortName>Ini_Landing_6.wav</ShortName>
+							<Path>SFX\Ini_Landing_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3914533117" Name="play_ini_movement_switch_state" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_movement_switch_state" DurationType="Mixed" DurationMin="0.352587" DurationMax="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="96444823" Language="SFX">
+							<ShortName>Ini_Swinging_2.wav</ShortName>
+							<Path>SFX\Ini_Swinging_2_10C4C929.wem</Path>
+						</File>
+						<File Id="106436880" Language="SFX">
+							<ShortName>Ini_Swinging_1.wav</ShortName>
+							<Path>SFX\Ini_Swinging_1_10C4C929.wem</Path>
+						</File>
+						<File Id="115379748" Language="SFX">
+							<ShortName>Ini_Gripping_4.wav</ShortName>
+							<Path>SFX\Ini_Gripping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="136357049" Language="SFX">
+							<ShortName>Jumping_3.wav</ShortName>
+							<Path>SFX\Jumping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="166132435" Language="SFX">
+							<ShortName>Ini_Swinging_3.wav</ShortName>
+							<Path>SFX\Ini_Swinging_3_10C4C929.wem</Path>
+						</File>
+						<File Id="194946419" Language="SFX">
+							<ShortName>Jumping_5.wav</ShortName>
+							<Path>SFX\Jumping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="199524365" Language="SFX">
+							<ShortName>Ini_Landing_2.wav</ShortName>
+							<Path>SFX\Ini_Landing_2_10C4C929.wem</Path>
+						</File>
+						<File Id="267801289" Language="SFX">
+							<ShortName>Ini_Landing_5.wav</ShortName>
+							<Path>SFX\Ini_Landing_5_10C4C929.wem</Path>
+						</File>
+						<File Id="339364033" Language="SFX">
+							<ShortName>Ini_Landing_4.wav</ShortName>
+							<Path>SFX\Ini_Landing_4_10C4C929.wem</Path>
+						</File>
+						<File Id="395215130" Language="SFX">
+							<ShortName>Ini_Falling_1.wav</ShortName>
+							<Path>SFX\Ini_Falling_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="423598091" Language="SFX">
+							<ShortName>Ini_Gripping_2.wav</ShortName>
+							<Path>SFX\Ini_Gripping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="434402466" Language="SFX">
+							<ShortName>Ini_Walking_1.wav</ShortName>
+							<Path>SFX\Ini_Walking_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="471532261" Language="SFX">
+							<ShortName>Ini_Landing_1.wav</ShortName>
+							<Path>SFX\Ini_Landing_1_10C4C929.wem</Path>
+						</File>
+						<File Id="501584193" Language="SFX">
+							<ShortName>Ini_Gripping_5.wav</ShortName>
+							<Path>SFX\Ini_Gripping_5_10C4C929.wem</Path>
+						</File>
+						<File Id="542480758" Language="SFX">
+							<ShortName>Jumping_1.wav</ShortName>
+							<Path>SFX\Jumping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="593538929" Language="SFX">
+							<ShortName>Jumping_4.wav</ShortName>
+							<Path>SFX\Jumping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="705432378" Language="SFX">
+							<ShortName>Jumping_6.wav</ShortName>
+							<Path>SFX\Jumping_6_10C4C929.wem</Path>
+						</File>
+						<File Id="753504210" Language="SFX">
+							<ShortName>Ini_Gripping_1.wav</ShortName>
+							<Path>SFX\Ini_Gripping_1_10C4C929.wem</Path>
+						</File>
+						<File Id="816822219" Language="SFX">
+							<ShortName>Jumping_2.wav</ShortName>
+							<Path>SFX\Jumping_2_10C4C929.wem</Path>
+						</File>
+						<File Id="883717124" Language="SFX">
+							<ShortName>Ini_Landing_3.wav</ShortName>
+							<Path>SFX\Ini_Landing_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1007316953" Language="SFX">
+							<ShortName>Ini_Gripping_3.wav</ShortName>
+							<Path>SFX\Ini_Gripping_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1027123563" Language="SFX">
+							<ShortName>Ini_Idle_1.wav</ShortName>
+							<Path>SFX\Ini_Idle_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1061621836" Language="SFX">
+							<ShortName>Ini_Landing_6.wav</ShortName>
+							<Path>SFX\Ini_Landing_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{4240EAF3-16BC-4294-8306-F3C9B437C1A0}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}">
+							<Media>
+								<File Id="434402466"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{60DEC709-B3A1-450E-AB0A-213D64A0E390}">
+							<Media>
+								<File Id="199524365"/>
+								<File Id="267801289"/>
+								<File Id="339364033"/>
+								<File Id="471532261"/>
+								<File Id="883717124"/>
+								<File Id="1061621836"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}">
+							<Media>
+								<File Id="136357049"/>
+								<File Id="194946419"/>
+								<File Id="542480758"/>
+								<File Id="593538929"/>
+								<File Id="705432378"/>
+								<File Id="816822219"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}">
+							<Media>
+								<File Id="115379748"/>
+								<File Id="423598091"/>
+								<File Id="501584193"/>
+								<File Id="753504210"/>
+								<File Id="1007316953"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{21AEAEFB-3795-4539-A899-21EEE896CEF4}">
+							<Media>
+								<File Id="1027123563"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{49E46925-5AA8-4111-A59D-2CB681C25758}">
+							<Media>
+								<File Id="395215130"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}">
+							<Media>
+								<File Id="96444823"/>
+								<File Id="106436880"/>
+								<File Id="166132435"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2689642121" Name="play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_plant" MaxAttenuation="5.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="76287148" Language="SFX">
+							<ShortName>Plant_Sounds_14.wav</ShortName>
+							<Path>SFX\Plant_Sounds_14_10C4C929.wem</Path>
+						</File>
+						<File Id="112066250" Language="SFX">
+							<ShortName>Plant_Sounds_2.wav</ShortName>
+							<Path>SFX\Plant_Sounds_2_10C4C929.wem</Path>
+						</File>
+						<File Id="379661347" Language="SFX">
+							<ShortName>Plant_Sounds_12.wav</ShortName>
+							<Path>SFX\Plant_Sounds_12_10C4C929.wem</Path>
+						</File>
+						<File Id="390587651" Language="SFX">
+							<ShortName>Plant_Sounds_5.wav</ShortName>
+							<Path>SFX\Plant_Sounds_5_10C4C929.wem</Path>
+						</File>
+						<File Id="419090162" Language="SFX">
+							<ShortName>Plant_Sounds_4.wav</ShortName>
+							<Path>SFX\Plant_Sounds_4_10C4C929.wem</Path>
+						</File>
+						<File Id="462472093" Language="SFX">
+							<ShortName>Plant_Sounds_16.wav</ShortName>
+							<Path>SFX\Plant_Sounds_16_10C4C929.wem</Path>
+						</File>
+						<File Id="471237613" Language="SFX">
+							<ShortName>Plant_Sounds_11.wav</ShortName>
+							<Path>SFX\Plant_Sounds_11_10C4C929.wem</Path>
+						</File>
+						<File Id="509539300" Language="SFX">
+							<ShortName>Plant_Sounds_9.wav</ShortName>
+							<Path>SFX\Plant_Sounds_9_10C4C929.wem</Path>
+						</File>
+						<File Id="650233984" Language="SFX">
+							<ShortName>Plant_Sounds_1.wav</ShortName>
+							<Path>SFX\Plant_Sounds_1_10C4C929.wem</Path>
+						</File>
+						<File Id="683678928" Language="SFX">
+							<ShortName>Plant_Sounds_10.wav</ShortName>
+							<Path>SFX\Plant_Sounds_10_10C4C929.wem</Path>
+						</File>
+						<File Id="687883256" Language="SFX">
+							<ShortName>Plant_Sounds_6.wav</ShortName>
+							<Path>SFX\Plant_Sounds_6_10C4C929.wem</Path>
+						</File>
+						<File Id="709045239" Language="SFX">
+							<ShortName>Plant_Sounds_7.wav</ShortName>
+							<Path>SFX\Plant_Sounds_7_10C4C929.wem</Path>
+						</File>
+						<File Id="746551178" Language="SFX">
+							<ShortName>Plant_Sounds_13.wav</ShortName>
+							<Path>SFX\Plant_Sounds_13_10C4C929.wem</Path>
+						</File>
+						<File Id="838443512" Language="SFX">
+							<ShortName>Plant_Sounds_3.wav</ShortName>
+							<Path>SFX\Plant_Sounds_3_10C4C929.wem</Path>
+						</File>
+						<File Id="975248344" Language="SFX">
+							<ShortName>Plant_Sounds_15.wav</ShortName>
+							<Path>SFX\Plant_Sounds_15_10C4C929.wem</Path>
+						</File>
+						<File Id="987577468" Language="SFX">
+							<ShortName>Plant_Sounds_8.wav</ShortName>
+							<Path>SFX\Plant_Sounds_8_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3790043115" Name="play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle" MaxAttenuation="200.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="106157273" Language="SFX">
+							<ShortName>UFO_Engine_Idle_1.wav</ShortName>
+							<Path>SFX\UFO_Engine_Idle_1_8D80BC05.wem</Path>
+						</File>
+						<File Id="314159048" Language="SFX">
+							<ShortName>UFO_Lights_Alarms_1.wav</ShortName>
+							<Path>SFX\UFO_Lights_Alarms_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1097816718" Name="play_ufo_take_off" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_take_off" DurationType="OneShot" DurationMin="6.812500" DurationMax="6.812500">
+					<IncludedMemoryFiles>
+						<File Id="888391156" Language="SFX">
+							<ShortName>UFO_Take_Off_1.wav</ShortName>
+							<Path>SFX\UFO_Take_Off_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3252663195" Name="stop_ini_movement_switch_state" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\stop_ini_movement_switch_state" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2743729328" Name="stop_play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_beam_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="139174012" Name="stop_play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_plant" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3729613304" Name="stop_play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_ufo_idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="612075679" Name="Checkpoint" ObjectPath="\States\Default Work Unit\Checkpoint">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Checkpoint\None"/>
+						<State Id="1651971902" Name="on" ObjectPath="\States\Default Work Unit\Checkpoint\on"/>
+						<State Id="930712164" Name="off" ObjectPath="\States\Default Work Unit\Checkpoint\off"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2064316991" Name="Ini_Movement" ObjectPath="\States\Default Work Unit\Ini_Movement">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Ini_Movement\None"/>
+						<State Id="1874288895" Name="idle" ObjectPath="\States\Default Work Unit\Ini_Movement\idle"/>
+						<State Id="3629409974" Name="isWalking" ObjectPath="\States\Default Work Unit\Ini_Movement\isWalking"/>
+						<State Id="594781027" Name="isJumping" ObjectPath="\States\Default Work Unit\Ini_Movement\isJumping"/>
+						<State Id="1579702610" Name="isFalling" ObjectPath="\States\Default Work Unit\Ini_Movement\isFalling"/>
+						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Ini_Movement\isSwinging"/>
+						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Ini_Movement\isGrabbing"/>
+						<State Id="3910744550" Name="isLanding" ObjectPath="\States\Default Work Unit\Ini_Movement\isLanding"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3475857121">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Music_Volume"/>
+				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\SFX_Volume"/>
+				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2703541833" Language="SFX" Hash="3363196112">
+			<ObjectPath>\SoundBanks\Default Work Unit\James_UI_Bank</ObjectPath>
+			<ShortName>James_UI_Bank</ShortName>
+			<Path>James_UI_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="27619919" Name="play_countdown_20s" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_countdown_20s" DurationType="OneShot" DurationMin="70.000000" DurationMax="70.000000">
+					<IncludedMemoryFiles>
+						<File Id="548150828" Language="SFX">
+							<ShortName>UI_Countdown20s.wav</ShortName>
+							<Path>SFX\UI_Countdown20s_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3174629258" Name="play_gameover" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_gameover" DurationType="OneShot" DurationMin="9.845261" DurationMax="9.845261">
+					<IncludedMemoryFiles>
+						<File Id="505384754" Language="SFX">
+							<ShortName>UI_GameOver.wav</ShortName>
+							<Path>SFX\UI_GameOver_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2977565850" Name="play_gameover_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_gameover_music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="464420358" Language="SFX">
+							<ShortName>UI_GameOver_Music.wav</ShortName>
+							<Path>SFX\UI_GameOver_Music_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="414863633" Name="play_main_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\play_main_music" DurationType="OneShot" DurationMin="956.183411" DurationMax="956.183411">
+					<IncludedMemoryFiles>
+						<File Id="195671915" Language="SFX">
+							<ShortName>musicloop4_120.wav</ShortName>
+							<Path>SFX\musicloop4_120_D79FB2B7.wem</Path>
+						</File>
+						<File Id="565904256" Language="SFX">
+							<ShortName>musicloop1_120.wav</ShortName>
+							<Path>SFX\musicloop1_120_D79FB2B7.wem</Path>
+						</File>
+						<File Id="725529921" Language="SFX">
+							<ShortName>musicloop3_120.wav</ShortName>
+							<Path>SFX\musicloop3_120_D79FB2B7.wem</Path>
+						</File>
+						<File Id="914587540" Language="SFX">
+							<ShortName>musicloop2_120.wav</ShortName>
+							<Path>SFX\musicloop2_120_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="786906729" Name="play_pause_amb" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_pause_amb" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1039365012" Language="SFX">
+							<ShortName>UI_Pause_drone.wav</ShortName>
+							<Path>SFX\UI_Pause_drone_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="129783479" Name="play_ui_ambience" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1039365012" Language="SFX">
+							<ShortName>UI_Pause_drone.wav</ShortName>
+							<Path>SFX\UI_Pause_drone_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2244506081" Name="play_ui_cancel" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel" DurationType="OneShot" DurationMin="1.439637" DurationMax="2.229116">
+					<IncludedMemoryFiles>
+						<File Id="322561206" Language="SFX">
+							<ShortName>UI_Item_Select_Cancel_1.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Cancel_1_10C4C929.wem</Path>
+						</File>
+						<File Id="322958163" Language="SFX">
+							<ShortName>UI_Item_Select_Cancel_3.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Cancel_3_10C4C929.wem</Path>
+						</File>
+						<File Id="444927508" Language="SFX">
+							<ShortName>UI_Item_Select_Cancel_2.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Cancel_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1063259166" Language="SFX">
+							<ShortName>UI_Item_Select_Cancel_4.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Cancel_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3022734157" Name="play_ui_confirm" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_confirm" DurationType="OneShot" DurationMin="0.661769" DurationMax="2.380045">
+					<IncludedMemoryFiles>
+						<File Id="41907832" Language="SFX">
+							<ShortName>UI_Item_Select_Confirm_4.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Confirm_4_10C4C929.wem</Path>
+						</File>
+						<File Id="381017666" Language="SFX">
+							<ShortName>UI_Item_Select_Confirm_1.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Confirm_1_10C4C929.wem</Path>
+						</File>
+						<File Id="564895375" Language="SFX">
+							<ShortName>UI_Item_Select_Confirm_3.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Confirm_3_10C4C929.wem</Path>
+						</File>
+						<File Id="729166634" Language="SFX">
+							<ShortName>UI_Item_Select_Confirm_2.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Confirm_2_10C4C929.wem</Path>
+						</File>
+						<File Id="956436522" Language="SFX">
+							<ShortName>UI_Item_Select_Confirm_5.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Confirm_5_10C4C929.wem</Path>
+						</File>
+						<File Id="1038214766" Language="SFX">
+							<ShortName>UI_Item_Select_Confirm_6.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Confirm_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1986548623" Name="play_ui_exit" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="249738436" Name="play_ui_move" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_move" DurationType="OneShot" DurationMin="0.559743" DurationMax="0.593027">
+					<IncludedMemoryFiles>
+						<File Id="225471993" Language="SFX">
+							<ShortName>UI_Item_Select_Move_1.wav</ShortName>
+							<Path>SFX\UI_Item_Select_Move_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1597364423" Name="play_victory_1_star" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_1_star" DurationType="OneShot" DurationMin="10.123900" DurationMax="10.123900">
+					<IncludedMemoryFiles>
+						<File Id="977803398" Language="SFX">
+							<ShortName>UI_Victory_1S.wav</ShortName>
+							<Path>SFX\UI_Victory_1S_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2635608162" Name="play_victory_2_star" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_2_star" DurationType="OneShot" DurationMin="10.263220" DurationMax="10.263220">
+					<IncludedMemoryFiles>
+						<File Id="412649290" Language="SFX">
+							<ShortName>UI_Victory_2S.wav</ShortName>
+							<Path>SFX\UI_Victory_2S_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1743052465" Name="play_victory_3_star" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_3_star" DurationType="OneShot" DurationMin="10.843719" DurationMax="10.843719">
+					<IncludedMemoryFiles>
+						<File Id="166315958" Language="SFX">
+							<ShortName>UI_Victory_3S.wav</ShortName>
+							<Path>SFX\UI_Victory_3S_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2141970788" Name="play_victory_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="55320165" Language="SFX">
+							<ShortName>UI_Victory_Music.wav</ShortName>
+							<Path>SFX\UI_Victory_Music_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1319156832" Name="set_IsPaused" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_IsPaused" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2128862759" Name="set_NotPaused" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_NotPaused" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1241273495" Name="stop_main_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\stop_main_music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2910167054" Name="stop_ui" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\stop_ui" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="857333373" Name="stop_victory_1_star" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_1_star" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3062924404" Name="stop_victory_2_star" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_2_star" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2982197139" Name="stop_victory_3_star" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_3_star" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3834448970" Name="stop_victory_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3182103661" Language="SFX" Hash="3308947363">
+			<ObjectPath>\SoundBanks\Default Work Unit\James_Players_Bank</ObjectPath>
+			<ShortName>James_Players_Bank</ShortName>
+			<Path>James_Players_Bank.bnk</Path>
+			<IncludedEvents>
 				<Event Id="3259393782" Name="play_gem_gripping" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_gripping" DurationType="OneShot" DurationMin="0.754649" DurationMax="1.861406">
 					<IncludedMemoryFiles>
 						<File Id="80475751" Language="SFX">
@@ -188,6 +777,10 @@
 							<ShortName>PlayerGem_Falling.wav</ShortName>
 							<Path>SFX\PlayerGem_Falling_D79FB2B7.wem</Path>
 						</File>
+						<File Id="266703678" Language="SFX">
+							<ShortName>PlayerGem_Landing_3.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_3_10C4C929.wem</Path>
+						</File>
 						<File Id="273825055" Language="SFX">
 							<ShortName>PlayerGem_Jumping_1.wav</ShortName>
 							<Path>SFX\PlayerGem_Jumping_1_10C4C929.wem</Path>
@@ -220,6 +813,10 @@
 							<ShortName>PlayerGem_Jumping_4.wav</ShortName>
 							<Path>SFX\PlayerGem_Jumping_4_10C4C929.wem</Path>
 						</File>
+						<File Id="779702268" Language="SFX">
+							<ShortName>PlayerGem_Landing_1.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_1_10C4C929.wem</Path>
+						</File>
 						<File Id="864741291" Language="SFX">
 							<ShortName>PlayerGem_Gripping_2.wav</ShortName>
 							<Path>SFX\PlayerGem_Gripping_2_10C4C929.wem</Path>
@@ -227,6 +824,10 @@
 						<File Id="894027688" Language="SFX">
 							<ShortName>PlayerGem_Gripping_4.wav</ShortName>
 							<Path>SFX\PlayerGem_Gripping_4_10C4C929.wem</Path>
+						</File>
+						<File Id="1027132071" Language="SFX">
+							<ShortName>PlayerGem_Landing_2.wav</ShortName>
+							<Path>SFX\PlayerGem_Landing_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{8E492038-33E6-4394-BBFE-65DC3505D77D}</DefaultSwitchValue>
@@ -265,244 +866,42 @@
 								<File Id="761976081"/>
 							</Media>
 						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
-				<Event Id="271671075" Name="play_ini_gripping" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_gripping" DurationType="OneShot" DurationMin="0.528360" DurationMax="0.997592">
-					<IncludedMemoryFiles>
-						<File Id="115379748" Language="SFX">
-							<ShortName>Ini_Gripping_4.wav</ShortName>
-							<Path>SFX\Ini_Gripping_4_10C4C929.wem</Path>
-						</File>
-						<File Id="423598091" Language="SFX">
-							<ShortName>Ini_Gripping_2.wav</ShortName>
-							<Path>SFX\Ini_Gripping_2_10C4C929.wem</Path>
-						</File>
-						<File Id="501584193" Language="SFX">
-							<ShortName>Ini_Gripping_5.wav</ShortName>
-							<Path>SFX\Ini_Gripping_5_10C4C929.wem</Path>
-						</File>
-						<File Id="753504210" Language="SFX">
-							<ShortName>Ini_Gripping_1.wav</ShortName>
-							<Path>SFX\Ini_Gripping_1_10C4C929.wem</Path>
-						</File>
-						<File Id="1007316953" Language="SFX">
-							<ShortName>Ini_Gripping_3.wav</ShortName>
-							<Path>SFX\Ini_Gripping_3_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1655759033" Name="play_ini_jumping" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_jumping" DurationType="OneShot" DurationMin="0.372597" DurationMax="1.027417">
-					<IncludedMemoryFiles>
-						<File Id="136357049" Language="SFX">
-							<ShortName>Jumping_3.wav</ShortName>
-							<Path>SFX\Jumping_3_10C4C929.wem</Path>
-						</File>
-						<File Id="194946419" Language="SFX">
-							<ShortName>Jumping_5.wav</ShortName>
-							<Path>SFX\Jumping_5_10C4C929.wem</Path>
-						</File>
-						<File Id="542480758" Language="SFX">
-							<ShortName>Jumping_1.wav</ShortName>
-							<Path>SFX\Jumping_1_10C4C929.wem</Path>
-						</File>
-						<File Id="593538929" Language="SFX">
-							<ShortName>Jumping_4.wav</ShortName>
-							<Path>SFX\Jumping_4_10C4C929.wem</Path>
-						</File>
-						<File Id="705432378" Language="SFX">
-							<ShortName>Jumping_6.wav</ShortName>
-							<Path>SFX\Jumping_6_10C4C929.wem</Path>
-						</File>
-						<File Id="816822219" Language="SFX">
-							<ShortName>Jumping_2.wav</ShortName>
-							<Path>SFX\Jumping_2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="570498444" Name="play_ini_landing" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_landing" DurationType="OneShot" DurationMin="0.352587" DurationMax="0.644296">
-					<IncludedMemoryFiles>
-						<File Id="199524365" Language="SFX">
-							<ShortName>Ini_Landing_2.wav</ShortName>
-							<Path>SFX\Ini_Landing_2_10C4C929.wem</Path>
-						</File>
-						<File Id="267801289" Language="SFX">
-							<ShortName>Ini_Landing_5.wav</ShortName>
-							<Path>SFX\Ini_Landing_5_10C4C929.wem</Path>
-						</File>
-						<File Id="339364033" Language="SFX">
-							<ShortName>Ini_Landing_4.wav</ShortName>
-							<Path>SFX\Ini_Landing_4_10C4C929.wem</Path>
-						</File>
-						<File Id="471532261" Language="SFX">
-							<ShortName>Ini_Landing_1.wav</ShortName>
-							<Path>SFX\Ini_Landing_1_10C4C929.wem</Path>
-						</File>
-						<File Id="883717124" Language="SFX">
-							<ShortName>Ini_Landing_3.wav</ShortName>
-							<Path>SFX\Ini_Landing_3_10C4C929.wem</Path>
-						</File>
-						<File Id="1061621836" Language="SFX">
-							<ShortName>Ini_Landing_6.wav</ShortName>
-							<Path>SFX\Ini_Landing_6_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3914533117" Name="play_ini_movement_switch_state" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\play_ini_movement_switch_state" DurationType="OneShot" DurationMin="0.372597" DurationMax="2.000000">
-					<IncludedMemoryFiles>
-						<File Id="106436880" Language="SFX">
-							<ShortName>Ini_Swinging_1.wav</ShortName>
-							<Path>SFX\Ini_Swinging_1_10C4C929.wem</Path>
-						</File>
-						<File Id="115379748" Language="SFX">
-							<ShortName>Ini_Gripping_4.wav</ShortName>
-							<Path>SFX\Ini_Gripping_4_10C4C929.wem</Path>
-						</File>
-						<File Id="136357049" Language="SFX">
-							<ShortName>Jumping_3.wav</ShortName>
-							<Path>SFX\Jumping_3_10C4C929.wem</Path>
-						</File>
-						<File Id="194946419" Language="SFX">
-							<ShortName>Jumping_5.wav</ShortName>
-							<Path>SFX\Jumping_5_10C4C929.wem</Path>
-						</File>
-						<File Id="423598091" Language="SFX">
-							<ShortName>Ini_Gripping_2.wav</ShortName>
-							<Path>SFX\Ini_Gripping_2_10C4C929.wem</Path>
-						</File>
-						<File Id="434402466" Language="SFX">
-							<ShortName>Ini_Walking_1.wav</ShortName>
-							<Path>SFX\Ini_Walking_1_10C4C929.wem</Path>
-						</File>
-						<File Id="501584193" Language="SFX">
-							<ShortName>Ini_Gripping_5.wav</ShortName>
-							<Path>SFX\Ini_Gripping_5_10C4C929.wem</Path>
-						</File>
-						<File Id="542480758" Language="SFX">
-							<ShortName>Jumping_1.wav</ShortName>
-							<Path>SFX\Jumping_1_10C4C929.wem</Path>
-						</File>
-						<File Id="593538929" Language="SFX">
-							<ShortName>Jumping_4.wav</ShortName>
-							<Path>SFX\Jumping_4_10C4C929.wem</Path>
-						</File>
-						<File Id="705432378" Language="SFX">
-							<ShortName>Jumping_6.wav</ShortName>
-							<Path>SFX\Jumping_6_10C4C929.wem</Path>
-						</File>
-						<File Id="753504210" Language="SFX">
-							<ShortName>Ini_Gripping_1.wav</ShortName>
-							<Path>SFX\Ini_Gripping_1_10C4C929.wem</Path>
-						</File>
-						<File Id="816822219" Language="SFX">
-							<ShortName>Jumping_2.wav</ShortName>
-							<Path>SFX\Jumping_2_10C4C929.wem</Path>
-						</File>
-						<File Id="1007316953" Language="SFX">
-							<ShortName>Ini_Gripping_3.wav</ShortName>
-							<Path>SFX\Ini_Gripping_3_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{4240EAF3-16BC-4294-8306-F3C9B437C1A0}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}">
+						<SwitchContainer SwitchValue="{6FA03933-43A3-4F62-8707-42006B775876}">
 							<Media>
-								<File Id="434402466"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}">
-							<Media>
-								<File Id="106436880"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}">
-							<Media>
-								<File Id="136357049"/>
-								<File Id="194946419"/>
-								<File Id="542480758"/>
-								<File Id="593538929"/>
-								<File Id="705432378"/>
-								<File Id="816822219"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{F91C6068-7596-4D55-A221-E4D7A7DC1DD6}">
-							<Media>
-								<File Id="115379748"/>
-								<File Id="423598091"/>
-								<File Id="501584193"/>
-								<File Id="753504210"/>
-								<File Id="1007316953"/>
+								<File Id="266703678"/>
+								<File Id="779702268"/>
+								<File Id="1027132071"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2689642121" Name="play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_plant" MaxAttenuation="5.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="76287148" Language="SFX">
-							<ShortName>Plant_Sounds_14.wav</ShortName>
-							<Path>SFX\Plant_Sounds_14_10C4C929.wem</Path>
-						</File>
-						<File Id="112066250" Language="SFX">
-							<ShortName>Plant_Sounds_2.wav</ShortName>
-							<Path>SFX\Plant_Sounds_2_10C4C929.wem</Path>
-						</File>
-						<File Id="379661347" Language="SFX">
-							<ShortName>Plant_Sounds_12.wav</ShortName>
-							<Path>SFX\Plant_Sounds_12_10C4C929.wem</Path>
-						</File>
-						<File Id="390587651" Language="SFX">
-							<ShortName>Plant_Sounds_5.wav</ShortName>
-							<Path>SFX\Plant_Sounds_5_10C4C929.wem</Path>
-						</File>
-						<File Id="419090162" Language="SFX">
-							<ShortName>Plant_Sounds_4.wav</ShortName>
-							<Path>SFX\Plant_Sounds_4_10C4C929.wem</Path>
-						</File>
-						<File Id="462472093" Language="SFX">
-							<ShortName>Plant_Sounds_16.wav</ShortName>
-							<Path>SFX\Plant_Sounds_16_10C4C929.wem</Path>
-						</File>
-						<File Id="471237613" Language="SFX">
-							<ShortName>Plant_Sounds_11.wav</ShortName>
-							<Path>SFX\Plant_Sounds_11_10C4C929.wem</Path>
-						</File>
-						<File Id="509539300" Language="SFX">
-							<ShortName>Plant_Sounds_9.wav</ShortName>
-							<Path>SFX\Plant_Sounds_9_10C4C929.wem</Path>
-						</File>
-						<File Id="650233984" Language="SFX">
-							<ShortName>Plant_Sounds_1.wav</ShortName>
-							<Path>SFX\Plant_Sounds_1_10C4C929.wem</Path>
-						</File>
-						<File Id="683678928" Language="SFX">
-							<ShortName>Plant_Sounds_10.wav</ShortName>
-							<Path>SFX\Plant_Sounds_10_10C4C929.wem</Path>
-						</File>
-						<File Id="687883256" Language="SFX">
-							<ShortName>Plant_Sounds_6.wav</ShortName>
-							<Path>SFX\Plant_Sounds_6_10C4C929.wem</Path>
-						</File>
-						<File Id="709045239" Language="SFX">
-							<ShortName>Plant_Sounds_7.wav</ShortName>
-							<Path>SFX\Plant_Sounds_7_10C4C929.wem</Path>
-						</File>
-						<File Id="746551178" Language="SFX">
-							<ShortName>Plant_Sounds_13.wav</ShortName>
-							<Path>SFX\Plant_Sounds_13_10C4C929.wem</Path>
-						</File>
-						<File Id="838443512" Language="SFX">
-							<ShortName>Plant_Sounds_3.wav</ShortName>
-							<Path>SFX\Plant_Sounds_3_10C4C929.wem</Path>
-						</File>
-						<File Id="975248344" Language="SFX">
-							<ShortName>Plant_Sounds_15.wav</ShortName>
-							<Path>SFX\Plant_Sounds_15_10C4C929.wem</Path>
-						</File>
-						<File Id="987577468" Language="SFX">
-							<ShortName>Plant_Sounds_8.wav</ShortName>
-							<Path>SFX\Plant_Sounds_8_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="1031277876" Name="stop_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="72319902" Name="Gem_Movement" ObjectPath="\States\Default Work Unit\Gem_Movement">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gem_Movement\None"/>
+						<State Id="3629409974" Name="isWalking" ObjectPath="\States\Default Work Unit\Gem_Movement\isWalking"/>
+						<State Id="594781027" Name="isJumping" ObjectPath="\States\Default Work Unit\Gem_Movement\isJumping"/>
+						<State Id="1579702610" Name="isFalling" ObjectPath="\States\Default Work Unit\Gem_Movement\isFalling"/>
+						<State Id="1874288895" Name="idle" ObjectPath="\States\Default Work Unit\Gem_Movement\idle"/>
+						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Gem_Movement\isSwinging"/>
+						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Gem_Movement\isGrabbing"/>
+						<State Id="3910744550" Name="isLanding" ObjectPath="\States\Default Work Unit\Gem_Movement\isLanding"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3203257376" Language="SFX" Hash="560322649">
+			<ObjectPath>\SoundBanks\Default Work Unit\James_NPC_Bank</ObjectPath>
+			<ShortName>James_NPC_Bank</ShortName>
+			<Path>James_NPC_Bank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3657742645" Language="SFX" Hash="1638962558">
+			<ObjectPath>\SoundBanks\Default Work Unit\General_SoundBank</ObjectPath>
+			<ShortName>General_SoundBank</ShortName>
+			<Path>General_SoundBank.bnk</Path>
+			<IncludedEvents>
 				<Event Id="3987033674" Name="play_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\play_start_up" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="189333254" Language="SFX">
@@ -647,121 +1046,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3790043115" Name="play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle" MaxAttenuation="20.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="106157273" Language="SFX">
-							<ShortName>UFO_Engine_Idle_1.wav</ShortName>
-							<Path>SFX\UFO_Engine_Idle_1_8D80BC05.wem</Path>
-						</File>
-						<File Id="314159048" Language="SFX">
-							<ShortName>UFO_Lights_Alarms_1.wav</ShortName>
-							<Path>SFX\UFO_Lights_Alarms_1_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2888126495" Name="play_ufo_idle_01" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle_01" MaxAttenuation="20.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="106157273" Language="SFX">
-							<ShortName>UFO_Engine_Idle_1.wav</ShortName>
-							<Path>SFX\UFO_Engine_Idle_1_8D80BC05.wem</Path>
-						</File>
-						<File Id="314159048" Language="SFX">
-							<ShortName>UFO_Lights_Alarms_1.wav</ShortName>
-							<Path>SFX\UFO_Lights_Alarms_1_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2244506081" Name="play_ui_cancel" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel" DurationType="OneShot" DurationMin="1.439637" DurationMax="2.229116">
-					<IncludedMemoryFiles>
-						<File Id="322561206" Language="SFX">
-							<ShortName>UI_Item_Select_Cancel_1.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Cancel_1_10C4C929.wem</Path>
-						</File>
-						<File Id="322958163" Language="SFX">
-							<ShortName>UI_Item_Select_Cancel_3.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Cancel_3_10C4C929.wem</Path>
-						</File>
-						<File Id="444927508" Language="SFX">
-							<ShortName>UI_Item_Select_Cancel_2.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Cancel_2_10C4C929.wem</Path>
-						</File>
-						<File Id="1063259166" Language="SFX">
-							<ShortName>UI_Item_Select_Cancel_4.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Cancel_4_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3022734157" Name="play_ui_confirm" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_confirm" DurationType="OneShot" DurationMin="0.661769" DurationMax="2.380045">
-					<IncludedMemoryFiles>
-						<File Id="41907832" Language="SFX">
-							<ShortName>UI_Item_Select_Confirm_4.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Confirm_4_10C4C929.wem</Path>
-						</File>
-						<File Id="381017666" Language="SFX">
-							<ShortName>UI_Item_Select_Confirm_1.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Confirm_1_10C4C929.wem</Path>
-						</File>
-						<File Id="564895375" Language="SFX">
-							<ShortName>UI_Item_Select_Confirm_3.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Confirm_3_10C4C929.wem</Path>
-						</File>
-						<File Id="729166634" Language="SFX">
-							<ShortName>UI_Item_Select_Confirm_2.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Confirm_2_10C4C929.wem</Path>
-						</File>
-						<File Id="956436522" Language="SFX">
-							<ShortName>UI_Item_Select_Confirm_5.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Confirm_5_10C4C929.wem</Path>
-						</File>
-						<File Id="1038214766" Language="SFX">
-							<ShortName>UI_Item_Select_Confirm_6.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Confirm_6_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1986548623" Name="play_ui_exit" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="249738436" Name="play_ui_move" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_move" DurationType="OneShot" DurationMin="0.559743" DurationMax="0.593027">
-					<IncludedMemoryFiles>
-						<File Id="225471993" Language="SFX">
-							<ShortName>UI_Item_Select_Move_1.wav</ShortName>
-							<Path>SFX\UI_Item_Select_Move_1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1031277876" Name="stop_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3252663195" Name="stop_ini_movement_switch_state" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Ini\stop_ini_movement_switch_state" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2743729328" Name="stop_play_beam_up" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_beam_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="139174012" Name="stop_play_plant" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_plant" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3729613304" Name="stop_play_ufo_idle" ObjectPath="\Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\stop_play_ufo_idle" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="492406940" Name="stop_start_up" ObjectPath="\Events\Default Work Unit\Start_Up_Events\stop_start_up" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2910167054" Name="stop_ui" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\stop_ui" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
-			<StateGroups>
-				<StateGroup Id="72319902" Name="Gem_Movement" ObjectPath="\States\Default Work Unit\Gem_Movement">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gem_Movement\None"/>
-						<State Id="3629409974" Name="isWalking" ObjectPath="\States\Default Work Unit\Gem_Movement\isWalking"/>
-						<State Id="594781027" Name="isJumping" ObjectPath="\States\Default Work Unit\Gem_Movement\isJumping"/>
-						<State Id="1579702610" Name="isFalling" ObjectPath="\States\Default Work Unit\Gem_Movement\isFalling"/>
-						<State Id="1874288895" Name="idle" ObjectPath="\States\Default Work Unit\Gem_Movement\idle"/>
-						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Gem_Movement\isSwinging"/>
-						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Gem_Movement\isGrabbing"/>
-						<State Id="3910744550" Name="isLanding" ObjectPath="\States\Default Work Unit\Gem_Movement\isLanding"/>
-					</States>
-				</StateGroup>
-				<StateGroup Id="2064316991" Name="Ini_Movement" ObjectPath="\States\Default Work Unit\Ini_Movement">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Ini_Movement\None"/>
-						<State Id="1874288895" Name="idle" ObjectPath="\States\Default Work Unit\Ini_Movement\idle"/>
-						<State Id="3629409974" Name="isWalking" ObjectPath="\States\Default Work Unit\Ini_Movement\isWalking"/>
-						<State Id="594781027" Name="isJumping" ObjectPath="\States\Default Work Unit\Ini_Movement\isJumping"/>
-						<State Id="1579702610" Name="isFalling" ObjectPath="\States\Default Work Unit\Ini_Movement\isFalling"/>
-						<State Id="605894799" Name="isSwinging" ObjectPath="\States\Default Work Unit\Ini_Movement\isSwinging"/>
-						<State Id="3183196101" Name="isGrabbing" ObjectPath="\States\Default Work Unit\Ini_Movement\isGrabbing"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

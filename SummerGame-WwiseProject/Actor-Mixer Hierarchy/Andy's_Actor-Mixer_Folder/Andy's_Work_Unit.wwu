@@ -318,6 +318,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Ini_Walking_1" ID="{6644ACF2-E6B0-4341-B0D7-1B0C108856A6}" ShortID="181436327">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
@@ -338,52 +341,6 @@
 											<ObjectLists/>
 											<ActiveSourceList>
 												<ActiveSource Name="Ini_Walking_1" ID="{7CE349A6-D1D9-493B-8969-7F74470F481E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" ShortID="1018849343">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Swinging_1" ID="{44B74802-AA02-4973-86F8-E486DB8C8A22}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Swinging_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="106436880"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Swinging_1" ID="{44B74802-AA02-4973-86F8-E486DB8C8A22}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Ini_Swinging_2" ID="{517D19B3-9AD8-4D77-B0BA-B8538252CDE8}" ShortID="72188774">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Swinging_2" ID="{C0DFA279-F135-44E6-BCAE-F4A5D896C5EA}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Swinging_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="96444823"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Swinging_2" ID="{C0DFA279-F135-44E6-BCAE-F4A5D896C5EA}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<RandomSequenceContainer Name="Landing" ID="{6E3D59F7-EDFE-443D-B936-09651A2C75B2}" ShortID="658130027">
@@ -562,6 +519,10 @@
 													<CustomState>
 														<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
 														<CustomState Name="" ID="{205A2089-5EF6-4C97-9077-236529D23F84}" ShortID="512726375"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="isLanding" ID="{60DEC709-B3A1-450E-AB0A-213D64A0E390}"/>
+														<CustomState Name="" ID="{407E89E0-BB84-4DEE-88E8-A4BEAF574BE4}" ShortID="952036371"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
@@ -765,6 +726,10 @@
 														<CustomState Name="" ID="{24CAF593-1340-4C8C-9684-AF0FE52A4C50}" ShortID="537129246"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="isLanding" ID="{60DEC709-B3A1-450E-AB0A-213D64A0E390}"/>
+														<CustomState Name="" ID="{79B6FB36-741C-4BE4-9D8D-5F7458659C2E}" ShortID="273331396"/>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
 														<CustomState Name="" ID="{7A2D7C4B-DE0D-4A2D-86E7-D83B33F2D421}" ShortID="458358508"/>
 													</CustomState>
@@ -941,6 +906,10 @@
 													<CustomState>
 														<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
 														<CustomState Name="" ID="{391D4EA7-9BCD-4F6D-9A33-333D8677E92F}" ShortID="437990398"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="isLanding" ID="{60DEC709-B3A1-450E-AB0A-213D64A0E390}"/>
+														<CustomState Name="" ID="{9D94D145-FCE3-474A-9B68-DE71BF05F781}" ShortID="815654100"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
@@ -1162,6 +1131,9 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<Sound Name="Ini_Idle_1" ID="{457C56C4-66D4-4A18-BF83-5BD5A47B49C5}" ShortID="932971944">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
@@ -1184,30 +1156,10 @@
 												<ActiveSource Name="Ini_Idle_1" ID="{CDE7AD13-3CF9-4137-A814-CF14EF8BC2C3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Ini_Swinging_3" ID="{04F53E26-1CF7-416B-AE16-5973E55354F4}" ShortID="534845741">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Ini_Swinging_3" ID="{CC641E97-E96B-4B25-9385-07AD44DF810A}">
-													<Language>SFX</Language>
-													<AudioFile>Ini_Swinging_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="166132435"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Ini_Swinging_3" ID="{CC641E97-E96B-4B25-9385-07AD44DF810A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="Ini_Falling_1" ID="{D604A073-252D-4827-A516-F76595A70E58}" ShortID="378934922">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
@@ -1230,6 +1182,99 @@
 												<ActiveSource Name="Ini_Falling_1" ID="{4D6803BE-8955-4EBA-819A-D5B12B62269F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="Ini_Swinging_Sequence" ID="{7AFD07F8-9961-4631-A2C0-CDBFC7B899CF}" ShortID="1036346606">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}" ShortID="1018849343">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ini_Swinging_1" ID="{44B74802-AA02-4973-86F8-E486DB8C8A22}">
+															<Language>SFX</Language>
+															<AudioFile>Ini_Swinging_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="106436880"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Ini_Swinging_1" ID="{44B74802-AA02-4973-86F8-E486DB8C8A22}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ini_Swinging_2" ID="{517D19B3-9AD8-4D77-B0BA-B8538252CDE8}" ShortID="72188774">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ini_Swinging_2" ID="{C0DFA279-F135-44E6-BCAE-F4A5D896C5EA}">
+															<Language>SFX</Language>
+															<AudioFile>Ini_Swinging_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="96444823"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Ini_Swinging_2" ID="{C0DFA279-F135-44E6-BCAE-F4A5D896C5EA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ini_Swinging_3" ID="{04F53E26-1CF7-416B-AE16-5973E55354F4}" ShortID="534845741">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ini_Swinging_3" ID="{CC641E97-E96B-4B25-9385-07AD44DF810A}">
+															<Language>SFX</Language>
+															<AudioFile>Ini_Swinging_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="166132435"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Ini_Swinging_3" ID="{CC641E97-E96B-4B25-9385-07AD44DF810A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
@@ -1241,6 +1286,10 @@
 											<CustomState>
 												<StateRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
 												<CustomState Name="" ID="{64B84E29-D461-4978-9C56-66C7A45E6459}" ShortID="923218125"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="isLanding" ID="{60DEC709-B3A1-450E-AB0A-213D64A0E390}"/>
+												<CustomState Name="" ID="{5526C6F5-0486-47D4-B790-E4B1F098D54A}" ShortID="235895121"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
@@ -1271,9 +1320,6 @@
 												<ItemRef Name="Jumping" ID="{8F0C080A-4D0D-472B-9F7B-40163929CE17}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Ini_Swinging_3" ID="{04F53E26-1CF7-416B-AE16-5973E55354F4}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
 												<ItemRef Name="Gripping" ID="{A571583F-7307-40CD-9F9A-C3335693B107}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
@@ -1281,12 +1327,6 @@
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Ini_Falling_1" ID="{D604A073-252D-4827-A516-F76595A70E58}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Ini_Swinging_2" ID="{517D19B3-9AD8-4D77-B0BA-B8538252CDE8}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Ini_Idle_1" ID="{457C56C4-66D4-4A18-BF83-5BD5A47B49C5}"/>
@@ -1297,8 +1337,23 @@
 											<GroupingBehavior>
 												<ItemRef Name="Landing" ID="{6E3D59F7-EDFE-443D-B936-09651A2C75B2}"/>
 											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ini_Swinging_Sequence" ID="{7AFD07F8-9961-4631-A2C0-CDBFC7B899CF}"/>
+											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="isLanding" ID="{60DEC709-B3A1-450E-AB0A-213D64A0E390}"/>
+												<ItemList>
+													<ItemRef Name="Landing" ID="{6E3D59F7-EDFE-443D-B936-09651A2C75B2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="isFalling" ID="{49E46925-5AA8-4111-A59D-2CB681C25758}"/>
+												<ItemList>
+													<ItemRef Name="Ini_Falling_1" ID="{D604A073-252D-4827-A516-F76595A70E58}"/>
+												</ItemList>
+											</Grouping>
 											<Grouping>
 												<SwitchRef Name="isWalking" ID="{80ABA23C-3DF0-4D5B-8396-5737DECF2C0E}"/>
 												<ItemList>
@@ -1314,13 +1369,19 @@
 											<Grouping>
 												<SwitchRef Name="isSwinging" ID="{4DE72F90-A05B-4E7C-BA5C-4EC4F9981372}"/>
 												<ItemList>
-													<ItemRef Name="Ini_Swinging_1" ID="{724D86B2-35E4-447E-83A0-8FEE7FC706E3}"/>
+													<ItemRef Name="Ini_Swinging_Sequence" ID="{7AFD07F8-9961-4631-A2C0-CDBFC7B899CF}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="isJumping" ID="{783EC6BB-9FEC-4E91-A753-BE7FD0A44EE9}"/>
 												<ItemList>
 													<ItemRef Name="Jumping" ID="{8F0C080A-4D0D-472B-9F7B-40163929CE17}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="idle" ID="{21AEAEFB-3795-4539-A899-21EEE896CEF4}"/>
+												<ItemList>
+													<ItemRef Name="Ini_Idle_1" ID="{457C56C4-66D4-4A18-BF83-5BD5A47B49C5}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -1441,7 +1502,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+											<ObjectRef Name="att_200m" ID="{FC22A8D2-271F-40B2-8993-B9729DCF5416}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
@@ -1554,7 +1615,14 @@
 							<ObjectLists/>
 						</ActorMixer>
 						<ActorMixer Name="Telephone" ID="{AE0918BE-A275-4817-91B6-96906EB39B66}" ShortID="896857915">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 								</Reference>
@@ -1563,337 +1631,404 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Telephone_Ringing" ID="{558473EF-29E5-476B-9D5B-9D0CF20B50F4}" ShortID="1038639612">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{96A68EAA-E005-48B2-AB2E-6B6C75E1E8B7}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="25"/>
-															<Property Name="Min" Type="Real64" Value="-51"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.35"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<SwitchContainer Name="Checkpoint_States" ID="{CB1BA67D-02EC-48DD-8264-6F8A58F7FEA0}" ShortID="479696664">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{EFE66023-C001-49A5-A300-F60CF275D2F4}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
+										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+											<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Checkpoint" ID="{85D4E2B2-7ACE-43A6-9C75-B333C62AE49B}" WorkUnitID="{D38C2956-5B33-4BCE-AF0F-01CC54B0BC6A}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Telephone_1" ID="{75FE804E-FEC5-4703-B460-B81C0B8BE6F3}" ShortID="274732294">
+										<RandomSequenceContainer Name="Telephone_Answered" ID="{B54A577B-DBDD-4ABE-A76E-DF53B3184051}" ShortID="51500971">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5D4F34DC-C200-44BD-BD6C-5A615B0532C2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="152"/>
+																	<Property Name="Min" Type="Real64" Value="-101"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+													<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Telephone_1" ID="{6C5F9209-6F6E-4C10-8EDC-C69CBDDA92CF}">
+												<Sound Name="Answering_Phone_2" ID="{DF8C5D53-4D7E-4E18-9ADB-2384AFE42327}" ShortID="821387678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Answering_Phone_2" ID="{F483077D-C413-4351-A3F3-CB1DC4E9CCD4}">
+															<Language>SFX</Language>
+															<AudioFile>Answering_Phone_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="351277226"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Answering_Phone_2" ID="{F483077D-C413-4351-A3F3-CB1DC4E9CCD4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Answering_Phone_3" ID="{342E3E1E-9DB0-44DE-A1FD-D8C6FEDE6704}" ShortID="739061017">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Answering_Phone_3" ID="{B616CE15-3CD5-459F-9D3B-D3AEE6430D93}">
+															<Language>SFX</Language>
+															<AudioFile>Answering_Phone_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="984249789"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Answering_Phone_3" ID="{B616CE15-3CD5-459F-9D3B-D3AEE6430D93}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Answering_Phone_4" ID="{6DEBE565-4A4F-42C0-9A2A-88CE39676A09}" ShortID="353859089">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Answering_Phone_4" ID="{2BF4B030-E967-4A04-8BE3-887119AF9598}">
+															<Language>SFX</Language>
+															<AudioFile>Answering_Phone_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="967770350"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Answering_Phone_4" ID="{2BF4B030-E967-4A04-8BE3-887119AF9598}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="Answering_Phone_4" ID="{6DEBE565-4A4F-42C0-9A2A-88CE39676A09}"/>
+												<ItemRef Name="Answering_Phone_3" ID="{342E3E1E-9DB0-44DE-A1FD-D8C6FEDE6704}"/>
+												<ItemRef Name="Answering_Phone_2" ID="{DF8C5D53-4D7E-4E18-9ADB-2384AFE42327}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Telephone_Ringing" ID="{558473EF-29E5-476B-9D5B-9D0CF20B50F4}" ShortID="1038639612">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{96A68EAA-E005-48B2-AB2E-6B6C75E1E8B7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="25"/>
+																	<Property Name="Min" Type="Real64" Value="-51"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.35"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Telephone_1" ID="{75FE804E-FEC5-4703-B460-B81C0B8BE6F3}" ShortID="274732294">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Telephone_1" ID="{6C5F9209-6F6E-4C10-8EDC-C69CBDDA92CF}">
+															<Language>SFX</Language>
+															<AudioFile>Telephone_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="516595780"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Telephone_1" ID="{6C5F9209-6F6E-4C10-8EDC-C69CBDDA92CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Telephone_2" ID="{5D41320A-5A42-42FA-BC88-907E6DEF35CE}" ShortID="794763134">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Telephone_2" ID="{3E91C891-3F33-4C7E-ABED-F77BB46888E7}">
+															<Language>SFX</Language>
+															<AudioFile>Telephone_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1034876210"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Telephone_2" ID="{3E91C891-3F33-4C7E-ABED-F77BB46888E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Telephone_3" ID="{BC3BFF18-9C5D-41A4-BF32-B4BC93D635D8}" ShortID="155773075">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Telephone_3" ID="{0B9A1995-80C3-4CD8-9E79-A78338AE0A41}">
+															<Language>SFX</Language>
+															<AudioFile>Telephone_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="912278910"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Telephone_3" ID="{0B9A1995-80C3-4CD8-9E79-A78338AE0A41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Telephone_4" ID="{428E4847-E9E6-4CBA-ADF8-EF9C80870409}" ShortID="143562232">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Telephone_4" ID="{64241C54-A7F9-45A0-BDF9-611B8756A33A}">
+															<Language>SFX</Language>
+															<AudioFile>Telephone_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="857392389"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Telephone_4" ID="{64241C54-A7F9-45A0-BDF9-611B8756A33A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+											<Playlist>
+												<ItemRef Name="Telephone_1" ID="{75FE804E-FEC5-4703-B460-B81C0B8BE6F3}"/>
+												<ItemRef Name="Telephone_2" ID="{5D41320A-5A42-42FA-BC88-907E6DEF35CE}"/>
+												<ItemRef Name="Telephone_3" ID="{BC3BFF18-9C5D-41A4-BF32-B4BC93D635D8}"/>
+												<ItemRef Name="Telephone_4" ID="{428E4847-E9E6-4CBA-ADF8-EF9C80870409}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="Payphone_Lights_Humming_1" ID="{58830BEA-2361-4B36-9E9A-E0F2C1E825CD}" ShortID="714068988">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Payphone_Lights_Humming_1" ID="{D7902F24-2449-4E67-AF6C-1A95C856397D}">
 													<Language>SFX</Language>
-													<AudioFile>Telephone_1.wav</AudioFile>
+													<AudioFile>Payphone_Lights_Humming_1.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="516595780"/>
+														<MediaID ID="517667731"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Telephone_1" ID="{6C5F9209-6F6E-4C10-8EDC-C69CBDDA92CF}" Platform="Linked"/>
+												<ActiveSource Name="Payphone_Lights_Humming_1" ID="{D7902F24-2449-4E67-AF6C-1A95C856397D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Telephone_2" ID="{5D41320A-5A42-42FA-BC88-907E6DEF35CE}" ShortID="794763134">
+										<Sound Name="Telephone_Receiver_1" ID="{F13E931A-9968-463D-B8E4-2DF8B7EAAE3D}" ShortID="612460398">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F482C3D8-2488-4027-A095-694B897E14A5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="101"/>
+																	<Property Name="Min" Type="Real64" Value="-177"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="att_Generic_20m" ID="{8EF4A5ED-37E0-4AE2-A8D0-267BBADC02BD}" WorkUnitID="{363BBF00-3A84-4721-9563-C7582D02DC6B}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
+													<ObjectRef Name="SFX" ID="{D5D27B83-70F6-4452-ACF3-BA8616113BF7}" WorkUnitID="{E55FFCA6-7831-4F9D-9941-E4385AA4879C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Telephone_2" ID="{3E91C891-3F33-4C7E-ABED-F77BB46888E7}">
+												<AudioFileSource Name="Telephone_Receiver_1" ID="{0830B690-6D11-466C-AFC4-C02F6084F871}">
 													<Language>SFX</Language>
-													<AudioFile>Telephone_2.wav</AudioFile>
+													<AudioFile>Telephone_Receiver_1.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1034876210"/>
+														<MediaID ID="942732362"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Telephone_2" ID="{3E91C891-3F33-4C7E-ABED-F77BB46888E7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Telephone_3" ID="{BC3BFF18-9C5D-41A4-BF32-B4BC93D635D8}" ShortID="155773075">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Telephone_3" ID="{0B9A1995-80C3-4CD8-9E79-A78338AE0A41}">
-													<Language>SFX</Language>
-													<AudioFile>Telephone_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="912278910"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Telephone_3" ID="{0B9A1995-80C3-4CD8-9E79-A78338AE0A41}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Telephone_4" ID="{428E4847-E9E6-4CBA-ADF8-EF9C80870409}" ShortID="143562232">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Telephone_4" ID="{64241C54-A7F9-45A0-BDF9-611B8756A33A}">
-													<Language>SFX</Language>
-													<AudioFile>Telephone_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="857392389"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Telephone_4" ID="{64241C54-A7F9-45A0-BDF9-611B8756A33A}" Platform="Linked"/>
+												<ActiveSource Name="Telephone_Receiver_1" ID="{0830B690-6D11-466C-AFC4-C02F6084F871}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
-									<Playlist>
-										<ItemRef Name="Telephone_1" ID="{75FE804E-FEC5-4703-B460-B81C0B8BE6F3}"/>
-										<ItemRef Name="Telephone_2" ID="{5D41320A-5A42-42FA-BC88-907E6DEF35CE}"/>
-										<ItemRef Name="Telephone_3" ID="{BC3BFF18-9C5D-41A4-BF32-B4BC93D635D8}"/>
-										<ItemRef Name="Telephone_4" ID="{428E4847-E9E6-4CBA-ADF8-EF9C80870409}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-								<Sound Name="Payphone_Lights_Humming_1" ID="{58830BEA-2361-4B36-9E9A-E0F2C1E825CD}" ShortID="714068988">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Payphone_Lights_Humming_1" ID="{D7902F24-2449-4E67-AF6C-1A95C856397D}">
-											<Language>SFX</Language>
-											<AudioFile>Payphone_Lights_Humming_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="517667731"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Payphone_Lights_Humming_1" ID="{D7902F24-2449-4E67-AF6C-1A95C856397D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Telephone_Receiver_1" ID="{F13E931A-9968-463D-B8E4-2DF8B7EAAE3D}" ShortID="612460398">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{F482C3D8-2488-4027-A095-694B897E14A5}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="101"/>
-															<Property Name="Min" Type="Real64" Value="-177"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Telephone_Receiver_1" ID="{0830B690-6D11-466C-AFC4-C02F6084F871}">
-											<Language>SFX</Language>
-											<AudioFile>Telephone_Receiver_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="942732362"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Telephone_Receiver_1" ID="{0830B690-6D11-466C-AFC4-C02F6084F871}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="Telephone_Answered" ID="{B54A577B-DBDD-4ABE-A76E-DF53B3184051}" ShortID="51500971">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.5</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{5D4F34DC-C200-44BD-BD6C-5A615B0532C2}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="152"/>
-															<Property Name="Min" Type="Real64" Value="-101"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismLoopCount" Type="int32" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-7</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Answering_Phone_2" ID="{DF8C5D53-4D7E-4E18-9ADB-2384AFE42327}" ShortID="821387678">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Answering_Phone_2" ID="{F483077D-C413-4351-A3F3-CB1DC4E9CCD4}">
-													<Language>SFX</Language>
-													<AudioFile>Answering_Phone_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="351277226"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Answering_Phone_2" ID="{F483077D-C413-4351-A3F3-CB1DC4E9CCD4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Answering_Phone_3" ID="{342E3E1E-9DB0-44DE-A1FD-D8C6FEDE6704}" ShortID="739061017">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Answering_Phone_3" ID="{B616CE15-3CD5-459F-9D3B-D3AEE6430D93}">
-													<Language>SFX</Language>
-													<AudioFile>Answering_Phone_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="984249789"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Answering_Phone_3" ID="{B616CE15-3CD5-459F-9D3B-D3AEE6430D93}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Answering_Phone_4" ID="{6DEBE565-4A4F-42C0-9A2A-88CE39676A09}" ShortID="353859089">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60F54FA6-0D98-4476-A070-DC4C45CE9ABB}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master_Audio_Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93E7FEC5-E29C-437F-B2E1-91B06AB11ED4}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Answering_Phone_4" ID="{2BF4B030-E967-4A04-8BE3-887119AF9598}">
-													<Language>SFX</Language>
-													<AudioFile>Answering_Phone_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="967770350"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Answering_Phone_4" ID="{2BF4B030-E967-4A04-8BE3-887119AF9598}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-									<Playlist>
-										<ItemRef Name="Answering_Phone_4" ID="{6DEBE565-4A4F-42C0-9A2A-88CE39676A09}"/>
-										<ItemRef Name="Answering_Phone_3" ID="{342E3E1E-9DB0-44DE-A1FD-D8C6FEDE6704}"/>
-										<ItemRef Name="Answering_Phone_2" ID="{DF8C5D53-4D7E-4E18-9ADB-2384AFE42327}"/>
-									</Playlist>
-								</RandomSequenceContainer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Telephone_Receiver_1" ID="{F13E931A-9968-463D-B8E4-2DF8B7EAAE3D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Telephone_Answered" ID="{B54A577B-DBDD-4ABE-A76E-DF53B3184051}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Payphone_Lights_Humming_1" ID="{58830BEA-2361-4B36-9E9A-E0F2C1E825CD}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Telephone_Ringing" ID="{558473EF-29E5-476B-9D5B-9D0CF20B50F4}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="off" ID="{F521DC24-DE80-4937-92AB-5503CF5CAC6F}"/>
+												<ItemList>
+													<ItemRef Name="Telephone_Ringing" ID="{558473EF-29E5-476B-9D5B-9D0CF20B50F4}"/>
+													<ItemRef Name="Payphone_Lights_Humming_1" ID="{58830BEA-2361-4B36-9E9A-E0F2C1E825CD}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="on" ID="{3F2590DC-225D-4DA9-A941-1DE408703424}"/>
+												<ItemList>
+													<ItemRef Name="Telephone_Answered" ID="{B54A577B-DBDD-4ABE-A76E-DF53B3184051}"/>
+													<ItemRef Name="Telephone_Receiver_1" ID="{F13E931A-9968-463D-B8E4-2DF8B7EAAE3D}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
@@ -1901,6 +2036,11 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
