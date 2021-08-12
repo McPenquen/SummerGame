@@ -12,8 +12,12 @@ public class CharacterAudioManager : MonoBehaviour
     [SerializeField]
     private Character.PlayerStatus playerStatus;
 
+    [SerializeField]
+    private Character.PlayerStatus previousStatus;
+
     // Character name string
-    string characterName = "";
+    [SerializeField]
+    private string characterName = "";
 
     // Character state
     string characterState = "";
@@ -35,18 +39,6 @@ public class CharacterAudioManager : MonoBehaviour
         // Obtain the player status from the player
         playerStatus = GetComponent<Character>().GetPlayerStatus();
 
-        // Assign the switch state according to the player index value
-        if (GetComponent<Character>().GetPlayerIndex() == 0)
-        {
-            // Set player 1
-            characterName = "Ini";
-        }
-        else if (GetComponent<Character>().GetPlayerIndex() == 1)
-        {
-            // Set player 2
-            characterName = "Gem";
-        }
-
         // Establish character state string
         characterState = characterName + "_Movement";
 
@@ -59,8 +51,9 @@ public class CharacterAudioManager : MonoBehaviour
         // Obtain the game object
         go = this.gameObject;
 
+        // Set the previous status to the player status
+        previousStatus = playerStatus;
     }
-
 
 
     private void Update()
@@ -68,46 +61,57 @@ public class CharacterAudioManager : MonoBehaviour
         // Update the player status
         playerStatus = m_player.GetPlayerStatus();
 
-        // Post Sound event to sound engine
-        AkSoundEngine.PostEvent(playEvent, go);
+        // Check for status change
+        if (playerStatus != previousStatus)
+        {
+            // Status has changed
 
-        // Check the player status
-        if (playerStatus == Character.PlayerStatus.idle)
-        {
-            // Play Idle sounds
-            AkSoundEngine.SetState(characterState, "idle");
-        }
-        else if(playerStatus == Character.PlayerStatus.walking)
-        {
 
-            // Play walking sounds for the character
-            AkSoundEngine.SetState(characterState, "isWalking");
+            // Check the player status
+            if (playerStatus == Character.PlayerStatus.idle)
+            {
+                // Play Idle sounds
+                AkSoundEngine.SetState(characterState, "idle");
+            }
+            else if (playerStatus == Character.PlayerStatus.walking)
+            {
+
+                // Play walking sounds for the character
+                AkSoundEngine.SetState(characterState, "isWalking");
+            }
+            else if (playerStatus == Character.PlayerStatus.jumping)
+            {
+                // Play jumping sounds for the character
+                AkSoundEngine.SetState(characterState, "isJumping");
+            }
+            else if (playerStatus == Character.PlayerStatus.falling)
+            {
+                // Play falling sound for the character
+                AkSoundEngine.SetState(characterState, "isFalling");
+            }
+            else if (playerStatus == Character.PlayerStatus.swinging)
+            {
+                // Play swinging sound for the character
+                AkSoundEngine.SetState(characterState, "isSwinging");
+            }
+            else if (playerStatus == Character.PlayerStatus.grabbing)
+            {
+                // Play grabbing sound for the character
+                AkSoundEngine.SetState(characterState, "isGrabbing");
+            }
+            else
+            {
+                // No sound for the character
+                AkSoundEngine.SetState(characterState, "None");
+            }
+
+
+            // Post Sound event to sound engine
+            AkSoundEngine.PostEvent(playEvent, go);
+
+            previousStatus = playerStatus;
         }
-        else if (playerStatus == Character.PlayerStatus.jumping)
-        {
-            // Play jumping sounds for the character
-            AkSoundEngine.SetState(characterState, "isJumping");
-        }
-        else if (playerStatus == Character.PlayerStatus.falling)
-        {
-            // Play falling sound for the character
-            AkSoundEngine.SetState(characterState, "isFalling");
-        }
-        else if (playerStatus == Character.PlayerStatus.swinging)
-        {
-            // Play swinging sound for the character
-            AkSoundEngine.SetState(characterState, "isSwinging");
-        }
-        else if (playerStatus == Character.PlayerStatus.grabbing)
-        {
-            // Play grabbing sound for the character
-            AkSoundEngine.SetState(characterState, "isGrabbing");
-        }
-        else
-        {
-            // No sound for the character
-            AkSoundEngine.SetState(characterState, "None");
-        }
+
+
     }
-
 }
