@@ -21,6 +21,9 @@ State	ID	Name	State Group			Notes
 Effect plug-ins	ID	Name	Type				Notes
 	793351679	Dialog_Too_Quiet (Custom)	Wwise Compressor			
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	826972979	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_idle\silence\Wwise Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	80475751	PlayerGem_Gripping_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_1		80960
 	185432557	PlayerGem_Gripping_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_7_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_7		84800

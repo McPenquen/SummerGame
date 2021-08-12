@@ -147,7 +147,34 @@
 														</Action>
 													</ChildrenList>
 												</Event>
-												<Event Name="stop_main_music" ID="{9BF9C686-22EA-4DA3-AADE-7E0FA03BE86E}"/>
+												<Event Name="stop_main_music" ID="{9BF9C686-22EA-4DA3-AADE-7E0FA03BE86E}">
+													<ChildrenList>
+														<Action Name="" ID="{C3C3D1D1-B461-4CFE-BA01-1AE376084F10}" ShortID="41006872">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="2"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="main" ID="{D31C1D17-8F3C-40B1-B93D-F4DA59FED74F}" WorkUnitID="{52014873-F397-4F77-A131-A6485D26E1B2}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+												<Event Name="pause_main_music" ID="{77938AB1-8015-46F3-985A-97B5931C34B1}">
+													<ChildrenList>
+														<Action Name="" ID="{B379AB44-9432-4265-8E9E-D64F7B8A5F61}" ShortID="42800859">
+															<PropertyList>
+																<Property Name="ActionType" Type="int16" Value="7"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="main" ID="{D31C1D17-8F3C-40B1-B93D-F4DA59FED74F}" WorkUnitID="{52014873-F397-4F77-A131-A6485D26E1B2}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
 											</ChildrenList>
 										</Folder>
 									</ChildrenList>

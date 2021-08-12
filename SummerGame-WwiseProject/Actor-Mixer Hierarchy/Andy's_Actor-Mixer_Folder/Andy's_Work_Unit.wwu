@@ -1133,6 +1133,11 @@
 										<Sound Name="Ini_Idle_1" ID="{457C56C4-66D4-4A18-BF83-5BD5A47B49C5}" ShortID="932971944">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
