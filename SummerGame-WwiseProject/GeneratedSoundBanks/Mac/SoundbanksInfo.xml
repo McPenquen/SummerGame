@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="335436322" Language="SFX" Hash="70162872">
+		<SoundBank Id="335436322" Language="SFX" Hash="4115704164">
 			<ObjectPath>\SoundBanks\Default Work Unit\James_Army_Bank</ObjectPath>
 			<ShortName>James_Army_Bank</ShortName>
 			<Path>James_Army_Bank.bnk</Path>
@@ -46,7 +46,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1163442174" Language="SFX" Hash="1691213391">
+		<SoundBank Id="1163442174" Language="SFX" Hash="800062142">
 			<ObjectPath>\SoundBanks\Default Work Unit\Andy_Bank</ObjectPath>
 			<ShortName>Andy_Bank</ShortName>
 			<Path>Andy_Bank.bnk</Path>
@@ -522,11 +522,12 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Andy's_Game_Parameters\Andy's_Work_Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2703541833" Language="SFX" Hash="3363196112">
+		<SoundBank Id="2703541833" Language="SFX" Hash="271926844">
 			<ObjectPath>\SoundBanks\Default Work Unit\James_UI_Bank</ObjectPath>
 			<ShortName>James_UI_Bank</ShortName>
 			<Path>James_UI_Bank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2139815839" Name="pause_main_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\pause_main_music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="27619919" Name="play_countdown_20s" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_countdown_20s" DurationType="OneShot" DurationMin="70.000000" DurationMax="70.000000">
 					<IncludedMemoryFiles>
 						<File Id="548150828" Language="SFX">
@@ -686,7 +687,7 @@
 				<Event Id="3834448970" Name="stop_victory_music" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3182103661" Language="SFX" Hash="3308947363">
+		<SoundBank Id="3182103661" Language="SFX" Hash="3590532361">
 			<ObjectPath>\SoundBanks\Default Work Unit\James_Players_Bank</ObjectPath>
 			<ShortName>James_Players_Bank</ShortName>
 			<Path>James_Players_Bank.bnk</Path>
@@ -759,7 +760,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2682184630" Name="play_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state" DurationType="Mixed" DurationMin="0.000000" DurationMax="Infinite">
+				<Event Id="2682184630" Name="play_gem_movement_switch_state" ObjectPath="\Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state" DurationType="Mixed" DurationMin="0.673379" DurationMax="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="80475751" Language="SFX">
 							<ShortName>PlayerGem_Gripping_1.wav</ShortName>

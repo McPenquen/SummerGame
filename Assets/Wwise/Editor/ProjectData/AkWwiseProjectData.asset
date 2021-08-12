@@ -736,7 +736,7 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585728156181633030
+    m_lastTime: -8585728040333199296
     List:
     - name: Army
       guid: a6aa2ff2d9f67b40b003a5c1eb32942d
@@ -899,6 +899,38 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: pause_main_music
+      guid: b18a93771580f346985a97b5931c34b1
+      id: 2139815839
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: Desert
+        ObjectType: 4
+        guid: cf2693dea5301b41b063b6c8276fb468
+      - ElementName: Level1
+        ObjectType: 4
+        guid: 90edbdafb27c2b4a91c1f49e10b57c64
+      - ElementName: pause_main_music
+        ObjectType: 3
+        guid: b18a93771580f346985a97b5931c34b1
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\pause_main_music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: play_army_base_emitter
       guid: b1c029ff8b53184782deceb4bd0750d7
       id: 3508812408
@@ -1143,7 +1175,7 @@ MonoBehaviour:
       Path: Events\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state
       maxAttenuation: 0
       maxDuration: Infinity
-      minDuration: 0
+      minDuration: 0.673379
     - name: play_main_music
       guid: f97ef0576687b6409e0caadce0500e39
       id: 414863633

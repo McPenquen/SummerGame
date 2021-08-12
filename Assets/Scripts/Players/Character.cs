@@ -121,12 +121,30 @@ public class Character : MonoBehaviour
 
     // Number of segments - DEBUG USE ONLY
     private int numSegments = 20;
+
     // Set the collision direction vector
     private Vector2 collisionDirection = Vector2.zero;
+
     // Saved height of the sprite
     private float spriteHeight;
+
     // Saved height of the sprite
     private float spriteWidth;
+
+    // Player Status Enumerator
+    public enum PlayerStatus
+    {
+        idle = 0,
+        walking = 1,
+        jumping = 2,
+        falling = 3,
+        swinging = 4,
+        grabbing = 5
+    }
+
+    // Player status object
+    [SerializeField]
+    private PlayerStatus m_playerStatus;
 
     // Start is called before the first frame update
     private void Awake()
@@ -148,7 +166,9 @@ public class Character : MonoBehaviour
             // Current player is player 2, obtain player 1
             m_otherPlayer = GameObject.FindGameObjectWithTag("Player_1").GetComponent<Character>();
         }
-        
+
+        Debug.Log("Player " + (m_playerIndex + 1) + " GO: " + gameObject.GetInstanceID());
+
         // Obtain the 2D rigid body component
         m_rb = GetComponent<Rigidbody2D>();
 
@@ -267,19 +287,21 @@ public class Character : MonoBehaviour
             // Flip sprite depending on value of X input
             GetComponent<SpriteRenderer>().flipX = -m_xInput < 0.0f;
 
+            // Check if the player is not swinging
             if (!m_isSwinging)
             {
                 Vector3 newPos = transform.position + new Vector3(m_xInput * m_movementSpeed * Time.deltaTime, 0, 0);
                 // Move only when it is allowed
                 if (m_bond.AllowableDistance(newPos, m_otherPlayer.transform.position))
                 {
+                    // Set the transform position to the new position
                     transform.position = newPos;
                 }
                 // Movement towards the other player is allowed too
-                else if (Vector2.Distance(newPos, m_otherPlayer.transform.position) < Vector2.Distance(transform.position, m_otherPlayer.transform.position))
-                {
-                    transform.position = newPos;
-                }
+                //else if (Vector2.Distance(newPos, m_otherPlayer.transform.position) < Vector2.Distance(transform.position, m_otherPlayer.transform.position))
+                //{
+                //    transform.position = newPos;
+                //}
             }
             else
             {
@@ -303,13 +325,13 @@ public class Character : MonoBehaviour
         }
 
         // Check if player is grounded or touching other player
-        if(m_isGrounded || m_touchingOtherPlayer)
+        if (m_isGrounded || m_touchingOtherPlayer)
         {
             // Disable falling animation
             m_playerAnimator.SetBool("isFalling", false);
 
             // Check if there is an imput from the player
-            if(m_xInput < 0 || m_xInput > 0)
+            if (m_xInput < 0 || m_xInput > 0)
             {
                 // Enable the walking animation
                 m_playerAnimator.SetBool("isWalking", true);
@@ -319,7 +341,7 @@ public class Character : MonoBehaviour
                 // Disable the walking animation
                 m_playerAnimator.SetBool("isWalking", false);
             }
-            
+
             // Check if player is at the right of the other player
             if (GetPlayerPosition().x >= m_otherPlayer.GetPlayerPosition().x)
             {
@@ -353,7 +375,7 @@ public class Character : MonoBehaviour
                     m_bond.ExtendBond(Time.deltaTime * m_movementSpeed);
                 }
             }
-        
+
         }
 
         // Check if the player has walked off the edge of a platform
@@ -388,9 +410,9 @@ public class Character : MonoBehaviour
                 m_isFalling = true;
             }
         }
-        
+
         // Check if the player is falling and handle falling based actions
-        if(m_isFalling)
+        if (m_isFalling)
         {
             // Enable falling animation
             m_playerAnimator.SetBool("isFalling", true);
@@ -399,7 +421,7 @@ public class Character : MonoBehaviour
             m_playerAnimator.SetBool("isJumping", false);
 
             // Check if the player is falling below the other player
-            if(GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y && (m_otherPlayer.CheckGrabbing() || m_otherPlayer.CheckGrounded()))
+            if (GetPlayerPosition().y < m_otherPlayer.GetPlayerPosition().y && (m_otherPlayer.CheckGrabbing() || m_otherPlayer.CheckGrounded()))
             {
                 // Set is falling to false
                 m_isFalling = false;
@@ -412,7 +434,7 @@ public class Character : MonoBehaviour
             }
 
             // Check if the player is grounded or touching the other player
-            if(m_isGrounded || m_touchingOtherPlayer)
+            if (m_isGrounded || m_touchingOtherPlayer)
             {
                 // Player has hit the ground
                 m_isFalling = false;
@@ -423,7 +445,7 @@ public class Character : MonoBehaviour
         }
 
         // Check if the player is swinging and handling swinging actions
-        if(m_isSwinging)
+        if (m_isSwinging)
         {
             // Check if Y input is less than 0 (holding down button)
             if (m_yInput < 0)
@@ -476,6 +498,45 @@ public class Character : MonoBehaviour
 
         // Update the bond joint assigned to the player
         m_bond.UpdateJoint(GetPlayerIndex(), m_playerPos);
+
+        // PLAYER STATUS
+
+        // Check if the player is grounded and there is no movement from the player
+        if (m_isGrounded && m_xInput == 0)
+        {
+            // Set player status to idle
+            m_playerStatus = PlayerStatus.idle;
+        }
+        // Check if the player is grounded and there is movement from the player
+        else if (m_isGrounded && m_xInput != 0)
+        {
+            // Set player status to walking
+            m_playerStatus = PlayerStatus.walking;
+        }
+        // Check if the player is jumping
+        else if (m_isJumping)
+        {
+            // Set player status to jumping
+            m_playerStatus = PlayerStatus.jumping;
+        }
+        // Check if the player is falling
+        else if (m_isFalling)
+        {
+            // Set the player status to falling
+            m_playerStatus = PlayerStatus.falling;
+        }
+        // Check if the player is swinging
+        else if (m_isSwinging)
+        {
+            // Set the player status to swinging
+            m_playerStatus = PlayerStatus.swinging;
+        }
+        // Check if the player is grabbing
+        else if (m_isGrabbing)
+        {
+            // Set the player status to grabbing
+            m_playerStatus = PlayerStatus.grabbing;
+        }
     }
 
     /*
@@ -643,6 +704,15 @@ public class Character : MonoBehaviour
             // Set is grabbing to true
             m_isGrabbing = true;
 
+            // Set other booleans to false
+            m_isFalling = false;
+            m_isGrounded = false;
+            m_isJumping = false;
+            m_isSwinging = false;
+
+            // Set player status to grabbing
+            m_playerStatus = PlayerStatus.grabbing;
+
             // Control the animation
             m_playerAnimator.SetBool("isWalking", false); // it doesn't walk anymore
             m_playerAnimator.SetBool("isJumping", false); // it's not jumping anymore
@@ -672,8 +742,10 @@ public class Character : MonoBehaviour
     {
         // Set is grabbing to false
         m_isGrabbing = false;
+
         // Stop animating the grab
         m_playerAnimator.SetBool("isGrabbing", false);
+
         // The other player is not swinging anymore (if they were)
         m_otherPlayer.SetSwinging(false);
     }
@@ -720,5 +792,10 @@ public class Character : MonoBehaviour
     public bool CheckGrabbing()
     {
         return m_isGrabbing;
+    }
+
+    public PlayerStatus GetPlayerStatus()
+    {
+        return m_playerStatus;
     }
 }

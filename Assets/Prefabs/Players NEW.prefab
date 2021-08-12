@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 8050295438729485652}
   - component: {fileID: 3815493994780013332}
   - component: {fileID: 4195719691807728022}
+  - component: {fileID: 1555285306373129488}
   m_Layer: 10
   m_Name: Player_2
   m_TagString: Player_2
@@ -256,6 +257,23 @@ MonoBehaviour:
   m_xInput: 0
   m_yInput: 0
   m_viewGrabCircle: 0
+  m_playerStatus: 0
+--- !u!114 &1555285306373129488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050295438729485651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9831b458fe1db1f409192c3be5838e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_player: {fileID: 0}
+  playerStatus: 0
+  previousStatus: 0
+  characterName: Gem
 --- !u!1 &8050295438740226934
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +339,7 @@ GameObject:
   - component: {fileID: 3815493995421808251}
   - component: {fileID: 3226215086682286770}
   - component: {fileID: 8665894722799807364}
+  - component: {fileID: 7671933887978107014}
   m_Layer: 10
   m_Name: Player_1
   m_TagString: Player_1
@@ -496,6 +515,7 @@ MonoBehaviour:
   m_xInput: 0
   m_yInput: 0
   m_viewGrabCircle: 0
+  m_playerStatus: 0
 --- !u!232 &8665894722799807364
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -515,6 +535,22 @@ DistanceJoint2D:
   m_AutoConfigureDistance: 0
   m_Distance: 0.005
   m_MaxDistanceOnly: 0
+--- !u!114 &7671933887978107014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050295439498113545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9831b458fe1db1f409192c3be5838e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_player: {fileID: 0}
+  playerStatus: 0
+  previousStatus: 0
+  characterName: Ini
 --- !u!1 &8050295439585455356
 GameObject:
   m_ObjectHideFlags: 0
