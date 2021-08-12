@@ -65,17 +65,21 @@ public class LevelManager : MonoBehaviour
             // Activate sound only once
             if (victoryDelayCounter == 0)
             {
-                AkSoundEngine.PostEvent("play_beam_up",gameObject);   
+                AkSoundEngine.PostEvent("play_beam_up",gameObject);
+                // Start the spaceship animation
+                SpaceshipManager.SetIsWon(true);
             }
             // Save the time -> as score
             ScenesNavigation.SaveScore(Timer.GetScore());
             // Wait until the sound finishes to change scene
             victoryDelayCounter += Time.deltaTime;
             if (victoryDelayCounter >= 2.0f )
-            // Stop all current sounds and replay the default background noise
-            AkSoundEngine.StopAll();
-            AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
-            SceneManager.LoadScene("Victory");
+            {
+                // Stop all current sounds and replay the default background noise
+                AkSoundEngine.StopAll();
+                AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
+                SceneManager.LoadScene("Victory");
+            }
         }
 
         // If players die reload them to the last checkpoint
