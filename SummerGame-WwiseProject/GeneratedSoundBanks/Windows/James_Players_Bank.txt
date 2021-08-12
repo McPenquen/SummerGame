@@ -1,0 +1,42 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1031277876	stop_gem_movement_switch_state			\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state	
+	1912911931	play_gem_landing			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_landing	
+	2346201062	play_gem_jumping			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_jumping	
+	2682184630	play_gem_movement_switch_state			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_movement_switch_state	
+	3259393782	play_gem_gripping			\James'_Event_Folder\James'_Work_Unit\Players\play_gem_gripping	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	72319902	Gem_Movement			\Default Work Unit\Gem_Movement	
+
+State	ID	Name	State Group			Notes
+	594781027	isJumping	Gem_Movement			
+	605894799	isSwinging	Gem_Movement			
+	748895195	None	Gem_Movement			
+	1579702610	isFalling	Gem_Movement			
+	1874288895	idle	Gem_Movement			
+	3183196101	isGrabbing	Gem_Movement			
+	3629409974	isWalking	Gem_Movement			
+	3910744550	isLanding	Gem_Movement			
+
+Effect plug-ins	ID	Name	Type				Notes
+	793351679	Dialog_Too_Quiet (Custom)	Wwise Compressor			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	80475751	PlayerGem_Gripping_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_1		80960
+	185432557	PlayerGem_Gripping_7	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_7_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_7		84800
+	221046977	Gem_Swinging_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Swinging_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Swinging_1		1175616
+	258596799	Gem_Falling_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Falling_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Falling_1		984128
+	266703678	PlayerGem_Landing_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Landing_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Landing\PlayerGem_Landing_3		182856
+	273825055	PlayerGem_Jumping_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Jumping_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_1		59456
+	363765604	Gem_Walking_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Walking_Loop_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Walking_1		1263680
+	383594553	PlayerGem_Jumping_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Jumping_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_3		69696
+	497830579	PlayerGem_Gripping_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_5_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_5		78912
+	546820493	PlayerGem_Gripping_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_3		164240
+	578439824	PlayerGem_Gripping_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_6_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_6		83520
+	667000515	PlayerGem_Jumping_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Jumping_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_2		69696
+	761976081	PlayerGem_Jumping_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Jumping_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Jumping\PlayerGem_Jumping_4		122432
+	779702268	PlayerGem_Landing_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Landing_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Landing\PlayerGem_Landing_1		187968
+	864741291	PlayerGem_Gripping_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_2		66624
+	894027688	PlayerGem_Gripping_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Gripping_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Gripping\PlayerGem_Gripping_4		116874
+	1027132071	PlayerGem_Landing_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\PlayerGem_Landing_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Player_Characters\Gem\Movement_State_Switch\Gem_Landing\PlayerGem_Landing_2		163392
+

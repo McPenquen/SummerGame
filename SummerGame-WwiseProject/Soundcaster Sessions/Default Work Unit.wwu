@@ -22,10 +22,6 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_checkpoint_success" ID="{C251C376-6A07-47A7-AE0B-5A041F6A7C8D}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="stop_play_ufo_idle" ID="{9A91A3A1-5BEF-461B-B21C-BD8C079E07E9}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -40,6 +36,14 @@
 						<Module>
 							<ObjectRef Name="play_plant" ID="{B296738A-338C-4B7E-A456-02D827F802DD}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
 							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_victory_music" ID="{6080BD2C-A6B6-49BA-A1FF-EF3EC2886CC9}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_All" ID="{C7625C6F-AD81-4DF8-9D24-6DD3DBC51327}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="stop_play_plant" ID="{6744B241-6B5E-444E-A12F-2FAD4AA920E4}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
@@ -62,54 +66,72 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
+						<CurrentStateRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 				<SoundcasterSession Name="UI" ID="{F0CDF06E-EB7D-4E32-91E3-3467AB716254}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Master_Volume" ID="{00E4D79A-9DB8-416D-B0E0-5196A66B4B7A}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{8E267A51-6346-42B2-9C71-1C30BA728EF5}"/>
+							<Value>65</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{0A5BB017-7DFC-4866-B7EE-23D85E2846E2}"/>
+							<Value>75</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
+						<CurrentStateRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="music" ID="{416EADDC-D1D9-4A3D-A2E8-AB7821DB92D5}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="play_ui_cancel" ID="{6F5648CC-EA6E-4907-BD4C-36E1C5576DFF}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<ObjectRef Name="play_victory_music" ID="{6080BD2C-A6B6-49BA-A1FF-EF3EC2886CC9}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_ui_exit" ID="{FB7EC0C3-7E1F-4E06-B140-1AD93B4C6B29}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<ObjectRef Name="play_victory_1_star" ID="{CBCDBDBB-A38B-484D-8A93-63BF6D95DA78}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_start_up" ID="{65DCC9A7-8086-4ABB-98B8-D311DADBC986}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="play_ui_confirm" ID="{43185388-BA04-4B4D-AE6C-7BBD4C7744FB}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<ObjectRef Name="stop_victory_music" ID="{0315F36E-17B3-48CF-AB63-064C856A68D5}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_ui_move" ID="{7ED920E5-E9A3-4EC1-B690-06A5B8401C02}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<ObjectRef Name="play_gameover_music" ID="{6579AB3C-068C-413D-BF80-4ACD55C23DEE}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="stop_start_up" ID="{C1FF7C57-029A-4C9D-9FEB-EF2C243C084A}" WorkUnitID="{43C7572F-6797-46EE-8EE9-D03E59B7A593}"/>
-							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Stop_All" ID="{C7625C6F-AD81-4DF8-9D24-6DD3DBC51327}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_gem_gripping" ID="{0C340879-49E4-40E8-AB54-CA2BAC4BBA8D}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<ObjectRef Name="play_gameover" ID="{3C76ED2B-63FD-4A97-995A-0C4A7A647D36}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_gem_movement_switch_state" ID="{D657AF9A-8411-48B2-8785-69C6017DC18E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
-							<Position X="2" Y="2"/>
+							<ObjectRef Name="play_countdown_20s" ID="{B7835C8D-0653-43CF-B7DB-C2CE9E1B7811}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_gem_jumping" ID="{47987C8A-A747-442F-BE6A-1954D1266A7E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<ObjectRef Name="main" ID="{D31C1D17-8F3C-40B1-B93D-F4DA59FED74F}" WorkUnitID="{52014873-F397-4F77-A131-A6485D26E1B2}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_gem_landing" ID="{4FD35A85-316E-4703-8B56-7642063F2C09}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
-							<Position X="3" Y="2"/>
+							<ObjectRef Name="set_IsPaused" ID="{5B980614-42C2-4762-9422-42123D16A6E4}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="set_NotPaused" ID="{734F3BD0-AA80-40CE-A22D-7F7969ACDE99}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="4" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -128,7 +150,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
-						<CurrentStateRef Name="isJumping" ID="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}"/>
+						<CurrentStateRef Name="on" ID="{3F2590DC-225D-4DA9-A941-1DE408703424}"/>
+						<CurrentStateRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

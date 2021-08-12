@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648d9b78d609542319da2b4c65eaf8de, type: 3}
+  m_Name: 0E3B31E6-3848-4C2D-AD3E-49A24A8541F0
+  m_EditorClassIdentifier: 
+  objectName: James_Players_Bank
+  id: 3182103661
+  guid: 0E3B31E6-3848-4C2D-AD3E-49A24A8541F0

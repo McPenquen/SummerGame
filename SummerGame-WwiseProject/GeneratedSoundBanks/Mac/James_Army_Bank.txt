@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1770554193	play_army_vehicles_far			\James'_Event_Folder\James'_Work_Unit\Army\play_army_vehicles_far	
+	3508812408	play_army_base_emitter			\James'_Event_Folder\James'_Work_Unit\Army\play_army_base_emitter	
+	4030404899	play_explosion			\James'_Event_Folder\James'_Work_Unit\Army\play_explosion	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	24642990	Army_Base_Emitter_Loop	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Army_Base_Emitter_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Army\Army_Base_Emitter_Loop		4440128
+	418555469	Army_Radio	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Army_Radio_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Army\Army_Radio		8159296
+	656486940	Army_Explosion	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Army_Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Army\Army_Explosion		1387584
+	731210163	Army_Vehicles_Far_Loop	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Mac\SFX\Army_Vehicles_Far_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\Army\Army_Vehicles_Far_Loop		18284608
+

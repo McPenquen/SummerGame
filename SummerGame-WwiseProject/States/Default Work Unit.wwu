@@ -27,6 +27,13 @@
 						<State Name="isLanding" ID="{6FA03933-43A3-4F62-8707-42006B775876}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Checkpoint" ID="{85D4E2B2-7ACE-43A6-9C75-B333C62AE49B}">
+					<ChildrenList>
+						<State Name="None" ID="{EFE66023-C001-49A5-A300-F60CF275D2F4}"/>
+						<State Name="on" ID="{3F2590DC-225D-4DA9-A941-1DE408703424}"/>
+						<State Name="off" ID="{F521DC24-DE80-4937-92AB-5503CF5CAC6F}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

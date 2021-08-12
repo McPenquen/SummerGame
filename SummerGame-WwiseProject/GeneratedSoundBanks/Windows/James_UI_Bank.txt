@@ -1,0 +1,53 @@
+Event	ID	Name			Wwise Object Path	Notes
+	27619919	play_countdown_20s			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_countdown_20s	
+	129783479	play_ui_ambience			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_ambience	
+	249738436	play_ui_move			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_move	
+	414863633	play_main_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\play_main_music	
+	786906729	play_pause_amb			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_pause_amb	
+	857333373	stop_victory_1_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_1_star	
+	1241273495	stop_main_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\stop_main_music	
+	1319156832	set_IsPaused			\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_IsPaused	
+	1597364423	play_victory_1_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_1_star	
+	1743052465	play_victory_3_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_3_star	
+	1986548623	play_ui_exit			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit	
+	2128862759	set_NotPaused			\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_NotPaused	
+	2141970788	play_victory_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_music	
+	2244506081	play_ui_cancel			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel	
+	2635608162	play_victory_2_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_2_star	
+	2910167054	stop_ui			\James'_Event_Folder\James'_Work_Unit\UI\stop_ui	
+	2977565850	play_gameover_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_gameover_music	
+	2982197139	stop_victory_3_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_3_star	
+	3022734157	play_ui_confirm			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_confirm	
+	3062924404	stop_victory_2_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_2_star	
+	3174629258	play_gameover			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_gameover	
+	3834448970	stop_victory_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	583825884	Hall_Large_Bright (Custom)	Wwise RoomVerb			
+	1588715066	Echoes_Linear	Wwise Delay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	41907832	UI_Item_Select_Confirm_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Confirm_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_4		303168
+	55320165	UI_Victory_Music	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Victory_Music_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_Victory_Music		1209664
+	166315958	UI_Victory_3S	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Victory_3S_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_Victory_3S		1912896
+	195671915	loop4_120	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\musicloop4_120_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\main\loop4_120\loop4_120		21097320
+	225471993	UI_Item_Select_Move_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Move_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Move\UI_Item_Select_Move\UI_Item_Select_Move_1		101696
+	322561206	UI_Item_Select_Cancel_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Cancel_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_1		311360
+	322958163	UI_Item_Select_Cancel_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Cancel_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_3		254016
+	381017666	UI_Item_Select_Confirm_1	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Confirm_1_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_1		419904
+	412649290	UI_Victory_2S	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Victory_2S_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_Victory_2S		1810496
+	444927508	UI_Item_Select_Cancel_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Cancel_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_2		266304
+	464420358	UI_GameOver_Music	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_GameOver_Music_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_GameOver_Music		6668352
+	505384754	UI_GameOver	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_GameOver_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_GameOver		1736768
+	548150828	UI_Countdown20s	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Countdown20s_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_Countdown20s		12348064
+	564895375	UI_Item_Select_Confirm_3	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Confirm_3_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_3		321600
+	565904256	loop1_120	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\musicloop1_120_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\main\loop1_120\loop1_120		8114464
+	725529921	loop3_120	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\musicloop3_120_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\main\loop3_120\loop3_120		8524504
+	729166634	UI_Item_Select_Confirm_2	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Confirm_2_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_2		254016
+	914587540	loop2_120	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\musicloop2_120_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\main\loop2_120\loop2_120		8610896
+	956436522	UI_Item_Select_Confirm_5	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Confirm_5_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_5		305216
+	977803398	UI_Victory_1S	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Victory_1S_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_Victory_1S		1785920
+	1038214766	UI_Item_Select_Confirm_6	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Confirm_6_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Confirm\UI_Item_Select_Confirm\UI_Item_Select_Confirm_6		116800
+	1039365012	UI_Pause_drone	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Pause_drone_D79FB2B7.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Music\UI_Pause_drone		7526464
+	1063259166	UI_Item_Select_Cancel_4	C:\Users\james\Documents\GitHub\SummerGame\SummerGame-WwiseProject\.cache\Windows\SFX\UI_Item_Select_Cancel_4_10C4C929.wem		\Actor-Mixer Hierarchy\James'_Actor-Mixer_Folder\James'_Work_Unit\UI\Menu\Cancel\UI_Item_Select_Cancel\UI_Item_Select_Cancel_4		393280
+
