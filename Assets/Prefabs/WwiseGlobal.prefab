@@ -185,7 +185,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e6cc65835ad548948abff404856a099f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: c431b95f9feecfd42828185dc83bd1e4, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e6cc65835ad548948abff404856a099f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9b647814aba2c1d4fac48c0b3e946de2, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e6cc65835ad548948abff404856a099f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 28eb4758284f90049803328f51480533, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e6cc65835ad548948abff404856a099f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 16b4ceb290eec194193bf61fd9ff5e81, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
