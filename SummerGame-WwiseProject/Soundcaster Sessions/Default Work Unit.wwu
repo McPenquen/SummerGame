@@ -87,6 +87,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
+						<CurrentStateRef Name="None" ID="{EFE66023-C001-49A5-A300-F60CF275D2F4}"/>
 						<CurrentStateRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
@@ -102,12 +103,24 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_gem_movement_switch_state" ID="{D657AF9A-8411-48B2-8785-69C6017DC18E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_gem_movement_switch_state" ID="{9DC60405-76F3-4581-ACD2-6216DE14BD95}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="stop_victory_music" ID="{0315F36E-17B3-48CF-AB63-064C856A68D5}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="play_gameover_music" ID="{6579AB3C-068C-413D-BF80-4ACD55C23DEE}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pause_main_music" ID="{77938AB1-8015-46F3-985A-97B5931C34B1}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Stop_All" ID="{C7625C6F-AD81-4DF8-9D24-6DD3DBC51327}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
@@ -118,6 +131,10 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_main_music" ID="{57F07EF9-8766-40B6-9E0C-AADCE0500E39}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="play_countdown_20s" ID="{B7835C8D-0653-43CF-B7DB-C2CE9E1B7811}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -126,12 +143,24 @@
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="stop_main_music" ID="{9BF9C686-22EA-4DA3-AADE-7E0FA03BE86E}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="set_IsPaused" ID="{5B980614-42C2-4762-9422-42123D16A6E4}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="set_NotPaused" ID="{734F3BD0-AA80-40CE-A22D-7F7969ACDE99}" WorkUnitID="{802C438A-C851-4FE9-A7B3-F9A79A43CB88}"/>
 							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ini_movement_switch_state" ID="{94E8E912-A952-4686-B433-C4048B22130B}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_ini_movement_switch_state" ID="{EEE3900B-2165-4149-A330-45FA7F6FE34B}" WorkUnitID="{1A48A134-8CB0-4973-AE4B-D493EAEC004F}"/>
+							<Position X="4" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -151,7 +180,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{4240EAF3-16BC-4294-8306-F3C9B437C1A0}"/>
 						<CurrentStateRef Name="on" ID="{3F2590DC-225D-4DA9-A941-1DE408703424}"/>
-						<CurrentStateRef Name="None" ID="{8E492038-33E6-4394-BBFE-65DC3505D77D}"/>
+						<CurrentStateRef Name="isJumping" ID="{EE229090-48DD-4779-98E1-8E86DB2E7BB1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

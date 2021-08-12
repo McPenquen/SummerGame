@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1743052465	play_victory_3_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_3_star	
 	1986548623	play_ui_exit			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_exit	
 	2128862759	set_NotPaused			\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_NotPaused	
+	2139815839	pause_main_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\pause_main_music	
 	2141970788	play_victory_music			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_music	
 	2244506081	play_ui_cancel			\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_cancel	
 	2635608162	play_victory_2_star			\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_2_star	
