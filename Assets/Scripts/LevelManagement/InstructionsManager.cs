@@ -56,4 +56,17 @@ public class InstructionsManager : MonoBehaviour
             }
         }
     }
+    // Method for extending instruction's timer if it is bellow 2s
+    public void ExtendInstructionsTimer()
+    {
+        if (instructionDisplayCountdown < 2.0f)
+        {
+            instructionDisplayCountdown++; 
+        }
+    }
+    // Method for ending the current instruction now
+    public void EndCurrentinstruction()
+    {
+        instructionDisplayCountdown = 0; 
+    }
 }

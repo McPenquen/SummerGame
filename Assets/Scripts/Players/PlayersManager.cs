@@ -32,4 +32,14 @@ public class PlayersManager : MonoBehaviour
     {
         return bond.transform.position;
     }
+    // Get position of player 1
+    public Vector3 GetPlayer1Position()
+    {
+        return player1.transform.position;
+    }
+    // Get position of player 2
+    public Vector3 GetPlayer2Position()
+    {
+        return player2.transform.position;
+    }
 }
