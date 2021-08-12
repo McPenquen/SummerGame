@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using AK.Wwise;
 
 public class CharacterAudioManager : MonoBehaviour
 {
@@ -9,9 +10,11 @@ public class CharacterAudioManager : MonoBehaviour
     [SerializeField]
     private Character m_player;
 
+    // Player status
     [SerializeField]
     private Character.PlayerStatus playerStatus;
 
+    // Previous status
     [SerializeField]
     private Character.PlayerStatus previousStatus;
 
@@ -55,7 +58,21 @@ public class CharacterAudioManager : MonoBehaviour
         previousStatus = playerStatus;
     }
 
-
+    /*
+     * UPDATE METHOD
+     * 
+     * Unity method for updating the scene at each frame.
+     * 
+     * Method obtains the players current status and checks with
+     * the players previous status.
+     * 
+     * If the status has changed, the current audio for the player
+     * is stopped. The audio state is then changed depending on
+     * the status of the player.
+     * 
+     * Once changed, the sound engine then plays the audio to the
+     * changed state
+     */
     private void Update()
     {
         // Update the player status
@@ -64,24 +81,24 @@ public class CharacterAudioManager : MonoBehaviour
         // Check for status change
         if (playerStatus != previousStatus)
         {
-            // Status has changed
+            // Status has changed, post stop event to stop any other sounds
+            AkSoundEngine.PostEvent(stopEvent, go);
 
-
-            // Check the player status
+            // Check the player status is idle
             if (playerStatus == Character.PlayerStatus.idle)
             {
-                // Play Idle sounds
+                // Play Idle sound
                 AkSoundEngine.SetState(characterState, "idle");
             }
             else if (playerStatus == Character.PlayerStatus.walking)
             {
 
-                // Play walking sounds for the character
+                // Play walking sound for the character
                 AkSoundEngine.SetState(characterState, "isWalking");
             }
             else if (playerStatus == Character.PlayerStatus.jumping)
             {
-                // Play jumping sounds for the character
+                // Play jumping sound for the character
                 AkSoundEngine.SetState(characterState, "isJumping");
             }
             else if (playerStatus == Character.PlayerStatus.falling)
@@ -105,13 +122,11 @@ public class CharacterAudioManager : MonoBehaviour
                 AkSoundEngine.SetState(characterState, "None");
             }
 
-
             // Post Sound event to sound engine
             AkSoundEngine.PostEvent(playEvent, go);
 
+            // Update the previous state to the player's current state
             previousStatus = playerStatus;
         }
-
-
     }
 }
