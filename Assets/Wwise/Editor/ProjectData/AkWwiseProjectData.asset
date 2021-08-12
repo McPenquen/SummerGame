@@ -167,8 +167,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 57531442cb4f8a479ae9131731cae77e
     GuidInternal: 
-    m_lastTime: -8585731718037018889
+    m_lastTime: -8585728156133455766
     List:
+    - name: Andy_Bank
+      guid: e1e2cff1dce58044b0ee13a65adc4230
+      id: 1163442174
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57531442cb4f8a479ae9131731cae77e
+      - ElementName: Andy_Bank
+        ObjectType: 7
+        guid: e1e2cff1dce58044b0ee13a65adc4230
+      Path: SoundBanks\Default Work Unit\Andy_Bank
     - name: General_SoundBank
       guid: ed1fbc9cffffc845b0ec06456e9ddc0c
       id: 3657742645
@@ -183,6 +197,62 @@ MonoBehaviour:
         ObjectType: 7
         guid: ed1fbc9cffffc845b0ec06456e9ddc0c
       Path: SoundBanks\Default Work Unit\General_SoundBank
+    - name: James_Army_Bank
+      guid: 04734163137cb64dbb447bda2ee9ac43
+      id: 335436322
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57531442cb4f8a479ae9131731cae77e
+      - ElementName: James_Army_Bank
+        ObjectType: 7
+        guid: 04734163137cb64dbb447bda2ee9ac43
+      Path: SoundBanks\Default Work Unit\James_Army_Bank
+    - name: James_NPC_Bank
+      guid: 49d2cbe1bdb9fa478dd92d5c8b5d65f1
+      id: 3203257376
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57531442cb4f8a479ae9131731cae77e
+      - ElementName: James_NPC_Bank
+        ObjectType: 7
+        guid: 49d2cbe1bdb9fa478dd92d5c8b5d65f1
+      Path: SoundBanks\Default Work Unit\James_NPC_Bank
+    - name: James_Players_Bank
+      guid: e6313b0e48382d4cad3e49a24a8541f0
+      id: 3182103661
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57531442cb4f8a479ae9131731cae77e
+      - ElementName: James_Players_Bank
+        ObjectType: 7
+        guid: e6313b0e48382d4cad3e49a24a8541f0
+      Path: SoundBanks\Default Work Unit\James_Players_Bank
+    - name: James_UI_Bank
+      guid: 51367261941e274fba6d96431cf3b32b
+      id: 2703541833
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57531442cb4f8a479ae9131731cae77e
+      - ElementName: James_UI_Bank
+        ObjectType: 7
+        guid: 51367261941e274fba6d96431cf3b32b
+      Path: SoundBanks\Default Work Unit\James_UI_Bank
   EventWwu:
   - PhysicalPath: Events\Andy's_Events_Folder\Andy's_Work_Unit.wwu
     PathAndIcons:
@@ -198,7 +268,7 @@ MonoBehaviour:
     ParentPath: Events\Andy's_Events_Folder\Andy's_Work_Unit
     guid: 34a1481ab08c7349ae4bd493eaec004f
     GuidInternal: 
-    m_lastTime: -8585729094628768274
+    m_lastTime: -8585728156181643019
     List:
     - name: Game_Object_Events
       guid: 89fa3ec7ba747c4a896dbbbe6e503329
@@ -327,31 +397,8 @@ MonoBehaviour:
         guid: 45fdc1dbf1c39349a1fe3d5f4f56ca87
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_phone_ring
       maxAttenuation: 100
-      maxDuration: -1
-      minDuration: -1
-    - name: play_checkpoint_success
-      guid: 76c351c2076aa747ae0b5a041f6a7c8d
-      id: 2952657888
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Andy's_Events_Folder
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Andy's_Work_Unit
-        ObjectType: 12
-        guid: 34a1481ab08c7349ae4bd493eaec004f
-      - ElementName: Game_Object_Events
-        ObjectType: 4
-        guid: 89fa3ec7ba747c4a896dbbbe6e503329
-      - ElementName: play_checkpoint_success
-        ObjectType: 3
-        guid: 76c351c2076aa747ae0b5a041f6a7c8d
-      Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_checkpoint_success
-      maxAttenuation: 100
-      maxDuration: 5.514213
-      minDuration: 5.117991
+      maxDuration: Infinity
+      minDuration: 0.324161
     - name: play_ini_gripping
       guid: 15884942c511b24285b5018464e1dc07
       id: 271671075
@@ -487,7 +534,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 180791b49f303f44bc1fc139c97c2234
       Path: Events\Andy's_Events_Folder\Andy's_Work_Unit\Game_Object_Events\play_ufo_idle
-      maxAttenuation: 100
+      maxAttenuation: 200
       maxDuration: -1
       minDuration: -1
     - name: play_ufo_take_off
@@ -689,8 +736,54 @@ MonoBehaviour:
     ParentPath: Events\James'_Event_Folder\James'_Work_Unit
     guid: 8a432c8051c8e94fa7b3f9a79a43cb88
     GuidInternal: 
-    m_lastTime: -8585729094751063962
+    m_lastTime: -8585728156181633030
     List:
+    - name: Army
+      guid: a6aa2ff2d9f67b40b003a5c1eb32942d
+      id: 3551918582
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: a6aa2ff2d9f67b40b003a5c1eb32942d
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Desert
+      guid: cf2693dea5301b41b063b6c8276fb468
+      id: 1850388778
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: Desert
+        ObjectType: 4
+        guid: cf2693dea5301b41b063b6c8276fb468
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Environment
       guid: 21dce2aed516bb449e5e924774476129
       id: 1229948536
@@ -708,6 +801,35 @@ MonoBehaviour:
         ObjectType: 4
         guid: 21dce2aed516bb449e5e924774476129
       Path: Events\James'_Event_Folder\James'_Work_Unit\Environment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Level1
+      guid: 90edbdafb27c2b4a91c1f49e10b57c64
+      id: 2678230382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: Desert
+        ObjectType: 4
+        guid: cf2693dea5301b41b063b6c8276fb468
+      - ElementName: Level1
+        ObjectType: 4
+        guid: 90edbdafb27c2b4a91c1f49e10b57c64
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -734,6 +856,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music
+      guid: 100f00635e7cda4e9849e8eaad13a4d6
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: NPC
       guid: 815fabc88d70ba45a09ffc45e40be80e
       id: 662417162
@@ -754,9 +899,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: play_beam_up_01
-      guid: 6f41ba5772fb55498e2b393a9e97f0c2
-      id: 3488140881
+    - name: play_army_base_emitter
+      guid: b1c029ff8b53184782deceb4bd0750d7
+      id: 3508812408
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -767,19 +912,146 @@ MonoBehaviour:
       - ElementName: James'_Work_Unit
         ObjectType: 12
         guid: 8a432c8051c8e94fa7b3f9a79a43cb88
-      - ElementName: NPC
+      - ElementName: Army
         ObjectType: 4
-        guid: 815fabc88d70ba45a09ffc45e40be80e
-      - ElementName: UFO
-        ObjectType: 4
-        guid: 033d2fe4119ebc48bae192db05ece4f6
-      - ElementName: play_beam_up_01
+        guid: a6aa2ff2d9f67b40b003a5c1eb32942d
+      - ElementName: play_army_base_emitter
         ObjectType: 3
-        guid: 6f41ba5772fb55498e2b393a9e97f0c2
-      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_beam_up_01
+        guid: b1c029ff8b53184782deceb4bd0750d7
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_base_emitter
+      maxAttenuation: 75
+      maxDuration: -1
+      minDuration: -1
+    - name: play_army_vehicles_far
+      guid: 54ab105309afe94585ee71d522c3b704
+      id: 1770554193
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: a6aa2ff2d9f67b40b003a5c1eb32942d
+      - ElementName: play_army_vehicles_far
+        ObjectType: 3
+        guid: 54ab105309afe94585ee71d522c3b704
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army\play_army_vehicles_far
+      maxAttenuation: 250
+      maxDuration: -1
+      minDuration: -1
+    - name: play_countdown_20s
+      guid: 8d5c83b75306cf43b7dbc2ce9e1b7811
+      id: 27619919
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: play_countdown_20s
+        ObjectType: 3
+        guid: 8d5c83b75306cf43b7dbc2ce9e1b7811
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_countdown_20s
       maxAttenuation: 0
-      maxDuration: 2.5
-      minDuration: 2.375
+      maxDuration: 70
+      minDuration: 70
+    - name: play_explosion
+      guid: 4f6a5d394d2de4429185d7aac379e21e
+      id: 4030404899
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: Army
+        ObjectType: 4
+        guid: a6aa2ff2d9f67b40b003a5c1eb32942d
+      - ElementName: play_explosion
+        ObjectType: 3
+        guid: 4f6a5d394d2de4429185d7aac379e21e
+      Path: Events\James'_Event_Folder\James'_Work_Unit\Army\play_explosion
+      maxAttenuation: 0
+      maxDuration: 7.86576
+      minDuration: 7.86576
+    - name: play_gameover
+      guid: 2bed763cfd63974a995a0c4a7a647d36
+      id: 3174629258
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_gameover
+        ObjectType: 3
+        guid: 2bed763cfd63974a995a0c4a7a647d36
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_gameover
+      maxAttenuation: 0
+      maxDuration: 9.845261
+      minDuration: 9.845261
+    - name: play_gameover_music
+      guid: 3cab79658c063d41bf804acd55c23dee
+      id: 2977565850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_gameover_music
+        ObjectType: 3
+        guid: 3cab79658c063d41bf804acd55c23dee
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_gameover_music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: play_gem_gripping
       guid: 7908340ce449e840ab54ca2bac4bba8d
       id: 3259393782
@@ -872,9 +1144,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: Infinity
       minDuration: 0
-    - name: play_ufo_idle_01
-      guid: 76df6aac1a39674ab207b319efbbac20
-      id: 2888126495
+    - name: play_main_music
+      guid: f97ef0576687b6409e0caadce0500e39
+      id: 414863633
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -885,17 +1157,78 @@ MonoBehaviour:
       - ElementName: James'_Work_Unit
         ObjectType: 12
         guid: 8a432c8051c8e94fa7b3f9a79a43cb88
-      - ElementName: NPC
+      - ElementName: UI
         ObjectType: 4
-        guid: 815fabc88d70ba45a09ffc45e40be80e
-      - ElementName: UFO
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
         ObjectType: 4
-        guid: 033d2fe4119ebc48bae192db05ece4f6
-      - ElementName: play_ufo_idle_01
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: Desert
+        ObjectType: 4
+        guid: cf2693dea5301b41b063b6c8276fb468
+      - ElementName: Level1
+        ObjectType: 4
+        guid: 90edbdafb27c2b4a91c1f49e10b57c64
+      - ElementName: play_main_music
         ObjectType: 3
-        guid: 76df6aac1a39674ab207b319efbbac20
-      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO\play_ufo_idle_01
-      maxAttenuation: 100
+        guid: f97ef0576687b6409e0caadce0500e39
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\play_main_music
+      maxAttenuation: 0
+      maxDuration: 956.1834
+      minDuration: 956.1834
+    - name: play_pause_amb
+      guid: 31f7abc17f6bcb4495f1610473e94677
+      id: 786906729
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_pause_amb
+        ObjectType: 3
+        guid: 31f7abc17f6bcb4495f1610473e94677
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_pause_amb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: play_ui_ambience
+      guid: f52b049507706c4d810ceed53a00d6bd
+      id: 129783479
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: play_ui_ambience
+        ObjectType: 3
+        guid: f52b049507706c4d810ceed53a00d6bd
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\play_ui_ambience
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: play_ui_cancel
@@ -1002,6 +1335,122 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.593027
       minDuration: 0.559743
+    - name: play_victory_1_star
+      guid: bbbdcdcb8ba34d488a9363bf6d95da78
+      id: 1597364423
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_victory_1_star
+        ObjectType: 3
+        guid: bbbdcdcb8ba34d488a9363bf6d95da78
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_1_star
+      maxAttenuation: 0
+      maxDuration: 10.1239
+      minDuration: 10.1239
+    - name: play_victory_2_star
+      guid: c9d084c600f4e847828e390138ff085a
+      id: 2635608162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_victory_2_star
+        ObjectType: 3
+        guid: c9d084c600f4e847828e390138ff085a
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_2_star
+      maxAttenuation: 0
+      maxDuration: 10.26322
+      minDuration: 10.26322
+    - name: play_victory_3_star
+      guid: b6ab3cfcb79eec4bba37464a87785452
+      id: 1743052465
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_victory_3_star
+        ObjectType: 3
+        guid: b6ab3cfcb79eec4bba37464a87785452
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_3_star
+      maxAttenuation: 0
+      maxDuration: 10.843719
+      minDuration: 10.843719
+    - name: play_victory_music
+      guid: 2cbd8060b6a6ba49a1ffef3ec2886cc9
+      id: 2141970788
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: play_victory_music
+        ObjectType: 3
+        guid: 2cbd8060b6a6ba49a1ffef3ec2886cc9
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\play_victory_music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Players
       guid: 16f84b15948a284c93db079559a0ede5
       id: 2188949101
@@ -1022,6 +1471,58 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: set_IsPaused
+      guid: 1406985bc2426247942242123d16a6e4
+      id: 1319156832
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: set_IsPaused
+        ObjectType: 3
+        guid: 1406985bc2426247942242123d16a6e4
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_IsPaused
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: set_NotPaused
+      guid: d03b4f7380aace40a22d7f7969acde99
+      id: 2128862759
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Menu
+        ObjectType: 4
+        guid: b5dccc171854a24fa81e10b405d28b9f
+      - ElementName: set_NotPaused
+        ObjectType: 3
+        guid: d03b4f7380aace40a22d7f7969acde99
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Menu\set_NotPaused
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_All
       guid: 6f5c62c781adf84d9d246dd3dbc51327
       id: 452547817
@@ -1040,8 +1541,8 @@ MonoBehaviour:
         guid: 6f5c62c781adf84d9d246dd3dbc51327
       Path: Events\James'_Event_Folder\James'_Work_Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: stop_gem_movement_switch_state
       guid: 0504c69df3768145acd26216de14bd95
       id: 1031277876
@@ -1062,6 +1563,38 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0504c69df3768145acd26216de14bd95
       Path: Events\James'_Event_Folder\James'_Work_Unit\Players\stop_gem_movement_switch_state
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_main_music
+      guid: 86c6f99bea22a34daade7e0fa03be86e
+      id: 1241273495
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: Desert
+        ObjectType: 4
+        guid: cf2693dea5301b41b063b6c8276fb468
+      - ElementName: Level1
+        ObjectType: 4
+        guid: 90edbdafb27c2b4a91c1f49e10b57c64
+      - ElementName: stop_main_music
+        ObjectType: 3
+        guid: 86c6f99bea22a34daade7e0fa03be86e
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\Desert\Level1\stop_main_music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1088,9 +1621,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: UFO
-      guid: 033d2fe4119ebc48bae192db05ece4f6
-      id: 1198168263
+    - name: stop_victory_1_star
+      guid: 6b04675be42b2c4da6944473e17bf9df
+      id: 857333373
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1101,13 +1634,132 @@ MonoBehaviour:
       - ElementName: James'_Work_Unit
         ObjectType: 12
         guid: 8a432c8051c8e94fa7b3f9a79a43cb88
-      - ElementName: NPC
+      - ElementName: UI
         ObjectType: 4
-        guid: 815fabc88d70ba45a09ffc45e40be80e
-      - ElementName: UFO
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
         ObjectType: 4
-        guid: 033d2fe4119ebc48bae192db05ece4f6
-      Path: Events\James'_Event_Folder\James'_Work_Unit\NPC\UFO
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: stop_victory_1_star
+        ObjectType: 3
+        guid: 6b04675be42b2c4da6944473e17bf9df
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_1_star
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_victory_2_star
+      guid: 4fff5f6cb24c08489ce169bbb517fe59
+      id: 3062924404
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: stop_victory_2_star
+        ObjectType: 3
+        guid: 4fff5f6cb24c08489ce169bbb517fe59
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_2_star
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_victory_3_star
+      guid: 56e1988b089a2849b586c36faa27f6d9
+      id: 2982197139
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: stop_victory_3_star
+        ObjectType: 3
+        guid: 56e1988b089a2849b586c36faa27f6d9
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_3_star
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_victory_music
+      guid: 6ef31503b317cf48ab63064c856a68d5
+      id: 3834448970
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      - ElementName: stop_victory_music
+        ObjectType: 3
+        guid: 6ef31503b317cf48ab63064c856a68d5
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI\stop_victory_music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: UI
+      guid: ca969acbcfeb9f4390b7b1da7b685728
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Event_Folder
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: James'_Work_Unit
+        ObjectType: 12
+        guid: 8a432c8051c8e94fa7b3f9a79a43cb88
+      - ElementName: UI
+        ObjectType: 4
+        guid: 91651e5b49010944a6a1333a72bef0ab
+      - ElementName: Music
+        ObjectType: 4
+        guid: 100f00635e7cda4e9849e8eaad13a4d6
+      - ElementName: UI
+        ObjectType: 4
+        guid: ca969acbcfeb9f4390b7b1da7b685728
+      Path: Events\James'_Event_Folder\James'_Work_Unit\UI\Music\UI
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1224,8 +1876,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 56298cd3335bce4baf0f01cc54b0bc6a
     GuidInternal: 
-    m_lastTime: -8585729094621187383
+    m_lastTime: -8585728156133425818
     List:
+    - name: Checkpoint
+      guid: b2e2d485ce7aa6439c75b333c62ae49b
+      id: 612075679
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 56298cd3335bce4baf0f01cc54b0bc6a
+      - ElementName: Checkpoint
+        ObjectType: 9
+        guid: b2e2d485ce7aa6439c75b333c62ae49b
+      Path: States\Default Work Unit\Checkpoint
+      values:
+      - name: None
+        guid: 2360e6ef01c0a549a300f60cf275d2f4
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Checkpoint
+          ObjectType: 9
+          guid: b2e2d485ce7aa6439c75b333c62ae49b
+        - ElementName: None
+          ObjectType: 8
+          guid: 2360e6ef01c0a549a300f60cf275d2f4
+      - name: off
+        guid: 24dc21f580de374992ab5503cf5cac6f
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Checkpoint
+          ObjectType: 9
+          guid: b2e2d485ce7aa6439c75b333c62ae49b
+        - ElementName: off
+          ObjectType: 8
+          guid: 24dc21f580de374992ab5503cf5cac6f
+      - name: on
+        guid: dc90253f5d22a94da9411de408703424
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 56298cd3335bce4baf0f01cc54b0bc6a
+        - ElementName: Checkpoint
+          ObjectType: 9
+          guid: b2e2d485ce7aa6439c75b333c62ae49b
+        - ElementName: on
+          ObjectType: 8
+          guid: dc90253f5d22a94da9411de408703424
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Gem_Movement
       guid: 853ee3d50d9dfc45be3a5256d6d78617
       id: 72319902
