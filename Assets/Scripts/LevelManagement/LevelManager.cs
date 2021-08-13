@@ -78,6 +78,8 @@ public class LevelManager : MonoBehaviour
                 // Stop all current sounds and replay the default background noise
                 AkSoundEngine.StopAll();
                 AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
+                // Make sure the players are active for next time
+                players.gameObject.SetActive(true);
                 SceneManager.LoadScene("Victory");
             }
         }
