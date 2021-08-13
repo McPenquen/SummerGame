@@ -68,6 +68,8 @@ public class LevelManager : MonoBehaviour
                 AkSoundEngine.PostEvent("play_beam_up",gameObject);
                 // Start the spaceship animation
                 SpaceshipManager.SetIsWon(true);
+                // Hide the players
+                players.gameObject.SetActive(false);
             }
             // Save the time -> as score
             ScenesNavigation.SaveScore(Timer.GetScore());
@@ -75,11 +77,11 @@ public class LevelManager : MonoBehaviour
             victoryDelayCounter += Time.deltaTime;
             if (victoryDelayCounter >= 2.0f )
             {
+                // Make sure the players are active for next time
+                players.gameObject.SetActive(true);               
                 // Stop all current sounds and replay the default background noise
                 AkSoundEngine.StopAll();
                 AkSoundEngine.PostEvent("play_start_up", UnityEngine.GameObject.Find("WwiseGlobal"));
-                // Make sure the players are active for next time
-                players.gameObject.SetActive(true);
                 SceneManager.LoadScene("Victory");
             }
         }
