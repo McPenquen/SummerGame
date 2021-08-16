@@ -483,6 +483,12 @@ public class Character : MonoBehaviour
 
             // Control the animation transition from grabbing
             m_playerAnimator.SetBool("isFalling", true);
+
+            // And the other player is swinging enable the bond
+            if (m_otherPlayer.m_isSwinging)
+            {
+                m_bond.EnableDistanceJoint();
+            }
         }
         else
         {
