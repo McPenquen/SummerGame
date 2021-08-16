@@ -573,7 +573,7 @@ public class Character : MonoBehaviour
     public void Jump()
     {
         // Check if the player is grounded or it touching the other player (need improvement)
-        if (m_isGrounded || (m_touchingOtherPlayer && m_otherPlayer.CheckGrounded()))
+        if (m_isGrounded || (m_touchingOtherPlayer && (m_otherPlayer.CheckGrounded() || m_otherPlayer.CheckGrabbing())))
         {
             // Invoke the jump action in Y, whilst keeping the rigid body velocity in X
             m_rb.velocity = new Vector2(m_rb.velocity.x, m_jumpForce);
